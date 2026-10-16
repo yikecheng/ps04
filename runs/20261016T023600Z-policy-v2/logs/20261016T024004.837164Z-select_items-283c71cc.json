@@ -1,0 +1,16 @@
+{
+  "cost_estimate": false,
+  "cost_usd": null,
+  "errors": [
+    "model returned an unknown or duplicate decision: ('youtube:7XzjQa8z0uc', 'v-aa6fb499336c3701ec05174c')"
+  ],
+  "finished_at": "2026-10-16T02:40:04Z",
+  "input_count": 17,
+  "output_count": null,
+  "stage": "select_items",
+  "started_at": "2026-10-16T02:36:25Z",
+  "status": "failed",
+  "tools_or_models": [
+    "codex-cli"
+  ]
+}

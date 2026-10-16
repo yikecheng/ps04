@@ -1,0 +1,1367 @@
+[
+  {
+    "end_seconds": 13.827,
+    "segment_id": "seg-0001",
+    "start_seconds": 0.0,
+    "text": "InfoQ Software Architects' Newsletter A monthly overview of things you need to know as an architect or aspiring architect. View an example We protect your privacy. InfoQ Homepage Podcasts What Does It Really Mean To Program With AI: A Conversation with Joy Ebertz What Does",
+    "timestamp_method": "estimated_from_duration"
+  },
+  {
+    "end_seconds": 27.654,
+    "segment_id": "seg-0002",
+    "start_seconds": 13.827,
+    "text": "It Really Mean To Program With AI: A Conversation with Joy Ebertz Oct 12, 2026 In this podcast, Michael Stiefel spoke to Joy Ebertz about how the use of artificial intelligence is changing the way architects and developers do their jobs. Focusing on the long",
+    "timestamp_method": "estimated_from_duration"
+  },
+  {
+    "end_seconds": 41.48,
+    "segment_id": "seg-0003",
+    "start_seconds": 27.654,
+    "text": "term success of the business is one of the most neglected tasks of an architect. This task becomes particularly important as the nature of artificial intelligence changes the landscape of software development. Architects must be especially aware of requirements and their inherent ambiguity. More than",
+    "timestamp_method": "estimated_from_duration"
+  },
+  {
+    "end_seconds": 55.307,
+    "segment_id": "seg-0004",
+    "start_seconds": 41.48,
+    "text": "ever, they must be expert at explaining technology to the business people, and the business to the technology people. On the flip side, goals must be clearly explained to AI agents, and tests must be unambiguously written. Industry practice is uncertain on how to incorporate",
+    "timestamp_method": "estimated_from_duration"
+  },
+  {
+    "end_seconds": 69.134,
+    "segment_id": "seg-0005",
+    "start_seconds": 55.307,
+    "text": "changes due to bug reports or new requirements. Should it be done incrementally, or should the module’s or application’s code base be regenerated? This is especially challenging in existing systems, especially old ones where nobody knows what the real requirements were. Unambiguous requirements definition may",
+    "timestamp_method": "estimated_from_duration"
+  },
+  {
+    "end_seconds": 82.961,
+    "segment_id": "seg-0006",
+    "start_seconds": 69.134,
+    "text": "turn out to be the gating factor in AI driven software development because code reviews seem not to be effective, and verification of the AI work is a great burden. The conversation then shifted to talk about the future of software developers. The industry needs",
+    "timestamp_method": "estimated_from_duration"
+  },
+  {
+    "end_seconds": 96.787,
+    "segment_id": "seg-0007",
+    "start_seconds": 82.961,
+    "text": "to find a way to use AI so that human understanding of how software systems work does not atrophy. The flexibility that AI coding gives you reinforces the idea that constraints, and the recognition of the assumptions you are making, are critical concepts on which",
+    "timestamp_method": "estimated_from_duration"
+  },
+  {
+    "end_seconds": 110.614,
+    "segment_id": "seg-0008",
+    "start_seconds": 96.787,
+    "text": "future developers need to focus. If you look at how AI is actually used, it seems to boil down to two use cases - vibe coding for things that do not have to be perfect such as many internal tools, and essential systems where you",
+    "timestamp_method": "estimated_from_duration"
+  },
+  {
+    "end_seconds": 124.441,
+    "segment_id": "seg-0009",
+    "start_seconds": 110.614,
+    "text": "specify to the AI, and validate the results very carefully. In the latter scenario, you are effectively pair programming with the AI. Here those constraints and assumptions must be understood. In addition, the industry has not figured out a way to train future software engineers",
+    "timestamp_method": "estimated_from_duration"
+  },
+  {
+    "end_seconds": 138.268,
+    "segment_id": "seg-0010",
+    "start_seconds": 124.441,
+    "text": "since AI is doing the tasks on which junior engineers were traditionally trained. One of the important, often neglected parts of an architect’s job is to focus on the long term implications of technical decisions that might make or break a business’ survival. It is",
+    "timestamp_method": "estimated_from_duration"
+  },
+  {
+    "end_seconds": 152.094,
+    "segment_id": "seg-0011",
+    "start_seconds": 138.268,
+    "text": "still not certain whether AI software development generally lends itself more naturally to microservices or monoliths. What is meant by coding with artificial intelligence has a wide range of meaning. It ranges from vibe coding, developing internal tools, treating the AI as a closely supervised",
+    "timestamp_method": "estimated_from_duration"
+  },
+  {
+    "end_seconds": 165.921,
+    "segment_id": "seg-0012",
+    "start_seconds": 152.094,
+    "text": "pair programmer, to being similar to a constrained senior developer. As artificial intelligence takes on more of the coding workload, precise requirements and comprehensive tests in order to remove ambiguity becomes critical. Industry has not yet figured out how to train junior engineers as AI",
+    "timestamp_method": "estimated_from_duration"
+  },
+  {
+    "end_seconds": 179.748,
+    "segment_id": "seg-0013",
+    "start_seconds": 165.921,
+    "text": "coding now does much of the work on which they were trained. Michael Stiefel : Welcome to The Architect's Podcast where we discuss what it means to be an architect and how architects actually do their job. Today's guest is Joy Ebertz, who is a",
+    "timestamp_method": "estimated_from_duration"
+  },
+  {
+    "end_seconds": 193.575,
+    "segment_id": "seg-0014",
+    "start_seconds": 179.748,
+    "text": "principal software engineer at Imprint where she is currently trying to detangle their configuration. She's primarily a backend focused developer with extensive experience in microservice architecture, authorization frameworks, creating REST API standards, feature flagging, and more. Prior to Imprint, she worked at Harness, Split, and",
+    "timestamp_method": "estimated_from_duration"
+  },
+  {
+    "end_seconds": 207.401,
+    "segment_id": "seg-0015",
+    "start_seconds": 193.575,
+    "text": "Box in staff plus roles. In addition to designing software and writing a lot of code with the help of AI, she also maintains a blog with both career and technical topics. In her free time, she does a lot of traveling, reading, and running",
+    "timestamp_method": "estimated_from_duration"
+  },
+  {
+    "end_seconds": 221.228,
+    "segment_id": "seg-0016",
+    "start_seconds": 207.401,
+    "text": "ridiculously long distances, mostly on trails. It's great to have you here on the podcast. And I'd like to start out by asking you, were you trained as an architect? How did you become an architect? What is an Architect? [ 01:09 ] Joy Ebertz",
+    "timestamp_method": "estimated_from_duration"
+  },
+  {
+    "end_seconds": 235.055,
+    "segment_id": "seg-0017",
+    "start_seconds": 221.228,
+    "text": ": Yes. Well, thanks for having me, first of all. I guess like most career paths, it was a bit meandering. I mean, if you had asked me pretty soon out of college, \"Where do you want to go eventually?\" I probably would've said something",
+    "timestamp_method": "estimated_from_duration"
+  },
+  {
+    "end_seconds": 248.882,
+    "segment_id": "seg-0018",
+    "start_seconds": 235.055,
+    "text": "like architect. I thought something like that was pretty cool. I was generally drawn to that. But then over time, I tried a few different things. When I was at Box, I got pushed into management at one point. I lasted about a year and",
+    "timestamp_method": "estimated_from_duration"
+  },
+  {
+    "end_seconds": 262.708,
+    "segment_id": "seg-0019",
+    "start_seconds": 248.882,
+    "text": "a half and decided I absolutely hated it. So that was the end of that career progression. I moved back to the IC track. And from there, it wasn't quite ... We didn't have a role called architect at Box, but over time, as I",
+    "timestamp_method": "estimated_from_duration"
+  },
+  {
+    "end_seconds": 276.535,
+    "segment_id": "seg-0020",
+    "start_seconds": 262.708,
+    "text": "got more senior and started picking up more responsibilities, I tended to gravitate towards the more overarching type roles, the roles that looked into a lot of different spaces and how things fit together, how things generally worked. And then at some point we started",
+    "timestamp_method": "estimated_from_duration"
+  },
+  {
+    "end_seconds": 290.362,
+    "segment_id": "seg-0021",
+    "start_seconds": 276.535,
+    "text": "a project, actually we started this project five times, but on one of the iterations, we were trying to break our monolith into microservices. And so as a part of that, we spun up a small team of individuals working on doing sort of a",
+    "timestamp_method": "estimated_from_duration"
+  },
+  {
+    "end_seconds": 304.189,
+    "segment_id": "seg-0022",
+    "start_seconds": 290.362,
+    "text": "domain-driven design exploration of the entire space. And I was lucky enough to be chosen as one of the people on that team, which caused me to learn a lot about some of the more theoretical side of architecture and dig in and really think",
+    "timestamp_method": "estimated_from_duration"
+  },
+  {
+    "end_seconds": 318.015,
+    "segment_id": "seg-0023",
+    "start_seconds": 304.189,
+    "text": "about how code fits together. And from there, I would say I just sort of tended in that direction. And to be honest, I've never had an official architect title, but if you ask me to place myself, that's generally where I would place myself",
+    "timestamp_method": "estimated_from_duration"
+  },
+  {
+    "end_seconds": 331.842,
+    "segment_id": "seg-0024",
+    "start_seconds": 318.015,
+    "text": "in my roles. Michael Stiefel : Well, a lot of people who function as architects don't have that title. In fact, if you remember, there was a time in a certain phase of Agile where they said, \"We're not going to have any architects\". And",
+    "timestamp_method": "estimated_from_duration"
+  },
+  {
+    "end_seconds": 345.669,
+    "segment_id": "seg-0025",
+    "start_seconds": 331.842,
+    "text": "the idea was that architecture would somehow magically emerge and everybody would be an architect. And to my way of thinking, that always doesn't work because if no one has responsibility for it, it usually doesn't get done. And I don't know if that's your",
+    "timestamp_method": "estimated_from_duration"
+  },
+  {
+    "end_seconds": 359.496,
+    "segment_id": "seg-0026",
+    "start_seconds": 345.669,
+    "text": "experience. Joy Ebertz : Yes. Michael Stiefel : The way I like to think about architecture, and tell me whether you disagree with that, is that the architect is responsible for those things that cannot be written in a use case. The ilities, the security,",
+    "timestamp_method": "estimated_from_duration"
+  },
+  {
+    "end_seconds": 373.322,
+    "segment_id": "seg-0027",
+    "start_seconds": 359.496,
+    "text": "scalability, the whole user experience. I'm not talking about the user interface, but the user experience. And that really is where the architect role shines. Joy Ebertz : I would say some of that, but also thinking long-term. I feel like sometimes some of the",
+    "timestamp_method": "estimated_from_duration"
+  },
+  {
+    "end_seconds": 387.149,
+    "segment_id": "seg-0028",
+    "start_seconds": 373.322,
+    "text": "things you mentioned, the team might think about anyway because they happen to be in the RFC template or what have you. But I've also seen a lot of times people will think a little bit too small, either in terms of timeline or in",
+    "timestamp_method": "estimated_from_duration"
+  },
+  {
+    "end_seconds": 400.976,
+    "segment_id": "seg-0029",
+    "start_seconds": 387.149,
+    "text": "terms of only thinking about their team or what have you. And part of where I see the architect shine is pulling in those, \"Where are we going next and how does this fit with that?\" as well as, \"This other team is doing this",
+    "timestamp_method": "estimated_from_duration"
+  },
+  {
+    "end_seconds": 414.803,
+    "segment_id": "seg-0030",
+    "start_seconds": 400.976,
+    "text": "thing, how does your thing work well with that?\" And kind of pulling the big picture into what's actually being built. Michael Stiefel : And part of that, as I remember from your QCon talk, I mean, you were talking at the time about technical",
+    "timestamp_method": "estimated_from_duration"
+  },
+  {
+    "end_seconds": 428.63,
+    "segment_id": "seg-0031",
+    "start_seconds": 414.803,
+    "text": "debt, but the technical debt is just an example of this. You have to trade off, do we sacrifice too much for the long term? How much does it really matter? What's the business case for doing that? So it's really, from what you're saying,",
+    "timestamp_method": "estimated_from_duration"
+  },
+  {
+    "end_seconds": 442.456,
+    "segment_id": "seg-0032",
+    "start_seconds": 428.63,
+    "text": "it's not only thinking in the long term in terms of technical things, but in terms of understanding the business and explaining that to the business people as well. Joy Ebertz : Correct. Yes. I mean, you could build something absolutely technically perfect that's going",
+    "timestamp_method": "estimated_from_duration"
+  },
+  {
+    "end_seconds": 456.283,
+    "segment_id": "seg-0033",
+    "start_seconds": 442.456,
+    "text": "to last a hundred billion customers, whatever, but if your business doesn't survive to next month, it doesn't matter. Michael Stiefel : Right. I think that's a valid point. What you're referring to is what Gregor Hohpe likes to talk about, the elevator architect, where",
+    "timestamp_method": "estimated_from_duration"
+  },
+  {
+    "end_seconds": 470.11,
+    "segment_id": "seg-0034",
+    "start_seconds": 456.283,
+    "text": "he has to go from the boardroom to the boiler room. In other words, you have to be able to talk to the technical people and explain to them the business goals, and you have to explain to the business people what the technical goals",
+    "timestamp_method": "estimated_from_duration"
+  },
+  {
+    "end_seconds": 483.937,
+    "segment_id": "seg-0035",
+    "start_seconds": 470.11,
+    "text": "are. Joy Ebertz : Yes, exactly. Monoliths or Microservices When Coding With AI [ 05:33 ] Michael Stiefel : Which leads me into the first thing I'm curious about is you've talked about monoliths and you have an extensive background in microservices. There seems to",
+    "timestamp_method": "estimated_from_duration"
+  },
+  {
+    "end_seconds": 497.763,
+    "segment_id": "seg-0036",
+    "start_seconds": 483.937,
+    "text": "be a tendency today that people are pushing back and going towards monoliths. And to me, this sort of conflicts with the use of AI to code because I think AI thinks it works better with microservices where you can see what the AI code",
+    "timestamp_method": "estimated_from_duration"
+  },
+  {
+    "end_seconds": 511.59,
+    "segment_id": "seg-0037",
+    "start_seconds": 497.763,
+    "text": "generator does; you have bounding boxes around it. As opposed to if you have a monolith, it becomes much harder to use AI. Joy Ebertz : Yes, that's an interesting point. Yes, I guess over the years I've seen the trend from monolith to microservices",
+    "timestamp_method": "estimated_from_duration"
+  },
+  {
+    "end_seconds": 525.417,
+    "segment_id": "seg-0038",
+    "start_seconds": 511.59,
+    "text": "and then back to monolith. And honestly, personally, I can see good arguments in both directions. But what's fascinating is where I am currently, one of the things we've talked about too is that your point is absolutely correct, that AIs do better if they're",
+    "timestamp_method": "estimated_from_duration"
+  },
+  {
+    "end_seconds": 539.244,
+    "segment_id": "seg-0039",
+    "start_seconds": 525.417,
+    "text": "constrained in what they're looking at and they're constrained in the problem they're given. They're kind of like humans, right? If you give them too much to think about at once, stuff gets lost and forgotten and whatever. So if you can constrain the code",
+    "timestamp_method": "estimated_from_duration"
+  },
+  {
+    "end_seconds": 553.07,
+    "segment_id": "seg-0040",
+    "start_seconds": 539.244,
+    "text": "base, they're going to do better. But on the flip side, for example, we had three JavaScript separate services, separate repos, but they were sort of drifting in different directions for no good reason. And so we merged those back together and then the AI",
+    "timestamp_method": "estimated_from_duration"
+  },
+  {
+    "end_seconds": 566.897,
+    "segment_id": "seg-0041",
+    "start_seconds": 553.07,
+    "text": "has started to pick up good practices from one and apply it to the others. So it can occasionally be useful with AI to have stuff in, I guess this is more a mono repo than a mono service, but still a similar idea of",
+    "timestamp_method": "estimated_from_duration"
+  },
+  {
+    "end_seconds": 580.724,
+    "segment_id": "seg-0042",
+    "start_seconds": 566.897,
+    "text": "pulling everything back together. So I don't know that we have the perfect answer yet because your point is still correct, but I think we're still trying to figure out when is it better to pull things together versus split them apart and what are",
+    "timestamp_method": "estimated_from_duration"
+  },
+  {
+    "end_seconds": 594.551,
+    "segment_id": "seg-0043",
+    "start_seconds": 580.724,
+    "text": "the advantages to each side? Michael Stiefel : Well, one thing that occurred to me as I've thought about this problem, and anybody who is curious about this is thinking about this problem ... none of us have answers to it ... but I think",
+    "timestamp_method": "estimated_from_duration"
+  },
+  {
+    "end_seconds": 608.377,
+    "segment_id": "seg-0044",
+    "start_seconds": 594.551,
+    "text": "about not only the creation of the code at the start, but when you start to get bug reports back, how do you alter the AI generated code? So if you have a monolith or you have one repo or you have something large, it",
+    "timestamp_method": "estimated_from_duration"
+  },
+  {
+    "end_seconds": 622.204,
+    "segment_id": "seg-0045",
+    "start_seconds": 608.377,
+    "text": "may be harder for the AI to make the micro changes or the larger changes that have to be made if you're dealing with a monolith rather than a microservice. Because I had someone on the podcast who we talked about this and his whole",
+    "timestamp_method": "estimated_from_duration"
+  },
+  {
+    "end_seconds": 636.031,
+    "segment_id": "seg-0046",
+    "start_seconds": 622.204,
+    "text": "idea was you have the AI generate the microservice, and when you get a bug report in, you just regenerate the microservice from scratch because you can do that with an AI much more easily than you can with a human. So I don't know",
+    "timestamp_method": "estimated_from_duration"
+  },
+  {
+    "end_seconds": 649.858,
+    "segment_id": "seg-0047",
+    "start_seconds": 636.031,
+    "text": "how you feel about that. It's not so much the initial creation, but it's when you loop back the bug report or the changes from the field that the SREs are bringing in or the customers reported, that the advantage of microservices really comes to",
+    "timestamp_method": "estimated_from_duration"
+  },
+  {
+    "end_seconds": 663.684,
+    "segment_id": "seg-0048",
+    "start_seconds": 649.858,
+    "text": "the fore. Joy Ebertz : I haven't actually dabbled in anything that extreme. I have heard other people talk about it as well. And I'm really fascinated by this concept of just having AI completely regenerate something because to your point, it is much, much",
+    "timestamp_method": "estimated_from_duration"
+  },
+  {
+    "end_seconds": 677.511,
+    "segment_id": "seg-0049",
+    "start_seconds": 663.684,
+    "text": "faster to build the entire thing than it used to be. I do think the thing we're missing is good testing. I think in order to do that, you have to have all of your use cases very well-defined in tests or in some form.",
+    "timestamp_method": "estimated_from_duration"
+  },
+  {
+    "end_seconds": 691.338,
+    "segment_id": "seg-0050",
+    "start_seconds": 677.511,
+    "text": "As you rebuild a thing, you need to make sure it still meets all of the needs that you have, which is I think a limiting factor for a number of teams out there at the moment. The Importance of Requirements and Testing [ 09:29",
+    "timestamp_method": "estimated_from_duration"
+  },
+  {
+    "end_seconds": 705.165,
+    "segment_id": "seg-0051",
+    "start_seconds": 691.338,
+    "text": "] Michael Stiefel : Well, that raises the other question, and I've been in this business long enough. I mean, I remember, and it's curious when I think about this, because I remember the arguments over whether compilers or hand-coded assembly code was better or",
+    "timestamp_method": "estimated_from_duration"
+  },
+  {
+    "end_seconds": 718.991,
+    "segment_id": "seg-0052",
+    "start_seconds": 705.165,
+    "text": "not. This is the software business, all things old are new again. But in those days, there was a dream, and I'm thinking about the 1980s, early 1990s, that we would have these requirement definition languages that would remove the ambiguity. See, this is the",
+    "timestamp_method": "estimated_from_duration"
+  },
+  {
+    "end_seconds": 732.818,
+    "segment_id": "seg-0053",
+    "start_seconds": 718.991,
+    "text": "problem. English is wonderful or anything ... I'm picking English out, but it's true of all languages. So I'm just using English because that's the language I know best. I'm not trying to prejudice against some other language or some other culture, but language is",
+    "timestamp_method": "estimated_from_duration"
+  },
+  {
+    "end_seconds": 746.645,
+    "segment_id": "seg-0054",
+    "start_seconds": 732.818,
+    "text": "purposely ambiguous because it's much better very often diplomatically or culturally just to be slightly ambiguous than precise. Computers, on the other hand, are stupid. I mean, even at some level, they're dumb. And even the AI today, maybe 50 years from now, 20 years",
+    "timestamp_method": "estimated_from_duration"
+  },
+  {
+    "end_seconds": 760.472,
+    "segment_id": "seg-0055",
+    "start_seconds": 746.645,
+    "text": "from now, they'll be smarter than we are, but not where we are right now and not for the foreseeable future. So the question is, if you're going to have those tests, A, how are you going to describe them precisely? Because if the AI",
+    "timestamp_method": "estimated_from_duration"
+  },
+  {
+    "end_seconds": 774.298,
+    "segment_id": "seg-0056",
+    "start_seconds": 760.472,
+    "text": "is generating the tests, presumably a separate AI is going to generate the test, but if you have the tests, how are you going to describe them precisely enough? Because let's say you're doing TDD and you want to write your test first, and it's",
+    "timestamp_method": "estimated_from_duration"
+  },
+  {
+    "end_seconds": 788.125,
+    "segment_id": "seg-0057",
+    "start_seconds": 774.298,
+    "text": "one thing for me to write a test and looking through requirements, document a conversation with the customer or the program manager, however it came about, and write a test, but for the AI to take that written statement, do we need a language to",
+    "timestamp_method": "estimated_from_duration"
+  },
+  {
+    "end_seconds": 801.952,
+    "segment_id": "seg-0058",
+    "start_seconds": 788.125,
+    "text": "do this? Is this something that still should be done by humans if the AI is generating the code? I mean, you see what I'm struggling with, and if you have any insights into that. Joy Ebertz : I don't know that I have great",
+    "timestamp_method": "estimated_from_duration"
+  },
+  {
+    "end_seconds": 815.779,
+    "segment_id": "seg-0059",
+    "start_seconds": 801.952,
+    "text": "insights, but when I first started playing with AI, one of the first things one of my teammates said was like, \"Look, it's great. It generates the code and then it fixes all the tests it broke\". And I was like, \"Wait a minute, it's",
+    "timestamp_method": "estimated_from_duration"
+  },
+  {
+    "end_seconds": 829.605,
+    "segment_id": "seg-0060",
+    "start_seconds": 815.779,
+    "text": "just doing whatever it wants\". Michael Stiefel : It could write it as assert true, and then the test passes. Joy Ebertz : Yes, exactly. And I also have had cases where I'm like, \"Fix this test\", and the AI was like, \"Okay, I'll delete",
+    "timestamp_method": "estimated_from_duration"
+  },
+  {
+    "end_seconds": 843.432,
+    "segment_id": "seg-0061",
+    "start_seconds": 829.605,
+    "text": "the test\". And I'm like, \"Well, technically we don't have broken tests now, but not what I meant\". So I think we do need to figure that out. I mean, I think you can still have AI generate tests, but I think you need to",
+    "timestamp_method": "estimated_from_duration"
+  },
+  {
+    "end_seconds": 857.259,
+    "segment_id": "seg-0062",
+    "start_seconds": 843.432,
+    "text": "make sure that it's separate or there's clear commands that as a part of this rewrite, you don't touch any of the tests or much clearer on that side than we are right now, in general at least. I know our code base, we now",
+    "timestamp_method": "estimated_from_duration"
+  },
+  {
+    "end_seconds": 871.086,
+    "segment_id": "seg-0063",
+    "start_seconds": 857.259,
+    "text": "have in our agent files things like \"Don't just delete tests\", and things like that. Michael Stiefel : I mean, this is one of the places where you've talked about avoiding perfectionism, but here's almost the place where you have to be perfect or aim",
+    "timestamp_method": "estimated_from_duration"
+  },
+  {
+    "end_seconds": 884.913,
+    "segment_id": "seg-0064",
+    "start_seconds": 871.086,
+    "text": "for perfectionism. Especially on the test then, because if you're going to rely on the AI to generate the code, all right, there regenerates slop, okay, that will come out in the process. But it's really the tests, and in this world, the way I",
+    "timestamp_method": "estimated_from_duration"
+  },
+  {
+    "end_seconds": 898.739,
+    "segment_id": "seg-0065",
+    "start_seconds": 884.913,
+    "text": "think about it, the tests become even more important than they were. Joy Ebertz : Yes, it's interesting because I guess, and this is a shift in thinking in general, is, previously you would have an old system and even if there were small bugs",
+    "timestamp_method": "estimated_from_duration"
+  },
+  {
+    "end_seconds": 912.566,
+    "segment_id": "seg-0066",
+    "start_seconds": 898.739,
+    "text": "or it was really annoying to maintain, sometimes it was worth just not touching because you didn't know what the requirements were exactly. Nobody in the company remembers anymore what all the requirements are. So it's easier to just leave it and not touch it,",
+    "timestamp_method": "estimated_from_duration"
+  },
+  {
+    "end_seconds": 926.393,
+    "segment_id": "seg-0067",
+    "start_seconds": 912.566,
+    "text": "or touch it as little as possible. And it's still going to mostly work. But with this new model of maybe we regenerate huge chunks of it regularly, you need to know what it's supposed to do and you need to somehow document that or",
+    "timestamp_method": "estimated_from_duration"
+  },
+  {
+    "end_seconds": 940.22,
+    "segment_id": "seg-0068",
+    "start_seconds": 926.393,
+    "text": "something in a way that we've been traditionally very lazy about. In fact, I heard this a couple days ago. It was like, \"We are not writing enough documentation. It's not clear what our stuff does\". Because nobody does; that's just not something that happens.",
+    "timestamp_method": "estimated_from_duration"
+  },
+  {
+    "end_seconds": 954.046,
+    "segment_id": "seg-0069",
+    "start_seconds": 940.22,
+    "text": "Michael Stiefel : Well, let me tell you, I've been doing this since around 1982, and we still in those days said we're not writing enough documentation or ... So I mean, this is a problem, especially as the speed of development increases. Joy Ebertz",
+    "timestamp_method": "estimated_from_duration"
+  },
+  {
+    "end_seconds": 967.873,
+    "segment_id": "seg-0070",
+    "start_seconds": 954.046,
+    "text": ": Yes. Michael Stiefel : This might actually turn out to be the gating factor. It's not the AI slop, whatever that means, but the fact that we cannot generate requirements well enough and we can't feed back what comes back to the field to",
+    "timestamp_method": "estimated_from_duration"
+  },
+  {
+    "end_seconds": 981.7,
+    "segment_id": "seg-0071",
+    "start_seconds": 967.873,
+    "text": "those requirements fast enough. Joy Ebertz : I think that's right because I've been hearing recently that code reviews and some of that is what's gating it right now, but I think that's an artificial gate because I think as the tests improve and some",
+    "timestamp_method": "estimated_from_duration"
+  },
+  {
+    "end_seconds": 995.527,
+    "segment_id": "seg-0072",
+    "start_seconds": 981.7,
+    "text": "of that stuff, we're going to stop relying on code reviews. Because code reviews are never great to begin with, if I'm being honest. Michael Stiefel : I've done them, so I know exactly where you're coming from. Joy Ebertz : Yes. Sometimes they catch",
+    "timestamp_method": "estimated_from_duration"
+  },
+  {
+    "end_seconds": 1009.353,
+    "segment_id": "seg-0073",
+    "start_seconds": 995.527,
+    "text": "stuff, but a lot of times they don't catch a lot of the things. And as you're getting inundated with more and more code reviews, none of us signed up to just code review all day. None of us like that. We're just getting sloppy",
+    "timestamp_method": "estimated_from_duration"
+  },
+  {
+    "end_seconds": 1023.18,
+    "segment_id": "seg-0074",
+    "start_seconds": 1009.353,
+    "text": "at the code reviews too. So I think they have to go away and we have to find a way for them to go away. So once you get rid of that, I think it gets replaced with tests and requirements and some of the",
+    "timestamp_method": "estimated_from_duration"
+  },
+  {
+    "end_seconds": 1037.007,
+    "segment_id": "seg-0075",
+    "start_seconds": 1023.18,
+    "text": "stuff you're talking about, and I think it comes back more to how fast can we think through the problems and define the behaviors we want to see and how well can we define the system as a whole? Michael Stiefel : Because if you",
+    "timestamp_method": "estimated_from_duration"
+  },
+  {
+    "end_seconds": 1050.834,
+    "segment_id": "seg-0076",
+    "start_seconds": 1037.007,
+    "text": "remember the extreme TDD people went and said they actually define the system as they wrote the tests because the tests were almost the requirement. I mean, I never believed in that extreme to begin with. That's too much ceremony. You weren't done until the",
+    "timestamp_method": "estimated_from_duration"
+  },
+  {
+    "end_seconds": 1064.66,
+    "segment_id": "seg-0077",
+    "start_seconds": 1050.834,
+    "text": "tests were done, but the idea is that you'd evolve the tests and that would tell you what the requirements are, and that's clearly not going to work here in this world. Human Technological Knowledge Disappears [ 16:03 ] Thinking about what we've moved the",
+    "timestamp_method": "estimated_from_duration"
+  },
+  {
+    "end_seconds": 1078.487,
+    "segment_id": "seg-0078",
+    "start_seconds": 1064.66,
+    "text": "conversation to, there's still going to be some problems that humans are going to have to investigate. I think especially some of the security problems, some of the interface with third parties, because if we're using third party libraries or third party services, they're not",
+    "timestamp_method": "estimated_from_duration"
+  },
+  {
+    "end_seconds": 1092.314,
+    "segment_id": "seg-0079",
+    "start_seconds": 1078.487,
+    "text": "going to be very often well-defined. So how the hell are you going to tell the AI what to be well-defined? So in those scenarios or the tough bugs or whatever it is, we're going to have to read the AI-generated code. However, if the",
+    "timestamp_method": "estimated_from_duration"
+  },
+  {
+    "end_seconds": 1106.141,
+    "segment_id": "seg-0080",
+    "start_seconds": 1092.314,
+    "text": "AI start to, or the agents or whatever, we're obviously being sloppy about what we mean by the term AI here, but I think in the ambiguity of the conversation, the event of being humans, talking to humans- Joy Ebertz : Yes. Michael Stiefel :",
+    "timestamp_method": "estimated_from_duration"
+  },
+  {
+    "end_seconds": 1119.967,
+    "segment_id": "seg-0081",
+    "start_seconds": 1106.141,
+    "text": "... we understand. The question becomes if the AI writes the software, does it start to write the software for the machine and other AIs and not human consumption? Because I remember that's part of the debate that happened with the compilers and the machine",
+    "timestamp_method": "estimated_from_duration"
+  },
+  {
+    "end_seconds": 1133.794,
+    "segment_id": "seg-0082",
+    "start_seconds": 1119.967,
+    "text": "language that you would have at some point, until the compilers got really good. I mean, now no one really worries about that kind of thing. Although I'm old enough to remember when we found bugs in compilers or we found bugs because the compiler",
+    "timestamp_method": "estimated_from_duration"
+  },
+  {
+    "end_seconds": 1147.621,
+    "segment_id": "seg-0083",
+    "start_seconds": 1133.794,
+    "text": "switches weren't right. I mean, this is not to show you, I don't know if anybody in this generation would understand this, but I remember one time I was called in as a consultant to solve a problem where all of a sudden these huge",
+    "timestamp_method": "estimated_from_duration"
+  },
+  {
+    "end_seconds": 1161.448,
+    "segment_id": "seg-0084",
+    "start_seconds": 1147.621,
+    "text": "builds stopped working. And what took me a little while, I had to go down the call stack and watch the calls as one library called another, and what I finally deduced was at one interface point, the two libraries are compiled with different compiler",
+    "timestamp_method": "estimated_from_duration"
+  },
+  {
+    "end_seconds": 1175.274,
+    "segment_id": "seg-0085",
+    "start_seconds": 1161.448,
+    "text": "switches for which word boundaries the commands were reliant on. So in the call stack, the argument transfer didn't work, and that's why the thing was blowing up. Now, most developers today would not be able to handle that problem because it's just assumed away.",
+    "timestamp_method": "estimated_from_duration"
+  },
+  {
+    "end_seconds": 1189.101,
+    "segment_id": "seg-0086",
+    "start_seconds": 1175.274,
+    "text": "In other words, the abstractions have been piled up and the virtual machines have been piled up, and the only reason why I could figure it out is because I was old enough to remember the days when you worried about things like that. So",
+    "timestamp_method": "estimated_from_duration"
+  },
+  {
+    "end_seconds": 1202.928,
+    "segment_id": "seg-0087",
+    "start_seconds": 1189.101,
+    "text": "my fear is in this transition period, because we're going faster ... See, in those days we didn't go fast, so there was time for people like me to adapt to new technology and keep up and still retain the old knowledge. My fear is",
+    "timestamp_method": "estimated_from_duration"
+  },
+  {
+    "end_seconds": 1216.755,
+    "segment_id": "seg-0088",
+    "start_seconds": 1202.928,
+    "text": "if we go so fast, this old knowledge will be rapidly forgotten. Training Junior Engineers to User AI Effectively [ 18:54 ] Joy Ebertz : I think it's related to that, but one of the things I worry about is we're not effectively teaching the",
+    "timestamp_method": "estimated_from_duration"
+  },
+  {
+    "end_seconds": 1230.581,
+    "segment_id": "seg-0089",
+    "start_seconds": 1216.755,
+    "text": "next generation. Because I know senior engineers right now, I suspect we just know what to ask the AI a little bit better and we frame it in terms of like, \"I want to use this database and kind of roughly structure it like this\".",
+    "timestamp_method": "estimated_from_duration"
+  },
+  {
+    "end_seconds": 1244.408,
+    "segment_id": "seg-0090",
+    "start_seconds": 1230.581,
+    "text": "You give it pretty specific instructions with the architecture kind of already built in and then have it do the thing. But I've seen some fairly junior engineers who come in and just give it very generic things and you end up with like spaghetti",
+    "timestamp_method": "estimated_from_duration"
+  },
+  {
+    "end_seconds": 1258.235,
+    "segment_id": "seg-0091",
+    "start_seconds": 1244.408,
+    "text": "code doing who knows what, that kind of does the thing but not great. And as a senior engineer, I don't know how to necessarily train them or which pieces of what I'm telling the AI I need to train them to start doing. It's",
+    "timestamp_method": "estimated_from_duration"
+  },
+  {
+    "end_seconds": 1272.062,
+    "segment_id": "seg-0092",
+    "start_seconds": 1258.235,
+    "text": "this much harder to teach them this thing that I was never specifically taught. So we're not teaching them to use the AI effectively, but we're also not teaching them how to do it without the AI, which is kind of where I came from",
+    "timestamp_method": "estimated_from_duration"
+  },
+  {
+    "end_seconds": 1285.889,
+    "segment_id": "seg-0093",
+    "start_seconds": 1272.062,
+    "text": "in order to be where I am today. Michael Stiefel : So I'll put it even more bluntly, is the code that we're asking AIs to do with traditionally the code that the apprentice has learned on. Joy Ebertz : There's some of that as",
+    "timestamp_method": "estimated_from_duration"
+  },
+  {
+    "end_seconds": 1299.715,
+    "segment_id": "seg-0094",
+    "start_seconds": 1285.889,
+    "text": "well for sure. Michael Stiefel : And this is a topic I've tried exploring on the podcast before and I would love to explore again, is how do we train the next generation of engineers? Because I think there's a serious problem here and we're",
+    "timestamp_method": "estimated_from_duration"
+  },
+  {
+    "end_seconds": 1313.542,
+    "segment_id": "seg-0095",
+    "start_seconds": 1299.715,
+    "text": "moving too fast. Because for example, I had this actual conversation at lunch with a friend of mine. Do you tell people to study computer science as an undergraduate? Joy Ebertz : Yes. Michael Stiefel : Or do you tell them, and I had this",
+    "timestamp_method": "estimated_from_duration"
+  },
+  {
+    "end_seconds": 1327.369,
+    "segment_id": "seg-0096",
+    "start_seconds": 1313.542,
+    "text": "conversation with many people who are senior engineers and have children going into college and what advice do they give them? There's more to it than just telling the AI what to do. Joy Ebertz : Yes. I honestly don't know if I would tell",
+    "timestamp_method": "estimated_from_duration"
+  },
+  {
+    "end_seconds": 1341.196,
+    "segment_id": "seg-0097",
+    "start_seconds": 1327.369,
+    "text": "somebody to go into CS today. Most companies at the moment are just not hiring junior engineers too, which also feels shortsighted. At some point everybody's going to retire out of the workforce and who are they going to have left? Michael Stiefel : Where",
+    "timestamp_method": "estimated_from_duration"
+  },
+  {
+    "end_seconds": 1355.022,
+    "segment_id": "seg-0098",
+    "start_seconds": 1341.196,
+    "text": "are all the COBOL programmers? Joy Ebertz : Yes. Michael Stiefel : Somebody once said to me, I mean we were having a discussion, some companies are still hiring junior engineers because they're cheaper than all the tokens they need to produce the code. But",
+    "timestamp_method": "estimated_from_duration"
+  },
+  {
+    "end_seconds": 1368.849,
+    "segment_id": "seg-0099",
+    "start_seconds": 1355.022,
+    "text": "at some point that won't be the case. So neither of us have an answer to this question. And I have a feeling, like most things in our discipline, in fact, most things we do with human beings, they don't learn until there's a crash",
+    "timestamp_method": "estimated_from_duration"
+  },
+  {
+    "end_seconds": 1382.676,
+    "segment_id": "seg-0100",
+    "start_seconds": 1368.849,
+    "text": "or failure of some sort. In other words, I don't know if this is an evolutionary defect that we're so short-term-minded, but we don't get the next thing done without thinking ... This is what you were talking about before about the architect. As an",
+    "timestamp_method": "estimated_from_duration"
+  },
+  {
+    "end_seconds": 1396.503,
+    "segment_id": "seg-0101",
+    "start_seconds": 1382.676,
+    "text": "architect, you should be thinking about the long-term and that the long-term is where we're going to get the developers from. Joy Ebertz : Exactly. Michael Stiefel : I mean, I've had people suggest to me maybe you pair-program with the AI or you give",
+    "timestamp_method": "estimated_from_duration"
+  },
+  {
+    "end_seconds": 1410.329,
+    "segment_id": "seg-0102",
+    "start_seconds": 1396.503,
+    "text": "the junior developers to ask them to debug certain problems, but these seem to be ad hoc solutions. This is something that somebody's going to have to figure out. And neither you nor I seem to have the answer to ... Ah, I'm not surprised,",
+    "timestamp_method": "estimated_from_duration"
+  },
+  {
+    "end_seconds": 1424.156,
+    "segment_id": "seg-0103",
+    "start_seconds": 1410.329,
+    "text": "but it's going to have to emerge. I think what's going to happen is people are going to just have to bite the bullet and not assign certain problems to AI, to just train the junior developers. Joy Ebertz : Yes. But it's interesting, especially",
+    "timestamp_method": "estimated_from_duration"
+  },
+  {
+    "end_seconds": 1437.983,
+    "segment_id": "seg-0104",
+    "start_seconds": 1424.156,
+    "text": "with capitalism, what company is incentivized to do that? Very few of them are. Michael Stiefel : Well, first of all, you have the same problem in other economic systems. It's just in capitalism it's more visible because you see the dynamic. If you have",
+    "timestamp_method": "estimated_from_duration"
+  },
+  {
+    "end_seconds": 1451.81,
+    "segment_id": "seg-0105",
+    "start_seconds": 1437.983,
+    "text": "social systems that do bureaucratic long-term planning, you don't see it because the signals aren't there. But that's an interesting discussion we're going to have some other time. To me, the advantage of capitalism has always been that the signals are obvious. The question is",
+    "timestamp_method": "estimated_from_duration"
+  },
+  {
+    "end_seconds": 1465.636,
+    "segment_id": "seg-0106",
+    "start_seconds": 1451.81,
+    "text": "what you do about the signals. This is where you can argue about social policy and what's right and what's not. But if you hide the signals, it's like curing a fever with aspirin without asking yourself, \"Well, why do we have a fever?\" Joy",
+    "timestamp_method": "estimated_from_duration"
+  },
+  {
+    "end_seconds": 1479.463,
+    "segment_id": "seg-0107",
+    "start_seconds": 1465.636,
+    "text": "Ebertz : Yes. Michael Stiefel : Anyway, you would think the larger companies would have the time to look ahead because they have the market momentum. Unlike the smaller ventures who have to get a product to market to show, you think the larger companies",
+    "timestamp_method": "estimated_from_duration"
+  },
+  {
+    "end_seconds": 1493.29,
+    "segment_id": "seg-0108",
+    "start_seconds": 1479.463,
+    "text": "would, where this would come from, but I don't see them doing this either or figuring this out. Joy Ebertz : Yes. Which sort of ties back into my tech debt talk as well. The larger companies can afford to build things the right way",
+    "timestamp_method": "estimated_from_duration"
+  },
+  {
+    "end_seconds": 1507.117,
+    "segment_id": "seg-0109",
+    "start_seconds": 1493.29,
+    "text": "and generally do things the right way for the long term. And to your point, I would hope that they would start to do this as well, but I haven't seen evidence of it quite yet, but I guess we're still fairly early. Michael Stiefel",
+    "timestamp_method": "estimated_from_duration"
+  },
+  {
+    "end_seconds": 1520.943,
+    "segment_id": "seg-0110",
+    "start_seconds": 1507.117,
+    "text": ": Well, I mean, I think we will see evidence of this quickly because if people start to move ahead quickly with AI. And all you need is one bad situation and everybody will now panic in the opposite direction. So we'll see what happens.",
+    "timestamp_method": "estimated_from_duration"
+  },
+  {
+    "end_seconds": 1534.77,
+    "segment_id": "seg-0111",
+    "start_seconds": 1520.943,
+    "text": "AI Coding and Hard Technical Problems [ 24:37 ] One other question I was thinking about, I was thinking about talking to ... You've spent a lot of time dealing with authorization. And to me, I mean, everyone talks about authentication, but to me in",
+    "timestamp_method": "estimated_from_duration"
+  },
+  {
+    "end_seconds": 1548.597,
+    "segment_id": "seg-0112",
+    "start_seconds": 1534.77,
+    "text": "my experience, authorization is a much harder problem because it's fine-grained. I mean, I once had a situation where I had a client where certain columns and reports could only be read by certain people. Authorization can get down to a really, really gnarly problem",
+    "timestamp_method": "estimated_from_duration"
+  },
+  {
+    "end_seconds": 1562.424,
+    "segment_id": "seg-0113",
+    "start_seconds": 1548.597,
+    "text": "in a way that authentication seems relatively ... \"Okay, just make sure the token flows\". Authentication and Authorization Joy Ebertz : Yes. Authentication is very complex, but it's also a pretty well-defined problem and people understand it fairly well. Authorization, to your point, the simple",
+    "timestamp_method": "estimated_from_duration"
+  },
+  {
+    "end_seconds": 1576.25,
+    "segment_id": "seg-0114",
+    "start_seconds": 1562.424,
+    "text": "case is pretty easy, but then you can very quickly add many, many rules, many, many special cases on top of that. And it gets very, very complex very quickly. Michael Stiefel : Do you think artificial intelligence could help with this? Joy Ebertz :",
+    "timestamp_method": "estimated_from_duration"
+  },
+  {
+    "end_seconds": 1590.077,
+    "segment_id": "seg-0115",
+    "start_seconds": 1576.25,
+    "text": "That's a great question. I mean, it helps with a lot of things, so I don't want to say no. But then on the flip side, there's also the case or what we were talking about originally where it doesn't do well with large problems",
+    "timestamp_method": "estimated_from_duration"
+  },
+  {
+    "end_seconds": 1603.904,
+    "segment_id": "seg-0116",
+    "start_seconds": 1590.077,
+    "text": "either, large complex systems either. So I don't know. Michael Stiefel : Well, that's fair. I mean, that's a lot more honest than an LLM will be, which would never say I don't know. Joy Ebertz : Actually, I have had it a couple times",
+    "timestamp_method": "estimated_from_duration"
+  },
+  {
+    "end_seconds": 1617.731,
+    "segment_id": "seg-0117",
+    "start_seconds": 1603.904,
+    "text": "be like, \"Oh, I think I'm going in circles here\". But, anyway. Michael Stiefel : I mean, not to get too far afield, but I've had that problem. Let's say you're using RAG and it can't find in your sources that you gave it from",
+    "timestamp_method": "estimated_from_duration"
+  },
+  {
+    "end_seconds": 1631.557,
+    "segment_id": "seg-0118",
+    "start_seconds": 1617.731,
+    "text": "the RAG an answer. It will go back and instead of saying, \"I don't know\", it'll go back into its training data and come up with an answer. Joy Ebertz : Yes. One of my least favorite coworkers tended to do that too. If he",
+    "timestamp_method": "estimated_from_duration"
+  },
+  {
+    "end_seconds": 1645.384,
+    "segment_id": "seg-0119",
+    "start_seconds": 1631.557,
+    "text": "didn't know something, he would make something up, and so you couldn't trust anything out of his mouth. Michael Stiefel : Well! So this would be someplace where I think ... I haven't dealt with authorization problems in a long time, but I figured you",
+    "timestamp_method": "estimated_from_duration"
+  },
+  {
+    "end_seconds": 1659.211,
+    "segment_id": "seg-0120",
+    "start_seconds": 1645.384,
+    "text": "having your experience and also experience with AI might be able to have some insight into that problem, but as you say, it can be a global problem which AI has problems with. Joy Ebertz : Yes. I think part of why people struggle with",
+    "timestamp_method": "estimated_from_duration"
+  },
+  {
+    "end_seconds": 1673.038,
+    "segment_id": "seg-0121",
+    "start_seconds": 1659.211,
+    "text": "authorization is it starts simple. Like I said, any new company, it starts very simple. So they just build something simple. They don't use a vendor or anything. Makes sense. And then they slowly tack on more and more and more rules until it's this",
+    "timestamp_method": "estimated_from_duration"
+  },
+  {
+    "end_seconds": 1686.864,
+    "segment_id": "seg-0122",
+    "start_seconds": 1673.038,
+    "text": "giant monstrosity that nobody really understands. And from what I've seen from there, is the best path forward is usually to break that up and try to put these into more well-constrained rules and problems and kind of separate the domains a little bit. And",
+    "timestamp_method": "estimated_from_duration"
+  },
+  {
+    "end_seconds": 1700.691,
+    "segment_id": "seg-0123",
+    "start_seconds": 1686.864,
+    "text": "I think at that point, sure, an AI can deal with that because it's like the constrained problems again, but whether it would be good at breaking it up in the first place, maybe. I guess I haven't tried it, but I would also be",
+    "timestamp_method": "estimated_from_duration"
+  },
+  {
+    "end_seconds": 1714.518,
+    "segment_id": "seg-0124",
+    "start_seconds": 1700.691,
+    "text": "a little scared because this is authorization we're talking about. Michael Stiefel : Right, right. I mean, this might be something you would try in some sandbox. I would be curious to know. Joy Ebertz : Now I'm curious. Yes. Michael Stiefel : Because I",
+    "timestamp_method": "estimated_from_duration"
+  },
+  {
+    "end_seconds": 1728.345,
+    "segment_id": "seg-0125",
+    "start_seconds": 1714.518,
+    "text": "mean, not that I read the entire literature, but I have not seen anybody really talk about this. Because a lot of talk has been about AI coding, microservices, monoliths, the slop, testing, a lot of the things that we've talked about, but some of",
+    "timestamp_method": "estimated_from_duration"
+  },
+  {
+    "end_seconds": 1742.172,
+    "segment_id": "seg-0126",
+    "start_seconds": 1728.345,
+    "text": "these classic architectural problems like authorization ... I mean, it doesn't help, of course, the authorization technologies are sometimes opaque in themselves. Joy Ebertz : Yes. Michael Stiefel : It might be interesting, I haven't tried this, to query an LLM on trying to see",
+    "timestamp_method": "estimated_from_duration"
+  },
+  {
+    "end_seconds": 1755.998,
+    "segment_id": "seg-0127",
+    "start_seconds": 1742.172,
+    "text": "if they understand RBAC or any of these technologies because I find humans have problems with them. But to think about these things like scalability or security in general or user experience, and again, I mean end-to-end user experience. You would think the AIs have",
+    "timestamp_method": "estimated_from_duration"
+  },
+  {
+    "end_seconds": 1769.825,
+    "segment_id": "seg-0128",
+    "start_seconds": 1755.998,
+    "text": "anything to contribute to this? Joy Ebertz : You're naming all of the places where I think humans are still the most important. Yes. It's like places where you really care about performance, places where you really care about security, end-to-end user experience. Yes, I've",
+    "timestamp_method": "estimated_from_duration"
+  },
+  {
+    "end_seconds": 1783.652,
+    "segment_id": "seg-0129",
+    "start_seconds": 1769.825,
+    "text": "tried to ask an AI like, \"Center this on the screen\", and it failed like seven times in a row, so. Middle Tier Architecture and Orchestration [ 29:21 ] Michael Stiefel : Do you think there's a place for AI in the middle tier? In",
+    "timestamp_method": "estimated_from_duration"
+  },
+  {
+    "end_seconds": 1797.479,
+    "segment_id": "seg-0130",
+    "start_seconds": 1783.652,
+    "text": "other words, one architecture I've seen, and I've seen it talked about in multiple places, is the orchestrator pattern, where you have, let's say the AI generates the microservices. So the question is who does the orchestration? Because to me, the way I naively like",
+    "timestamp_method": "estimated_from_duration"
+  },
+  {
+    "end_seconds": 1811.305,
+    "segment_id": "seg-0131",
+    "start_seconds": 1797.479,
+    "text": "to think about software, or architecture, this is sort of like the meal planning model of software. You have the microservices or the fundamental services, the basic services are sort of the ingredients. The front end is sort of the final meal that the user",
+    "timestamp_method": "estimated_from_duration"
+  },
+  {
+    "end_seconds": 1825.132,
+    "segment_id": "seg-0132",
+    "start_seconds": 1811.305,
+    "text": "sees. But the real hard stuff happens in the middle tier; you take the basic ingredients and you put together, in some sense, the business is in the middle tier. The UI is just for the humans. So if you're orchestrating these things, let's say",
+    "timestamp_method": "estimated_from_duration"
+  },
+  {
+    "end_seconds": 1838.959,
+    "segment_id": "seg-0133",
+    "start_seconds": 1825.132,
+    "text": "the AI is writing the microservices and we've solved the problems that we've talked about before. Do you think it's reasonable that AIs either now or in the foreseeable future be able to orchestrate these things? If you give it a defined business problem, maybe",
+    "timestamp_method": "estimated_from_duration"
+  },
+  {
+    "end_seconds": 1852.786,
+    "segment_id": "seg-0134",
+    "start_seconds": 1838.959,
+    "text": "they could do the orchestration. Joy Ebertz : It certainly seems plausible that we could get there. I'm unsure if we're there now. I guess we keep coming back to sort of the same point of it doesn't do well with large things necessarily, so",
+    "timestamp_method": "estimated_from_duration"
+  },
+  {
+    "end_seconds": 1866.612,
+    "segment_id": "seg-0135",
+    "start_seconds": 1852.786,
+    "text": "if you can constrain that business problem enough, I could imagine it doing okay. But is it worth it is another question too. Michael Stiefel : Yes. But what you're also saying is, to abuse a phrase from another place, there's a chasm to be",
+    "timestamp_method": "estimated_from_duration"
+  },
+  {
+    "end_seconds": 1880.439,
+    "segment_id": "seg-0136",
+    "start_seconds": 1866.612,
+    "text": "crossed. So in other words, maybe early on, the AI could do the orchestration when your problem is simple, but as you get more customers and things get more complicated, you cross a chasm where the AI can't do it, but then you're sort of",
+    "timestamp_method": "estimated_from_duration"
+  },
+  {
+    "end_seconds": 1894.266,
+    "segment_id": "seg-0137",
+    "start_seconds": 1880.439,
+    "text": "left with, A, people who don't know how to do the orchestration, and then whatever slop or mess or good stuff that the AI created to begin with and you may not be able to bridge that gap. Joy Ebertz : Yes. It's an interesting",
+    "timestamp_method": "estimated_from_duration"
+  },
+  {
+    "end_seconds": 1908.093,
+    "segment_id": "seg-0138",
+    "start_seconds": 1894.266,
+    "text": "time right now because we still have mostly code that was written by humans and we're still building mostly on that, so things are pretty easy, but as we move more to the point where almost all the code has been written by AI, I",
+    "timestamp_method": "estimated_from_duration"
+  },
+  {
+    "end_seconds": 1921.919,
+    "segment_id": "seg-0139",
+    "start_seconds": 1908.093,
+    "text": "think things will start or will continue to shift. It'll shift through that and it'll be, to your point, even harder sometimes to do things. What Does \"We Are Coding WIth AI\" Really Mean? [ 32:06 ] Michael Stiefel : I mean, I was at",
+    "timestamp_method": "estimated_from_duration"
+  },
+  {
+    "end_seconds": 1935.746,
+    "segment_id": "seg-0140",
+    "start_seconds": 1921.919,
+    "text": "Google Next about two weeks ago and one of the statements that got made, I think it was in one of the keynotes or whatever, that 75% of the code written at Google is written by AI in one way or another. Now, I didn't",
+    "timestamp_method": "estimated_from_duration"
+  },
+  {
+    "end_seconds": 1949.573,
+    "segment_id": "seg-0141",
+    "start_seconds": 1935.746,
+    "text": "get a chance to query the person who made that statement or investigate that statement. Are they including configuration? I mean, what is that 75%? Does that include the tooling that people use, that it's okay if it's a little sloppy because people using it",
+    "timestamp_method": "estimated_from_duration"
+  },
+  {
+    "end_seconds": 1963.4,
+    "segment_id": "seg-0142",
+    "start_seconds": 1949.573,
+    "text": "on the outside doesn't see it? Is it really organizing configuration files? I don't know what's in that 75%, but that is an impressive figure if it's true. Or it just states that most of the code that we write is not that important. And",
+    "timestamp_method": "estimated_from_duration"
+  },
+  {
+    "end_seconds": 1977.226,
+    "segment_id": "seg-0143",
+    "start_seconds": 1963.4,
+    "text": "what I mean is I've seen figures before that something like 80% of the code in a system is error checking, user input, just presenting things to humans, and it's not the core functionality. So maybe all they're doing is automating the \"easy stuff\", which",
+    "timestamp_method": "estimated_from_duration"
+  },
+  {
+    "end_seconds": 1991.053,
+    "segment_id": "seg-0144",
+    "start_seconds": 1977.226,
+    "text": "is 75% for the coding task anyway. So I'm really curious to know what that 75% represents. Joy Ebertz : I'm curious now too, because if you had asked me how much we're doing, I would say it's closer to a hundred. But for example,",
+    "timestamp_method": "estimated_from_duration"
+  },
+  {
+    "end_seconds": 2004.88,
+    "segment_id": "seg-0145",
+    "start_seconds": 1991.053,
+    "text": "I'm working on an internal tool and the front end for that, I am a hundred percent vibe coding. I am barely looking at what code it spits out. I test it manually and I'm like, okay, this thing works, but it's an internal tool.",
+    "timestamp_method": "estimated_from_duration"
+  },
+  {
+    "end_seconds": 2018.707,
+    "segment_id": "seg-0146",
+    "start_seconds": 2004.88,
+    "text": "If it's a little broken, nobody cares. But when I'm playing with our backend systems, I'm much more careful about, okay, telling the AI exactly how it needs to be written and then going through and checking that code. Sure, the code is still written",
+    "timestamp_method": "estimated_from_duration"
+  },
+  {
+    "end_seconds": 2032.533,
+    "segment_id": "seg-0147",
+    "start_seconds": 2018.707,
+    "text": "by the AI, but I would say I'm validating basically every step of that. And so even if you say all of the code was written by AI, those two are very different statements depending on which end of that spectrum you're on. Michael Stiefel",
+    "timestamp_method": "estimated_from_duration"
+  },
+  {
+    "end_seconds": 2046.36,
+    "segment_id": "seg-0148",
+    "start_seconds": 2032.533,
+    "text": ": Right. And it's almost, if I can be a little sardonic, if it's almost in that second case, you're almost using the AI as a sophisticated auto complete. Joy Ebertz : Like a pair programmer that you're working with. Michael Stiefel : Yes, yes.",
+    "timestamp_method": "estimated_from_duration"
+  },
+  {
+    "end_seconds": 2060.187,
+    "segment_id": "seg-0149",
+    "start_seconds": 2046.36,
+    "text": "Joy Ebertz : It's paid to double check you and vice versa. Michael Stiefel : So what we're saying is when people say that the code was written by AI, we really have to qualify what kind of code we're talking about and how much",
+    "timestamp_method": "estimated_from_duration"
+  },
+  {
+    "end_seconds": 2074.014,
+    "segment_id": "seg-0150",
+    "start_seconds": 2060.187,
+    "text": "human supervision and cooperation was there. For example, in the scenario you presented, you are the more senior of the pair and the other person's actually typing, but you are looking over their shoulder and saying, \"This is not right\", or, \"Maybe you should do",
+    "timestamp_method": "estimated_from_duration"
+  },
+  {
+    "end_seconds": 2087.84,
+    "segment_id": "seg-0151",
+    "start_seconds": 2074.014,
+    "text": "it this way\". Joy Ebertz : Yes, exactly. Michael Stiefel : So going forward, we really have to be very careful when we present to people and say, \"This was code written by an AI\", what we actually mean by that. Joy Ebertz : Yes.",
+    "timestamp_method": "estimated_from_duration"
+  },
+  {
+    "end_seconds": 2101.667,
+    "segment_id": "seg-0152",
+    "start_seconds": 2087.84,
+    "text": "Michael Stiefel : I'm very fascinated by this conversation because it's getting me to think about what do we really mean when we say AI is helping us and what the limits to it are and how we're really going to figure this out? Joy",
+    "timestamp_method": "estimated_from_duration"
+  },
+  {
+    "end_seconds": 2115.494,
+    "segment_id": "seg-0153",
+    "start_seconds": 2101.667,
+    "text": "Ebertz : Yes. Constraints Are Your Friend [ 35:21 ] Michael Stiefel : Does this flexibility that AI gives you become a nightmare? Because one of the things that I've seen in my career is that constraints always help you. Joy Ebertz : Yes. Michael",
+    "timestamp_method": "estimated_from_duration"
+  },
+  {
+    "end_seconds": 2129.321,
+    "segment_id": "seg-0154",
+    "start_seconds": 2115.494,
+    "text": "Stiefel : In other words, because they take a huge ... I mean, you must have seen this when you do domain-driven design. In other words, the constraints are actually what pushes the conversation forward. You don't get to event storming until you have a",
+    "timestamp_method": "estimated_from_duration"
+  },
+  {
+    "end_seconds": 2143.148,
+    "segment_id": "seg-0155",
+    "start_seconds": 2129.321,
+    "text": "relatively well-defined problem and it's the constraints that help you. Joy Ebertz : Yes, I was actually, this is a totally different scenario, but I was in a planning meeting recently and we're just going in circles, but a lot of it, to your point,",
+    "timestamp_method": "estimated_from_duration"
+  },
+  {
+    "end_seconds": 2156.974,
+    "segment_id": "seg-0156",
+    "start_seconds": 2143.148,
+    "text": "is just that it wasn't clear what the constraints were. People were asking, is something along these lines vaguely possible? Well, yes, but what exactly is that going to look like? And there were five different answers and it wasn't clear which one you pick",
+    "timestamp_method": "estimated_from_duration"
+  },
+  {
+    "end_seconds": 2170.801,
+    "segment_id": "seg-0157",
+    "start_seconds": 2156.974,
+    "text": "because it wasn't clear what we were trying to solve for or what the real problems were or the constraints, to your point. So, yes. Understanding Complexity and Assumptions [ 36:21 ] Michael Stiefel : Yes. And what also that raises the question, and I've",
+    "timestamp_method": "estimated_from_duration"
+  },
+  {
+    "end_seconds": 2184.628,
+    "segment_id": "seg-0158",
+    "start_seconds": 2170.801,
+    "text": "seen this over and over again, I presume you have too, is that non-technical people do not understand the complexity. Because how many times in your career someone has come to you and said, \"Oh, this should be an easy change\". But what the change",
+    "timestamp_method": "estimated_from_duration"
+  },
+  {
+    "end_seconds": 2198.455,
+    "segment_id": "seg-0159",
+    "start_seconds": 2184.628,
+    "text": "they're asking for contradicts the fundamental assumptions you've made in the system. So it's really a big change. And at the same time, people come to you and say, \"I know this is going to be horrible to change and it's going to give you",
+    "timestamp_method": "estimated_from_duration"
+  },
+  {
+    "end_seconds": 2212.281,
+    "segment_id": "seg-0160",
+    "start_seconds": 2198.455,
+    "text": "a lot of work\". And you realize, \"Oh, I just change an if statement and it's done\". And I just wonder in the world of, again, AI coding, how are we going to answer those questions? How are you going to estimate the complexity of",
+    "timestamp_method": "estimated_from_duration"
+  },
+  {
+    "end_seconds": 2226.108,
+    "segment_id": "seg-0161",
+    "start_seconds": 2212.281,
+    "text": "doing something? Or how long is this going to take both in just compute time to get it done and to correcting the AI? Because you don't know what the ... This is the other, you don't know what assumptions the AI has made in",
+    "timestamp_method": "estimated_from_duration"
+  },
+  {
+    "end_seconds": 2239.935,
+    "segment_id": "seg-0162",
+    "start_seconds": 2226.108,
+    "text": "creating the code. Joy Ebertz : Yes. We usually do a plan first and then have it code. My favorite question to ask it when it finishes the plan is what assumptions have you made? And then I go through those assumptions and do something",
+    "timestamp_method": "estimated_from_duration"
+  },
+  {
+    "end_seconds": 2253.762,
+    "segment_id": "seg-0163",
+    "start_seconds": 2239.935,
+    "text": "one way or the other. But it's fascinating to see what it tells me because sometimes it's not a lot. And sometimes there's these huge assumptions, I'm like, \"I'm glad I asked. That is totally wrong\". Michael Stiefel : This sounds like a real talk",
+    "timestamp_method": "estimated_from_duration"
+  },
+  {
+    "end_seconds": 2267.588,
+    "segment_id": "seg-0164",
+    "start_seconds": 2253.762,
+    "text": "for a conference or a paper to be written about what it really means to code with AI. I mean, you've really come up with some interesting things based on experience that I don't think people appreciate. There's a lot of experience that you've had",
+    "timestamp_method": "estimated_from_duration"
+  },
+  {
+    "end_seconds": 2281.415,
+    "segment_id": "seg-0165",
+    "start_seconds": 2267.588,
+    "text": "and a lot of experience you've put forward that I think is worth an article or a talk. Joy Ebertz : I think what's interesting about this at the moment too is that we're all sort of in our own little bubbles learning these things",
+    "timestamp_method": "estimated_from_duration"
+  },
+  {
+    "end_seconds": 2295.242,
+    "segment_id": "seg-0166",
+    "start_seconds": 2281.415,
+    "text": "on our own, and we don't necessarily have a lot of insight into how even our coworkers are using AI. I suspect some of them are doing some things better than I am and some things worse. Michael Stiefel : Well, that says that maybe",
+    "timestamp_method": "estimated_from_duration"
+  },
+  {
+    "end_seconds": 2309.069,
+    "segment_id": "seg-0167",
+    "start_seconds": 2295.242,
+    "text": "the next QCon, there should be a conference track on how are we actually using this AI thing? Joy Ebertz : Yes, but on a personal level even, not like the large scale stuff, but just how exactly are you talking to the AI? What",
+    "timestamp_method": "estimated_from_duration"
+  },
+  {
+    "end_seconds": 2322.895,
+    "segment_id": "seg-0168",
+    "start_seconds": 2309.069,
+    "text": "questions are you asking? What are you prompting it? The Architect's Questionnaire [ 38:50 ] Michael Stiefel : Maybe this is a meetup or a non-conference or something, because these are all questions that people don't really have answers to, and I think they're all",
+    "timestamp_method": "estimated_from_duration"
+  },
+  {
+    "end_seconds": 2336.722,
+    "segment_id": "seg-0169",
+    "start_seconds": 2322.895,
+    "text": "important questions. So I've been very fascinated by this conversation, and I would like to now shift into what I like to call the more humane part of the podcast where I get to ask my architect's questionnaire and it's always interesting to me because",
+    "timestamp_method": "estimated_from_duration"
+  },
+  {
+    "end_seconds": 2350.549,
+    "segment_id": "seg-0170",
+    "start_seconds": 2336.722,
+    "text": "no matter how many times I ask this, I always get some very interesting ideas from people and very different perspectives on what it means to be an architect. So what is your favorite part of being an architect? Joy Ebertz : I'm sort of",
+    "timestamp_method": "estimated_from_duration"
+  },
+  {
+    "end_seconds": 2364.376,
+    "segment_id": "seg-0171",
+    "start_seconds": 2350.549,
+    "text": "a big picture person anyway, and so it allows me to use that in a way that solves problems. I guess ultimately I really like solving problems, and so it's like the intersection of how I think anyway and the problem solving, which I find",
+    "timestamp_method": "estimated_from_duration"
+  },
+  {
+    "end_seconds": 2378.202,
+    "segment_id": "seg-0172",
+    "start_seconds": 2364.376,
+    "text": "fun and exciting. Michael Stiefel : What is your least favorite part of being an architect? Joy Ebertz : Some of the problems you encounter are these long event horizon things that you're trying to affect and change, and it can be very frustrating to",
+    "timestamp_method": "estimated_from_duration"
+  },
+  {
+    "end_seconds": 2392.029,
+    "segment_id": "seg-0173",
+    "start_seconds": 2378.202,
+    "text": "get them prioritized and continue to get them prioritized and continue to decide if they're even worth getting prioritized this next time. And maybe it never comes to anything, and then did you make the right decision originally? You know what I mean? This long",
+    "timestamp_method": "estimated_from_duration"
+  },
+  {
+    "end_seconds": 2405.856,
+    "segment_id": "seg-0174",
+    "start_seconds": 2392.029,
+    "text": "cascade of how do you get things to happen or roll in the direction that you're hoping that they roll? Michael Stiefel : Is there anything creatively, spiritually, or emotionally intriguing about architecture, being an architect? Joy Ebertz : To my point of liking to",
+    "timestamp_method": "estimated_from_duration"
+  },
+  {
+    "end_seconds": 2419.683,
+    "segment_id": "seg-0175",
+    "start_seconds": 2405.856,
+    "text": "solve problems, I feel like it's just more problems and more complexity and you're thinking about more things. So I don't know, it's just exciting problem solving. Michael Stiefel : What turns you off about architecture or being an architect? Joy Ebertz : I think",
+    "timestamp_method": "estimated_from_duration"
+  },
+  {
+    "end_seconds": 2433.509,
+    "segment_id": "seg-0176",
+    "start_seconds": 2419.683,
+    "text": "there's still that image of the ivory tower architect floating around, which I've never liked. I hope I never turn into. I hope I'm not. But trying to figure out how to bridge that gap of having enough level above that you can see the",
+    "timestamp_method": "estimated_from_duration"
+  },
+  {
+    "end_seconds": 2447.336,
+    "segment_id": "seg-0177",
+    "start_seconds": 2433.509,
+    "text": "entire picture and that you can figure out how to pull everything in, but still have enough grounding in the team that you're working with so that they trust you and all that kind of stuff. And how do you balance that? But I'm constantly",
+    "timestamp_method": "estimated_from_duration"
+  },
+  {
+    "end_seconds": 2461.163,
+    "segment_id": "seg-0178",
+    "start_seconds": 2447.336,
+    "text": "trying to figure out how to balance that in a reasonable way. Michael Stiefel : Do you have any favorite technologies? Joy Ebertz : Probably not. Michael Stiefel : That's fair. Joy Ebertz : I don't know. I've generally viewed technologies as just tools to",
+    "timestamp_method": "estimated_from_duration"
+  },
+  {
+    "end_seconds": 2474.99,
+    "segment_id": "seg-0179",
+    "start_seconds": 2461.163,
+    "text": "help me solve the problems, and it's the problems that I find interesting more so than the technologies. A lot of technologies are good in some scenarios and absolutely terrible in others. So it's matching the technology for the problem you have at hand. Michael",
+    "timestamp_method": "estimated_from_duration"
+  },
+  {
+    "end_seconds": 2488.816,
+    "segment_id": "seg-0180",
+    "start_seconds": 2474.99,
+    "text": "Stiefel : What about architecture do you love? Joy Ebertz : When things go well, it's pretty exciting because you can really see how you've made something simpler, you've made something cleaner, you've enabled something to last longer. Michael Stiefel : What about architecture do",
+    "timestamp_method": "estimated_from_duration"
+  },
+  {
+    "end_seconds": 2502.643,
+    "segment_id": "seg-0181",
+    "start_seconds": 2488.816,
+    "text": "you hate? Joy Ebertz : A lot of times that doesn't happen. Just honestly, I kind of mentioned this before too, but a lot of times these are long horizon things and you start to question whether this was even the right choice to begin",
+    "timestamp_method": "estimated_from_duration"
+  },
+  {
+    "end_seconds": 2516.47,
+    "segment_id": "seg-0182",
+    "start_seconds": 2502.643,
+    "text": "with. And sometimes you change your mind and that's the best decision at the time. And yes, a lot of times these projects don't necessarily finish or don't get as far as you want them to. In fact, I've come to the side that most",
+    "timestamp_method": "estimated_from_duration"
+  },
+  {
+    "end_seconds": 2530.297,
+    "segment_id": "seg-0183",
+    "start_seconds": 2516.47,
+    "text": "monoliths splitting into microservices projects, you don't actually expect it to finish. You expect it to get about 75% of the way there, and then that is actually success, but it's hard to see it that way sometimes. Michael Stiefel : What profession other than",
+    "timestamp_method": "estimated_from_duration"
+  },
+  {
+    "end_seconds": 2544.123,
+    "segment_id": "seg-0184",
+    "start_seconds": 2530.297,
+    "text": "being an architect would you like to attempt? Joy Ebertz : I mean, most things in software are pretty fun, but I assume we're taking that off the table entirely. And somebody told me recently this would be terrible, so now I'm questioning, but I've",
+    "timestamp_method": "estimated_from_duration"
+  },
+  {
+    "end_seconds": 2557.95,
+    "segment_id": "seg-0185",
+    "start_seconds": 2544.123,
+    "text": "always sort of wanted to be like a mail carrier because you get to walk around and do your own thing, and I don't know. Anyway, random thought, but totally unreal and good. Michael Stiefel : Do you ever see yourself not being an architect",
+    "timestamp_method": "estimated_from_duration"
+  },
+  {
+    "end_seconds": 2571.777,
+    "segment_id": "seg-0186",
+    "start_seconds": 2557.95,
+    "text": "anymore? Joy Ebertz : I doubt it because I really like software. I really like solving problems. At the moment, I would say I'm probably a little bit, if you're talking like Will Larson's archetypes, I'm probably a little bit closer to the Right Hand",
+    "timestamp_method": "estimated_from_duration"
+  },
+  {
+    "end_seconds": 2585.604,
+    "segment_id": "seg-0187",
+    "start_seconds": 2571.777,
+    "text": "than the Architect, but it doesn't mean that I stop thinking like an architect. Part of me is still an architect, even if it's only a small part at the moment. And I think that's going to generally be true. It's hard to get rid",
+    "timestamp_method": "estimated_from_duration"
+  },
+  {
+    "end_seconds": 2599.431,
+    "segment_id": "seg-0188",
+    "start_seconds": 2585.604,
+    "text": "of that entirely. Michael Stiefel : When a project is done, what do you like to hear from your clients or your team? Joy Ebertz : Feedback. Any feedback, honestly. I think with these long-term projects I'm talking about, it's often hard to get feedback.",
+    "timestamp_method": "estimated_from_duration"
+  },
+  {
+    "end_seconds": 2613.257,
+    "segment_id": "seg-0189",
+    "start_seconds": 2599.431,
+    "text": "And that leads to the ivory tower thing of you don't really know the outcomes, good or bad. And so getting those outcomes, even if it's bad, I would rather know it so I can learn from it. Michael Stiefel : Well, thank you very",
+    "timestamp_method": "estimated_from_duration"
+  },
+  {
+    "end_seconds": 2627.084,
+    "segment_id": "seg-0190",
+    "start_seconds": 2613.257,
+    "text": "much. I found this quite fascinating. I hope you enjoyed it as well, and thank you very much for being on the podcast. Joy Ebertz : Yes, thank you for having me. This was fun. The Software Architect Elevator , Gregor Hohpe Staff Engineer Archetypes",
+    "timestamp_method": "estimated_from_duration"
+  },
+  {
+    "end_seconds": 2640.911,
+    "segment_id": "seg-0191",
+    "start_seconds": 2627.084,
+    "text": ", WIll Larson All Tech Debt Is Not Created Equal , Joy Ebertz, QCon talk About the Author More about our podcasts Future Cybersecurity: Hardware Memory Safety, Automated Governance and Post-Quantum Cryptography The AI Revolution Fails without Psychological Safety for Developers: a Conversation with Erin",
+    "timestamp_method": "estimated_from_duration"
+  },
+  {
+    "end_seconds": 2654.738,
+    "segment_id": "seg-0192",
+    "start_seconds": 2640.911,
+    "text": "Doyle The Future of AI: from Enterprise Adoption to Open Source Sovereignty Securing AI Agents: Identity, Authorization, and the DPACT Framework This content is in the AI, ML & Data Engineering topic Architecture & Design AI, ML & Data Engineering Customers & Requirements The InfoQ",
+    "timestamp_method": "estimated_from_duration"
+  },
+  {
+    "end_seconds": 2668.564,
+    "segment_id": "seg-0193",
+    "start_seconds": 2654.738,
+    "text": "Podcast Popular across InfoQ What Does It Really Mean To Program With AI: A Conversation with Joy Ebertz Github Migrates Copilot Runtime to Rust with AI-Assisted Rewrite Survey Finds AI-Generated Code Increases Debugging and Failure Rates and Creates a Comprehension Gap The Minimum Viable Manager:",
+    "timestamp_method": "estimated_from_duration"
+  },
+  {
+    "end_seconds": 2682.391,
+    "segment_id": "seg-0194",
+    "start_seconds": 2668.564,
+    "text": "Building Trust, Feedback, and Alignment Context Language Models: Self-Managing Context to Improve Performance and Reduce Compute Costs Cloudflare Traces Turns the Proxy Layer into OpenTelemetry Spans, with New Volume-Based Pricing The InfoQ Newsletter A round-up of last week’s content on InfoQ sent out every Tuesday.",
+    "timestamp_method": "estimated_from_duration"
+  },
+  {
+    "end_seconds": 2687.0,
+    "segment_id": "seg-0195",
+    "start_seconds": 2682.391,
+    "text": "Join a community of over 250,000 senior developers. View an example We protect your privacy.",
+    "timestamp_method": "estimated_from_duration"
+  }
+]

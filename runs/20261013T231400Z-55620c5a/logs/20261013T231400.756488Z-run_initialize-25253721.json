@@ -1,0 +1,17 @@
+{
+  "cost_estimate": false,
+  "cost_usd": null,
+  "details": {
+    "run_dir": "runs/20261013T231400Z-55620c5a"
+  },
+  "errors": [],
+  "finished_at": "2026-10-13T23:14:00Z",
+  "input_count": null,
+  "output_count": 1,
+  "stage": "run_initialize",
+  "started_at": "2026-10-13T23:14:00Z",
+  "status": "completed",
+  "tools_or_models": [
+    "python-stdlib"
+  ]
+}

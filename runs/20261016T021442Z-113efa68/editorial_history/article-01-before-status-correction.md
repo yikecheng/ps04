@@ -1,0 +1,48 @@
+# The shift: agents are entering the delivery control plane
+
+_As of October 16, 2026._
+
+_Disclosure: AI assisted the research and drafting; a human reviewed the evidence._
+
+<!-- claim:01-c8 -->
+The consequential boundary is the fence around delivery, not the editor. Our inference from [Cursor’s rollout workflow](https://cursor.com/blog/rollouts-and-security-reviewer) and [GitHub’s security workflow](https://github.blog/changelog/2026-10-15-agentic-autofix-for-code-scanning-alerts-general-availability) is that the production-ready advance is governable participation: agents can prepare plans and pull requests inside controls that people can inspect, approve, stage, and reverse. That is materially different from evidence that an agent can deliver correct software unattended—which these sources do not provide.
+
+<!-- claim:01-c1 -->
+Cursor made Rollouts available on Teams and Enterprise plans. Before merge, it reads the diff and creates an editable monitoring plan. After deployment, the configured response can be a notification, a paused progressive rollout, or a revert PR awaiting approval. The agent has crossed into operations, but it has not been handed the final switch.
+
+<!-- claim:01-c2 -->
+GitHub’s generally available agentic autofix, for eligible security customers, follows a similarly bounded path. It explores relevant repository files, proposes a repair, reruns CodeQL, and opens a draft PR for human review. The useful unit is not autonomous remediation; it is an inspectable change attached to an external detector and the familiar review boundary.
+
+<!-- claim:01-c3 -->
+In [an OpenAI demonstration at 0:41–0:49](https://www.youtube.com/watch?v=IZXv6a78NDw&t=41s), an initial pull-request review runs automatically once the connector has the required repository permissions. That establishes workflow feasibility, not review accuracy.
+
+These products place agents at handoffs where engineering risk is already managed. Notice the artifacts they produce: a monitoring plan, a draft fix, an initial review, or a proposed revert. Each still meets an independent check or human decision before it can become production reality.
+
+<!-- claim:01-c4 -->
+The machinery around the model matters too. Cursor [reports](https://cursor.com/blog/improved-token-efficiency) that changes across its agent harness reduced user token costs by 7% without lowering agent quality. That is an internal product measurement, not independent evidence of better software outcomes, but it shows that context assembly and tool loading have become consequential capabilities in their own right.
+
+<!-- claim:01-c7 -->
+Scale cases reinforce the same pattern. According to [InfoQ’s account of GitHub’s migration](https://www.infoq.com/news/2026/10/github-copilot-rust-migration/), GitHub reports rewriting more than 800,000 lines of production code with AI assistance in approximately 14.5 weeks through 128 PRs while releases continued. Agents generated most of the implementation, but compilation, testing, and human review found regressions involving behavior, state and lifetime handling, library semantics, and lost optimizations. The impressive part is inseparable from the controls that caught the misses.
+
+<!-- claim:01-c5 -->
+Spotify, meanwhile, [reports through InfoQ](https://www.infoq.com/news/2026/10/spotify-ai-quality-controls/) that monthly merged changes rose from approximately 8,100 to 17,000 year over year. That is meaningful throughput evidence, but it is not a correctness rate.
+
+<!-- claim:01-c6 -->
+The same account supplies the warning label: an automated dependency upgrade passed existing checks and still failed in production. Spotify says it responded by strengthening safeguards, expanding rollback capacity, and scheduling automated changes during the owning teams’ working hours. More automation increased the importance of recovery rather than removing it.
+
+For a small team, the practical reading is neither dismissal nor autonomy. Review automation, security remediation, monitored rollout, and incremental migration are production-ready enough for bounded trials because they connect to controls the team already understands. Their value depends on the quality of those controls.
+
+The uncertainty remains substantial. Official releases establish availability and workflow shape, not review accuracy, security-fix correctness, false-positive rates, latency, or return on investment. Cursor, GitHub, and OpenAI sell the featured products; their demonstrations are curated. The production cases are largely company accounts from organizations far larger than the intended reader. Useful integration need not wait for perfect studies, but this evidence supports a measured trial, not unattended deployment.
+
+### What to do / what to watch
+
+Trial one agent at an existing gate, with an external check, named approver, staged release, and usable rollback. Watch for evidence about accepted outcomes and escaped failures—not merely more agent activity. The agent may now enter the control room; it should not yet hold the only key.
+
+## Sources
+
+- *Bots for the last mile* — Cursor, September 23, 2026. [Read the release](https://cursor.com/blog/rollouts-and-security-reviewer)
+- *Agentic autofix for code scanning alerts general availability* — GitHub, October 15, 2026. [Read the release](https://github.blog/changelog/2026-10-15-agentic-autofix-for-code-scanning-alerts-general-availability)
+- *Code review is no longer the bottleneck* — OpenAI, October 12, 2026. [Watch at 0:41–0:49](https://www.youtube.com/watch?v=IZXv6a78NDw&t=41s)
+- *Improved token efficiency for longer agent runs* — Cursor, September 23, 2026. [Read the report](https://cursor.com/blog/improved-token-efficiency)
+- *Github Migrates Copilot Runtime to Rust with AI-Assisted Rewrite* — InfoQ, October 9, 2026. [Read the report](https://www.infoq.com/news/2026/10/github-copilot-rust-migration/)
+- *Spotify More Than Doubled Monthly Code Changes as AI Accelerated Development* — InfoQ, October 12, 2026. [Read the report](https://www.infoq.com/news/2026/10/spotify-ai-quality-controls/)

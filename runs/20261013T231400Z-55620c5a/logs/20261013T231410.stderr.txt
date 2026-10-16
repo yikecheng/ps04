@@ -1,0 +1,16 @@
+2026-10-13T23:14:10.395450Z  WARN codex_skills::interface: ignoring interface.icon_small: icon path with '..' must resolve under plugin assets/
+2026-10-13T23:14:10.395469Z  WARN codex_skills::interface: ignoring interface.icon_large: icon path with '..' must resolve under plugin assets/
+2026-10-13T23:14:10.402255Z  WARN codex_rollout::list: state db discrepancy during find_thread_path_by_id_str_in_subdir: falling_back
+2026-10-13T23:14:10.403515Z  WARN codex_rollout::list: state db discrepancy during find_thread_path_by_id_str_in_subdir: falling_back
+2026-10-13T23:14:10.765001Z  WARN codex_skills::interface: ignoring interface.icon_small: icon path with '..' must resolve under plugin assets/
+2026-10-13T23:14:10.765012Z  WARN codex_skills::interface: ignoring interface.icon_large: icon path with '..' must resolve under plugin assets/
+2026-10-13T23:14:20.647280Z ERROR codex_core::tools::router: error=collab spawn failed: Fatal error: failed to load model context for thread 01a1378b-7b50-7261-a38c-c5c331008f96: invalid thread-store request: no rollout found for thread id 01a1378b-7b50-7261-a38c-c5c331008f96
+2026-10-13T23:14:26.291886Z ERROR codex_core::tools::router: error=collab spawn failed: Fatal error: failed to load model context for thread 01a1378b-7b50-7261-a38c-c5c331008f96: invalid thread-store request: no rollout found for thread id 01a1378b-7b50-7261-a38c-c5c331008f96
+2026-10-13T23:14:46.162420Z ERROR codex_core::tools::router: error=collab spawn failed: Fatal error: failed to load model context for thread 01a1378b-da0d-78c3-889d-da14d47f063b: invalid thread-store request: no rollout found for thread id 01a1378b-da0d-78c3-889d-da14d47f063b
+2026-10-13T23:14:50.196529Z ERROR codex_core::tools::router: error=collab spawn failed: Fatal error: failed to load model context for thread 01a1378c-0169-7e62-85c0-f56098c5ee8f: invalid thread-store request: no rollout found for thread id 01a1378c-0169-7e62-85c0-f56098c5ee8f
+2026-10-13T23:14:51.449165Z  WARN codex_core::session: skipping subagent thread analytics: missing inherited client metadata
+2026-10-13T23:14:56.468047Z ERROR codex_core::tools::router: error=collab spawn failed: agent thread limit reached
+2026-10-13T23:15:21.850749Z  WARN codex_core::hook_runtime: failed to resolve parent transcript path for subagent hook parent_thread_id=01a1378b-da0d-78c3-889d-da14d47f063b error=invalid thread-store request: no rollout found for thread id 01a1378b-da0d-78c3-889d-da14d47f063b
+2026-10-13T23:15:22.480317Z  WARN codex_analytics::reducer: dropping turn analytics event: missing analytics context thread_id=01a1378c-1b98-7ae2-9316-cf949cf36219 turn_id=Some("01a1378c-1bb9-7f53-84f5-0cdd8ac848bf") review_id=None item_id=None missing_context="thread_connection"
+2026-10-13T23:15:28.306513Z  WARN codex_core::hook_runtime: failed to resolve parent transcript path for subagent hook parent_thread_id=01a1378b-7b50-7261-a38c-c5c331008f96 error=invalid thread-store request: no rollout found for thread id 01a1378b-7b50-7261-a38c-c5c331008f96
+2026-10-13T23:15:36.783325Z  WARN codex_core::hook_runtime: failed to resolve parent transcript path for subagent hook parent_thread_id=01a1378b-7b50-7261-a38c-c5c331008f96 error=invalid thread-store request: no rollout found for thread id 01a1378b-7b50-7261-a38c-c5c331008f96

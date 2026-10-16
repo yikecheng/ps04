@@ -1,0 +1,5 @@
+youtube-transcript-api>=1.2,<2
+# Python 3.10-compatible fallback; transcript-api is preferred for captions.
+yt-dlp>=2025.12.8,<2026
+# Explicit CA bundle for Python installations that do not inherit macOS trust.
+certifi>=2024.7.4

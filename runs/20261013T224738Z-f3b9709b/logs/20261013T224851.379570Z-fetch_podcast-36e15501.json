@@ -1,0 +1,21 @@
+{
+  "cost_estimate": false,
+  "cost_usd": null,
+  "details": {
+    "failed_source_count": 2
+  },
+  "errors": [
+    "infoq-podcast: <urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:997)>",
+    "thoughtworks-podcast: <urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: self signed certificate in certificate chain (_ssl.c:997)>"
+  ],
+  "finished_at": "2026-10-13T22:48:51Z",
+  "input_count": 2,
+  "output_count": 0,
+  "stage": "fetch_podcast",
+  "started_at": "2026-10-13T22:48:51Z",
+  "status": "incomplete",
+  "tools_or_models": [
+    "python-urllib",
+    "python-elementtree"
+  ]
+}

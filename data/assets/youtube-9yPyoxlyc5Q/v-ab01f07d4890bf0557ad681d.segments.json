@@ -1,0 +1,3642 @@
+[
+  {
+    "end_seconds": 11.28,
+    "segment_id": "seg-0001",
+    "start_seconds": 5.2,
+    "text": "I'm extremely delighted to be here and",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 13.92,
+    "segment_id": "seg-0002",
+    "start_seconds": 8.48,
+    "text": "I've been somehow come into possession",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 17.6,
+    "segment_id": "seg-0003",
+    "start_seconds": 11.28,
+    "text": "of the most or the second most popular",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 20.0,
+    "segment_id": "seg-0004",
+    "start_seconds": 13.92,
+    "text": "skills repo in the world. I'm coming to",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 22.48,
+    "segment_id": "seg-0005",
+    "start_seconds": 17.6,
+    "text": "you from sunny Oxfordshire right now and",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 25.6,
+    "segment_id": "seg-0006",
+    "start_seconds": 20.0,
+    "text": "I'm going to introduce to you to the",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 26.8,
+    "segment_id": "seg-0007",
+    "start_seconds": 22.48,
+    "text": "skills repo and also maybe look at a",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 28.24,
+    "segment_id": "seg-0008",
+    "start_seconds": 25.6,
+    "text": "couple of new things that are coming to",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 30.08,
+    "segment_id": "seg-0009",
+    "start_seconds": 26.8,
+    "text": "the skills repo and how you can apply",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 31.84,
+    "segment_id": "seg-0010",
+    "start_seconds": 28.24,
+    "text": "those in GitHub copilot. So, first of",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 33.92,
+    "segment_id": "seg-0011",
+    "start_seconds": 30.08,
+    "text": "all, let me show you the repo. We are up",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 36.64,
+    "segment_id": "seg-0012",
+    "start_seconds": 31.84,
+    "text": "to around 259K",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 38.16,
+    "segment_id": "seg-0013",
+    "start_seconds": 33.92,
+    "text": "stars, which is fairly wild to me. I",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 41.28,
+    "segment_id": "seg-0014",
+    "start_seconds": 36.64,
+    "text": "never really thought we would get there.",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 44.399,
+    "segment_id": "seg-0015",
+    "start_seconds": 38.16,
+    "text": "And the place we're going to start is in",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 47.039,
+    "segment_id": "seg-0016",
+    "start_seconds": 41.28,
+    "text": "the main flow here. So, the idea of",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 49.76,
+    "segment_id": "seg-0017",
+    "start_seconds": 44.399,
+    "text": "these skills is you can really ship any",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 51.68,
+    "segment_id": "seg-0018",
+    "start_seconds": 47.039,
+    "text": "size of work that you want to. And the",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 54.399,
+    "segment_id": "seg-0019",
+    "start_seconds": 49.76,
+    "text": "place we pretty much always start is",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 57.039,
+    "segment_id": "seg-0020",
+    "start_seconds": 51.68,
+    "text": "with this grill with docks skill. For",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 60.0,
+    "segment_id": "seg-0021",
+    "start_seconds": 54.399,
+    "text": "those who haven't used my skills before,",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 62.399,
+    "segment_id": "seg-0022",
+    "start_seconds": 57.039,
+    "text": "this is essentially a way to align",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 65.92,
+    "segment_id": "seg-0023",
+    "start_seconds": 60.0,
+    "text": "yourself with the agent. And it means",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 68.72,
+    "segment_id": "seg-0024",
+    "start_seconds": 62.399,
+    "text": "that like it's so often that you will",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 70.56,
+    "segment_id": "seg-0025",
+    "start_seconds": 65.92,
+    "text": "get the agent and you will look at the",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 72.08,
+    "segment_id": "seg-0026",
+    "start_seconds": 68.72,
+    "text": "work that they've done and they will",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 75.2,
+    "segment_id": "seg-0027",
+    "start_seconds": 70.56,
+    "text": "just have not produced the thing that",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 77.92,
+    "segment_id": "seg-0028",
+    "start_seconds": 72.08,
+    "text": "you want them to. And so doing a kind of",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 80.24,
+    "segment_id": "seg-0029",
+    "start_seconds": 75.2,
+    "text": "preession grilling kind of before the",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 82.64,
+    "segment_id": "seg-0030",
+    "start_seconds": 77.92,
+    "text": "agent does any work whatsoever I found",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 84.479,
+    "segment_id": "seg-0031",
+    "start_seconds": 80.24,
+    "text": "has been absolutely essential. And this",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 87.52,
+    "segment_id": "seg-0032",
+    "start_seconds": 82.64,
+    "text": "is what that looks like in GitHub",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 90.4,
+    "segment_id": "seg-0033",
+    "start_seconds": 84.479,
+    "text": "Copilot. So if we head over to the",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 92.32,
+    "segment_id": "seg-0034",
+    "start_seconds": 87.52,
+    "text": "terminal here, I have been doing some",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 94.24,
+    "segment_id": "seg-0035",
+    "start_seconds": 90.4,
+    "text": "actual real work on my repo this",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 96.56,
+    "segment_id": "seg-0036",
+    "start_seconds": 92.32,
+    "text": "morning. My repo is a course video",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 98.32,
+    "segment_id": "seg-0037",
+    "start_seconds": 94.24,
+    "text": "manager where I handle all of my video",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 100.159,
+    "segment_id": "seg-0038",
+    "start_seconds": 96.56,
+    "text": "editing. I manage all of my course",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 102.88,
+    "segment_id": "seg-0039",
+    "start_seconds": 98.32,
+    "text": "videos. And let's take a look at what",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 105.6,
+    "segment_id": "seg-0040",
+    "start_seconds": 100.159,
+    "text": "that actually looked like. So what I did",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 107.28,
+    "segment_id": "seg-0041",
+    "start_seconds": 102.88,
+    "text": "first of all is I use GitHub issues to",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 110.0,
+    "segment_id": "seg-0042",
+    "start_seconds": 105.6,
+    "text": "coordinate all the things I want to",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 112.079,
+    "segment_id": "seg-0043",
+    "start_seconds": 107.28,
+    "text": "change about the repo itself. This means",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 114.88,
+    "segment_id": "seg-0044",
+    "start_seconds": 110.0,
+    "text": "that keeping those outside of the repo,",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 117.52,
+    "segment_id": "seg-0045",
+    "start_seconds": 112.079,
+    "text": "I just get a lot more value in pumping",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 119.759,
+    "segment_id": "seg-0046",
+    "start_seconds": 114.88,
+    "text": "those into uh automated loops, in",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 121.52,
+    "segment_id": "seg-0047",
+    "start_seconds": 117.52,
+    "text": "passing them directly to agents, and",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 123.2,
+    "segment_id": "seg-0048",
+    "start_seconds": 119.759,
+    "text": "sometimes even just triggering them via",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 125.52,
+    "segment_id": "seg-0049",
+    "start_seconds": 121.52,
+    "text": "labels. But that's kind of outside the",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 127.2,
+    "segment_id": "seg-0050",
+    "start_seconds": 123.2,
+    "text": "scope for today. But what that looks",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 129.2,
+    "segment_id": "seg-0051",
+    "start_seconds": 125.52,
+    "text": "like in GitHub Copilot is it means I can",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 131.36,
+    "segment_id": "seg-0052",
+    "start_seconds": 127.2,
+    "text": "just go into issues. I could press W",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 134.319,
+    "segment_id": "seg-0053",
+    "start_seconds": 129.2,
+    "text": "here to open up a work tree and I ended",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 136.08,
+    "segment_id": "seg-0054",
+    "start_seconds": 131.36,
+    "text": "up inside this work tree here. So this",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 138.64,
+    "segment_id": "seg-0055",
+    "start_seconds": 134.319,
+    "text": "little example, if I press enter to go",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 141.92,
+    "segment_id": "seg-0056",
+    "start_seconds": 136.08,
+    "text": "in, what happens is I just literally say",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 143.92,
+    "segment_id": "seg-0057",
+    "start_seconds": 138.64,
+    "text": "grill with docs issue 1612. And this",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 145.68,
+    "segment_id": "seg-0058",
+    "start_seconds": 141.92,
+    "text": "issue was one that I actually needed to",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 148.8,
+    "segment_id": "seg-0059",
+    "start_seconds": 143.92,
+    "text": "fix. It's basically adding something",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 150.72,
+    "segment_id": "seg-0060",
+    "start_seconds": 145.68,
+    "text": "into the CLI that comes served with this",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 152.16,
+    "segment_id": "seg-0061",
+    "start_seconds": 148.8,
+    "text": "uh course video manager. Now what",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 154.879,
+    "segment_id": "seg-0062",
+    "start_seconds": 150.72,
+    "text": "happened first is it goes and does an",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 156.56,
+    "segment_id": "seg-0063",
+    "start_seconds": 152.16,
+    "text": "exploration in a sub agent. Very nice.",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 158.959,
+    "segment_id": "seg-0064",
+    "start_seconds": 154.879,
+    "text": "And once it's done the exploration, once",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 161.04,
+    "segment_id": "seg-0065",
+    "start_seconds": 156.56,
+    "text": "it understands what it wants to grill me",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 162.959,
+    "segment_id": "seg-0066",
+    "start_seconds": 158.959,
+    "text": "about, then it begins asking its",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 165.04,
+    "segment_id": "seg-0067",
+    "start_seconds": 161.04,
+    "text": "questions. And so these questions here",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 168.08,
+    "segment_id": "seg-0068",
+    "start_seconds": 162.959,
+    "text": "supported hierarchy selectors. So the",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 170.48,
+    "segment_id": "seg-0069",
+    "start_seconds": 165.04,
+    "text": "problem here is that I've got an entity",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 173.68,
+    "segment_id": "seg-0070",
+    "start_seconds": 168.08,
+    "text": "that I want to fetch called a beat. And",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 175.599,
+    "segment_id": "seg-0071",
+    "start_seconds": 170.48,
+    "text": "that beat is attached to videos, but it",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 177.36,
+    "segment_id": "seg-0072",
+    "start_seconds": 173.68,
+    "text": "wants to be able to search not only on",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 179.04,
+    "segment_id": "seg-0073",
+    "start_seconds": 175.599,
+    "text": "videos, but on lessons where there are",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 181.44,
+    "segment_id": "seg-0074",
+    "start_seconds": 177.36,
+    "text": "multiple videos and on sections where",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 183.2,
+    "segment_id": "seg-0075",
+    "start_seconds": 179.04,
+    "text": "there are multiple lessons beneath that.",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 186.56,
+    "segment_id": "seg-0076",
+    "start_seconds": 181.44,
+    "text": "And so it says, okay, both selectors",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 189.12,
+    "segment_id": "seg-0077",
+    "start_seconds": 183.2,
+    "text": "mutually exclusive. I'm going to um use",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 190.4,
+    "segment_id": "seg-0078",
+    "start_seconds": 186.56,
+    "text": "a dictation tool to just answer these",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 191.519,
+    "segment_id": "seg-0079",
+    "start_seconds": 189.12,
+    "text": "questions fully because I kind of",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 193.36,
+    "segment_id": "seg-0080",
+    "start_seconds": 190.4,
+    "text": "prepped a little bit for this. So I know",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 195.84,
+    "segment_id": "seg-0081",
+    "start_seconds": 191.519,
+    "text": "what I'm doing. Yeah, I think we should",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 198.159,
+    "segment_id": "seg-0082",
+    "start_seconds": 193.36,
+    "text": "use um all three supported hierarchy",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 199.84,
+    "segment_id": "seg-0083",
+    "start_seconds": 195.84,
+    "text": "selectors. I think using the",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 202.239,
+    "segment_id": "seg-0084",
+    "start_seconds": 198.159,
+    "text": "deterministic hierarchy order makes",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 204.959,
+    "segment_id": "seg-0085",
+    "start_seconds": 199.84,
+    "text": "sense. And then videos with an empty",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 206.879,
+    "segment_id": "seg-0086",
+    "start_seconds": 202.239,
+    "text": "plan. I think we can just exclude them.",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 210.159,
+    "segment_id": "seg-0087",
+    "start_seconds": 204.959,
+    "text": "I don't think we need to add any kind of",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 211.68,
+    "segment_id": "seg-0088",
+    "start_seconds": 206.879,
+    "text": "uh extra signal in there. So now that's",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 213.44,
+    "segment_id": "seg-0089",
+    "start_seconds": 210.159,
+    "text": "gone in. I'm just going to press return",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 216.239,
+    "segment_id": "seg-0090",
+    "start_seconds": 211.68,
+    "text": "there. And it's now going to ask me the",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 218.159,
+    "segment_id": "seg-0091",
+    "start_seconds": 213.44,
+    "text": "next round of questions. In other words,",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 220.799,
+    "segment_id": "seg-0092",
+    "start_seconds": 216.239,
+    "text": "what grill with docs is doing is it's",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 223.68,
+    "segment_id": "seg-0093",
+    "start_seconds": 218.159,
+    "text": "pushing out the frontier of these",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 225.599,
+    "segment_id": "seg-0094",
+    "start_seconds": 220.799,
+    "text": "questions and we're reaching alignment",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 227.2,
+    "segment_id": "seg-0095",
+    "start_seconds": 223.68,
+    "text": "slower and slower or rather faster and",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 229.12,
+    "segment_id": "seg-0096",
+    "start_seconds": 225.599,
+    "text": "faster and faster. So, it's gone and",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 230.48,
+    "segment_id": "seg-0097",
+    "start_seconds": 227.2,
+    "text": "kicked off another explore agent and",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 232.159,
+    "segment_id": "seg-0098",
+    "start_seconds": 229.12,
+    "text": "while it's kicking off the explore",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 234.0,
+    "segment_id": "seg-0099",
+    "start_seconds": 230.48,
+    "text": "agent, it's going to ask me some more",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 235.68,
+    "segment_id": "seg-0100",
+    "start_seconds": 232.159,
+    "text": "questions. This level of alignment",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 237.68,
+    "segment_id": "seg-0101",
+    "start_seconds": 234.0,
+    "text": "basically means that you and the agent",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 240.0,
+    "segment_id": "seg-0102",
+    "start_seconds": 235.68,
+    "text": "are reaching a shared understanding",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 241.76,
+    "segment_id": "seg-0103",
+    "start_seconds": 237.68,
+    "text": "together. You are figuring out where",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 244.56,
+    "segment_id": "seg-0104",
+    "start_seconds": 240.0,
+    "text": "you're going together. And this is",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 246.48,
+    "segment_id": "seg-0105",
+    "start_seconds": 241.76,
+    "text": "really useful in situations where you",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 248.48,
+    "segment_id": "seg-0106",
+    "start_seconds": 244.56,
+    "text": "have lots of unknown unknowns where you",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 251.04,
+    "segment_id": "seg-0107",
+    "start_seconds": 246.48,
+    "text": "don't quite know where you're going. And",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 253.28,
+    "segment_id": "seg-0108",
+    "start_seconds": 248.48,
+    "text": "so I absolutely love this. But then what",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 255.84,
+    "segment_id": "seg-0109",
+    "start_seconds": 251.04,
+    "text": "happens next? What do you do after",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 257.68,
+    "segment_id": "seg-0110",
+    "start_seconds": 253.28,
+    "text": "you've done a grilling session? Well,",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 260.4,
+    "segment_id": "seg-0111",
+    "start_seconds": 255.84,
+    "text": "let's take a look at what happened next.",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 262.639,
+    "segment_id": "seg-0112",
+    "start_seconds": 257.68,
+    "text": "So in my real version here, what I did,",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 265.12,
+    "segment_id": "seg-0113",
+    "start_seconds": 260.4,
+    "text": "this is fairly long chat history. We did",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 266.72,
+    "segment_id": "seg-0114",
+    "start_seconds": 262.639,
+    "text": "our grilling session. It did a bunch of",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 268.88,
+    "segment_id": "seg-0115",
+    "start_seconds": 265.12,
+    "text": "asked the user a bunch of questions,",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 270.639,
+    "segment_id": "seg-0116",
+    "start_seconds": 266.72,
+    "text": "asked the user more questions and then",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 273.199,
+    "segment_id": "seg-0117",
+    "start_seconds": 268.88,
+    "text": "it kicked off and actually implemented",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 275.759,
+    "segment_id": "seg-0118",
+    "start_seconds": 270.639,
+    "text": "it. So what grill we or what grill with",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 277.6,
+    "segment_id": "seg-0119",
+    "start_seconds": 273.199,
+    "text": "docs does is it takes that set of",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 279.12,
+    "segment_id": "seg-0120",
+    "start_seconds": 275.759,
+    "text": "questions that it asked you and then",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 281.04,
+    "segment_id": "seg-0121",
+    "start_seconds": 277.6,
+    "text": "tries to reach a shared understanding",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 283.12,
+    "segment_id": "seg-0122",
+    "start_seconds": 279.12,
+    "text": "with you. And then what we end up with",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 286.479,
+    "segment_id": "seg-0123",
+    "start_seconds": 281.04,
+    "text": "is a nice little pull request. So if I",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 288.4,
+    "segment_id": "seg-0124",
+    "start_seconds": 283.12,
+    "text": "head into the PR itself, I've done a",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 290.56,
+    "segment_id": "seg-0125",
+    "start_seconds": 286.479,
+    "text": "little trick actually in the PR which",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 292.8,
+    "segment_id": "seg-0126",
+    "start_seconds": 288.4,
+    "text": "I'm rather proud of and is actually not",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 295.759,
+    "segment_id": "seg-0127",
+    "start_seconds": 290.56,
+    "text": "my trick, it's somebody else's. So, if",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 299.84,
+    "segment_id": "seg-0128",
+    "start_seconds": 292.8,
+    "text": "we take a look at uh where was the PR",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 302.0,
+    "segment_id": "seg-0129",
+    "start_seconds": 295.759,
+    "text": "here? It was uh add",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 305.759,
+    "segment_id": "seg-0130",
+    "start_seconds": 299.84,
+    "text": "this one. Add bulk section and lesson",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 308.56,
+    "segment_id": "seg-0131",
+    "start_seconds": 302.0,
+    "text": "beat lists. Now, this PR body probably",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 311.759,
+    "segment_id": "seg-0132",
+    "start_seconds": 305.759,
+    "text": "looks rather nice to you. What we have",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 313.759,
+    "segment_id": "seg-0133",
+    "start_seconds": 308.56,
+    "text": "is we have this rather nice little diff",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 316.8,
+    "segment_id": "seg-0134",
+    "start_seconds": 311.759,
+    "text": "showing exactly what has changed about",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 319.12,
+    "segment_id": "seg-0135",
+    "start_seconds": 313.759,
+    "text": "the CLI. You have just this very small",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 321.6,
+    "segment_id": "seg-0136",
+    "start_seconds": 316.8,
+    "text": "amount of preserves the current compact",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 323.44,
+    "segment_id": "seg-0137",
+    "start_seconds": 319.12,
+    "text": "uh excludes uh archive beats, lessons,",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 325.44,
+    "segment_id": "seg-0138",
+    "start_seconds": 321.6,
+    "text": "etc. And we have a nice little mermaid",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 327.199,
+    "segment_id": "seg-0139",
+    "start_seconds": 323.44,
+    "text": "diagram which we can open up here. So we",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 328.88,
+    "segment_id": "seg-0140",
+    "start_seconds": 325.44,
+    "text": "see that sections, okay, sections",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 331.52,
+    "segment_id": "seg-0141",
+    "start_seconds": 327.199,
+    "text": "contain lessons that have a fractional",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 333.28,
+    "segment_id": "seg-0142",
+    "start_seconds": 328.88,
+    "text": "order. Lessons contain videos and we can",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 334.72,
+    "segment_id": "seg-0143",
+    "start_seconds": 331.52,
+    "text": "access those with the lesson. And then",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 336.16,
+    "segment_id": "seg-0144",
+    "start_seconds": 333.28,
+    "text": "videos contain the beats with their",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 337.52,
+    "segment_id": "seg-0145",
+    "start_seconds": 334.72,
+    "text": "fractional order. You know, this is a",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 339.52,
+    "segment_id": "seg-0146",
+    "start_seconds": 336.16,
+    "text": "real application. There's stuff",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 342.56,
+    "segment_id": "seg-0147",
+    "start_seconds": 337.52,
+    "text": "relatively complex here. And we can dive",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 344.88,
+    "segment_id": "seg-0148",
+    "start_seconds": 339.52,
+    "text": "into this mermaid diagram and this diff",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 346.479,
+    "segment_id": "seg-0149",
+    "start_seconds": 342.56,
+    "text": "and understand it a lot better. And the",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 349.68,
+    "segment_id": "seg-0150",
+    "start_seconds": 344.88,
+    "text": "thing that's firing here, the thing",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 351.6,
+    "segment_id": "seg-0151",
+    "start_seconds": 346.479,
+    "text": "that's making this look nice is not my",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 354.08,
+    "segment_id": "seg-0152",
+    "start_seconds": 349.68,
+    "text": "skill. Actually, I'm going to shout out",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 355.84,
+    "segment_id": "seg-0153",
+    "start_seconds": 351.6,
+    "text": "Dexter Horthy at Human Layer Skills",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 358.32,
+    "segment_id": "seg-0154",
+    "start_seconds": 354.08,
+    "text": "who's written a brilliant skill called",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 360.4,
+    "segment_id": "seg-0155",
+    "start_seconds": 355.84,
+    "text": "Show Me. Helps the user understands the",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 362.0,
+    "segment_id": "seg-0156",
+    "start_seconds": 358.32,
+    "text": "current topic visually with concise",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 364.08,
+    "segment_id": "seg-0157",
+    "start_seconds": 360.4,
+    "text": "diagrams, code shaped sketches, and",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 366.639,
+    "segment_id": "seg-0158",
+    "start_seconds": 362.0,
+    "text": "focused HTML artifacts. I mean, just",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 369.919,
+    "segment_id": "seg-0159",
+    "start_seconds": 364.08,
+    "text": "look at this stuff.",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 372.4,
+    "segment_id": "seg-0160",
+    "start_seconds": 366.639,
+    "text": "This is basically a really really nice",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 375.919,
+    "segment_id": "seg-0161",
+    "start_seconds": 369.919,
+    "text": "set of tools for understanding how code",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 377.84,
+    "segment_id": "seg-0162",
+    "start_seconds": 372.4,
+    "text": "changes. we have a pseudo code. Um like",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 379.68,
+    "segment_id": "seg-0163",
+    "start_seconds": 375.919,
+    "text": "if you have changes to an algorithm",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 381.84,
+    "segment_id": "seg-0164",
+    "start_seconds": 377.84,
+    "text": "that's relatively complicated, we can",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 383.68,
+    "segment_id": "seg-0165",
+    "start_seconds": 379.68,
+    "text": "show it as pseudo code. We can show",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 385.84,
+    "segment_id": "seg-0166",
+    "start_seconds": 381.84,
+    "text": "runtime control flow as a call tree",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 387.84,
+    "segment_id": "seg-0167",
+    "start_seconds": 383.68,
+    "text": "here. This UI structure one is amazing",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 390.319,
+    "segment_id": "seg-0168",
+    "start_seconds": 385.84,
+    "text": "for front-end components because it",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 392.88,
+    "segment_id": "seg-0169",
+    "start_seconds": 387.84,
+    "text": "shows exactly where each component is.",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 395.28,
+    "segment_id": "seg-0170",
+    "start_seconds": 390.319,
+    "text": "It can sort of show stuff changing",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 396.96,
+    "segment_id": "seg-0171",
+    "start_seconds": 392.88,
+    "text": "across different components and",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 398.72,
+    "segment_id": "seg-0172",
+    "start_seconds": 395.28,
+    "text": "different files. And then we have",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 400.96,
+    "segment_id": "seg-0173",
+    "start_seconds": 396.96,
+    "text": "mermaid diagrams of course which GitHub",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 402.8,
+    "segment_id": "seg-0174",
+    "start_seconds": 398.72,
+    "text": "handles naturally. And we have file",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 405.68,
+    "segment_id": "seg-0175",
+    "start_seconds": 400.96,
+    "text": "responsibility and all that stuff. The",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 408.0,
+    "segment_id": "seg-0176",
+    "start_seconds": 402.8,
+    "text": "one I really like is diff. So using diff",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 409.6,
+    "segment_id": "seg-0177",
+    "start_seconds": 405.68,
+    "text": "for component changes, for file layout",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 412.479,
+    "segment_id": "seg-0178",
+    "start_seconds": 408.0,
+    "text": "changes, for call tree and call stack",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 415.039,
+    "segment_id": "seg-0179",
+    "start_seconds": 409.6,
+    "text": "changes. And what this skill does is it",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 418.639,
+    "segment_id": "seg-0180",
+    "start_seconds": 412.479,
+    "text": "really encourages the agent to push",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 420.8,
+    "segment_id": "seg-0181",
+    "start_seconds": 415.039,
+    "text": "towards using these uh sort of diff",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 422.72,
+    "segment_id": "seg-0182",
+    "start_seconds": 418.639,
+    "text": "views instead of writing a bunch of",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 424.72,
+    "segment_id": "seg-0183",
+    "start_seconds": 420.8,
+    "text": "stuff in text. And so the nice thing",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 426.24,
+    "segment_id": "seg-0184",
+    "start_seconds": 422.72,
+    "text": "about this PR is that it's really short",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 428.24,
+    "segment_id": "seg-0185",
+    "start_seconds": 424.72,
+    "text": "to read. You know, there's less than 100",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 429.919,
+    "segment_id": "seg-0186",
+    "start_seconds": 426.24,
+    "text": "words here. And once you've dived in to",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 431.68,
+    "segment_id": "seg-0187",
+    "start_seconds": 428.24,
+    "text": "understand the mermaid diagram, you dive",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 433.919,
+    "segment_id": "seg-0188",
+    "start_seconds": 429.919,
+    "text": "in to understand the diff, it's pretty",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 437.28,
+    "segment_id": "seg-0189",
+    "start_seconds": 431.68,
+    "text": "nice. And so as part of this skill or",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 439.52,
+    "segment_id": "seg-0190",
+    "start_seconds": 433.919,
+    "text": "part of this session here, which is uh",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 441.84,
+    "segment_id": "seg-0191",
+    "start_seconds": 437.28,
+    "text": "back here, at some point in the session,",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 446.16,
+    "segment_id": "seg-0192",
+    "start_seconds": 439.52,
+    "text": "I said, okay, use show me to create the",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 448.08,
+    "segment_id": "seg-0193",
+    "start_seconds": 441.84,
+    "text": "PR. Now, what happens next? So, one",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 450.56,
+    "segment_id": "seg-0194",
+    "start_seconds": 446.16,
+    "text": "thing I'm really interested in is sure,",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 452.8,
+    "segment_id": "seg-0195",
+    "start_seconds": 448.08,
+    "text": "you've got this PR, but how do we make",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 456.24,
+    "segment_id": "seg-0196",
+    "start_seconds": 450.56,
+    "text": "sure that before the human gets to this",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 458.88,
+    "segment_id": "seg-0197",
+    "start_seconds": 452.8,
+    "text": "PR, how do we make sure that this PR is",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 461.68,
+    "segment_id": "seg-0198",
+    "start_seconds": 456.24,
+    "text": "of high enough quality that we can",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 465.199,
+    "segment_id": "seg-0199",
+    "start_seconds": 458.88,
+    "text": "really um guarantee that the user's time",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 467.199,
+    "segment_id": "seg-0200",
+    "start_seconds": 461.68,
+    "text": "is not wasted, right? Because",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 468.8,
+    "segment_id": "seg-0201",
+    "start_seconds": 465.199,
+    "text": "I just hate and this is something that",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 470.72,
+    "segment_id": "seg-0202",
+    "start_seconds": 467.199,
+    "text": "comes up again and again and again when",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 474.08,
+    "segment_id": "seg-0203",
+    "start_seconds": 468.8,
+    "text": "I work with teams and try to get their",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 476.24,
+    "segment_id": "seg-0204",
+    "start_seconds": 470.72,
+    "text": "processes better. Like so many teams are",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 478.08,
+    "segment_id": "seg-0205",
+    "start_seconds": 474.08,
+    "text": "going, okay, PRs are now the bottleneck.",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 480.56,
+    "segment_id": "seg-0206",
+    "start_seconds": 476.24,
+    "text": "How do we get through the enormous",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 482.8,
+    "segment_id": "seg-0207",
+    "start_seconds": 478.08,
+    "text": "amount of PRs that we're seeing? And",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 484.8,
+    "segment_id": "seg-0208",
+    "start_seconds": 480.56,
+    "text": "sure, we can improve the DX, right? We",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 487.039,
+    "segment_id": "seg-0209",
+    "start_seconds": 482.8,
+    "text": "can improve this view to make sure that",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 488.72,
+    "segment_id": "seg-0210",
+    "start_seconds": 484.8,
+    "text": "it's as easy to review as possible, but",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 491.759,
+    "segment_id": "seg-0211",
+    "start_seconds": 487.039,
+    "text": "we also need to make sure that the code",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 493.68,
+    "segment_id": "seg-0212",
+    "start_seconds": 488.72,
+    "text": "itself is of high enough quality. And so",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 496.479,
+    "segment_id": "seg-0213",
+    "start_seconds": 491.759,
+    "text": "for that, I recommend using my code",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 497.759,
+    "segment_id": "seg-0214",
+    "start_seconds": 493.68,
+    "text": "review skill. So after implementation, I",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 499.599,
+    "segment_id": "seg-0215",
+    "start_seconds": 496.479,
+    "text": "recommend running this code review",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 502.24,
+    "segment_id": "seg-0216",
+    "start_seconds": 497.759,
+    "text": "skill. It's somewhere in the history",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 503.52,
+    "segment_id": "seg-0217",
+    "start_seconds": 499.599,
+    "text": "here. And this code review skill, what",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 506.0,
+    "segment_id": "seg-0218",
+    "start_seconds": 502.24,
+    "text": "it does, there you go. There's the show",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 509.68,
+    "segment_id": "seg-0219",
+    "start_seconds": 503.52,
+    "text": "me that we had before. What code review",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 511.919,
+    "segment_id": "seg-0220",
+    "start_seconds": 506.0,
+    "text": "does is it first figures out what you're",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 513.839,
+    "segment_id": "seg-0221",
+    "start_seconds": 509.68,
+    "text": "diffing against, what has changed, and",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 517.36,
+    "segment_id": "seg-0222",
+    "start_seconds": 511.919,
+    "text": "it's using origin main as the fix point",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 518.719,
+    "segment_id": "seg-0223",
+    "start_seconds": 513.839,
+    "text": "here. It then searches for any um coding",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 520.479,
+    "segment_id": "seg-0224",
+    "start_seconds": 517.36,
+    "text": "standards that you've got inside your",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 522.719,
+    "segment_id": "seg-0225",
+    "start_seconds": 518.719,
+    "text": "repo. You can see GitHub Copilot",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 525.279,
+    "segment_id": "seg-0226",
+    "start_seconds": 520.479,
+    "text": "searching for the coding standards here.",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 528.399,
+    "segment_id": "seg-0227",
+    "start_seconds": 522.719,
+    "text": "It's reading the claw.md files and it",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 531.2,
+    "segment_id": "seg-0228",
+    "start_seconds": 525.279,
+    "text": "now does two things. it spawns a sub",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 533.68,
+    "segment_id": "seg-0229",
+    "start_seconds": 528.399,
+    "text": "agent to check all those coding",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 536.64,
+    "segment_id": "seg-0230",
+    "start_seconds": 531.2,
+    "text": "standards. So it's checking whether the",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 538.56,
+    "segment_id": "seg-0231",
+    "start_seconds": 533.68,
+    "text": "actual um code that was implemented",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 541.2,
+    "segment_id": "seg-0232",
+    "start_seconds": 536.64,
+    "text": "corresponds to the stuff you've written",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 543.839,
+    "segment_id": "seg-0233",
+    "start_seconds": 538.56,
+    "text": "that you know we need to do it this way",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 545.44,
+    "segment_id": "seg-0234",
+    "start_seconds": 541.2,
+    "text": "we need to do it X way and I have a list",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 548.16,
+    "segment_id": "seg-0235",
+    "start_seconds": 543.839,
+    "text": "of coding standards that I keep in my",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 549.519,
+    "segment_id": "seg-0236",
+    "start_seconds": 545.44,
+    "text": "repo that I append to when things go",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 552.32,
+    "segment_id": "seg-0237",
+    "start_seconds": 548.16,
+    "text": "wrong and we'll talk about that in a",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 554.08,
+    "segment_id": "seg-0238",
+    "start_seconds": 549.519,
+    "text": "minute. Then it's also doing a spec",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 556.48,
+    "segment_id": "seg-0239",
+    "start_seconds": 552.32,
+    "text": "check. So it's doing a check against",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 558.32,
+    "segment_id": "seg-0240",
+    "start_seconds": 554.08,
+    "text": "what I actually specified using this",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 561.04,
+    "segment_id": "seg-0241",
+    "start_seconds": 556.48,
+    "text": "conversation history making sure that",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 562.959,
+    "segment_id": "seg-0242",
+    "start_seconds": 558.32,
+    "text": "the thing that was built is actually the",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 564.48,
+    "segment_id": "seg-0243",
+    "start_seconds": 561.04,
+    "text": "thing that we wanted. And what this",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 566.48,
+    "segment_id": "seg-0244",
+    "start_seconds": 562.959,
+    "text": "means is because we're doing these in",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 569.44,
+    "segment_id": "seg-0245",
+    "start_seconds": 564.48,
+    "text": "sub aents these are clean context",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 571.44,
+    "segment_id": "seg-0246",
+    "start_seconds": 566.48,
+    "text": "windows. It means that the agent drops a",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 574.0,
+    "segment_id": "seg-0247",
+    "start_seconds": 569.44,
+    "text": "lot of its preconceptions. We get a new",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 575.839,
+    "segment_id": "seg-0248",
+    "start_seconds": 571.44,
+    "text": "trajectory in the conversation and is",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 578.48,
+    "segment_id": "seg-0249",
+    "start_seconds": 574.0,
+    "text": "often able to surface stuff that you",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 580.16,
+    "segment_id": "seg-0250",
+    "start_seconds": 575.839,
+    "text": "hadn't considered before. And so looks",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 581.92,
+    "segment_id": "seg-0251",
+    "start_seconds": 578.48,
+    "text": "like our spec came back with no",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 583.6,
+    "segment_id": "seg-0252",
+    "start_seconds": 580.16,
+    "text": "findings. That's nice. and standards.",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 585.2,
+    "segment_id": "seg-0253",
+    "start_seconds": 581.92,
+    "text": "There's one judgment call duplicated",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 587.6,
+    "segment_id": "seg-0254",
+    "start_seconds": 583.6,
+    "text": "beat learning goal relation",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 589.76,
+    "segment_id": "seg-0255",
+    "start_seconds": 585.2,
+    "text": "configuration in DB beat services",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 591.36,
+    "segment_id": "seg-0256",
+    "start_seconds": 587.6,
+    "text": "operations. Okay, interesting. If we go",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 594.32,
+    "segment_id": "seg-0257",
+    "start_seconds": 589.76,
+    "text": "into GitHub copilot, we can see that",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 596.32,
+    "segment_id": "seg-0258",
+    "start_seconds": 591.36,
+    "text": "this was created as a commit here. So,",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 599.2,
+    "segment_id": "seg-0259",
+    "start_seconds": 594.32,
+    "text": "dduplicate beat relation query. Let's",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 602.0,
+    "segment_id": "seg-0260",
+    "start_seconds": 596.32,
+    "text": "review here and we can see that okay,",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 603.92,
+    "segment_id": "seg-0261",
+    "start_seconds": 599.2,
+    "text": "what it did was before we had a bit of",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 607.76,
+    "segment_id": "seg-0262",
+    "start_seconds": 602.0,
+    "text": "duplicated configuration between two",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 609.92,
+    "segment_id": "seg-0263",
+    "start_seconds": 603.92,
+    "text": "calls and it turned that into an as uh",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 611.279,
+    "segment_id": "seg-0264",
+    "start_seconds": 607.76,
+    "text": "kind of object here to figure that out.",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 613.519,
+    "segment_id": "seg-0265",
+    "start_seconds": 609.92,
+    "text": "That's nice. That's a nice little",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 616.32,
+    "segment_id": "seg-0266",
+    "start_seconds": 611.279,
+    "text": "change. And all of that happens. Code",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 618.24,
+    "segment_id": "seg-0267",
+    "start_seconds": 613.519,
+    "text": "review happens before the user goes to",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 622.0,
+    "segment_id": "seg-0268",
+    "start_seconds": 616.32,
+    "text": "review. I think there's this prevailing",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 624.64,
+    "segment_id": "seg-0269",
+    "start_seconds": 618.24,
+    "text": "idea with uh AI code review that the",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 627.519,
+    "segment_id": "seg-0270",
+    "start_seconds": 622.0,
+    "text": "code review should then go to the human",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 629.44,
+    "segment_id": "seg-0271",
+    "start_seconds": 624.64,
+    "text": "to figure out what should change next or",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 630.959,
+    "segment_id": "seg-0272",
+    "start_seconds": 627.519,
+    "text": "whether we should actually implement",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 633.2,
+    "segment_id": "seg-0273",
+    "start_seconds": 629.44,
+    "text": "these things. In other words, the output",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 635.12,
+    "segment_id": "seg-0274",
+    "start_seconds": 630.959,
+    "text": "of most code review skills is comments.",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 637.44,
+    "segment_id": "seg-0275",
+    "start_seconds": 633.2,
+    "text": "I believe that code review is kind of",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 638.959,
+    "segment_id": "seg-0276",
+    "start_seconds": 635.12,
+    "text": "part of the implementation flow and so",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 641.2,
+    "segment_id": "seg-0277",
+    "start_seconds": 637.44,
+    "text": "it's kind of like a traditional red",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 643.519,
+    "segment_id": "seg-0278",
+    "start_seconds": 638.959,
+    "text": "green refactor. The implementer agent is",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 645.44,
+    "segment_id": "seg-0279",
+    "start_seconds": 641.2,
+    "text": "responsible for doing the red green like",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 647.44,
+    "segment_id": "seg-0280",
+    "start_seconds": 643.519,
+    "text": "just getting the thing working and then",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 649.36,
+    "segment_id": "seg-0281",
+    "start_seconds": 645.44,
+    "text": "the refactor is done by these review",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 651.12,
+    "segment_id": "seg-0282",
+    "start_seconds": 647.44,
+    "text": "agents that I've been working with. So",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 653.279,
+    "segment_id": "seg-0283",
+    "start_seconds": 649.36,
+    "text": "that means we end up with a PR that is",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 656.079,
+    "segment_id": "seg-0284",
+    "start_seconds": 651.12,
+    "text": "pretty nice to review. And actually",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 658.64,
+    "segment_id": "seg-0285",
+    "start_seconds": 653.279,
+    "text": "looking down the code here, I can see",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 660.72,
+    "segment_id": "seg-0286",
+    "start_seconds": 656.079,
+    "text": "okay, there's something that is sort of",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 662.48,
+    "segment_id": "seg-0287",
+    "start_seconds": 658.64,
+    "text": "stressing me out a little bit. It's not",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 664.48,
+    "segment_id": "seg-0288",
+    "start_seconds": 660.72,
+    "text": "anything to do with a command here or",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 667.68,
+    "segment_id": "seg-0289",
+    "start_seconds": 662.48,
+    "text": "any of this stuff. I just had a little",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 670.48,
+    "segment_id": "seg-0290",
+    "start_seconds": 664.48,
+    "text": "look and I realized, okay, this where is",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 671.92,
+    "segment_id": "seg-0291",
+    "start_seconds": 667.68,
+    "text": "this? this RPC layer here. I've got a",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 673.92,
+    "segment_id": "seg-0292",
+    "start_seconds": 670.48,
+    "text": "feeling that this is not very type-",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 676.24,
+    "segment_id": "seg-0293",
+    "start_seconds": 671.92,
+    "text": "safe. Had a little look inside the code",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 678.24,
+    "segment_id": "seg-0294",
+    "start_seconds": 673.92,
+    "text": "and I realized ah that's pretty gross",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 680.399,
+    "segment_id": "seg-0295",
+    "start_seconds": 676.24,
+    "text": "actually. I really don't like that. And",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 682.88,
+    "segment_id": "seg-0296",
+    "start_seconds": 678.24,
+    "text": "so what I've realized is I want to I",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 685.279,
+    "segment_id": "seg-0297",
+    "start_seconds": 680.399,
+    "text": "don't want to block this PR but as part",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 688.8,
+    "segment_id": "seg-0298",
+    "start_seconds": 682.88,
+    "text": "of this PR merging or maybe uh in a",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 691.279,
+    "segment_id": "seg-0299",
+    "start_seconds": 685.279,
+    "text": "stack I want to take a look at that work",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 693.44,
+    "segment_id": "seg-0300",
+    "start_seconds": 688.8,
+    "text": "take a look at this code and maybe think",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 696.72,
+    "segment_id": "seg-0301",
+    "start_seconds": 691.279,
+    "text": "about improving the architecture of it.",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 698.8,
+    "segment_id": "seg-0302",
+    "start_seconds": 693.44,
+    "text": "And for that we have a lovely lovely",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 700.72,
+    "segment_id": "seg-0303",
+    "start_seconds": 696.72,
+    "text": "skill which is in the upkeep section",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 703.76,
+    "segment_id": "seg-0304",
+    "start_seconds": 698.8,
+    "text": "which is called improve codebase",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 706.0,
+    "segment_id": "seg-0305",
+    "start_seconds": 700.72,
+    "text": "architecture. What this skill does is it",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 707.44,
+    "segment_id": "seg-0306",
+    "start_seconds": 703.76,
+    "text": "takes a look at your repo and you can",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 710.8,
+    "segment_id": "seg-0307",
+    "start_seconds": 706.0,
+    "text": "give it a little nudge for the things",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 713.44,
+    "segment_id": "seg-0308",
+    "start_seconds": 707.44,
+    "text": "you want it to take a look at. And what",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 714.959,
+    "segment_id": "seg-0309",
+    "start_seconds": 710.8,
+    "text": "it does is it gives you a report based",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 716.88,
+    "segment_id": "seg-0310",
+    "start_seconds": 713.44,
+    "text": "on the things that it thinks you should",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 719.12,
+    "segment_id": "seg-0311",
+    "start_seconds": 714.959,
+    "text": "change. And this report can be",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 721.04,
+    "segment_id": "seg-0312",
+    "start_seconds": 716.88,
+    "text": "incredibly valuable. So if we take a",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 722.399,
+    "segment_id": "seg-0313",
+    "start_seconds": 719.12,
+    "text": "look at the report that ours generated I",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 724.56,
+    "segment_id": "seg-0314",
+    "start_seconds": 721.04,
+    "text": "think it's this one actually. Apologies",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 727.44,
+    "segment_id": "seg-0315",
+    "start_seconds": 722.399,
+    "text": "for the sudden switch to light mode. Let",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 729.2,
+    "segment_id": "seg-0316",
+    "start_seconds": 724.56,
+    "text": "me take a look at the um",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 731.76,
+    "segment_id": "seg-0317",
+    "start_seconds": 727.44,
+    "text": "actual",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 733.76,
+    "segment_id": "seg-0318",
+    "start_seconds": 729.2,
+    "text": "uh session which was inside improve",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 735.44,
+    "segment_id": "seg-0319",
+    "start_seconds": 731.76,
+    "text": "codebase architecture planning. Now what",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 737.279,
+    "segment_id": "seg-0320",
+    "start_seconds": 733.76,
+    "text": "I did was I called this with I want you",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 738.959,
+    "segment_id": "seg-0321",
+    "start_seconds": 735.44,
+    "text": "to take a look at the recent PR and see",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 741.279,
+    "segment_id": "seg-0322",
+    "start_seconds": 737.279,
+    "text": "if you can improve anything related to",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 742.24,
+    "segment_id": "seg-0323",
+    "start_seconds": 738.959,
+    "text": "the RPC. Maybe make things more type-",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 743.839,
+    "segment_id": "seg-0324",
+    "start_seconds": 741.279,
+    "text": "safe. I'm not quite sure of the",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 745.04,
+    "segment_id": "seg-0325",
+    "start_seconds": 742.24,
+    "text": "architecture around that area. I want",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 747.12,
+    "segment_id": "seg-0326",
+    "start_seconds": 743.839,
+    "text": "you to take a look and offer some",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 748.8,
+    "segment_id": "seg-0327",
+    "start_seconds": 745.04,
+    "text": "suggestions. This code is stuff that I",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 750.88,
+    "segment_id": "seg-0328",
+    "start_seconds": 747.12,
+    "text": "haven't really authored myself. I've",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 753.6,
+    "segment_id": "seg-0329",
+    "start_seconds": 748.8,
+    "text": "been kind of letting the AI run wild.",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 755.2,
+    "segment_id": "seg-0330",
+    "start_seconds": 750.88,
+    "text": "I'm sure that folks have a have a strong",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 756.88,
+    "segment_id": "seg-0331",
+    "start_seconds": 753.6,
+    "text": "sense of what that feels like. An",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 759.44,
+    "segment_id": "seg-0332",
+    "start_seconds": 755.2,
+    "text": "improved codebase architecture here,",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 761.92,
+    "segment_id": "seg-0333",
+    "start_seconds": 756.88,
+    "text": "what it produces is a very nice little",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 764.24,
+    "segment_id": "seg-0334",
+    "start_seconds": 759.44,
+    "text": "diagram. The first thing it's saying is",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 766.959,
+    "segment_id": "seg-0335",
+    "start_seconds": 761.92,
+    "text": "okay, these are its recommendations down",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 769.6,
+    "segment_id": "seg-0336",
+    "start_seconds": 764.24,
+    "text": "here. Check every remote call.",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 771.68,
+    "segment_id": "seg-0337",
+    "start_seconds": 766.959,
+    "text": "Interesting. So, it flags up the uh",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 773.6,
+    "segment_id": "seg-0338",
+    "start_seconds": 769.6,
+    "text": "exact lines that it's looking for here",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 775.519,
+    "segment_id": "seg-0339",
+    "start_seconds": 771.68,
+    "text": "and it's saying the problem. The remote",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 777.519,
+    "segment_id": "seg-0340",
+    "start_seconds": 773.6,
+    "text": "adapter module is shallow at the scene.",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 779.36,
+    "segment_id": "seg-0341",
+    "start_seconds": 775.519,
+    "text": "Each adapter checks calls that it has.",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 780.8,
+    "segment_id": "seg-0342",
+    "start_seconds": 777.519,
+    "text": "It does not report a missing call. The",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 783.36,
+    "segment_id": "seg-0343",
+    "start_seconds": 779.36,
+    "text": "final cast tells Typescript that the",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 785.04,
+    "segment_id": "seg-0344",
+    "start_seconds": 780.8,
+    "text": "adapter has every domain call. Now, this",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 787.44,
+    "segment_id": "seg-0345",
+    "start_seconds": 783.36,
+    "text": "is pretty gnarly language that it's",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 789.279,
+    "segment_id": "seg-0346",
+    "start_seconds": 785.04,
+    "text": "using here. And for this gnarly",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 790.959,
+    "segment_id": "seg-0347",
+    "start_seconds": 787.44,
+    "text": "language, I actually have another skill",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 792.24,
+    "segment_id": "seg-0348",
+    "start_seconds": 789.279,
+    "text": "that I really like. In fact, there's two",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 793.279,
+    "segment_id": "seg-0349",
+    "start_seconds": 790.959,
+    "text": "skills. There is my skill, but I'm",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 797.12,
+    "segment_id": "seg-0350",
+    "start_seconds": 792.24,
+    "text": "actually going to shout out someone",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 801.04,
+    "segment_id": "seg-0351",
+    "start_seconds": 793.279,
+    "text": "else's skill called uh PTO's skill. And",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 802.959,
+    "segment_id": "seg-0352",
+    "start_seconds": 797.12,
+    "text": "PTO here is a phenomenal skill writer",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 806.16,
+    "segment_id": "seg-0353",
+    "start_seconds": 801.04,
+    "text": "and this is one you absolutely have to",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 808.88,
+    "segment_id": "seg-0354",
+    "start_seconds": 802.959,
+    "text": "have in your library which is it",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 812.56,
+    "segment_id": "seg-0355",
+    "start_seconds": 806.16,
+    "text": "basically takes AI text and it unslops",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 815.44,
+    "segment_id": "seg-0356",
+    "start_seconds": 808.88,
+    "text": "it. So it turns it into really beautiful",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 818.399,
+    "segment_id": "seg-0357",
+    "start_seconds": 812.56,
+    "text": "I maybe not sure about beautiful but it",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 820.959,
+    "segment_id": "seg-0358",
+    "start_seconds": 815.44,
+    "text": "takes out all of the AI tells from your",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 823.44,
+    "segment_id": "seg-0359",
+    "start_seconds": 818.399,
+    "text": "work and it means that horrible sort of",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 825.44,
+    "segment_id": "seg-0360",
+    "start_seconds": 820.959,
+    "text": "like um garbage like this the remote",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 826.959,
+    "segment_id": "seg-0361",
+    "start_seconds": 823.44,
+    "text": "adapter module is shallow at the seam",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 828.8,
+    "segment_id": "seg-0362",
+    "start_seconds": 825.44,
+    "text": "you can actually get it to write it in",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 830.24,
+    "segment_id": "seg-0363",
+    "start_seconds": 826.959,
+    "text": "much planer language. So, I strongly",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 832.72,
+    "segment_id": "seg-0364",
+    "start_seconds": 828.8,
+    "text": "recommend that if you're interested in",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 834.56,
+    "segment_id": "seg-0365",
+    "start_seconds": 830.24,
+    "text": "an unsloped skill. However, I do, you",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 836.88,
+    "segment_id": "seg-0366",
+    "start_seconds": 832.72,
+    "text": "know, I do understand what it means and",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 839.279,
+    "segment_id": "seg-0367",
+    "start_seconds": 834.56,
+    "text": "I do like this idea. Okay, we can just",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 840.8,
+    "segment_id": "seg-0368",
+    "start_seconds": 836.88,
+    "text": "reduce make it a bit more simple here",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 842.639,
+    "segment_id": "seg-0369",
+    "start_seconds": 839.279,
+    "text": "with there's a little bit down the",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 844.399,
+    "segment_id": "seg-0370",
+    "start_seconds": 840.8,
+    "text": "bottom here that I also liked as well.",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 846.399,
+    "segment_id": "seg-0371",
+    "start_seconds": 842.639,
+    "text": "So, this is sort of a deep module coming",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 848.16,
+    "segment_id": "seg-0372",
+    "start_seconds": 844.399,
+    "text": "out from a lots of shallow modules. So,",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 850.72,
+    "segment_id": "seg-0373",
+    "start_seconds": 846.399,
+    "text": "what I did was I decided, okay, let's",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 853.199,
+    "segment_id": "seg-0374",
+    "start_seconds": 848.16,
+    "text": "actually implement that. Now, what is",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 855.839,
+    "segment_id": "seg-0375",
+    "start_seconds": 850.72,
+    "text": "implementing something this complicated",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 857.519,
+    "segment_id": "seg-0376",
+    "start_seconds": 853.199,
+    "text": "look like? Because the previous one I",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 859.6,
+    "segment_id": "seg-0377",
+    "start_seconds": 855.839,
+    "text": "happen to know sort of the relative",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 862.8,
+    "segment_id": "seg-0378",
+    "start_seconds": 857.519,
+    "text": "scope of what we were trying to do. I",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 865.839,
+    "segment_id": "seg-0379",
+    "start_seconds": 859.6,
+    "text": "knew that we could walk through it just",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 867.68,
+    "segment_id": "seg-0380",
+    "start_seconds": 862.8,
+    "text": "in a single session. We wouldn't need to",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 869.839,
+    "segment_id": "seg-0381",
+    "start_seconds": 865.839,
+    "text": "um do it over multiple sessions. In",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 871.839,
+    "segment_id": "seg-0382",
+    "start_seconds": 867.68,
+    "text": "other words, we just did grow with docs,",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 873.92,
+    "segment_id": "seg-0383",
+    "start_seconds": 869.839,
+    "text": "then we implemented it and then we used",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 875.6,
+    "segment_id": "seg-0384",
+    "start_seconds": 871.839,
+    "text": "code review at the bottom. But for",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 877.839,
+    "segment_id": "seg-0385",
+    "start_seconds": 873.92,
+    "text": "things that might cross over multiple",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 880.24,
+    "segment_id": "seg-0386",
+    "start_seconds": 875.6,
+    "text": "sessions or might spiral out of control",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 881.839,
+    "segment_id": "seg-0387",
+    "start_seconds": 877.839,
+    "text": "in terms of the size, then I recommend a",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 884.32,
+    "segment_id": "seg-0388",
+    "start_seconds": 880.24,
+    "text": "different approach. You can do grill",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 885.68,
+    "segment_id": "seg-0389",
+    "start_seconds": 881.839,
+    "text": "with docs and or in our case we've kind",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 887.68,
+    "segment_id": "seg-0390",
+    "start_seconds": 884.32,
+    "text": "of got something pretty workable",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 890.32,
+    "segment_id": "seg-0391",
+    "start_seconds": 885.68,
+    "text": "already. We can go improve codebase",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 893.279,
+    "segment_id": "seg-0392",
+    "start_seconds": 887.68,
+    "text": "architecture and then turn that into a",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 895.92,
+    "segment_id": "seg-0393",
+    "start_seconds": 890.32,
+    "text": "spec. Now the point of a spec is if we",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 897.92,
+    "segment_id": "seg-0394",
+    "start_seconds": 893.279,
+    "text": "take a look at our GitHub issues in",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 902.959,
+    "segment_id": "seg-0395",
+    "start_seconds": 895.92,
+    "text": "here, we can take a look at this spec",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 906.24,
+    "segment_id": "seg-0396",
+    "start_seconds": 897.92,
+    "text": "that I created which is uh I think it is",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 908.24,
+    "segment_id": "seg-0397",
+    "start_seconds": 902.959,
+    "text": "here. Make the CVM RPC call mappings and",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 912.399,
+    "segment_id": "seg-0398",
+    "start_seconds": 906.24,
+    "text": "forwarding type save. What I ended up",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 914.72,
+    "segment_id": "seg-0399",
+    "start_seconds": 908.24,
+    "text": "doing was I turned that really nice um",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 916.24,
+    "segment_id": "seg-0400",
+    "start_seconds": 912.399,
+    "text": "sort of diagram here, this uh spec of",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 918.0,
+    "segment_id": "seg-0401",
+    "start_seconds": 914.72,
+    "text": "what was supposed to be done and I",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 920.32,
+    "segment_id": "seg-0402",
+    "start_seconds": 916.24,
+    "text": "turned it into a proper spec where we",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 922.32,
+    "segment_id": "seg-0403",
+    "start_seconds": 918.0,
+    "text": "had user stories. We have a solution",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 924.16,
+    "segment_id": "seg-0404",
+    "start_seconds": 920.32,
+    "text": "here and a problem as well as a bunch of",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 925.92,
+    "segment_id": "seg-0405",
+    "start_seconds": 922.32,
+    "text": "implementation decisions and kind of",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 928.639,
+    "segment_id": "seg-0406",
+    "start_seconds": 924.16,
+    "text": "specking out exactly what I wanted from",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 931.04,
+    "segment_id": "seg-0407",
+    "start_seconds": 925.92,
+    "text": "the work and then we call a different",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 933.279,
+    "segment_id": "seg-0408",
+    "start_seconds": 928.639,
+    "text": "skill under that to create the actual",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 936.16,
+    "segment_id": "seg-0409",
+    "start_seconds": 931.04,
+    "text": "tickets that correspond to making the",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 938.24,
+    "segment_id": "seg-0410",
+    "start_seconds": 933.279,
+    "text": "spec reality. So this spec is",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 943.12,
+    "segment_id": "seg-0411",
+    "start_seconds": 936.16,
+    "text": "essentially the destination and these",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 945.12,
+    "segment_id": "seg-0412",
+    "start_seconds": 938.24,
+    "text": "tickets are the journey and what I did",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 947.199,
+    "segment_id": "seg-0413",
+    "start_seconds": 943.12,
+    "text": "is all of this was done inside one",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 948.959,
+    "segment_id": "seg-0414",
+    "start_seconds": 945.12,
+    "text": "session inside the planning session and",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 950.72,
+    "segment_id": "seg-0415",
+    "start_seconds": 947.199,
+    "text": "you can see that it's published two",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 953.199,
+    "segment_id": "seg-0416",
+    "start_seconds": 948.959,
+    "text": "independent tickets right at the bottom",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 955.68,
+    "segment_id": "seg-0417",
+    "start_seconds": 950.72,
+    "text": "and I've been using two tickets there",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 958.0,
+    "segment_id": "seg-0418",
+    "start_seconds": 953.199,
+    "text": "and then in a separate session I did the",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 960.16,
+    "segment_id": "seg-0419",
+    "start_seconds": 955.68,
+    "text": "implementation and this implementation",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 962.8,
+    "segment_id": "seg-0420",
+    "start_seconds": 958.0,
+    "text": "will be quite new to anyone who's used",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 966.32,
+    "segment_id": "seg-0421",
+    "start_seconds": 960.16,
+    "text": "my skills before which is I used a skill",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 968.8,
+    "segment_id": "seg-0422",
+    "start_seconds": 962.8,
+    "text": "called implement spec and I just sent it",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 971.199,
+    "segment_id": "seg-0423",
+    "start_seconds": 966.32,
+    "text": "the spec. So what it did first is it",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 974.0,
+    "segment_id": "seg-0424",
+    "start_seconds": 968.8,
+    "text": "went and mapped the tickets dependencies",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 975.839,
+    "segment_id": "seg-0425",
+    "start_seconds": 971.199,
+    "text": "and then opened a draft PR and then",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 977.92,
+    "segment_id": "seg-0426",
+    "start_seconds": 974.0,
+    "text": "those two tickets it turned out were",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 980.56,
+    "segment_id": "seg-0427",
+    "start_seconds": 975.839,
+    "text": "independent so they could be worked on",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 983.279,
+    "segment_id": "seg-0428",
+    "start_seconds": 977.92,
+    "text": "by themselves independently. And so what",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 986.24,
+    "segment_id": "seg-0429",
+    "start_seconds": 980.56,
+    "text": "it did was it worked them independently",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 988.639,
+    "segment_id": "seg-0430",
+    "start_seconds": 983.279,
+    "text": "on separate work trees and branches. So",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 990.88,
+    "segment_id": "seg-0431",
+    "start_seconds": 986.24,
+    "text": "we have parallelization here. We're able",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 992.639,
+    "segment_id": "seg-0432",
+    "start_seconds": 988.639,
+    "text": "to spawn out multiple sub aents to put",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 995.12,
+    "segment_id": "seg-0433",
+    "start_seconds": 990.88,
+    "text": "them on different work trees. GitHub",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 997.839,
+    "segment_id": "seg-0434",
+    "start_seconds": 992.639,
+    "text": "Copilot is handling all of this for me.",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 1000.399,
+    "segment_id": "seg-0435",
+    "start_seconds": 995.12,
+    "text": "And then it rebased them together and",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 1003.279,
+    "segment_id": "seg-0436",
+    "start_seconds": 997.839,
+    "text": "yeah, merged into DraftBr. Everything's",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 1006.079,
+    "segment_id": "seg-0437",
+    "start_seconds": 1000.399,
+    "text": "working. Uh, merge adapter ticket. There",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 1009.12,
+    "segment_id": "seg-0438",
+    "start_seconds": 1003.279,
+    "text": "we go. And then it did a code review at",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 1011.36,
+    "segment_id": "seg-0439",
+    "start_seconds": 1006.079,
+    "text": "the end. So, one thing that this skill",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 1012.959,
+    "segment_id": "seg-0440",
+    "start_seconds": 1009.12,
+    "text": "does really nicely is we can actually",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 1015.759,
+    "segment_id": "seg-0441",
+    "start_seconds": 1011.36,
+    "text": "take a look at the skill in a minute is",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 1018.399,
+    "segment_id": "seg-0442",
+    "start_seconds": 1012.959,
+    "text": "it runs an exploration agent. It runs",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 1020.48,
+    "segment_id": "seg-0443",
+    "start_seconds": 1015.759,
+    "text": "everything it can in parallel and then",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 1022.079,
+    "segment_id": "seg-0444",
+    "start_seconds": 1018.399,
+    "text": "it code reviews it at the end and fixes",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 1024.4,
+    "segment_id": "seg-0445",
+    "start_seconds": 1020.48,
+    "text": "everything it finds.",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 1025.839,
+    "segment_id": "seg-0446",
+    "start_seconds": 1022.079,
+    "text": "So once we get to there, there we go.",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 1027.6,
+    "segment_id": "seg-0447",
+    "start_seconds": 1024.4,
+    "text": "You can see the code review running. You",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 1030.24,
+    "segment_id": "seg-0448",
+    "start_seconds": 1025.839,
+    "text": "can see it fixing the review findings.",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 1032.079,
+    "segment_id": "seg-0449",
+    "start_seconds": 1027.6,
+    "text": "We ended up with a pretty nice PR that",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 1035.039,
+    "segment_id": "seg-0450",
+    "start_seconds": 1030.24,
+    "text": "we can actually just stack on top of the",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 1036.799,
+    "segment_id": "seg-0451",
+    "start_seconds": 1032.079,
+    "text": "other one. So here is the original PR.",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 1039.12,
+    "segment_id": "seg-0452",
+    "start_seconds": 1035.039,
+    "text": "Oh no, here we go. No, this is the the",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 1041.439,
+    "segment_id": "seg-0453",
+    "start_seconds": 1036.799,
+    "text": "proper PR. It closes all of the tickets",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 1044.48,
+    "segment_id": "seg-0454",
+    "start_seconds": 1039.12,
+    "text": "that we created. Closes the spec. It",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 1046.48,
+    "segment_id": "seg-0455",
+    "start_seconds": 1041.439,
+    "text": "closes the each individual ticket. And",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 1048.48,
+    "segment_id": "seg-0456",
+    "start_seconds": 1044.48,
+    "text": "then we get a nice thing that we can",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 1050.559,
+    "segment_id": "seg-0457",
+    "start_seconds": 1046.48,
+    "text": "actually merge on top of it in order to",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 1052.559,
+    "segment_id": "seg-0458",
+    "start_seconds": 1048.48,
+    "text": "make our operations type safe in future.",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 1055.84,
+    "segment_id": "seg-0459",
+    "start_seconds": 1050.559,
+    "text": "So that's the flow is if you want to",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 1058.08,
+    "segment_id": "seg-0460",
+    "start_seconds": 1052.559,
+    "text": "make your code actually um function",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 1060.16,
+    "segment_id": "seg-0461",
+    "start_seconds": 1055.84,
+    "text": "better over time and clear up some of",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 1061.679,
+    "segment_id": "seg-0462",
+    "start_seconds": 1058.08,
+    "text": "the slop, you end up with these nice",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 1064.88,
+    "segment_id": "seg-0463",
+    "start_seconds": 1060.16,
+    "text": "architecture reviews that you can just",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 1068.16,
+    "segment_id": "seg-0464",
+    "start_seconds": 1061.679,
+    "text": "keep working on. But what about if you",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 1070.559,
+    "segment_id": "seg-0465",
+    "start_seconds": 1064.88,
+    "text": "want to actually take this approach,",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 1072.88,
+    "segment_id": "seg-0466",
+    "start_seconds": 1068.16,
+    "text": "take this unslopping approach and apply",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 1076.08,
+    "segment_id": "seg-0467",
+    "start_seconds": 1070.559,
+    "text": "it to your own agent, to your agents",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 1078.72,
+    "segment_id": "seg-0468",
+    "start_seconds": 1072.88,
+    "text": "environment. What do you do then? Well,",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 1081.919,
+    "segment_id": "seg-0469",
+    "start_seconds": 1076.08,
+    "text": "I've got a new skill. And this new skill",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 1084.64,
+    "segment_id": "seg-0470",
+    "start_seconds": 1078.72,
+    "text": "is called retro. Retro, take the four",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 1087.36,
+    "segment_id": "seg-0471",
+    "start_seconds": 1081.919,
+    "text": "most recent sessions and do a retro on",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 1089.6,
+    "segment_id": "seg-0472",
+    "start_seconds": 1084.64,
+    "text": "them. And a retro comes from the word",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 1091.679,
+    "segment_id": "seg-0473",
+    "start_seconds": 1087.36,
+    "text": "retrospective where at the end of a",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 1093.28,
+    "segment_id": "seg-0474",
+    "start_seconds": 1089.6,
+    "text": "piece of work, you look back over what",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 1095.84,
+    "segment_id": "seg-0475",
+    "start_seconds": 1091.679,
+    "text": "you've done and see what you can",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 1097.36,
+    "segment_id": "seg-0476",
+    "start_seconds": 1093.28,
+    "text": "improve. And so agents are pretty good",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 1099.52,
+    "segment_id": "seg-0477",
+    "start_seconds": 1095.84,
+    "text": "at this because a lot of agents have",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 1102.0,
+    "segment_id": "seg-0478",
+    "start_seconds": 1097.36,
+    "text": "access to their own session history. So",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 1104.16,
+    "segment_id": "seg-0479",
+    "start_seconds": 1099.52,
+    "text": "does GitHub copilot. So it reads the you",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 1105.679,
+    "segment_id": "seg-0480",
+    "start_seconds": 1102.0,
+    "text": "know most recent sessions reads the",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 1107.2,
+    "segment_id": "seg-0481",
+    "start_seconds": 1104.16,
+    "text": "implementation session the architecture",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 1108.96,
+    "segment_id": "seg-0482",
+    "start_seconds": 1105.679,
+    "text": "session looks for all the session",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 1112.32,
+    "segment_id": "seg-0483",
+    "start_seconds": 1107.2,
+    "text": "artifacts and the session checkpoints",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 1114.559,
+    "segment_id": "seg-0484",
+    "start_seconds": 1108.96,
+    "text": "and then it suggests a bunch of ideas.",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 1115.919,
+    "segment_id": "seg-0485",
+    "start_seconds": 1112.32,
+    "text": "So we can see the implement spec run",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 1117.6,
+    "segment_id": "seg-0486",
+    "start_seconds": 1114.559,
+    "text": "created PR directly from the active",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 1119.28,
+    "segment_id": "seg-0487",
+    "start_seconds": 1115.919,
+    "text": "feature branch rather than its intended",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 1121.679,
+    "segment_id": "seg-0488",
+    "start_seconds": 1117.6,
+    "text": "base. So there was a little bit of",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 1123.28,
+    "segment_id": "seg-0489",
+    "start_seconds": 1119.28,
+    "text": "confusion there with the agent. So it's",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 1124.559,
+    "segment_id": "seg-0490",
+    "start_seconds": 1121.679,
+    "text": "saying you probably need to change the",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 1126.72,
+    "segment_id": "seg-0491",
+    "start_seconds": 1123.28,
+    "text": "skill a little bit. Tighten",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 1128.24,
+    "segment_id": "seg-0492",
+    "start_seconds": 1124.559,
+    "text": "implementation specs integration branch",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 1130.4,
+    "segment_id": "seg-0493",
+    "start_seconds": 1126.72,
+    "text": "step resolve the target base before",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 1132.88,
+    "segment_id": "seg-0494",
+    "start_seconds": 1128.24,
+    "text": "creating anything. Then it's also",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 1135.12,
+    "segment_id": "seg-0495",
+    "start_seconds": 1130.4,
+    "text": "looking at tool economy. So it's seeing",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 1137.2,
+    "segment_id": "seg-0496",
+    "start_seconds": 1132.88,
+    "text": "are the tools that we're calling token",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 1140.559,
+    "segment_id": "seg-0497",
+    "start_seconds": 1135.12,
+    "text": "efficient enough and also we're looking",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 1142.64,
+    "segment_id": "seg-0498",
+    "start_seconds": 1137.2,
+    "text": "at navigation steps here. So this retro",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 1144.0,
+    "segment_id": "seg-0499",
+    "start_seconds": 1140.559,
+    "text": "is something that's really exciting to",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 1146.799,
+    "segment_id": "seg-0500",
+    "start_seconds": 1142.64,
+    "text": "me and something I'm going to continue",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 1150.0,
+    "segment_id": "seg-0501",
+    "start_seconds": 1144.0,
+    "text": "working on and it builds on the main",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 1152.64,
+    "segment_id": "seg-0502",
+    "start_seconds": 1146.799,
+    "text": "flow of the skills here where you grill",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 1155.039,
+    "segment_id": "seg-0503",
+    "start_seconds": 1150.0,
+    "text": "you then uh either go and create spec",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 1156.96,
+    "segment_id": "seg-0504",
+    "start_seconds": 1152.64,
+    "text": "and tickets to work it over multiple",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 1159.039,
+    "segment_id": "seg-0505",
+    "start_seconds": 1155.039,
+    "text": "different sessions multiple sub aents.",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 1161.28,
+    "segment_id": "seg-0506",
+    "start_seconds": 1156.96,
+    "text": "You then go to implement it. You then do",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 1163.039,
+    "segment_id": "seg-0507",
+    "start_seconds": 1159.039,
+    "text": "a code review on it. And then you do a",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 1165.44,
+    "segment_id": "seg-0508",
+    "start_seconds": 1161.28,
+    "text": "retro where you look for opportunities",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 1166.799,
+    "segment_id": "seg-0509",
+    "start_seconds": 1163.039,
+    "text": "to do better next time. I'm excited",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 1168.559,
+    "segment_id": "seg-0510",
+    "start_seconds": 1165.44,
+    "text": "about the growth of these skills. I'm",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 1170.16,
+    "segment_id": "seg-0511",
+    "start_seconds": 1166.799,
+    "text": "excited about how so many people are",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 1172.4,
+    "segment_id": "seg-0512",
+    "start_seconds": 1168.559,
+    "text": "going to get to work with them. And I",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 1174.88,
+    "segment_id": "seg-0513",
+    "start_seconds": 1170.16,
+    "text": "just I love being able to package up my",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 1176.559,
+    "segment_id": "seg-0514",
+    "start_seconds": 1172.4,
+    "text": "processes and send them to you. You can",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 1178.72,
+    "segment_id": "seg-0515",
+    "start_seconds": 1174.88,
+    "text": "install them. You can modify them,",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 1180.24,
+    "segment_id": "seg-0516",
+    "start_seconds": 1176.559,
+    "text": "fiddle with them. And I think that's so",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 1182.08,
+    "segment_id": "seg-0517",
+    "start_seconds": 1178.72,
+    "text": "so exciting for this era that we live",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 1184.0,
+    "segment_id": "seg-0518",
+    "start_seconds": 1180.24,
+    "text": "in. I love it. So, thank you so much for",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 1187.84,
+    "segment_id": "seg-0519",
+    "start_seconds": 1182.08,
+    "text": "watching. Have a great rest of Copilot",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 1187.84,
+    "segment_id": "seg-0520",
+    "start_seconds": 1184.0,
+    "text": "Day. See you very soon.",
+    "timestamp_method": "source_transcript"
+  }
+]

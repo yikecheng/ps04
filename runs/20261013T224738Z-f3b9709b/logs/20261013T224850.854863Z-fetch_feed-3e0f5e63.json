@@ -1,0 +1,22 @@
+{
+  "cost_estimate": false,
+  "cost_usd": null,
+  "details": {
+    "failed_source_count": 3
+  },
+  "errors": [
+    "github-changelog: <urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:997)>",
+    "arxiv-software-engineering: <urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:997)>",
+    "arxiv-human-computer-interaction: <urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:997)>"
+  ],
+  "finished_at": "2026-10-13T22:48:50Z",
+  "input_count": 7,
+  "output_count": 8,
+  "stage": "fetch_feed",
+  "started_at": "2026-10-13T22:48:50Z",
+  "status": "incomplete",
+  "tools_or_models": [
+    "python-urllib",
+    "python-elementtree"
+  ]
+}

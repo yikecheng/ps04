@@ -1,0 +1,24 @@
+{
+  "cost_estimate": false,
+  "cost_usd": null,
+  "details": {
+    "failed_source_count": 5
+  },
+  "errors": [
+    "github-youtube: <urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:997)>",
+    "openai-youtube: <urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:997)>",
+    "ibm-technology-youtube: <urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:997)>",
+    "kevin-stratvert-youtube: <urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:997)>",
+    "simon-scrapes-youtube: <urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:997)>"
+  ],
+  "finished_at": "2026-10-13T22:48:51Z",
+  "input_count": 5,
+  "output_count": 0,
+  "stage": "fetch_youtube",
+  "started_at": "2026-10-13T22:48:50Z",
+  "status": "incomplete",
+  "tools_or_models": [
+    "python-urllib",
+    "python-elementtree"
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "cost_estimate": false,
+  "cost_usd": null,
+  "details": {
+    "overall_status": "awaiting_review"
+  },
+  "errors": [],
+  "finished_at": "2026-10-13T23:35:32Z",
+  "input_count": 13,
+  "output_count": 1,
+  "stage": "summarize_run",
+  "started_at": "2026-10-13T23:35:32Z",
+  "status": "completed",
+  "tools_or_models": [
+    "python-stdlib"
+  ]
+}

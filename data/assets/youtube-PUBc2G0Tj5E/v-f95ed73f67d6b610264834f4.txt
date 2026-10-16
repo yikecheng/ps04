@@ -1,0 +1,104 @@
+Look, we know some of you are
+terminally in the terminal.
+Well, this one's for y'all.
+We've been listening.
+You want Codex to feel fast
+and stay out of your way.
+You want it to let you build
+where you love to hang out.
+I think you're going to dig
+these new features.
+So I've been working
+on a very important project,
+a CLI for purchasing my usual burrito.
+It's a single command.
+Here, let me show you the help.
+Pretty handy, eh?
+I've been talking about it a lot
+to others and they want in.
+So I'm making a web property
+so people can get it installed.
+Let's pop that open in the Codex CLI.
+First, look at this new
+full-screen interface.
+It's gorgeous, right?
+You can scroll through
+these earlier outputs
+and the footer for the next message
+is always there.
+Why don't we give it
+some work to do?
+Now this is a little bonkers.
+I can kick it off in voice mode.
+Hey there.
+Can you hear me?
+Hey, what's up?
+Start three separate tasks
+for these burrito projects.
+Now first, extend the website
+adding a new background
+of repeating burritos.
+And second, check the CLI tests
+and ensure that we test
+for price changes
+and order confirmation.
+And third, can you generate
+me a Mermaid diagram
+of the CLI's order flow?
+Now I can mute the voice.
+And now I've got three
+actual tasks working across
+a couple of projects.
+Let's go see what they're doing.
+So left arrow takes me into the agents.
+I can see what's running.
+I can filter.
+I can group by status.
+I can search.
+I can jump straight into a task.
+I don't need to go hunting
+around my file system
+or open terminals to find these.
+I can ask Codex
+to check the other tasks
+or send them a follow-up.
+And if I want to try
+to build in a different direction,
+I can fork this conversation
+into a new worktree.
+The same context,
+but a completely separate checkout.
+And you might have missed this,
+but I can get back to all
+of this from my phone.
+I enable remote control on my laptop.
+I choose this specific computer
+and they're the same tasks.
+I can check progress.
+I can answer a question
+while I'm away from my keyboard.
+When I'm back at the terminal,
+I can see what finished
+and what needs attention.
+Hey, look, those changes
+and the test results are here.
+I'll open up the web demo.
+And there's more.
+Usage analytics let me see my activity.
+It's my top chats and the plugins
+and the skills that I've been using.
+Now, here's the burrito order flow
+rendered right in the terminal.
+Supported LaTeX renders here too.
+Here's some mathematical proof
+of why burritos rule.
+Look, you like to work in the terminal
+and we want Codex to meet you
+where you are and let you keep
+focusing on what you're building.
+We know you're building a lot.
+We'll keep improving the CLI.
+So keep the feedback coming.
+Okay, I'm getting pretty hungry.
+I'm pretty sure I need
+the output of that burrito command.

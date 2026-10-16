@@ -1,0 +1,53 @@
+{
+  "additionalProperties": false,
+  "properties": {
+    "decisions": {
+      "items": {
+        "additionalProperties": false,
+        "properties": {
+          "decision": {
+            "enum": [
+              "accept",
+              "reject",
+              "defer"
+            ],
+            "type": "string"
+          },
+          "item_id": {
+            "type": "string"
+          },
+          "piece_ids": {
+            "items": {
+              "enum": [
+                "01",
+                "02",
+                "03"
+              ],
+              "type": "string"
+            },
+            "type": "array"
+          },
+          "reason": {
+            "type": "string"
+          },
+          "version_id": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "item_id",
+          "version_id",
+          "decision",
+          "reason",
+          "piece_ids"
+        ],
+        "type": "object"
+      },
+      "type": "array"
+    }
+  },
+  "required": [
+    "decisions"
+  ],
+  "type": "object"
+}

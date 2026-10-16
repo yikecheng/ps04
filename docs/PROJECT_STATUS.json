@@ -1,0 +1,21 @@
+{
+  "student": "Yike Cheng",
+  "publication": "Agent Signal",
+  "repository_url": "https://github.com/yikecheng/ps04",
+  "repository_visibility": "public",
+  "first_completed_live_run": "runs/20261013T231400Z-55620c5a",
+  "second_live_run": "runs/20261016T021442Z-113efa68",
+  "policy_version": 2,
+  "student_approval_recorded": true,
+  "approval_review_id": "review-8f4ee1be1e8599b656e3fed9",
+  "production_package_ready": true,
+  "production_package": "runs/20261013T231400Z-55620c5a/package",
+  "published_pairs": 0,
+  "technical_demo_url": null,
+  "remaining_manual_actions": [
+    "Retain the second run's podcast-evidence coverage failure as a documented non-production comparison",
+    "Produce three Google Vids videos",
+    "Publish and cross-link three Substack and YouTube pairs",
+    "Record and publish the human-narrated technical demonstration"
+  ]
+}

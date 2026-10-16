@@ -1,0 +1,730 @@
+[
+  {
+    "end_seconds": 5.48,
+    "segment_id": "seg-0001",
+    "start_seconds": 2.86,
+    "text": "Look, we know some of you are",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 7.62,
+    "segment_id": "seg-0002",
+    "start_seconds": 5.48,
+    "text": "terminally in the terminal.",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 9.08,
+    "segment_id": "seg-0003",
+    "start_seconds": 7.78,
+    "text": "Well, this one's for y'all.",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 9.88,
+    "segment_id": "seg-0004",
+    "start_seconds": 9.1,
+    "text": "We've been listening.",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 11.34,
+    "segment_id": "seg-0005",
+    "start_seconds": 9.88,
+    "text": "You want Codex to feel fast",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 12.66,
+    "segment_id": "seg-0006",
+    "start_seconds": 11.34,
+    "text": "and stay out of your way.",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 14.74,
+    "segment_id": "seg-0007",
+    "start_seconds": 12.7,
+    "text": "You want it to let you build",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 16.12,
+    "segment_id": "seg-0008",
+    "start_seconds": 14.74,
+    "text": "where you love to hang out.",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 17.22,
+    "segment_id": "seg-0009",
+    "start_seconds": 16.22,
+    "text": "I think you're going to dig",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 18.22,
+    "segment_id": "seg-0010",
+    "start_seconds": 17.22,
+    "text": "these new features.",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 19.6,
+    "segment_id": "seg-0011",
+    "start_seconds": 18.22,
+    "text": "So I've been working",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 21.16,
+    "segment_id": "seg-0012",
+    "start_seconds": 19.6,
+    "text": "on a very important project,",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 24.02,
+    "segment_id": "seg-0013",
+    "start_seconds": 21.24,
+    "text": "a CLI for purchasing my usual burrito.",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 25.02,
+    "segment_id": "seg-0014",
+    "start_seconds": 24.06,
+    "text": "It's a single command.",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 26.22,
+    "segment_id": "seg-0015",
+    "start_seconds": 25.02,
+    "text": "Here, let me show you the help.",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 28.46,
+    "segment_id": "seg-0016",
+    "start_seconds": 27.26,
+    "text": "Pretty handy, eh?",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 30.94,
+    "segment_id": "seg-0017",
+    "start_seconds": 28.9,
+    "text": "I've been talking about it a lot",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 32.32,
+    "segment_id": "seg-0018",
+    "start_seconds": 30.94,
+    "text": "to others and they want in.",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 34.26,
+    "segment_id": "seg-0019",
+    "start_seconds": 32.42,
+    "text": "So I'm making a web property",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 35.74,
+    "segment_id": "seg-0020",
+    "start_seconds": 34.26,
+    "text": "so people can get it installed.",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 38.32,
+    "segment_id": "seg-0021",
+    "start_seconds": 36.04,
+    "text": "Let's pop that open in the Codex CLI.",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 41.14,
+    "segment_id": "seg-0022",
+    "start_seconds": 39.34,
+    "text": "First, look at this new",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 42.44,
+    "segment_id": "seg-0023",
+    "start_seconds": 41.14,
+    "text": "full-screen interface.",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 43.8,
+    "segment_id": "seg-0024",
+    "start_seconds": 42.66,
+    "text": "It's gorgeous, right?",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 44.84,
+    "segment_id": "seg-0025",
+    "start_seconds": 43.8,
+    "text": "You can scroll through",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 45.92,
+    "segment_id": "seg-0026",
+    "start_seconds": 44.84,
+    "text": "these earlier outputs",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 47.86,
+    "segment_id": "seg-0027",
+    "start_seconds": 45.92,
+    "text": "and the footer for the next message",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 49.06,
+    "segment_id": "seg-0028",
+    "start_seconds": 47.86,
+    "text": "is always there.",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 50.1,
+    "segment_id": "seg-0029",
+    "start_seconds": 49.26,
+    "text": "Why don't we give it",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 51.22,
+    "segment_id": "seg-0030",
+    "start_seconds": 50.1,
+    "text": "some work to do?",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 52.96,
+    "segment_id": "seg-0031",
+    "start_seconds": 51.22,
+    "text": "Now this is a little bonkers.",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 55.1,
+    "segment_id": "seg-0032",
+    "start_seconds": 53.1,
+    "text": "I can kick it off in voice mode.",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 56.84,
+    "segment_id": "seg-0033",
+    "start_seconds": 55.84,
+    "text": "Hey there.",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 58.04,
+    "segment_id": "seg-0034",
+    "start_seconds": 56.84,
+    "text": "Can you hear me?",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 59.02,
+    "segment_id": "seg-0035",
+    "start_seconds": 58.14,
+    "text": "Hey, what's up?",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 60.92,
+    "segment_id": "seg-0036",
+    "start_seconds": 59.02,
+    "text": "Start three separate tasks",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 62.52,
+    "segment_id": "seg-0037",
+    "start_seconds": 60.92,
+    "text": "for these burrito projects.",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 64.42,
+    "segment_id": "seg-0038",
+    "start_seconds": 62.54,
+    "text": "Now first, extend the website",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 65.7,
+    "segment_id": "seg-0039",
+    "start_seconds": 64.42,
+    "text": "adding a new background",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 67.86,
+    "segment_id": "seg-0040",
+    "start_seconds": 65.7,
+    "text": "of repeating burritos.",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 69.88,
+    "segment_id": "seg-0041",
+    "start_seconds": 67.98,
+    "text": "And second, check the CLI tests",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 71.98,
+    "segment_id": "seg-0042",
+    "start_seconds": 69.88,
+    "text": "and ensure that we test",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 72.96,
+    "segment_id": "seg-0043",
+    "start_seconds": 71.98,
+    "text": "for price changes",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 74.74,
+    "segment_id": "seg-0044",
+    "start_seconds": 72.96,
+    "text": "and order confirmation.",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 77.7,
+    "segment_id": "seg-0045",
+    "start_seconds": 74.74,
+    "text": "And third, can you generate",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 79.3,
+    "segment_id": "seg-0046",
+    "start_seconds": 77.7,
+    "text": "me a Mermaid diagram",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 81.24,
+    "segment_id": "seg-0047",
+    "start_seconds": 79.3,
+    "text": "of the CLI's order flow?",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 83.64,
+    "segment_id": "seg-0048",
+    "start_seconds": 81.86,
+    "text": "Now I can mute the voice.",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 86.38,
+    "segment_id": "seg-0049",
+    "start_seconds": 83.64,
+    "text": "And now I've got three",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 88.42,
+    "segment_id": "seg-0050",
+    "start_seconds": 86.38,
+    "text": "actual tasks working across",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 89.7,
+    "segment_id": "seg-0051",
+    "start_seconds": 88.42,
+    "text": "a couple of projects.",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 91.36,
+    "segment_id": "seg-0052",
+    "start_seconds": 89.94,
+    "text": "Let's go see what they're doing.",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 94.8,
+    "segment_id": "seg-0053",
+    "start_seconds": 92.08,
+    "text": "So left arrow takes me into the agents.",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 96.46,
+    "segment_id": "seg-0054",
+    "start_seconds": 94.98,
+    "text": "I can see what's running.",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 97.38,
+    "segment_id": "seg-0055",
+    "start_seconds": 96.48,
+    "text": "I can filter.",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 98.8,
+    "segment_id": "seg-0056",
+    "start_seconds": 97.38,
+    "text": "I can group by status.",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 99.82,
+    "segment_id": "seg-0057",
+    "start_seconds": 99.02,
+    "text": "I can search.",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 102.12,
+    "segment_id": "seg-0058",
+    "start_seconds": 99.82,
+    "text": "I can jump straight into a task.",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 103.88,
+    "segment_id": "seg-0059",
+    "start_seconds": 102.22,
+    "text": "I don't need to go hunting",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 105.12,
+    "segment_id": "seg-0060",
+    "start_seconds": 103.88,
+    "text": "around my file system",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 107.14,
+    "segment_id": "seg-0061",
+    "start_seconds": 105.12,
+    "text": "or open terminals to find these.",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 109.24,
+    "segment_id": "seg-0062",
+    "start_seconds": 107.84,
+    "text": "I can ask Codex",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 110.62,
+    "segment_id": "seg-0063",
+    "start_seconds": 109.24,
+    "text": "to check the other tasks",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 112.44,
+    "segment_id": "seg-0064",
+    "start_seconds": 110.62,
+    "text": "or send them a follow-up.",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 114.8,
+    "segment_id": "seg-0065",
+    "start_seconds": 112.44,
+    "text": "And if I want to try",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 116.42,
+    "segment_id": "seg-0066",
+    "start_seconds": 114.8,
+    "text": "to build in a different direction,",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 118.32,
+    "segment_id": "seg-0067",
+    "start_seconds": 116.6,
+    "text": "I can fork this conversation",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 119.8,
+    "segment_id": "seg-0068",
+    "start_seconds": 118.32,
+    "text": "into a new worktree.",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 121.4,
+    "segment_id": "seg-0069",
+    "start_seconds": 120.02,
+    "text": "The same context,",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 124.12,
+    "segment_id": "seg-0070",
+    "start_seconds": 121.56,
+    "text": "but a completely separate checkout.",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 125.96,
+    "segment_id": "seg-0071",
+    "start_seconds": 124.58,
+    "text": "And you might have missed this,",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 127.22,
+    "segment_id": "seg-0072",
+    "start_seconds": 126.0,
+    "text": "but I can get back to all",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 128.88,
+    "segment_id": "seg-0073",
+    "start_seconds": 127.22,
+    "text": "of this from my phone.",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 131.42,
+    "segment_id": "seg-0074",
+    "start_seconds": 129.1,
+    "text": "I enable remote control on my laptop.",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 133.34,
+    "segment_id": "seg-0075",
+    "start_seconds": 131.56,
+    "text": "I choose this specific computer",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 135.02,
+    "segment_id": "seg-0076",
+    "start_seconds": 133.34,
+    "text": "and they're the same tasks.",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 136.44,
+    "segment_id": "seg-0077",
+    "start_seconds": 135.3,
+    "text": "I can check progress.",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 137.72,
+    "segment_id": "seg-0078",
+    "start_seconds": 136.44,
+    "text": "I can answer a question",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 139.42,
+    "segment_id": "seg-0079",
+    "start_seconds": 137.72,
+    "text": "while I'm away from my keyboard.",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 140.84,
+    "segment_id": "seg-0080",
+    "start_seconds": 139.42,
+    "text": "When I'm back at the terminal,",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 141.8,
+    "segment_id": "seg-0081",
+    "start_seconds": 140.84,
+    "text": "I can see what finished",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 143.14,
+    "segment_id": "seg-0082",
+    "start_seconds": 141.8,
+    "text": "and what needs attention.",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 145.46,
+    "segment_id": "seg-0083",
+    "start_seconds": 143.48,
+    "text": "Hey, look, those changes",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 146.66,
+    "segment_id": "seg-0084",
+    "start_seconds": 145.46,
+    "text": "and the test results are here.",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 147.9,
+    "segment_id": "seg-0085",
+    "start_seconds": 146.7,
+    "text": "I'll open up the web demo.",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 151.54,
+    "segment_id": "seg-0086",
+    "start_seconds": 149.9,
+    "text": "And there's more.",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 154.9,
+    "segment_id": "seg-0087",
+    "start_seconds": 152.0,
+    "text": "Usage analytics let me see my activity.",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 157.42,
+    "segment_id": "seg-0088",
+    "start_seconds": 155.18,
+    "text": "It's my top chats and the plugins",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 159.42,
+    "segment_id": "seg-0089",
+    "start_seconds": 157.42,
+    "text": "and the skills that I've been using.",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 161.84,
+    "segment_id": "seg-0090",
+    "start_seconds": 159.74,
+    "text": "Now, here's the burrito order flow",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 163.76,
+    "segment_id": "seg-0091",
+    "start_seconds": 161.84,
+    "text": "rendered right in the terminal.",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 166.34,
+    "segment_id": "seg-0092",
+    "start_seconds": 164.52,
+    "text": "Supported LaTeX renders here too.",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 168.74,
+    "segment_id": "seg-0093",
+    "start_seconds": 167.12,
+    "text": "Here's some mathematical proof",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 170.22,
+    "segment_id": "seg-0094",
+    "start_seconds": 168.74,
+    "text": "of why burritos rule.",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 172.66,
+    "segment_id": "seg-0095",
+    "start_seconds": 170.46,
+    "text": "Look, you like to work in the terminal",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 174.58,
+    "segment_id": "seg-0096",
+    "start_seconds": 172.66,
+    "text": "and we want Codex to meet you",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 176.06,
+    "segment_id": "seg-0097",
+    "start_seconds": 174.58,
+    "text": "where you are and let you keep",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 177.66,
+    "segment_id": "seg-0098",
+    "start_seconds": 176.06,
+    "text": "focusing on what you're building.",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 179.4,
+    "segment_id": "seg-0099",
+    "start_seconds": 177.86,
+    "text": "We know you're building a lot.",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 181.46,
+    "segment_id": "seg-0100",
+    "start_seconds": 179.72,
+    "text": "We'll keep improving the CLI.",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 183.1,
+    "segment_id": "seg-0101",
+    "start_seconds": 181.48,
+    "text": "So keep the feedback coming.",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 186.0,
+    "segment_id": "seg-0102",
+    "start_seconds": 183.88,
+    "text": "Okay, I'm getting pretty hungry.",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 187.48,
+    "segment_id": "seg-0103",
+    "start_seconds": 186.18,
+    "text": "I'm pretty sure I need",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 189.38,
+    "segment_id": "seg-0104",
+    "start_seconds": 187.48,
+    "text": "the output of that burrito command.",
+    "timestamp_method": "source_transcript"
+  }
+]

@@ -1,0 +1,59 @@
+InfoQ Software Architects' Newsletter
+
+A monthly overview of things you need to know as an architect or aspiring architect.
+
+View an example
+
+We protect your privacy.
+
+InfoQ Homepage News Android Bench 2 Adds Support for Long-Horizon Tasks, Agentic Evaluation, and Continuous Scoring
+
+Android Bench 2 Adds Support for Long-Horizon Tasks, Agentic Evaluation, and Continuous Scoring
+
+Oct 09, 2026 2 min read
+
+Sergio De Simone
+
+Follow us on
+
+Google has released Android Bench 2.0 , a major update to its benchmark framework for evaluating AI models and agents on Android development tasks. The update introduces long-horizon tasks (LHTs), agent-based evaluation, and continuous scoring to better assess performance on complex, multi-step development tasks.
+
+Launched a few months ago , Android Bench evaluates AI models against a set of common development tasks and incorporates Android best practices in areas such as permissions, navigation, and connectivity. With the latest release, Google has expanded the benchmark to cover a broader range of development tasks.
+
+Today we're releasing the first set of long-horizon tasks (LHT), which are tasks of great complexity that take an engineer multiple days or even a week to complete. We are also introducing agentic evaluation, starting with agents from corresponding model providers.
+
+While the original version focused on incremental changes to existing repositories, Android Bench 2.0 introduces long-horizon tasks (LHTs) that Google describes as work an engineer might take "multiple days or even a week to complete". These tasks include upgrading dependencies, adding new features, building apps from scratch, or converting a cross-platform app to Android.
+
+One major change in version 2.0 is the shift from binary pass/fail evaluation to a more nuanced scoring system. Previously, a complex task could be marked as failed because of a single failing edge-case assertion, even if the agent had successfully met dozens of other requirements.
+
+We calculate this completion rate through a combination of factors like functionality, visual fidelity, and avoiding regressions. We also apply objective scoring penalties for deviations from evaluation instructions or structural constraints.
+
+Android Bench 2.0 results also help identify which tasks are more likely to succeed with AI assistance. For example, Google reports that "AI does a better job at writing new code rather than refactoring existing code", which may reflect that refactoring and migrations require an understanding of the codebase's architectural complexity.
+
+Similarly, AI performs well on several "well-established, deterministic transformations", even in larger codebases. Examples include converting Java to Kotlin, swapping Retrofit for Ktor, or introducing a ViewModel layer.
+
+In contrast, models still struggle in many cases, including tasks requiring runtime validation (like missing dependency injection graphs), breaking framework changes, or knowledge gaps with unreleased libraries. In particular, the best-in-class model achieves only an 80% completion rate in porting a cross-platform app to Android, which remains overall an "open challenge".
+
+The updated Android Bench 2.0 dashboard includes recent models, such as Gemini 3.8 Flash, Gemini 3.7 Flash, OpenAI GPT-6, Anthropic Fable 5.1, Kimi K3, and Qwen 3.8 Max. At the time of the article, Claude Opus 5.5 was at the top of the leaderboard with a 32% LHT pass rate, followed by GPT -6 Astra at 28%.
+
+About the Author
+
+Sergio De Simone
+
+This content is in the Mobile topic
+
+Architecture & Design
+
+AI, ML & Data Engineering
+
+Large language models
+
+AI coding agents
+
+Popular across InfoQ What Does It Really Mean To Program With AI: A Conversation with Joy Ebertz Cloudflares Newly Acquired Vite+ Reaches 1.0 with GitLab CI Support, Hooks, and tsup Migration Github Migrates Copilot Runtime to Rust with AI-Assisted Rewrite Java News Roundup: Grails 8, Open Liberty, GlassFish, Infinispan, LangChain4j, Spock Google Antigravity SDK Adds Local Model Support for Greater Token Efficiency and Code Privacy Ontology‐Driven Observability: Building the E2E Knowledge Graph at Netflix Scale
+
+The InfoQ Newsletter
+
+A round-up of last week’s content on InfoQ sent out every Tuesday. Join a community of over 250,000 senior developers. View an example
+
+We protect your privacy.

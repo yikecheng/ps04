@@ -1,0 +1,19 @@
+{
+  "cost_estimate": false,
+  "cost_usd": null,
+  "details": {
+    "error_count": 0,
+    "passed": true,
+    "warning_count": 1
+  },
+  "errors": [],
+  "finished_at": "2026-10-16T19:15:40Z",
+  "input_count": 3,
+  "output_count": 1,
+  "stage": "check_content",
+  "started_at": "2026-10-16T19:15:40Z",
+  "status": "completed",
+  "tools_or_models": [
+    "python-stdlib"
+  ]
+}

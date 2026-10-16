@@ -1,0 +1,527 @@
+[
+  {
+    "end_seconds": 1.46,
+    "segment_id": "seg-0001",
+    "start_seconds": 0.0,
+    "text": "Does this sound familiar?",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 3.84,
+    "segment_id": "seg-0002",
+    "start_seconds": 1.68,
+    "text": "Hey, can you give this a quick review?",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 5.18,
+    "segment_id": "seg-0003",
+    "start_seconds": 3.98,
+    "text": "And you're like, sure.",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 7.92,
+    "segment_id": "seg-0004",
+    "start_seconds": 6.16,
+    "text": "Which repository is this?",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 10.18,
+    "segment_id": "seg-0005",
+    "start_seconds": 8.54,
+    "text": "What's different about this?",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 12.08,
+    "segment_id": "seg-0006",
+    "start_seconds": 10.22,
+    "text": "And where is this feature coming from?",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 13.92,
+    "segment_id": "seg-0007",
+    "start_seconds": 12.26,
+    "text": "Look, there's so much code",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 15.18,
+    "segment_id": "seg-0008",
+    "start_seconds": 13.92,
+    "text": "being written all the time,",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 17.14,
+    "segment_id": "seg-0009",
+    "start_seconds": 15.18,
+    "text": "all over all of our companies.",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 19.34,
+    "segment_id": "seg-0010",
+    "start_seconds": 17.7,
+    "text": "Code review is the new bottleneck.",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 21.12,
+    "segment_id": "seg-0011",
+    "start_seconds": 19.36,
+    "text": "And that's why Codex now brings",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 23.46,
+    "segment_id": "seg-0012",
+    "start_seconds": 21.12,
+    "text": "that workflow into one place.",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 25.1,
+    "segment_id": "seg-0013",
+    "start_seconds": 23.64,
+    "text": "This is my personal inbox",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 26.58,
+    "segment_id": "seg-0014",
+    "start_seconds": 25.1,
+    "text": "with GitHub pull requests",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 28.22,
+    "segment_id": "seg-0015",
+    "start_seconds": 26.58,
+    "text": "from across my repositories.",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 29.54,
+    "segment_id": "seg-0016",
+    "start_seconds": 28.22,
+    "text": "I can see the reviews",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 30.58,
+    "segment_id": "seg-0017",
+    "start_seconds": 29.54,
+    "text": "that are assigned to me.",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 32.0,
+    "segment_id": "seg-0018",
+    "start_seconds": 30.58,
+    "text": "I can see stuff I authored",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 33.68,
+    "segment_id": "seg-0019",
+    "start_seconds": 32.0,
+    "text": "and I can also find priorities.",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 35.72,
+    "segment_id": "seg-0020",
+    "start_seconds": 34.32,
+    "text": "Now here's one that is",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 37.12,
+    "segment_id": "seg-0021",
+    "start_seconds": 35.72,
+    "text": "assigned specifically to me.",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 38.5,
+    "segment_id": "seg-0022",
+    "start_seconds": 37.12,
+    "text": "I'm going to pin it in the sidebar.",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 40.06,
+    "segment_id": "seg-0023",
+    "start_seconds": 38.5,
+    "text": "So it's easy to come back to.",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 41.76,
+    "segment_id": "seg-0024",
+    "start_seconds": 40.4,
+    "text": "Cloud code review has",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 43.46,
+    "segment_id": "seg-0025",
+    "start_seconds": 41.76,
+    "text": "already taken a first pass.",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 45.28,
+    "segment_id": "seg-0026",
+    "start_seconds": 43.62,
+    "text": "Once the connector has the right",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 47.36,
+    "segment_id": "seg-0027",
+    "start_seconds": 45.28,
+    "text": "repository permissions, initial",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 49.66,
+    "segment_id": "seg-0028",
+    "start_seconds": 47.36,
+    "text": "reviews can run automatically.",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 51.52,
+    "segment_id": "seg-0029",
+    "start_seconds": 49.98,
+    "text": "The comments Codex leaves",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 52.9,
+    "segment_id": "seg-0030",
+    "start_seconds": 51.52,
+    "text": "on GitHub show up here too.",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 54.4,
+    "segment_id": "seg-0031",
+    "start_seconds": 52.94,
+    "text": "So I can read the feedback",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 56.46,
+    "segment_id": "seg-0032",
+    "start_seconds": 54.4,
+    "text": "alongside the change and I don't",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 58.36,
+    "segment_id": "seg-0033",
+    "start_seconds": 56.46,
+    "text": "need to switch tools or worry",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 59.98,
+    "segment_id": "seg-0034",
+    "start_seconds": 58.36,
+    "text": "about managing a cloud environment.",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 63.42,
+    "segment_id": "seg-0035",
+    "start_seconds": 60.34,
+    "text": "Each pull request has a private chat.",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 64.48,
+    "segment_id": "seg-0036",
+    "start_seconds": 63.5,
+    "text": "I love this.",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 66.22,
+    "segment_id": "seg-0037",
+    "start_seconds": 64.48,
+    "text": "Look, I can ask, summarize",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 68.44,
+    "segment_id": "seg-0038",
+    "start_seconds": 66.22,
+    "text": "this change and explain the risks",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 70.66,
+    "segment_id": "seg-0039",
+    "start_seconds": 68.44,
+    "text": "for this entire project.",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 73.38,
+    "segment_id": "seg-0040",
+    "start_seconds": 71.3,
+    "text": "And all my skills and connectors",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 75.08,
+    "segment_id": "seg-0041",
+    "start_seconds": 73.38,
+    "text": "can be brought into this context.",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 76.92,
+    "segment_id": "seg-0042",
+    "start_seconds": 75.24,
+    "text": "Like our team's review guidelines",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 78.62,
+    "segment_id": "seg-0043",
+    "start_seconds": 76.92,
+    "text": "or design documents or whatever.",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 80.5,
+    "segment_id": "seg-0044",
+    "start_seconds": 78.84,
+    "text": "I can also customize the review",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 81.86,
+    "segment_id": "seg-0045",
+    "start_seconds": 80.5,
+    "text": "instructions depending",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 83.22,
+    "segment_id": "seg-0046",
+    "start_seconds": 81.86,
+    "text": "on how I like things.",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 84.86,
+    "segment_id": "seg-0047",
+    "start_seconds": 83.3,
+    "text": "Like give me a short summary,",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 86.78,
+    "segment_id": "seg-0048",
+    "start_seconds": 84.86,
+    "text": "or how about a risk analysis?",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 88.74,
+    "segment_id": "seg-0049",
+    "start_seconds": 86.96,
+    "text": "Or hey, how about even put",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 90.94,
+    "segment_id": "seg-0050",
+    "start_seconds": 88.74,
+    "text": "this in a comic book style explanation?",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 93.22,
+    "segment_id": "seg-0051",
+    "start_seconds": 90.94,
+    "text": "If I want another pass, I can",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 95.76,
+    "segment_id": "seg-0052",
+    "start_seconds": 93.22,
+    "text": "start a local private review myself.",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 97.28,
+    "segment_id": "seg-0053",
+    "start_seconds": 95.92,
+    "text": "Now that's separate from the cloud",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 98.6,
+    "segment_id": "seg-0054",
+    "start_seconds": 97.28,
+    "text": "review that ran ahead of time.",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 101.44,
+    "segment_id": "seg-0055",
+    "start_seconds": 98.74,
+    "text": "And now I can ask, ask",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 103.52,
+    "segment_id": "seg-0056",
+    "start_seconds": 101.44,
+    "text": "questions and draft a comment",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 105.26,
+    "segment_id": "seg-0057",
+    "start_seconds": 103.52,
+    "text": "in our team's review style.",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 107.34,
+    "segment_id": "seg-0058",
+    "start_seconds": 105.7,
+    "text": "I can check it against the diff.",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 108.56,
+    "segment_id": "seg-0059",
+    "start_seconds": 107.34,
+    "text": "I can make it my own and I",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 110.44,
+    "segment_id": "seg-0060",
+    "start_seconds": 108.56,
+    "text": "can use the comment and the review",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 112.3,
+    "segment_id": "seg-0061",
+    "start_seconds": 110.44,
+    "text": "actions right here in Codex.",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 114.34,
+    "segment_id": "seg-0062",
+    "start_seconds": 112.32,
+    "text": "I love that I don't have to leave.",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 116.0,
+    "segment_id": "seg-0063",
+    "start_seconds": 114.44,
+    "text": "Now when I'm the author, I can",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 117.6,
+    "segment_id": "seg-0064",
+    "start_seconds": 116.0,
+    "text": "switch back to my changes and work",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 119.62,
+    "segment_id": "seg-0065",
+    "start_seconds": 117.6,
+    "text": "through the feedback in the same place.",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 122.68,
+    "segment_id": "seg-0066",
+    "start_seconds": 119.62,
+    "text": "And that's code review in Codex.",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 124.76,
+    "segment_id": "seg-0067",
+    "start_seconds": 122.72,
+    "text": "Find the work, quickly understand",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 126.1,
+    "segment_id": "seg-0068",
+    "start_seconds": 124.76,
+    "text": "the change, and move the review",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 128.36,
+    "segment_id": "seg-0069",
+    "start_seconds": 126.1,
+    "text": "forward all in one place.",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 130.1,
+    "segment_id": "seg-0070",
+    "start_seconds": 128.46,
+    "text": "Remove those bottlenecks.",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 131.98,
+    "segment_id": "seg-0071",
+    "start_seconds": 130.48,
+    "text": "GitHub Code Review is generally",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 133.32,
+    "segment_id": "seg-0072",
+    "start_seconds": 131.98,
+    "text": "available with GitLab",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 134.52,
+    "segment_id": "seg-0073",
+    "start_seconds": 133.32,
+    "text": "support in preview.",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 136.52,
+    "segment_id": "seg-0074",
+    "start_seconds": 134.62,
+    "text": "Try it with the next review",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 137.76,
+    "segment_id": "seg-0075",
+    "start_seconds": 136.52,
+    "text": "waiting in your inbox.",
+    "timestamp_method": "source_transcript"
+  }
+]

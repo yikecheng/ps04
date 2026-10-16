@@ -1,0 +1,16 @@
+{
+  "cost_estimate": false,
+  "cost_usd": null,
+  "errors": [
+    "content checks completed with blocking errors"
+  ],
+  "finished_at": "2026-10-16T02:33:28Z",
+  "input_count": 25,
+  "output_count": null,
+  "stage": "create_series",
+  "started_at": "2026-10-16T02:15:16Z",
+  "status": "failed",
+  "tools_or_models": [
+    "bash"
+  ]
+}

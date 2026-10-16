@@ -1,0 +1,16 @@
+{
+  "cost_estimate": false,
+  "cost_usd": null,
+  "errors": [
+    "codex model invocation exited 1: Error: failed to initialize in-process app-server client: Operation not permitted (os error 1)"
+  ],
+  "finished_at": "2026-10-16T02:15:04Z",
+  "input_count": 25,
+  "output_count": null,
+  "stage": "select_items",
+  "started_at": "2026-10-16T02:15:04Z",
+  "status": "failed",
+  "tools_or_models": [
+    "codex-cli"
+  ]
+}

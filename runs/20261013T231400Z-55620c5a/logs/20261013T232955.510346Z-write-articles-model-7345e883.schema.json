@@ -1,0 +1,39 @@
+{
+  "additionalProperties": false,
+  "properties": {
+    "articles": {
+      "items": {
+        "additionalProperties": false,
+        "properties": {
+          "markdown": {
+            "type": "string"
+          },
+          "piece_id": {
+            "enum": [
+              "01",
+              "02",
+              "03"
+            ],
+            "type": "string"
+          },
+          "title": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "piece_id",
+          "title",
+          "markdown"
+        ],
+        "type": "object"
+      },
+      "maxItems": 3,
+      "minItems": 3,
+      "type": "array"
+    }
+  },
+  "required": [
+    "articles"
+  ],
+  "type": "object"
+}

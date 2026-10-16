@@ -1,0 +1,21 @@
+We will deprecate the following models across all GitHub Copilot experiences (including Copilot Chat, inline edits, ask and agent modes, and code completions) on November 16th, 2026:
+
+*Claude Opus 4.8 will remain available to individual GitHub Copilot subscribers on annual plans so they retain an Opus offering. The deprecation of Claude Opus 4.8 does not apply to these customers.
+
+Please update your workflows and integrations to use the supported models before this date. Under default model enablement, the suggested alternatives are automatically enabled for Copilot Enterprise and Copilot Business customers unless an administrator has turned off the global default or explicitly disabled the model. If you’ve turned off the global default, you can enable access to the alternative models through their model policies in Copilot settings.
+
+Once enabled, users will see the model in the Copilot Chat model selector in supported GitHub Copilot experiences.
+
+No action is required to remove the models after they have been deprecated.
+
+GitHub Enterprise customers with questions or concerns are encouraged to contact their account team for assistance.
+
+Share your feedback
+
+To learn more about the models available in Copilot, see our documentation on supported models .
+
+Join the GitHub Community to share your feedback.
+
+Subscribe to our developer newsletter
+
+Discover tips, technical guides, and best practices in our biweekly newsletter just for devs.

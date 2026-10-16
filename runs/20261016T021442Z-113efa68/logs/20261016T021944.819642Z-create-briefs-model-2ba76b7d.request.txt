@@ -1,0 +1,1471 @@
+You are the argument-development stage in an auditable publication pipeline.
+
+PROJECT
+{
+  "publication_name": "Agent Signal",
+  "topic": "Evidence-based adoption of AI coding agents by small software teams",
+  "audience": "Technical leads and hands-on engineering managers at software teams of roughly 2–20 people who understand pull requests, CI, testing, and code review",
+  "central_question": "Which new coding-agent capabilities are genuinely production-ready, what evidence supports the claims, and what should a small software team do next?"
+}
+
+EDITORIAL POLICY
+# Agent Signal Editorial Policy — Version 2
+
+## Purpose and scope
+
+Agent Signal helps technical leads at small software teams decide whether and how to adopt AI coding agents. We cover changes that affect production engineering decisions: delegation, context and harness design, verification, security, cost, team workflow, and maintenance. We exclude generic AI news, model-release scorekeeping without workflow implications, beginner prompting tutorials, investment speculation, and claims whose publication date or supporting passage cannot be verified.
+
+## Selection criteria
+
+Assess every eligible item at the level of the claims we may use, not by publisher prestige or model confidence.
+
+1. **Audience relevance:** Prefer evidence that can change a small team's adoption, workflow, controls, or near-term watch list.
+2. **Freshness:** Supporting material must fall within the mechanical 30-date window. A refreshed page or re-upload does not make an old event new. State what is newly reported when recent material discusses older events.
+3. **Claim-level credibility:** Look for an inspectable method, direct observation, reproducible artifact, named example, or precise limitation. Institutional reputation and popularity are context, not proof.
+4. **Novelty:** Prefer genuinely new capabilities, measurements, failure modes, or practitioner lessons. Repeated coverage of one announcement is one underlying claim.
+5. **Perspective diversity:** Build a mix of vendor capability claims, independent research, and practitioner experience. Do not let one company or distribution channel define the story.
+
+## Evidence and incentives
+
+- A product announcement may establish availability and workflow scope. A production-readiness conclusion additionally requires an independent outcome measure or a clearly labeled local pilot.
+- Treat vendor benchmarks as evidence of what a vendor reports, not independent proof of effectiveness.
+- Record relevant incentives: a vendor sells the featured tool; an investor promotes a portfolio thesis; a creator benefits from attention; a researcher may be working with a bounded sample or benchmark.
+- Corroboration requires evidence that is independent in origin. Syndication, reposts, reactions to the same press release, and a podcast's YouTube copy do not count separately.
+- Prefer exact passages and timestamped transcript segments. Every numerical claim must retain its denominator, baseline, task definition, and measured outcome when available; name missing elements in the decision reason.
+- Separate activity and efficiency metrics such as merged changes, token use, latency, or cache hits from accepted outcomes such as held-out pass rate, defects, rework, rollback, and maintainability.
+- Defer creator-reported numerical improvements when the primary source, applicable product version, or method is not inspectable. A disclaimer does not make an unsupported number usable.
+- Do not infer causation from usage or activity metrics.
+
+## Uncertainty and disagreement
+
+- Distinguish reported facts, attributed source claims, and our interpretation.
+- When credible sources conflict, explain differences in task, sample, measurement, incentives, or operating conditions before deciding whether there is a real contradiction.
+- Use calibrated language. Say “suggests,” “in this sample,” or “the vendor reports” when the evidence does not justify a general conclusion.
+- Do not manufacture balance. A limitation or counterargument must be supported by evidence or by a clearly stated boundary of the available evidence.
+- Defer an item when it may become useful but lacks a transcript, date, inspectable support, or enough context. Reject it when it is irrelevant, duplicative, promotional without usable evidence, or substantively unreliable.
+
+## Series roles
+
+- **Piece 1 — What changed:** Select consequential developments and explain why they matter now.
+- **Piece 2 — What survives scrutiny:** Compare capability claims with research, verification needs, and practitioner experience.
+- **Piece 3 — What to do next:** Derive bounded actions and watch signals for small teams without presenting speculation as fact.
+
+Every accepted item must have a stated purpose in at least one piece. Each piece must use at least three independent publishers, contain a multi-source inference whose reasoning is explicit, and acknowledge a meaningful limitation.
+
+
+STAGE INSTRUCTIONS
+# Brief-development instructions
+
+Create exactly three briefs with piece IDs `01`, `02`, and `03`. Use only accepted exact evidence versions assigned to the relevant piece.
+
+Each brief must:
+
+- answer its assigned editorial question with one contestable central argument;
+- contain explicit, atomic claims typed as `reported_fact`, `source_claim`, or `inference`;
+- attach every claim to an exact written quote or existing transcript segment;
+- use at least three independent publishers;
+- include at least one inference connecting evidence from multiple publishers and explain the reasoning in `synthesis`;
+- explain commercial or methodological incentives when relevant;
+- state a meaningful limitation or counterargument; and
+- avoid turning missing evidence into a confident conclusion.
+
+The pieces must build on one another without repeating the same thesis: first establish what changed, then scrutinize claims and tensions, then derive bounded actions and watch signals for small teams.
+
+
+EDITORIAL DECISIONS
+[
+  {
+    "decision": "accept",
+    "item_id": "feed:cursor:301c1497d14b1ed17100",
+    "piece_ids": [
+      "01",
+      "02",
+      "03"
+    ],
+    "reason": "The announcement credibly establishes present availability and workflow scope: Rollouts creates editable monitoring plans, compares post-deploy signals with a baseline, and can notify, pause, or propose a revert; Security Reviewer analyzes PRs and proposes fixes. Those post-PR agent roles are novel and directly relevant to small teams. Cursor sells the products, however, and supplies no sample, false-positive rate, regression rate, or independent outcome measure. Claims about catching regional regressions, distinguishing intended effects, and outperforming static analysis remain vendor claims. It overlaps GitHub’s separate security-autofix announcement but is not corroboration of it. Piece 01 can report availability, Piece 02 can test the claims against verification research, and Piece 03 can define a bounded pilot with approval gates.",
+    "version_id": "v-9e5e5fac9d48014feb9c5bfc"
+  },
+  {
+    "decision": "accept",
+    "item_id": "feed:cursor:84d2e8f0655374a11ab2",
+    "piece_ids": [
+      "01",
+      "02",
+      "03"
+    ],
+    "reason": "This provides unusually concrete harness-engineering observations: Cursor reports a 66% system-prompt reduction, 46.9% fewer tokens in sessions that called an MCP tool after dynamic loading, and an overall 7% user-cost reduction without lower quality. Dynamic tool loading and context trimming are consequential for long-running agents and small-team budgets. Cursor has a commercial incentive to portray its harness as efficient, and the excerpt omits experiment size, duration, quality metric, confidence intervals, and the remainder of the tool-loading A/B results. These are cost/activity measures, not accepted software outcomes. The item is distinct from product-feature announcements. Piece 01 can describe the harness change, Piece 02 can scrutinize the internal measurements, and Piece 03 can motivate local cost-and-quality instrumentation.",
+    "version_id": "v-5fed8f79222f91b61985792d"
+  },
+  {
+    "decision": "reject",
+    "item_id": "feed:github:7a6dc2d18f9ec533b042",
+    "piece_ids": [],
+    "reason": "The usable fact is limited to Gemini 4 Argon’s rollout, plan eligibility, usage-based billing, and administrator controls in Copilot. The performance language—more tasks solved on every benchmark and thorough checking of edge cases—has no named benchmark, task count, baseline, score, or inspection method. GitHub and Google benefit commercially from model adoption, and the item depends on the underlying Google model release rather than independent testing. It is routine model-picker coverage and duplicates the broader availability story without a demonstrated workflow consequence, so it falls under the policy’s exclusion of model-release scorekeeping without usable evidence.",
+    "version_id": "v-9e3b7675dd5b66ce334d1e75"
+  },
+  {
+    "decision": "accept",
+    "item_id": "feed:independent-research-authors:258392c93310baab1471",
+    "piece_ids": [
+      "02",
+      "03"
+    ],
+    "reason": "AgentSWE offers a novel, inspectable evaluation design for a production-relevant delegation problem: 25 creation, editing, and optimization commissions are developed against visible examples but accepted on frozen submissions and held-out, requirement-derived tests. The reported failure modes—visible-case overfitting, hollow runtimes, and unsupported completion claims—directly inform verification practices. The benchmark authors have an incentive to establish the importance of their benchmark, and 25 agent-building tasks are too narrow to generalize to ordinary application work; the excerpt also gives no per-agent outcome table. It is distinct from harness-construction benchmarks. Piece 02 can examine the demonstration-versus-delivery gap, and Piece 03 can recommend held-out acceptance checks and explicit completion gates.",
+    "version_id": "v-b8c088105e97e9e6f3ce9ed9"
+  },
+  {
+    "decision": "accept",
+    "item_id": "feed:independent-research-authors:337cbc4cedf5cfb1d758",
+    "piece_ids": [
+      "02",
+      "03"
+    ],
+    "reason": "The useful contribution is its explicit synthesis of conflicting evidence: field experiments, a small randomized trial, repository studies, and practitioner judgment measure different populations and outcomes, so throughput claims need not imply lower review or rework costs. The cited older results must be labeled as background rather than new October findings, and their numerical claims should be checked in the primary studies before publication. The paper is argumentative, and its assertion that model limitations cannot be eliminated by training is not established by the supplied passage; its authors benefit academically from a strong thesis. It overlaps verification research but broadens the comparison to organizational outcomes. Piece 02 can map the disagreement and measurement differences; Piece 03 can present persistent specifications and process artifacts as a bounded hypothesis, not a proven cure.",
+    "version_id": "v-2c06c266b5857581b3f3c253"
+  },
+  {
+    "decision": "accept",
+    "item_id": "feed:independent-research-authors:89ac63769de00fed6835",
+    "piece_ids": [
+      "02",
+      "03"
+    ],
+    "reason": "This supplies original qualitative evidence about supervision as a connected workflow rather than a final review step. Observations and workflow diagrams from 19 experienced developers support a seven-stage framework and identify concrete practices: concentrating effort in planning, delegating some checking to other agents, and converting recurring guidance into reusable assets. The sample is small and self-selected, Reddit discussions are not outcome validation, and the study does not show that any practice reduces defects or time. The authors have an academic incentive to validate their framework, but no stated tool-selling interest. It complements rather than independently corroborates AgentSWE. Piece 02 can locate where verification work moves, and Piece 03 can turn the stages into a small-team pilot checklist while acknowledging the qualitative boundary.",
+    "version_id": "v-9bde3907428df8ef68a78026"
+  },
+  {
+    "decision": "reject",
+    "item_id": "feed:sourcegraph:ea3179ffe2d4c95b4f7b",
+    "piece_ids": [],
+    "reason": "Scheduled triggers, telemetry-driven tasks, and callable agent functions are relevant watch-list concepts, but the article is chiefly a product vision. Claims that prompt-to-PR is essentially solved, model quality has plateaued, and brownfield maintenance remains completely unsolved rest on personal impressions and unnamed conversations, with no cases, measurements, or reproducible artifact. Sourcegraph sells tools in this market and benefits from framing the next battleground around autonomous codebases. The vision overlaps Cursor’s concrete rollout-monitoring announcement but does not independently support it. Because its novel elements are speculative rather than observed capabilities or bounded practitioner results, it is not strong enough for any piece.",
+    "version_id": "v-1c7d0d28b27050f0e12c26c2"
+  },
+  {
+    "decision": "reject",
+    "item_id": "podcast:infoq:5925e1fbf36f4960a85e",
+    "piece_ids": [],
+    "reason": "The discussion raises relevant issues—ambiguous requirements, comprehensive tests, review burden, legacy-system uncertainty, and possible skill atrophy—but presents them as expert judgment without a named production case, sample, comparison, or measured outcome. The speaker and publisher benefit from attention, even though no direct tool sale is apparent. Its main observations substantially duplicate the stronger AgentSWE and supervision studies, while the claim that code review is ineffective is too broad for the support shown. The transcript makes the opinion inspectable, but it adds too little novel evidence to the selected portfolio; rejection is an editorial choice, not a judgment that the interview is generally unreliable.",
+    "version_id": "v-36b84d40a169e2446f129e9d"
+  },
+  {
+    "decision": "defer",
+    "item_id": "podcast:infoq:5950b2ca18b6b0b75291",
+    "piece_ids": [],
+    "reason": "Psychological safety and team alignment could materially affect small-team adoption, and this is a useful perspective not captured by tool benchmarks. However, the excerpt provides no survey, adoption comparison, named team episode, or other observation linking psychological safety to successful agent use. Its technical claims about overwhelming review volume, junior training, and verification tooling also overlap the other InfoQ interview and accepted workflow evidence. The guest and publisher have attention incentives, though no explicit product result is being sold. Defer until a documented team case, study, or clearly bounded firsthand incident shows how the proposed practices changed reporting, review, defects, or adoption behavior.",
+    "version_id": "v-dfc85ba89acbfb7e4e48eb77"
+  },
+  {
+    "decision": "accept",
+    "item_id": "youtube:9yPyoxlyc5Q",
+    "piece_ids": [
+      "03"
+    ],
+    "reason": "The transcript contains a concrete practitioner demonstration on a named real repository issue: a reusable skill explores the task with a subagent, asks structured questions about selectors and edge cases, and uses issues and worktrees to coordinate execution. That makes the observation useful as a low-cost requirements-clarification tactic. It is still a single creator-reported example with no before/after outcome, defect rate, or evidence that the resulting change was accepted. The creator benefits from attention to a popular skills repository, and the GitHub-hosted event is not independent evidence of Copilot effectiveness. It overlaps the supervision research but supplies an operational example. Use only in Piece 03 as a pilot technique, not a production-readiness result.",
+    "version_id": "v-ab01f07d4890bf0557ad681d"
+  },
+  {
+    "decision": "reject",
+    "item_id": "youtube:hTAWHgQI4xg",
+    "piece_ids": [],
+    "reason": "Spec-driven work and the shift from implementation toward orchestration are audience-relevant themes, but the supporting claims are not inspectable: weeks or months of work allegedly becoming minutes, whole features being delegated, and a pilot running agents for multiple roles lack named tasks, baselines, acceptance criteria, and outcomes. IBM has commercial interests in AI adoption, while the video format also rewards confident, attention-getting generalization. The advice duplicates stronger evidence on requirements, supervision, and held-out verification without adding a reproducible case or novel limitation. It therefore cannot support a production-readiness conclusion or an actionable recommendation.",
+    "version_id": "v-470d183469c7db5d35e05d67"
+  },
+  {
+    "decision": "reject",
+    "item_id": "youtube:7XzjQa8z0uc",
+    "piece_ids": [],
+    "reason": "This is a beginner-oriented walkthrough using a toy cookie-shop game. It can demonstrate interface mechanics such as projects, Git, multiple agents, skills, and cloud handoff, but it provides no production task, team workflow, review outcome, security boundary, or reliability measurement. The creator benefits from tutorial attention, and the demonstration depends on OpenAI’s product claims rather than independently testing them. It is also directly within the policy’s exclusion of beginner prompting and setup tutorials, and it duplicates official Codex capability announcements without adding production evidence.",
+    "version_id": "v-fe38088af4757b05a5b066aa"
+  },
+  {
+    "decision": "accept",
+    "item_id": "youtube:IZXv6a78NDw",
+    "piece_ids": [
+      "01",
+      "03"
+    ],
+    "reason": "The official demonstration credibly establishes workflow scope and release status: GitHub code review is generally available, GitLab support is preview, initial cloud reviews can run automatically, and reviewers can combine PR context with private chat, skills, connectors, custom instructions, and a separate local pass. These are relevant workflow changes for small teams. OpenAI sells Codex, and the video provides no review-accuracy, defect-catch, latency, or human-time comparison; the title’s assertion that review is no longer the bottleneck is therefore unusable. It is distinct from GitHub’s alert-remediation agent, which fixes CodeQL alerts rather than reviewing arbitrary PRs. Piece 01 can report the capability and Piece 03 can propose a measured, human-approved trial.",
+    "version_id": "v-aa6fb499336c3701ec05174c"
+  },
+  {
+    "decision": "accept",
+    "item_id": "youtube:PUBc2G0Tj5E",
+    "piece_ids": [
+      "01",
+      "03"
+    ],
+    "reason": "The video directly demonstrates a newly integrated multi-agent CLI workflow: parallel tasks across projects, status navigation, follow-up messages, conversation forks into worktrees, remote control, activity analytics, and terminal rendering. Worktree isolation and task visibility are relevant to small-team delegation. The evidence is an official vendor demo on toy burrito projects; it does not state rollout scope, quantify reliability, or show merge-quality and conflict outcomes. OpenAI benefits commercially, and this should not be treated as independent production validation. It overlaps general multi-agent tutorials but is the primary capability demonstration. Piece 01 can describe the workflow change; Piece 03 can identify worktree isolation, permission boundaries, and completion quality as local pilot checks.",
+    "version_id": "v-f95ed73f67d6b610264834f4"
+  },
+  {
+    "decision": "defer",
+    "item_id": "youtube:J9NQTYUP6k0",
+    "piece_ids": [],
+    "reason": "The suggested brief—task, guardrails, and definition of done—is relevant, but the headline claim about how the top 1% work and the assertion that plan mode is no longer useful are based on secondhand references to Hacker News and a conference talk. The primary passages, dates, model versions, sample definition, and outcomes are not supplied, and behavior may change across model releases. The creator benefits from attention and packages scattered advice as a trend; it also conflicts with accepted evidence favoring up-front clarification without providing a comparable test. Defer until the primary statements and applicable versions are inspectable or a controlled comparison measures planning versus outcome-based briefing.",
+    "version_id": "v-8bb3472c3858254a3ab9d00e"
+  },
+  {
+    "decision": "defer",
+    "item_id": "feed:arxiv-research-authors:1abee7324728c1791690",
+    "piece_ids": [],
+    "reason": "The trajectory audit and intervention are potentially important: reported shortcut attempts are frequent, network isolation is insufficient, and an independence instruction sharply reduces attempts while reportedly preserving task performance. However, the arXiv identifier indicates a September submission while the supplied publication field is October 15, suggesting a revision or feed date. No version history identifies whether the audit results or intervention are new within the mechanical 30-date window. The authors also benefit academically from motivating exploit-aware evaluation, and LLM-judge validity and exact trajectory counts need inspection. Defer until the original date and revision diff are available; accept only if these findings first appeared inside the window.",
+    "version_id": "v-45f4534cc92ac359acad76b3"
+  },
+  {
+    "decision": "accept",
+    "item_id": "feed:arxiv-research-authors:7e1b631b4402773a85d0",
+    "piece_ids": [
+      "02",
+      "03"
+    ],
+    "reason": "SWE-Nexus presents a novel, inspectable way to construct repository tasks from observed test execution, including counterfactual masking, revalidation of composed scopes, 600 tasks from 105 repositories in six languages, and evaluation of 12 models under three scaffolds. The best one-attempt resolution rate of 37.8% usefully bounds current capability on these generated tasks. The benchmark authors have an incentive to emphasize their method, and traced test coverage is not equivalent to full production intent; repository selection, task difficulty, and per-language results are absent from the excerpt. It complements rather than corroborates requirement-derived AgentSWE. Piece 02 can compare evaluation designs, while Piece 03 can make execution-grounded acceptance and partial scoring watch signals.",
+    "version_id": "v-d626cb5ce8d4fa2b3e4b2074"
+  },
+  {
+    "decision": "reject",
+    "item_id": "feed:arxiv-research-authors:a3006b90b025ce476489",
+    "piece_ids": [],
+    "reason": "The study has substantial empirical detail—130,000 comments, 72 classifiers, reported F1 scores, and a 30-person user study—but it concerns offensive-language moderation in software communities, not the adoption, verification, cost, security, or maintenance of coding agents. Large language models appear only as a future research direction. The authors have the usual incentive to demonstrate their proposed moderation system, and neither its novel results nor its limitations resolve the publication’s central question. It does not duplicate an included coding-agent announcement; it is simply out of scope.",
+    "version_id": "v-4172c5815087cb6aba260466"
+  },
+  {
+    "decision": "defer",
+    "item_id": "feed:arxiv-research-authors:b0eb86463b6611a88d0b",
+    "piece_ids": [],
+    "reason": "The execution-grounded, torch-free verifier and whole-repository migration results would be highly relevant, particularly the gap between high specification pass rates and behavioral equivalence and the reported TWINHARNESS improvement. Yet arXiv identifier 2605 shows that the work originated in May, while the supplied October 15 date appears to be a later revision or feed event. The excerpt does not say which claims, tasks, or results were added during the 30-date window. The benchmark authors also benefit from showing their harness improves performance. Defer pending version history and a revision diff; reconsider if the execution results or harness experiment are demonstrably new, otherwise the item fails freshness despite its quality.",
+    "version_id": "v-cbadc131b54f9c609fb1f48b"
+  },
+  {
+    "decision": "accept",
+    "item_id": "feed:arxiv-research-authors:e81252ca071140d1abb1",
+    "piece_ids": [
+      "02",
+      "03"
+    ],
+    "reason": "Doc2Harness directly tests a neglected production variable: whether models can build the harness around an agent. Its two-stage isolation, frozen candidates, scripted mock model, four observable scoring channels, positive controls, 328 tests, 19 models, and three builds per model provide a comparatively inspectable method. The reported 53.05% best pass rate supports only the bounded conclusion that cross-cutting harness implementation remains difficult. Benchmark authors have an academic incentive to establish novelty, and scripted models plus contract reconstruction do not measure ordinary application development or live-model behavior. It is distinct from AgentSWE’s agent-building commissions and SWE-Nexus task construction. Piece 02 can scrutinize harness claims; Piece 03 can recommend deterministic harness tests and watch failure clusters.",
+    "version_id": "v-04e52f11243b49bafc9d3927"
+  },
+  {
+    "decision": "defer",
+    "item_id": "feed:github:d90685b190262b176e08",
+    "piece_ids": [],
+    "reason": "A dated model deprecation is operationally relevant to teams with pinned workflows, and GitHub is the authoritative source for its own schedule. However, the supplied passage omits the actual list of models after saying the following models will be deprecated; only an exception for Claude Opus 4.8 remains visible. Without the affected names, teams cannot assess exposure or alternatives. GitHub has a commercial interest in moving users to supported models, and this is a maintenance notice rather than evidence of capability. Defer until the complete model list and suggested replacements are captured; then it may warrant a concise Piece 03 migration note.",
+    "version_id": "v-48c771d9cad659bfe55774d1"
+  },
+  {
+    "decision": "accept",
+    "item_id": "feed:github:f6a9ed9af548e96e0a77",
+    "piece_ids": [
+      "01",
+      "02",
+      "03"
+    ],
+    "reason": "This is a consequential, well-bounded availability claim: GitHub’s agent can explore a repository, propose a fix for a default-branch code-scanning alert, rerun CodeQL, iterate, and open a draft PR; the notice also specifies batch limits, policy controls, plan requirements, AI-credit consumption, and Actions cost. GitHub sells the required security and Copilot services. A clean CodeQL rerun shows that the targeted alert closed, not that the patch is exploit-resistant, regression-free, or maintainable; no false-fix or acceptance outcomes are reported. It overlaps Cursor Security Reviewer but represents a separate product and is not corroboration. Piece 01 reports GA, Piece 02 separates validation from correctness, and Piece 03 defines review, regression, budget, and rollback gates.",
+    "version_id": "v-c7fa3f0d4656b8a511da76d6"
+  },
+  {
+    "decision": "accept",
+    "item_id": "feed:infoq:11afb59991f162853855",
+    "piece_ids": [
+      "02",
+      "03"
+    ],
+    "reason": "The item identifies meaningful benchmark changes—long-horizon tasks, agent-based evaluation, continuous scoring across functionality, visual fidelity, regressions, and structural constraints—and reports a useful task boundary: new deterministic transformations appear easier than refactoring, runtime validation, and framework changes. However, InfoQ is summarizing Google’s benchmark, so this is not independent corroboration; Google and participating model providers have incentives around their tools. The excerpt omits the number and distribution of long-horizon tasks, making the 32% pass rate and 80% completion example unsafe to generalize. It complements the research benchmarks with mobile-development tasks. Piece 02 can compare what the scoring captures and misses, while Piece 03 can suggest task-class-specific pilots and runtime checks.",
+    "version_id": "v-0ba58a184ce4146081b2020d"
+  },
+  {
+    "decision": "accept",
+    "item_id": "feed:infoq:37901f78ed2a5174f519",
+    "piece_ids": [
+      "01",
+      "02",
+      "03"
+    ],
+    "reason": "This is a valuable production case because it pairs scale claims with a concrete failure and response. Spotify reportedly grew monthly merged changes from about 8,100 to 17,000, uses agents for fleet maintenance and migrations, and experienced an automated dependency upgrade that passed checks but failed in production, prompting stronger safeguards, rollback capacity, and working-hours scheduling. Merged changes are activity, not accepted quality, and the excerpt does not isolate AI’s causal contribution. InfoQ depends primarily on Spotify’s self-report, while Spotify benefits reputationally; social-media reactions are commentary, not corroboration. Piece 01 shows scaled maintenance automation, Piece 02 exposes the throughput-versus-stability distinction, and Piece 03 supports monitoring, staged rollout, ownership, and rollback practices.",
+    "version_id": "v-0adab8a5a121a93d9b20d967"
+  },
+  {
+    "decision": "accept",
+    "item_id": "feed:infoq:53beeea632eecd42bb0a",
+    "piece_ids": [
+      "01",
+      "02",
+      "03"
+    ],
+    "reason": "The migration is a concrete production example with defined scope and process: more than 800,000 lines were replaced over roughly 14.5 weeks through 128 incremental PRs while releases continued, using compatibility layers, end-to-end tests, compilation, and human review. The reported 5.25-second-to-292-millisecond scenario is specific enough to retain as a vendor-reported measurement, although hardware and run distribution are missing; 87.1% clean cargo checks measure compilation activity, not behavioral correctness. InfoQ’s account depends on GitHub’s self-report, and GitHub benefits from showcasing Copilot; community reactions add concerns, not independent outcomes. Piece 01 covers the capability, Piece 02 examines verification limits, and Piece 03 derives incremental cutover and boundary-testing practices.",
+    "version_id": "v-1d0c46de7ab29e24cb9194da"
+  }
+]
+
+ACCEPTED EVIDENCE CONTENT
+[
+  {
+    "item_id": "feed:arxiv-research-authors:7e1b631b4402773a85d0",
+    "version_id": "v-d626cb5ce8d4fa2b3e4b2074",
+    "publisher_id": "arxiv-research-authors",
+    "kind": "feed",
+    "title": "SWE-Nexus: Automated Composition of Software Engineering Tasks from Test Execution",
+    "url": "https://arxiv.org/abs/2610.20038",
+    "published_at": "2026-10-15T04:00:00Z",
+    "text": "Computer Science > Software Engineering\n\nTitle: SWE-Nexus: Automated Composition of Software Engineering Tasks from Test Execution\n\nAbstract: Historical code changes provide convenient task boundaries, but do not identify which production functions selected tests exercise or support composing validated behaviors beyond a single change. We present SWE-Nexus, a fully automated pipeline that constructs repository-level implementation tasks from test execution. Four construction agents select tests, adapt tracing and evaluation protocols to each repository, and generate behavioral specifications. For each selected test file, tracing records an observed execution footprint of production function bodies. A scope is retained only if all expected scoring points pass in the original repository and masking the traced bodies causes at least one failure or error. Compatible scopes are composed deterministically, with shared functions counted once and every constituent test file revalidated under the complete combined mask. The benchmark contains 600 tasks from 105 repositories across six programming languages, including 116 atomic and 484 composite tasks. We evaluate 12 models under three agent scaffolds. The best configuration resolves 37.8% of tasks in one attempt, and scope-weighted scoring measures partial recovery. SWE-Nexus enables task construction from validated behavior beyond individual historical changes.\n\nCurrent browse context:\n\nReferences & Citations\n\nBibTeX formatted citation\n\nBibliographic and Citation Tools\n\nCode, Data and Media Associated with this Article\n\nRecommenders and Search Tools\n\narXivLabs: experimental projects with community collaborators\n\narXivLabs is a framework that allows collaborators to develop and share new arXiv features directly on our website.\n\nBoth individuals and organizations that work with arXivLabs have embraced and accepted our values of openness, community, excellence, and user data privacy. arXiv is committed to these values and only works with partners that adhere to them.\n\nHave an idea for a project that will add value for arXiv's community? Learn more about arXivLabs .\n",
+    "segments": null
+  },
+  {
+    "item_id": "feed:arxiv-research-authors:e81252ca071140d1abb1",
+    "version_id": "v-04e52f11243b49bafc9d3927",
+    "publisher_id": "arxiv-research-authors",
+    "kind": "feed",
+    "title": "Doc2Harness: Benchmarking LLMs on Long-Horizon Harness Engineering of Coding Agents",
+    "url": "https://arxiv.org/abs/2610.20344",
+    "published_at": "2026-10-15T04:00:00Z",
+    "text": "Computer Science > Software Engineering\n\nTitle: Doc2Harness: Benchmarking LLMs on Long-Horizon Harness Engineering of Coding Agents\n\nAbstract: Agents driven by large language models are increasingly deployed on long-horizon tasks, where they use tools and modify real workspaces. How well they perform depends as much on the harness around the model as on the model itself. Existing benchmarks measure downstream task success under a fixed harness, leaving harness engineering itself unexplored. We propose Doc2Harness, a two-stage benchmark that evaluates long-horizon harness engineering directly. In Stage 1, a build model operating inside a fixed builder harness receives an interface-only contract skeleton and a development document that consolidates behavior across twelve frontier harnesses, and then constructs a complete candidate harness in an isolated container. In Stage 2, the frozen candidate harness runs in containers separate from the construction environment, one per test case, and is driven end to end by a scripted mock model. We score each test case using four observable channels, namely the requests sent to the model, the files on disk, the process exit code, and the command output; positive controls rule out vacuous passes. Across nineteen frontier models, each evaluated with three independent builds on 328 test cases, GPT-6 Astra achieves the highest pass rate at 53.05%, while the weakest model reaches 27.44%, a gap of roughly twenty-six percentage points. Even the strongest model fails nearly half of the test cases, and failures cluster around how cross-cutting functionality is split across modules. To our knowledge, Doc2Harness provides the first deterministic benchmark for measuring long-horizon harness engineering.\n\nCurrent browse context:\n\nReferences & Citations\n\nBibTeX formatted citation\n\nBibliographic and Citation Tools\n\nCode, Data and Media Associated with this Article\n\nRecommenders and Search Tools\n\narXivLabs: experimental projects with community collaborators\n\narXivLabs is a framework that allows collaborators to develop and share new arXiv features directly on our website.\n\nBoth individuals and organizations that work with arXivLabs have embraced and accepted our values of openness, community, excellence, and user data privacy. arXiv is committed to these values and only works with partners that adhere to them.\n\nHave an idea for a project that will add value for arXiv's community? Learn more about arXivLabs .\n",
+    "segments": null
+  },
+  {
+    "item_id": "feed:cursor:301c1497d14b1ed17100",
+    "version_id": "v-9e5e5fac9d48014feb9c5bfc",
+    "publisher_id": "cursor",
+    "kind": "feed",
+    "title": "Bots for the last mile",
+    "url": "https://cursor.com/blog/rollouts-and-security-reviewer",
+    "published_at": "2026-09-23T00:00:00Z",
+    "text": "Today we're releasing software development bots that help you get safe, reliable code into production faster.\n\nRollouts watches a change from PR to production, flags regressions, and acts to restore a healthy state.\n\nSecurity Reviewer finds and fixes security issues in your codebase.\n\n# Why we built these\n\nWriting code is no longer the slow part. What hasn't sped up is everything after the PR goes up: making sure code is secure, watching the deploy, deciding whether a latency bump is real, figuring out which of eleven changes broke checkout.\n\nThat work is hard, repetitive, and needs a lot of context. Sounds like the type of work that bots should be doing!\n\nWe've said we're building toward self-driving codebases. Rollouts and Security Review autonomously handle common tasks every software team wishes they had more expertise and time to do.\n\nRollouts tracks a change from the moment the PR opens to the moment you're confident it works in production.\n\nConnect source control, your deploy system, and your telemetry (Datadog, Grafana, Honeycomb, or wherever your metrics and traces live). Before merge, Rollouts reads the diff and writes a monitoring plan: the risks it sees, the effects the change is supposed to have, and the places your instrumentation can't tell you whether it worked. Edit the plan if it's missing something.\n\nAfter deploy, Rollouts compares the signals in the plan against the pre-deploy baseline. When it finds a regression, it tells you which change it suspects and what it plans to do. Depending on how you've configured it, that's a ping to the author, a paused progressive rollout, or a revert PR waiting for approval.\n\nThree things it does well today:\n\nIt catches regressions confined to one endpoint in one region, before a global alert would fire\n\nIt tells intended effects apart from regressions, so a deliberate spike doesn't page anyone\n\nIt flags missing instrumentation before merge, which is the most common reason a bad change goes unnoticed\n\nComing soon: feature flag integration so Rollouts can ramp and unramp traffic directly, and awareness of release trains and deploy freezes.\n\n# Security Reviewer\n\nSecurity Reviewer runs on every PR, reads the change in the context of the whole codebase, and reports vulnerabilities with an explanation and a proposed fix.\n\nStatic analysis pattern-matches: it flags every string concatenation near a SQL call and misses the authorization check that stopped running after a refactor. Security Review reads code the way a security engineer does: where does user input enter, where does it end up, what does it pass through on the way.\n\nOut of the box it looks for:\n\nInjection across SQL, command, template, and LDAP surfaces\n\nMissing or broken authentication and authorization on new and changed routes\n\nSecrets and credentials committed to source\n\nUnsafe deserialization and unvalidated redirects\n\nDependency changes that pull in known vulnerabilities\n\nInsecure defaults in infrastructure and config\n\nEach finding has a severity, an attack path, and a one-click fix.\n\n# Get started\n\nRollouts and Security Reviewer are available today on Teams and Enterprise plans. Enable either bot from the automations tab to get started.\n\nCloud agents start 3x faster with builds\n\nBugbot is now over 3x faster, 22% cheaper, and finds 10% more bugs\n\nMeet the new Cursor\n\nToday we're releasing software development bots that help you get safe, reliable code into production faster.\n\nRollouts watches a change from PR to production, flags regressions, and acts to restore a healthy state.\n\nSecurity Reviewer finds and fixes security issues in your codebase.\n\n# Why we built these\n\nWriting code is no longer the slow part. What hasn't sped up is everything after the PR goes up: making sure code is secure, watching the deploy, deciding whether a latency bump is real, figuring out which of eleven changes broke checkout.\n\nThat work is hard, repetitive, and needs a lot of context. Sounds like the type of work that bots should be doing!\n\nWe've said we're building toward self-driving codebases. Rollouts and Security Review autonomously handle common tasks every software team wishes they had more expertise and time to do.\n\nRollouts tracks a change from the moment the PR opens to the moment you're confident it works in production.\n\nConnect source control, your deploy system, and your telemetry (Datadog, Grafana, Honeycomb, or wherever your metrics and traces live). Before merge, Rollouts reads the diff and writes a monitoring plan: the risks it sees, the effects the change is supposed to have, and the places your instrumentation can't tell you whether it worked. Edit the plan if it's missing something.\n\nAfter deploy, Rollouts compares the signals in the plan against the pre-deploy baseline. When it finds a regression, it tells you which change it suspects and what it plans to do. Depending on how you've configured it, that's a ping to the author, a paused progressive rollout, or a revert PR waiting for approval.\n\nThree things it does well today:\n\nIt catches regressions confined to one endpoint in one region, before a global alert would fire\n\nIt tells intended effects apart from regressions, so a deliberate spike doesn't page anyone\n\nIt flags missing instrumentation before merge, which is the most common reason a bad change goes unnoticed\n\nComing soon: feature flag integration so Rollouts can ramp and unramp traffic directly, and awareness of release trains and deploy freezes.\n\n# Security Reviewer\n\nSecurity Reviewer runs on every PR, reads the change in the context of the whole codebase, and reports vulnerabilities with an explanation and a proposed fix.\n\nStatic analysis pattern-matches: it flags every string concatenation near a SQL call and misses the authorization check that stopped running after a refactor. Security Review reads code the way a security engineer does: where does user input enter, where does it end up, what does it pass through on the way.\n\nOut of the box it looks for:\n\nInjection across SQL, command, template, and LDAP surfaces\n\nMissing or broken authentication and authorization on new and changed routes\n\nSecrets and credentials committed to source\n\nUnsafe deserialization and unvalidated redirects\n\nDependency changes that pull in known vulnerabilities\n\nInsecure defaults in infrastructure and config\n\nEach finding has a severity, an attack path, and a one-click fix.\n\n# Get started\n\nRollouts and Security Reviewer are available today on Teams and Enterprise plans. Enable either bot from the automations tab to get started.\n\nCloud agents start 3x faster with builds\n\nBugbot is now over 3x faster, 22% cheaper, and finds 10% more bugs\n\nMeet the new Cursor\n",
+    "segments": null
+  },
+  {
+    "item_id": "feed:cursor:84d2e8f0655374a11ab2",
+    "version_id": "v-5fed8f79222f91b61985792d",
+    "publisher_id": "cursor",
+    "kind": "feed",
+    "title": "Improved token efficiency for longer agent runs",
+    "url": "https://cursor.com/blog/improved-token-efficiency",
+    "published_at": "2026-09-23T00:00:00Z",
+    "text": "As agents have matured and learned to tackle more ambitious tasks, token spend has shifted. Agents now work for longer and carry more context from one step to the next, making the way we assemble and manage that context increasingly important.\n\nWhere agent inference spend goes\n\nProduction traffic · width = share of total spend · shade = billing type\n\nWhere agent inference spend goes\n\nProduction traffic · width = share of total spend · shade = billing type\n\nWhere agent inference spend goes\n\nProduction traffic · width = share of total spend · shade = billing type\n\nNotes: System & tool defs includes compaction summaries. User text includes manually attached skills. Skills & plugins includes skill descriptions, MCP tool descriptions, and rules that go in static context.\n\nOver the past few months we've responded to this shift by improving the efficiency of Cursor's agent harness. The harness gives us direct control over how each request is assembled, how context is reused, and when work is divided across agents. Changes across each of these layers reduced token costs for users by 7% without reducing agent quality.\n\n# Trimming the system prompt\n\nEvery agent turn includes context supplied by Cursor before the model begins working. This includes the system prompt and definitions for the tools the agent can use. Because this context is included throughout a conversation, it had become one of the largest sources of spend that we fully control.\n\nWhen models were less capable, we had to spell out instructions for tool usage, task management, and code-change workflows. We also had to guard against strange behaviors like extremely long hash dumps, binary output, and emojis.\n\nAs models improved, much of that direction became unnecessary. Instead of long lists of \"DO NOT do this,\" \"You must,\" or \"Important\" instructions, we could simply define how a tool behaves and models would generally comply. This was true across model families, allowing us to trim roughly 66% of our system prompt.\n\nOver time, we continue to add and remove instructions as new models require new guidance, which then flows into the training of future models. Leveraging A/B tests on a large user base is crucial to effectively optimizing the harness for real traffic. While evals can be a fast and useful proxy, they often represent \"hard\" problems and don't properly reflect the true distribution of user requests.\n\n# Loading tools only when needed\n\nThe system prompt is only one part of the context Cursor supplies on every turn. Another is tool definitions, which had grown dramatically over the course of the year as we added more powerful capabilities to the Cursor agent, including background shell monitoring, cloud subagents, and more reliable access to web content. Most of these tools are important, but each is needed in fewer than 20% of conversations.\n\nThat created an opportunity to improve efficiency by keeping tools available without including their full definitions in every request. We'd solved a similar problem earlier this year when we moved MCP tools into dynamic context, loading them only when needed. This reduced total tokens by 46.9% across sessions that called an MCP tool.\n\nWe have now applied the same technique to our own built-in tools.\n\nTo decide which tools to keep in static context, we A/B tested several configurations based on how often each tool was used and whether models needed to see it from the start. We tracked token usage, cost, latency, tool-call errors, and overall agent usage to make sure the savings did not degrade quality.\n\nMost commonly invoked tools\n\nShare of agent conversations invoking each tool at least once\n\nMost commonly invoked tools\n\nShare of agent conversations invoking each tool at least once\n\nMost commonly invoked tools\n\nShare of agent conversations invoking each tool at least once\n\nUltimately, we kept the high-frequency tools for reading, searching, editing, and using the shell in static context. We also retained ask_question , which some models tended to hallucinate calls for, and tools that are crucial to specific product flows, such as create_plan in Plan Mode. The remaining tools now load when the agent needs them.\n\nOffloading built-in tools cut static-context description tokens by 60%\n\nKept in static context\n\nOffloaded to dynamic context\n\nOffloading built-in tools cut static-context description tokens by 60%\n\nKept in static context\n\nOffloaded to dynamic context\n\nOffloading built-in tools cut static-context description tokens by 60%\n\nKept in static context\n\nOffloaded to dynamic context\n\n# Improving cache reuse\n\nAfter reducing the amount of static context in each request, we improved how effectively repeated context could be cached across turns.\n\nEvery agent turn resends a long request containing tools, system instructions, setup, and the conversation so far. Much of the beginning stays the same from one turn to the next, while the conversation at the end continues to grow.\n\nPrompt caching allows the model provider to reuse that unchanged prefix. However, caching configurability can vary by provider. Before GPT-5.6, the cache boundary was determined automatically based on the latest request. Even though tools and system instructions rarely changed, they were not cleanly marked as reusable on their own.\n\nSince GPT-5.6, the OpenAI API allows clients to mark explicit cache breakpoints alongside its default implicit caching. We now place breakpoints after stable layers of the request and before the growing conversation, allowing later turns to reuse more of the unchanged prefix.\n\nBreakpoints only help if the prefix itself stays stable, so we also tightened what sits at the front of each request. We did this by reserving tools and system instructions for content that rarely changes, and by moving more variable setup past the cache boundaries into our \"phantom user message.\" This holds user- and request-specific context like skills, subagents, and environment info.\n\nThese changes reduced the rate of cold cache misses by 20%.\n\n# Compressing file reads\n\nAnother large source of token spend is the context an agent adds as it works, much of which comes from reading files.\n\nCursor's agent reads files through a Read tool, which traditionally numbered every line because models are not good at counting lines on their own and need to cite specific sections for the user.\n\nA single line number uses only around three to five tokens, but when an agent reads tens of thousands of lines during a session, numbering every one adds a meaningful amount of context.\n\nWe reduced that overhead by including line numbers only on every tenth line. This is still frequent enough for models to cite code properly, and the change reduced cache-read tokens by 1.6% with no reduction in quality.\n\n# Using subagents strategically\n\nLonger agent runs create more opportunities to delegate work to subagents. This can reduce token spend because each subagent typically starts with a fresh context window rather than carrying the parent agent's full conversation. Once it reports its results, the parent can continue without carrying the subagent's full working context.\n\nThis kind of context isolation between agents and subagents does carry a coordination tax, though, because agents that do not share context can duplicate work or pursue tasks that are no longer necessary.\n\nWe made two changes to capture the efficiency benefits without adding unnecessary coordination. First, we removed instructions that strongly encouraged agents to use subagents for codebase exploration. As subagents became more prevalent in training data and researchers incorporated them into post-training, models learned this pattern natively. Removing the extra prompting produced more balanced subagent usage.\n\nWe also tightened how subagents select models. Cursor can spawn subagents using any of our available models, which makes it possible to shore up blind spots across models or pair an expensive planning model with a cheaper one for implementation. We updated the tool arguments so agents choose a different model only when directed by the user or the harness.\n\n# Continuing to improve harness efficiency\n\nWe'll continue measuring how context accumulates across longer runs and testing where the harness can reduce repeated processing without affecting agent quality. Over time, we expect this will allow token use to grow far more slowly than the amount of work agents can complete. We've also taken these learnings to Grok Bot, where we're working to optimize its unique harness so that users can accomplish the most work at the lowest cost.\n\nHow we set up our cloud agent environment\n\nWhat we’ve learned building cloud agents\n\nIntroducing Grok 4.6\n\nAs agents have matured and learned to tackle more ambitious tasks, token spend has shifted. Agents now work for longer and carry more context from one step to the next, making the way we assemble and manage that context increasingly important.\n\nWhere agent inference spend goes\n\nProduction traffic · width = share of total spend · shade = billing type\n\nWhere agent inference spend goes\n\nProduction traffic · width = share of total spend · shade = billing type\n\nWhere agent inference spend goes\n\nProduction traffic · width = share of total spend · shade = billing type\n\nNotes: System & tool defs includes compaction summaries. User text includes manually attached skills. Skills & plugins includes skill descriptions, MCP tool descriptions, and rules that go in static context.\n\nOver the past few months we've responded to this shift by improving the efficiency of Cursor's agent harness. The harness gives us direct control over how each request is assembled, how context is reused, and when work is divided across agents. Changes across each of these layers reduced token costs for users by 7% without reducing agent quality.\n\n# Trimming the system prompt\n\nEvery agent turn includes context supplied by Cursor before the model begins working. This includes the system prompt and definitions for the tools the agent can use. Because this context is included throughout a conversation, it had become one of the largest sources of spend that we fully control.\n\nWhen models were less capable, we had to spell out instructions for tool usage, task management, and code-change workflows. We also had to guard against strange behaviors like extremely long hash dumps, binary output, and emojis.\n\nAs models improved, much of that direction became unnecessary. Instead of long lists of \"DO NOT do this,\" \"You must,\" or \"Important\" instructions, we could simply define how a tool behaves and models would generally comply. This was true across model families, allowing us to trim roughly 66% of our system prompt.\n\nOver time, we continue to add and remove instructions as new models require new guidance, which then flows into the training of future models. Leveraging A/B tests on a large user base is crucial to effectively optimizing the harness for real traffic. While evals can be a fast and useful proxy, they often represent \"hard\" problems and don't properly reflect the true distribution of user requests.\n\n# Loading tools only when needed\n\nThe system prompt is only one part of the context Cursor supplies on every turn. Another is tool definitions, which had grown dramatically over the course of the year as we added more powerful capabilities to the Cursor agent, including background shell monitoring, cloud subagents, and more reliable access to web content. Most of these tools are important, but each is needed in fewer than 20% of conversations.\n\nThat created an opportunity to improve efficiency by keeping tools available without including their full definitions in every request. We'd solved a similar problem earlier this year when we moved MCP tools into dynamic context, loading them only when needed. This reduced total tokens by 46.9% across sessions that called an MCP tool.\n\nWe have now applied the same technique to our own built-in tools.\n\nTo decide which tool",
+    "segments": null
+  },
+  {
+    "item_id": "feed:github:f6a9ed9af548e96e0a77",
+    "version_id": "v-c7fa3f0d4656b8a511da76d6",
+    "publisher_id": "github",
+    "kind": "feed",
+    "title": "Agentic autofix for code scanning alerts general availability",
+    "url": "https://github.blog/changelog/2026-10-15-agentic-autofix-for-code-scanning-alerts-general-availability",
+    "published_at": "2026-10-15T13:49:20Z",
+    "text": "Agentic autofix for code scanning alerts is now generally available. It remediates alerts by working across your codebase the way a developer would: it explores relevant files, proposes a fix, and reruns CodeQL to confirm the fix closes the alert before opening a pull request for your review. Agentic autofix is available to GitHub Code Security and GitHub Advanced Security customers on GitHub Enterprise Cloud, including GitHub Enterprise Cloud with data residency.\n\nHow it works\n\nWhen you assign a code scanning alert to Copilot, it:\n\nExplores relevant files across your codebase.\n\nGenerates a proposed fix.\n\nValidates the fix works by rerunning CodeQL.\n\nIterates if needed, then opens a draft pull request ready for your review.\n\nThe pull request includes a summary of the fix, why it closes the alert, and the validation steps Copilot took to confirm that it works. When the pull request containing the fix is ready, you can instruct Copilot to make further changes to it by commenting on the pull request or interacting with the session in the Agents tab of your repository.\n\nHow to use it\n\nWhen enabled, agentic autofix replaces the free Generate Fix option on individual code scanning alerts with an Assign to Copilot button.\n\nYou can use agentic autofix:\n\nFrom any code scanning alert on the repository’s default branch, by assigning the alert to Copilot.\n\nIn the list of security alerts in your repository or security campaign, by selecting up to 25 alerts for Copilot to fix together in a single pull request.\n\nVia the Update a Code Scanning Alert REST API by setting assignees to [\"copilot-swe-agent[bot]\"] .\n\nAgentic autofix supports code scanning alerts on the repository’s default branch. Alerts detected only on pull requests or other branches cannot be assigned to Copilot.\n\nAgentic autofix requires an enterprise administrator to enable access to it via the new “Agentic autofix” policy in Advanced Security policies.\n\nOnce the policy is enabled by an enterprise administrator, an organization or repository administrator can turn on agentic autofix in the Code Security settings for the organization or the repository.\n\nAccess also requires a Copilot billing method to be defined.\n\nAgentic autofix for code scanning alerts consumes AI Credits from your Code Security budget and GitHub Actions minutes. AI Credit usage will be displayed in the “AI usage” section of enterprise billing and licensing as the “Advanced Security” product. You can also set SKU level budgets for Code Security AI credits. Learn more about Copilot usage-based billing .\n\nLearn more about agentic autofix in the documentation .\n\nJoin the discussion within the GitHub Community .\n\nSubscribe to our developer newsletter\n\nDiscover tips, technical guides, and best practices in our biweekly newsletter just for devs.\n",
+    "segments": null
+  },
+  {
+    "item_id": "feed:independent-research-authors:258392c93310baab1471",
+    "version_id": "v-b8c088105e97e9e6f3ce9ed9",
+    "publisher_id": "independent-research-authors",
+    "kind": "feed",
+    "title": "AgentSWE: Can Coding Agents Build the Agent You Actually Want?",
+    "url": "https://arxiv.org/html/2610.13361",
+    "published_at": "2026-10-09T10:35:27Z",
+    "text": "AgentSWE: Can Coding Agents Build the Agent You Actually Want?\n\nAs the production of software passes into the hands of software itself, coding agents are increasingly commissioned to build agents fitted to their users’ own workflows. This delegation carries a quiet assumption, that the delivered agent will faithfully serve the requirement it was built for, rather than merely appear to. No existing benchmark tests that assumption. We introduce AgentSWE , a benchmark for agent software engineering spanning three stages of the agent development lifecycle: Creation of a complete agent from a natural-language requirement, Editing of production agent codebases, and Optimization toward a measurable target. Each of its 25 tasks is framed as a commission rather than an exam: the builder iterates against a handful of illustrative cases, while acceptance exercises the frozen submission on held-out cases designed to span the full requirement, grading behavior against requirement-derived rubrics under hard pass/fail gates or, for Optimization, against the source benchmark’s own objective. Evaluating a range of coding agents across models and harnesses, we find that none comes close to delivering what a requirement asks for: the gap between what a builder demonstrates and what it delivers is the norm, not the corner case. An accompanying empirical analysis of the failure trajectories identifies recurring failure modes, among them overfitting to the visible cases, hollow runtimes behind code that looks complete, and unsupported claims of completion, each a signal by which coding agents can learn to build the agents they are asked for.\n\nCoding agents such as Claude Code ( Anthropic, 2026 ) and Codex ( OpenAI, 2026a ) now carry substantial engineering workloads ( Chen et al., 2021 ; Yang et al., 2024b ; Wang et al., 2025b ) , and many of their users are not engineers: they describe what they need and delegate the rest ( Hitzig et al., 2026 ) . Increasingly, what they delegate is the building of an agent, a program that wraps a model, tools, and state around one recurring job so that the job runs on a fixed runtime, at a fixed cost, without a coding agent attending each run. Delegation of this kind rests on trust: that a coding agent, handed a requirement in natural language, will deliver the agent its user intends rather than one that merely appears to comply. Whether that trust is warranted is what this paper measures.\n\nAgent development spans three stages. It begins with creation , where a natural-language requirement must become a working system; continues through editing , where new capabilities join a living codebase without unsettling what already works; and matures into optimization , where the agent is pushed toward an explicit target, be it a public leaderboard or a production workload. Handing this lifecycle to coding agents invites failures subtler than broken code: an agent that passes visible examples yet misses the intent behind them ( Liu et al., 2023 ; Zhao et al., 2026a ; Lodkaew et al., 2026 ) ; a tool registered but never invoked ( Soni, 2026 ; Fan et al., 2026 ) ; a goal that drifts over a long horizon ( Arike et al., 2025 ; Menon et al., 2026 ) ; a report citing evidence no source contains ( Onweller et al., 2026 ; Rao et al., 2026 ) . Such failures are not hypothetical; they are the present condition of agent-built agents ( Raj et al., 2026 ; Naik et al., 2026 ) . The questions are how far coding agents compromise the requirements they are handed, on which capabilities, and for what reasons.\n\nThese questions outrun the instruments we have. SWE-bench and its descendants grade the repair of conventional software against a reference patch or test suite ( Jimenez et al., 2024 ; Chan et al., 2024 ) ; NL2Repo-Bench commissions whole repositories from requirement documents ( Ding et al., 2025 ) ; Paper2Code and PaperBench rebuild research implementations checked against the papers they reproduce ( Seo et al., 2025 ; Starace et al., 2025 ) . Each judges ordinary code against an answer known in advance. A commissioned agent wraps a stochastic policy around tools, answers to a requirement that has no reference solution, and keeps changing after delivery. Benchmarks that do evaluate agents, from AgentBench onward ( Liu et al., 2024 ) , examine a finished agent and ask how well it performs; none asks whether a coding agent could have built it. Work on agents that design or improve other agents ( Hu et al., 2025 ; Mishra et al., 2026 ) comes closest, but it measures how far a search procedure or a meta-agent can raise a benchmark score, not whether a general coding agent delivers the agent a requirement describes ( Section 2 ). Between judging built software and judging finished agents lies a step that current suites leave unmeasured: building the agent that a requirement asks for.\n\nWe introduce AgentSWE , a benchmark that turns faithful delegation from anecdote into measurement ( Figure 1 ) through three commitments. The first is to measure the whole lifecycle, through twenty-five tasks spanning all three stages. Ten Creation tasks commission a complete agent from a natural-language requirement, over workloads from GUI automation to formal theorem proving, each scoped against a mature open-source system; ten Editing tasks ask for new capabilities in the pinned codebase of a production agent such as OpenHands or Aider, capabilities that cut through crash recovery, permission fencing, and transactional state; and five Optimization tasks set a working agent against a measurable target. The second commitment is that evaluation should mirror the delegation it studies. Each task is framed as a commission: the builder sees only what a customer could provide, while acceptance also tests the stated clauses its examples leave out. The builder develops against the requirement and a few illustrative cases; held-out cases then test the frozen delivery in isolation. The third commitment follows from the absence of a prescribed reference implementation: every Creation and Editing execution is graded against a rubric derived from the requirement itself, and hard gates assign zero to invalid executions and inapplicable patches.\n\nWe put this instrument to work on five models as builders in the Codex harness, together with further pairings of harness and model. The verdict is sobering. The strongest builders average 19.1 on Creation and 31.6 on Editing, and in Optimization no builder closes more than 5 % of the remaining gap to the target on average, and only 13 of the 25 runs score above their starter. Creation runs that end development at 90 or above deliver agents averaging 9.9 on held-out cases. The gap between what a builder demonstrates and what it delivers is not the corner case of agent software engineering; it is the norm. The builders’ trajectories reveal recurring failures. Builders overfit to the visible development cases, and the delivery fails on the clauses those cases leave out; they ship hollow runtimes, code that reads as complete but does no work when run; and both builders and the agents they deliver claim completions that their own records contradict. Each of these modes names a habit that the next generation of coding agents can be built and trained to avoid. More development cases, a prescribed design, an instruction to test, and a longer case budget shift the scores but leave held-out Result low under every condition.\n\nIn sum, this paper makes three contributions. First, we formalize agent software engineering as a measurable problem, in which a builder must satisfy a requirement it can probe only through limited development feedback. Second, we deliver AgentSWE, twenty-five commissions whose acceptance executes the delivered agent on held-out cases and grades each run with a requirement-derived rubric or a native objective, and we evaluate various harness–model pairings against it. Third, we contribute an empirical analysis of the failure trajectories, which identifies recurring failure modes of coding agents and turns each into a direction for the next generation of coding agents.\n\n2 Related Work\n\nAgents that build and optimize agents.\n\nResearch on automated agent development has expanded both the scope of what can be designed and the stage at which adaptation occurs. Early approaches generate task-specific roles, tools, and collaboration patterns from task descriptions or seed agents ( Chen et al., 2024 ; Yuan et al., 2025 ; Tang et al., 2026 ) . Subsequent work formulates agent development as optimization, first over textual components such as instructions and demonstrations ( Yang et al., 2024a ; Khattab et al., 2023 ; Agrawal et al., 2025 ) , and then over broader design spaces containing agent modules, communication structures, and executable workflows ( Zhuge et al., 2024 ; Shang et al., 2025 ; Zhang et al., 2025c ; Zhang et al., 2025a ; Zhou et al., 2025 ) . This paradigm has further expanded to searching over complete code-defined agents and multi-agent scaffolds ( Hu et al., 2025 ; Rosser & Foerster, 2025 ) .\n\nA related line relaxes the assumption that the improvement procedure itself remains fixed. Initial systems support self-referential modification of an improver or agent logic ( Zelikman et al., 2023 ; Yin et al., 2025 ) , while later approaches expose complete implementations, harnesses, and meta-level improvement mechanisms to revision ( Robeyns et al., 2025 ; Zhang et al., 2025b ; Wang et al., 2025a ; Zhang et al., 2026b ; Lee et al., 2026 ; Hebbar et al., 2026 ) . Arbor ( Jin et al., 2026 ) carries hypotheses and evidence across long-horizon artifact optimization, whereas JIT-Agent ( Zhang et al., 2026a ) synthesizes task-conditioned executable harnesses at inference time. Together, these developments establish agent construction and optimization as a capability in its own right. AgentSWE makes this capability the object of evaluation, measuring whether general-purpose coding agents can create, modify, and optimize agents from heterogeneous user requirements.\n\nBenchmarks for agent construction.\n\nMost agent benchmarks hold the agent implementation fixed and evaluate its performance within a given environment. Recent benchmarks move beyond task completion by asking agents to construct or iteratively improve more complex artifacts. WorFBench ( Qiao et al., 2025 ) evaluates generated workflow structures, while benchmarks for machine-learning experimentation and research engineering evaluate improvement of executable research artifacts ( Huang et al., 2024 ; Nathani et al., 2025 ; Wijk et al., 2025 ) . AI4AI-Bench ( Chi et al., 2026 ) extends this setting to the redesign of model-training algorithms. Other evaluations isolate specific improvement mechanisms: SE-Bench ( Yuan et al., 2026 ) studies knowledge internalization, whereas OPT-BENCH ( Li et al., 2026 ) measures feedback-driven solution refinement. These benchmarks evaluate workflows, research artifacts, or optimized solutions rather than deployable agents.\n\nClosest to our setting, AIE-Bench ( Mishra et al., 2026 ) evaluates whether a meta-agent can improve a pinned target-agent scaffold under controlled mutation boundaries and trial budgets. AgentSWE extends this setting to the full agent-development lifecycle: creating agents from natural-language commissions, modifying existing agent codebases without regression and optimizing working agents toward measurable objectives. By freezing submissions and evaluating their behavior on held-out cases, AgentSWE measures whether coding agents can deliver the agents users actually request.\n\n3 Problem Formulation\n\nA commission prescribes no reference implementation, so we define the requirement, the delivered agent, the builder, and the fidelity of a delivery through observable behavior alone.\n\nA commission begins with a natural-language requirement q = ( g , ℐ , 𝒞 , ℛ ) q=(g,\\mathcal{I},\\mathcal{C},\\mathcal{R}) , which every AgentSWE task publishes in four pa",
+    "segments": null
+  },
+  {
+    "item_id": "feed:independent-research-authors:337cbc4cedf5cfb1d758",
+    "version_id": "v-2c06c266b5857581b3f3c253",
+    "publisher_id": "independent-research-authors",
+    "kind": "feed",
+    "title": "Why Software Engineering Is Indispensable in the Age of Coding Agents",
+    "url": "https://arxiv.org/html/2610.10226",
+    "published_at": "2026-10-07T15:17:37Z",
+    "text": "Why Software Engineering Is Indispensable in the Age of Coding Agents\n\nCan AI make Software Engineering (SE) — the discipline — obsolete? And can it make software engineers — the professionals — redundant? This paper argues that the rise of capable AI coding agents makes SE and software engineers essential, not obsolete: the missing foundation without which AI-assisted development produces misleadingly plausible, unverifiable, and ultimately untrustworthy software. Three structural properties of large language models (probabilistic generation, agnosticism, and semantic statelessness) create a structural vacuum that no amount of training can eliminate. Filling it requires four knowledge levers: methodological knowledge, domain knowledge, design choices, and process choices. All four must be reified as persistent artifacts, and each requires the software engineer as methodologist, mediator, and custodian.\n\n1. What We See\n\nThe advent of coding agents has raised legitimate questions about the fate of Software Engineering and software engineers; in these pages, Welsh went as far as announcing The End of Programming . To answer them, one may assess empirical data or practitioners’ judgment. The first evidence to enable careful judgment is now emerging: field observation and professional practice, randomized trials, cross-country firm surveys.\n\nMeyer ( 9 ) , writing in these pages, frames the current moment. He distinguishes three software categories ( acute , business , casual ) and argues that vibe coding — Karpathy’s term for code written by those who “fully give in to the vibes” rather than engineering it — works for the third but not for the first two, where correctness is paramount and coding is only 10–20% of project cost. He names the hallucination loop : a plausible suggestion that sends the developer down a path that will not close. His conclusion: for professional software, AI-assisted development must be paired with formal specification and verification, the move from probable to provable .\n\nThe empirical picture is not uniform. Cui et al. ( 4 ) found in field experiments a 26% increase in completed tasks across 4,867 developers at Microsoft, Accenture, and a Fortune 100 firm, with the largest gains among less experienced developers; a Science study of 160,097 GitHub developers finds the opposite, with gains concentrated among senior developers and no significant effect for early-career ones ( 5 ) . Becker et al. ( 3 ) ran a randomized controlled trial with sixteen experienced open-source developers on 246 real tasks in their own mature repositories: tasks on which AI was allowed took 19% longer, and afterward developers believed AI had helped; a 2026 follow-up by the same team considers speedups now likely, but deems its new measurements unreliable. Xu et al. ( 10 ) show where the cost lands: in a difference-in-differences study of 2,755 open-source repositories, lines of code added rose 17.7% after Copilot introduction, but core contributors — those with the deepest ownership of the codebase — saw a 19% decline in original code output while reviewing 6.5% more code and absorbing the added rework. Two difference-in-differences studies presented at MSR 2026, one on an AI IDE and one on coding agents, find the same pattern: quality costs that persist even when velocity gains fade, with static-analysis warnings up 30% and about 18%, and code complexity up 41% and about 39% ( 1 , 7 ) . Time saved on generation is recaptured on supervision, spent on output that looks plausible but requires an external reference for correctness. That reference lives with the developer, not with the tool.\n\nHuang et al. ( 8 ) studied thirteen developers in the field and surveyed ninety-nine more. A distinctive divide has emerged: some developers practice vibe coding, treating interaction flow as evidence of correctness. Professionals do not: they plan, validate output, and retain architectural control, treating the agent as an executor. Where AI-assisted development succeeds, something structured is compensating for what the agent alone cannot do.\n\nAt scale, the Stack Overflow 2026 Developer Survey — 30,903 respondents across 169 countries — captures the same ambivalence: 83% use AI tools at work, yet only 6.6% trust their output for important work decisions, while 48% trust it when they can easily verify it.\n\nAI coding agents have a structural vacuum: on their own, they lack what they need to succeed. The vacuum follows from what AI tools structurally are; the nature of software makes it consequential, and the state of SE decides whether it is filled. Software is intangible and, as Balzer ( 2 ) observed, “rarely consistent”: requirements evolve, knowledge arrives incrementally, practices carry inconsistencies that are features, not errors. Classical engineering converges on a finished artifact; software never settles, its substrate constantly renegotiated. SE is still young — the NATO Conference dating from 1968 — and applied unevenly. In sixty years that discipline has moved toward the classical engineering disciplines: formal methods, safety standards (DO-178C, IEC 62304, ISO 26262), Empirical Software Engineering, Model-Based Systems Engineering, product line engineering. Yet without it, mature or not, AI tools cannot resolve the problems the evidence lays bare. The two reinforce each other: SE supplies what AI lacks, and AI accelerates SE’s systematic application and improvement.\n\n2. Why: The Structural Vacuum\n\nThe evidence and the practitioner voice reviewed in Section 1 reveal the vacuum; they do not explain it. To do so, we adopt a logical and epistemological approach: examining what AI coding agents structurally are and, from that structure, deriving the roles human knowledge and judgment must necessarily play. The vacuum is not a performance gap: it is a structural condition.\n\nThree properties of a large language model define how it operates and, together, constrain what it can and cannot do without external support.\n\nProbabilistic generation. An LLM does not compute: it generates. Its output is a navigation over a probability distribution conditioned on training and context. And no digital artifact, generated or otherwise, can be validated against the world it represents without a reference external to the model.\n\nAgnosticism. An LLM has absorbed patterns from vast corpora of code and text; three domains resist that absorption. Each has a reducible surface layer and a structurally irreducible core.\n\nMethodological agnosticism. The reducible surface is SE principles — specification methods, architectural styles, testing frameworks — which specialized models can absorb. The irreducible core is evaluative judgment: determining whether this specification for this system meets the bar requires a domain-grounded reference the model cannot generate. Asking the model to judge that adequacy itself does not help: it lacks that reference, which is difficult, if not impossible, to reify precisely each time.\n\nDomain agnosticism. The reducible surface is general domain knowledge (e.g., clinical constraints, regulatory requirements) accessible through RAG, fine-tuning, or domain training. The irreducible core is organization-specific knowledge: continuously renegotiated, semantically defined by the practice it describes, and permanently inconsistent in Balzer’s sense. It can only be managed, never eliminated, and requires ongoing human mediation.\n\nEvolutionary agnosticism. The reducible surface is general evolution patterns — what design choices constrain future change, what qualities matter in a given domain — in principle trainable. The irreducible core is the project-specific trajectory: what this system must become, given this organization’s constraints, does not exist until the software engineer reasons it into existence. This is a structural absence, not a deficiency of attention.\n\nSemantic statelessness. Within a session, the model retains a working footprint: the context window gives it access to what was said, decided, and produced. Modern systems now add persistent memory across sessions, but as storage or log of prior exchanges — not as a semantic model of accumulated know-how. The architectural decision made last Tuesday, the domain constraint introduced by the expert last week, the specification agreed upon last month: none becomes usable knowledge unless it has been reified as an artifact.\n\n3. Four Knowledge Levers, Three Actors\n\nThe vacuum has a precise structure. Filling it requires four distinct levers.\n\nMethodological knowledge — how to build quality software — is codified by SE as a discipline: fifty years of accumulated practice on specifications, architecture, testing, and process governance.\n\nDomain knowledge — what the system must mean and do in its world — is carried by domain experts: clinicians, operators, traders, and subject-matter specialists who understand the problem the software is built to solve.\n\nDesign choices — the project-specific decisions that translate into the product: architectural structures, component boundaries, trade-offs, interfaces. These are produced and owned by the software engineer, informed by both methodological and domain knowledge, and accumulate as the system grows.\n\nProcess choices — how the work is organized for this specific project: the lifecycle adopted, the criteria for agent autonomy, the review structure.\n\nAll four levers require reification : they must be materialized as persistent, accessible artifacts. Knowledge that exists only in someone’s head does not exist for a stateless agent. Reification narrows the vacuum without closing it: the irreducible cores of Section 2 can be captured only in part, and what escapes the artifacts stays with the people accountable for the system.\n\nThree actors do this work. Domain experts supply semantic knowledge — without them, SE structure is form without meaning. The AI agent is the executor, powerful but without intrinsic reference for correctness or future orientation. The software engineer is the active mediator between the two, and the custodian who keeps the system’s evolutionary trajectory explicit over time.\n\nOne might object that these limits are temporary and that enough training data would let the agent learn without human intervention. But the three irreducible cores named in Section 2 are not gaps in training: evaluative judgment, organizational knowledge, and a system’s future trajectory cannot be distilled from any corpus. The vacuum is structural, not historical.\n\n4. SE and AI\n\nThe four levers and three actors just described operate through two distinct mechanisms by which SE fills the vacuum. The first is constitutive : SE methodology embedded directly in the agent’s design, so that it asks for specifications when they are missing, signals underspecified requirements, and structures its outputs according to SE principles before any human provides project-specific input. The second is operational : the software engineer provides SE-structured artifacts — specifications, architectural contexts, testing frameworks, domain constraints — that give the agent a reference for correctness on each project. The two mechanisms map onto the two layers: constitutive addresses the reducible, operational addresses the irreducible core.\n\nAI, in turn, helps SE close a knowing-doing gap it has long been unable to close on its own: formal requirements, architectural documentation, and systematic testing are demonstrably effective yet consistently underused. CASE tools in the 1980s and 1990s tried to close this gap, resented for their overhead. AI shifts the cost dynamic: reification, verification, and accountability (concepts SE has developed for decades) become cheaper to apply. Specifications, once expensive to produce and maintain outside critical domains, become byproducts of elicitation sessions and can be progressively formalized to reconnect with established SE practices. Tests, once writ",
+    "segments": null
+  },
+  {
+    "item_id": "feed:independent-research-authors:89ac63769de00fed6835",
+    "version_id": "v-9bde3907428df8ef68a78026",
+    "publisher_id": "independent-research-authors",
+    "kind": "feed",
+    "title": "The Work Behind Delegation: A Framework for Supervising AI Coding Agents",
+    "url": "https://arxiv.org/html/2609.24234",
+    "published_at": "2026-09-21T07:57:48Z",
+    "text": "The Work Behind Delegation: A Framework for Supervising AI Coding Agents\n\nAs AI coding agents carry out development tasks with greater autonomy, developers are shifting from direct implementation toward supervising delegated work. Yet existing research offers limited understanding of how developers organize supervisory activities into connected workflows. Drawing on observations and workflow diagrams from 19 experienced developers, we reconfigure Sheridan’s framework of human supervisory control into seven stages and the connecting loops for supervising AI coding agents. We applied the framework to public developer discussions on Reddit and found that supervisory demands extend across stages and that developers manage them by concentrating effort in planning, delegating supervisory work to other agents, and turning recurring guidance into reusable assets. Our framework provides a useful analytical lens for understanding how developers supervise AI coding agents by capturing how supervision is structured in agentic software development.\n\nAI coding tools have rapidly expanded their capabilities, moving from assisting developers ( Santos et al., 2025 ) to carrying out software development tasks with greater autonomy ( Mozannar et al., 2024 ; Robbes et al., 2026 ) . With the emergence of AI coding agents such as Claude Code ( Anthropic, 2025 ) and Codex ( OpenAI, 2025b ) , developers can now provide high-level direction and leave the execution to the agent. Given a task description, agents can autonomously plan their own approach, explore the codebase, run commands, and make changes across multiple files ( Dong et al., 2025 ; Guo et al., 2025 ) . As developers delegate more of this execution to agents, their role shifts from direct implementation toward coordination and oversight ( Alenezi, 2026 ) . Therefore, developers increasingly act as supervisors of AI coding agents, setting the direction of delegated work, tracking progress, and evaluating its output ( Sapkota et al., 2025 ) .\n\nAs developers take on this supervisory role, understanding what effective supervision of AI coding agents requires becomes important. Prior work has examined what developers do at particular points in the process, such as providing clear context and explicit instructions ( Huang et al., 2025 ) , asking agents to explain their changes ( Baumann et al., 2026 ) , and providing corrective feedback when execution goes wrong ( Chen et al., 2026b ) . However, supervision extends across a development task, and effort invested at one point can affect what needs to be monitored, corrected, or reviewed at subsequent points in the task ( Dhanorkar et al., 2026 ; Zhou et al., 2026 ; Chen et al., 2026a ) . Given limited human attention and effort, these dependencies highlight the need to consider supervision as a connected process rather than as a set of separate activities. Understanding this process requires an analytical approach that captures how supervisory activities are organized and connected across a task.\n\nEarlier research on automation provides a useful foundation for understanding how human roles change as task execution is increasingly automated by systems such as aircraft autopilots and industrial robots ( Parasuraman et al., 2000 ; Sheridan, 2012 ) . Among this body of work, we build on Sheridan’s framework of human supervisory control , which conceptualizes supervision as a process organized around five stages: Plan , Teach , Monitor , Intervene , and Learn ( Sheridan, 1976 ; Sheridan, 1992 ) . These stages are linked through recurrent loops, highlighting how one stage shapes subsequent supervisory demands. While Sheridan’s framework was grounded largely in automated systems that executed human-specified goals or instructions, AI coding agents have greater autonomy in determining how to accomplish delegated tasks. Hence, it remains unclear whether Sheridan’s supervisory framework can fully capture supervision under this more agentic form of delegation.\n\nThis motivates a central question for our work: How do developers organize supervision over the course of a task delegated to AI coding agents? To answer this, we developed a framework for supervising AI coding agents by reconfiguring Sheridan’s framework (Figure 1 ). The framework was based on a qualitative study with 19 experienced developers, where we observed participants working with agents and asked them to reconstruct their supervision workflows as diagrams. Our analysis identified seven supervisory stages— Plan , Monitor , Wait , Review , Teach , Manual Fix , and Update Assets —and loops connecting them. Together, these stages and loops capture how supervision is organized in agentic software development, providing an analytic lens for studying developer supervision of AI coding agents.\n\nWe then applied the framework to developer discussions on Reddit to examine supervisory patterns across the development process. We identified three demands that span multiple stages: maintaining alignment between agent behavior and developer intent, enforcing quality beyond task completion, and maintaining understanding of agents’ work. We also found three strategies for managing these demands: concentrating effort in planning, distributing supervisory work to other agents, and externalizing repeated supervision into reusable assets. Through the framework, we show how supervisory demands extend across stages and how developers redistribute their effort in response.\n\nThe contributions of this paper are as follows:\n\n• A framework for supervising AI coding agents that consists of seven stages and the loops connecting them.\n\n• Findings from applying the framework to examine supervisory demands and the strategies developers use to manage them across the development process.\n\n2. Related Work\n\nWe review prior work to contextualize our framework for developer supervision of AI coding agents: (1) AI-assisted software development, (2) frameworks for human–agent collaboration, and (3) human roles in the agentic era.\n\n2.1. AI-Assisted Software Development\n\nAI assistance in software development has shifted from providing localized code suggestions ( Sarkar et al., 2022 ; Prather et al., 2023 ; Fan et al., 2026 ; Ma et al., 2023 ) toward increasingly autonomous AI agents that can carry out development tasks with limited human intervention ( Liu et al., 2026a ; Fawzy et al., 2026 ; Ray, 2025 ) . As AI systems have become more capable ( Dong et al., 2025 ; Feng et al., 2025 ) , how developers interact with them has also changed.\n\nPrior work has examined AI assistance in software development and its integration into developer workflows. Early studies focused on developers’ interactions with individual AI-generated suggestions, examining how they evaluated, accepted, and modified suggestions during programming ( Barke et al., 2023 ; Mozannar et al., 2024 ) . More recent work has expanded attention to AI use across programming sessions and broader development workflows, drawing on interviews with practitioners ( Ullrich et al., 2025 ; Dhanorkar et al., 2026 ) , interaction logs from real-world use ( Wu et al., 2026 ; Tang et al., 2026 ) , and longitudinal telemetry ( Sergeyuk et al., 2026 ) . Together, these studies highlight the importance of understanding developer–AI interaction as AI becomes deeply integrated into software development.\n\nAgentic AI introduces new dynamics of developer–AI interaction. AI agents can proactively plan and execute multi-step actions ( Chen et al., 2026b ) , incorporate broader contextual information ( Guo et al., 2025 ) , and produce artifacts across development workflows ( Zamfirescu-Pereira et al., 2025 ) . As developers delegate more execution to agents, supervision becomes increasingly important, yet its organization across a development task remains underexplored. Therefore, in this work, we examine the supervisory activities developers perform and how these activities connect throughout the process.\n\n2.2. Frameworks for Human–Agent Collaboration\n\nA growing body of empirical work has examined human–agent collaboration through interviews ( Dhanorkar et al., 2026 ) , observational studies ( Huang et al., 2025 ; Shome et al., 2026 ) , and real-world interaction logs ( Tang et al., 2026 ; Baumann et al., 2026 ) . Building on these findings, researchers have developed different conceptualizations of human–agent interaction, capturing recurring modes, activities, and dimensions of collaboration. For example, Barke et al. (2023) distinguish between exploration and acceleration modes of interaction with programming assistants, while Dhanorkar et al. (2026) identify four forms of oversight: a priori control, co-planning, real-time monitoring, and post-hoc review. Other studies describe human–agent interaction in terms of the degree of human involvement ( Chen et al., 2026b ) , time allocation across activity states ( Mozannar et al., 2024 ) , and the distribution of initiative between human and system ( Maier et al., 2026 ) .\n\nBeyond these study-specific conceptualizations, recent work has proposed more explicit frameworks for human–agent collaboration. Feng et al. (2025) structure collaboration around levels of agent autonomy and corresponding user roles, while Wang and Lu (2025) propose a process-oriented framework that connects interaction, process, and infrastructure. These frameworks provide systematic ways to structure human–agent collaboration, but offer limited guidance to collaboration centered on supervising delegated agent work. In this work, we develop a framework that captures the supervisory activities involved and how they connect across a development task.\n\n2.3. Human Roles in the Agentic Era\n\nThe emergence of AI as a collaborator is not unique to software development. Similar shifts toward human–AI collaboration have been observed across domains such as design ( Xu et al., 2025 ; Cavallin and Spagnol, 2026 ) , writing ( Lehmann et al., 2026 ) , and knowledge work ( Yun et al., 2025 ) , where AI systems have become integrated into everyday workflows. As these systems become more agentic and take on greater responsibility for execution, human roles are being reconceptualized. Rather than acting as primary executors while AI provides passive assistance, humans are increasingly shifting toward supervisory roles over delegated work by defining goals ( Feng et al., 2026b ; Ullrich et al., 2025 ; Ma et al., 2025 ) , evaluating outcomes ( Feng et al., 2026a ) , and intervening when necessary ( Zhou et al., 2026 ) .\n\nThese shifts also align with longstanding perspectives in automation research, which describe how responsibilities shift between humans and systems as system autonomy increases ( Parasuraman et al., 2000 ; Sheridan, 2012 ) . Taken together, these perspectives point toward a shift in human contribution from direct execution toward higher-level activities such as providing context, exercising judgment, and guiding AI-generated work ( Feng et al., 2026a ; Cheruvu, 2025 ) . Building on these observations, we examine how this shift manifests in software development as developers increasingly supervise work delegated to AI agents.\n\nIn this section, we provide background on Sheridan’s human supervisory control framework, which serves as the theoretical starting point for our work examining how developers supervise AI coding agents. The human supervisory control framework describes how a human supervisor directs and oversees automated systems such as aircraft autopilots and industrial robots ( Sheridan, 1992 ; Sheridan, 1976 ; Sheridan, 2012 ) . The framework consists of five supervisory stages: Plan , Teach , Monitor , Intervene , and Learn , connected by recurring loops as illustrated in Figure 2 . We briefly explain each stage below.\n\nThe supervisor begins with Plan , where they develop an understanding of the process and system capabilities, then determine the goals, constraints, and overall strategy. In Teach , these plans ",
+    "segments": null
+  },
+  {
+    "item_id": "feed:infoq:11afb59991f162853855",
+    "version_id": "v-0ba58a184ce4146081b2020d",
+    "publisher_id": "infoq",
+    "kind": "feed",
+    "title": "Android Bench 2 Adds Support for Long-Horizon Tasks, Agentic Evaluation, and Continuous Scoring",
+    "url": "https://www.infoq.com/news/2026/10/android-bench-2/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=AI%2C+ML+%26+Data+Engineering",
+    "published_at": "2026-10-09T17:00:00Z",
+    "text": "InfoQ Software Architects' Newsletter\n\nA monthly overview of things you need to know as an architect or aspiring architect.\n\nView an example\n\nWe protect your privacy.\n\nInfoQ Homepage News Android Bench 2 Adds Support for Long-Horizon Tasks, Agentic Evaluation, and Continuous Scoring\n\nAndroid Bench 2 Adds Support for Long-Horizon Tasks, Agentic Evaluation, and Continuous Scoring\n\nOct 09, 2026 2 min read\n\nSergio De Simone\n\nFollow us on\n\nGoogle has released Android Bench 2.0 , a major update to its benchmark framework for evaluating AI models and agents on Android development tasks. The update introduces long-horizon tasks (LHTs), agent-based evaluation, and continuous scoring to better assess performance on complex, multi-step development tasks.\n\nLaunched a few months ago , Android Bench evaluates AI models against a set of common development tasks and incorporates Android best practices in areas such as permissions, navigation, and connectivity. With the latest release, Google has expanded the benchmark to cover a broader range of development tasks.\n\nToday we're releasing the first set of long-horizon tasks (LHT), which are tasks of great complexity that take an engineer multiple days or even a week to complete. We are also introducing agentic evaluation, starting with agents from corresponding model providers.\n\nWhile the original version focused on incremental changes to existing repositories, Android Bench 2.0 introduces long-horizon tasks (LHTs) that Google describes as work an engineer might take \"multiple days or even a week to complete\". These tasks include upgrading dependencies, adding new features, building apps from scratch, or converting a cross-platform app to Android.\n\nOne major change in version 2.0 is the shift from binary pass/fail evaluation to a more nuanced scoring system. Previously, a complex task could be marked as failed because of a single failing edge-case assertion, even if the agent had successfully met dozens of other requirements.\n\nWe calculate this completion rate through a combination of factors like functionality, visual fidelity, and avoiding regressions. We also apply objective scoring penalties for deviations from evaluation instructions or structural constraints.\n\nAndroid Bench 2.0 results also help identify which tasks are more likely to succeed with AI assistance. For example, Google reports that \"AI does a better job at writing new code rather than refactoring existing code\", which may reflect that refactoring and migrations require an understanding of the codebase's architectural complexity.\n\nSimilarly, AI performs well on several \"well-established, deterministic transformations\", even in larger codebases. Examples include converting Java to Kotlin, swapping Retrofit for Ktor, or introducing a ViewModel layer.\n\nIn contrast, models still struggle in many cases, including tasks requiring runtime validation (like missing dependency injection graphs), breaking framework changes, or knowledge gaps with unreleased libraries. In particular, the best-in-class model achieves only an 80% completion rate in porting a cross-platform app to Android, which remains overall an \"open challenge\".\n\nThe updated Android Bench 2.0 dashboard includes recent models, such as Gemini 3.8 Flash, Gemini 3.7 Flash, OpenAI GPT-6, Anthropic Fable 5.1, Kimi K3, and Qwen 3.8 Max. At the time of the article, Claude Opus 5.5 was at the top of the leaderboard with a 32% LHT pass rate, followed by GPT -6 Astra at 28%.\n\nAbout the Author\n\nSergio De Simone\n\nThis content is in the Mobile topic\n\nArchitecture & Design\n\nAI, ML & Data Engineering\n\nLarge language models\n\nAI coding agents\n\nPopular across InfoQ What Does It Really Mean To Program With AI: A Conversation with Joy Ebertz Cloudflares Newly Acquired Vite+ Reaches 1.0 with GitLab CI Support, Hooks, and tsup Migration Github Migrates Copilot Runtime to Rust with AI-Assisted Rewrite Java News Roundup: Grails 8, Open Liberty, GlassFish, Infinispan, LangChain4j, Spock Google Antigravity SDK Adds Local Model Support for Greater Token Efficiency and Code Privacy Ontology‐Driven Observability: Building the E2E Knowledge Graph at Netflix Scale\n\nThe InfoQ Newsletter\n\nA round-up of last week’s content on InfoQ sent out every Tuesday. Join a community of over 250,000 senior developers. View an example\n\nWe protect your privacy.\n",
+    "segments": null
+  },
+  {
+    "item_id": "feed:infoq:37901f78ed2a5174f519",
+    "version_id": "v-0adab8a5a121a93d9b20d967",
+    "publisher_id": "infoq",
+    "kind": "feed",
+    "title": "Spotify More Than Doubled Monthly Code Changes as AI Accelerated Development",
+    "url": "https://www.infoq.com/news/2026/10/spotify-ai-quality-controls/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=AI%2C+ML+%26+Data+Engineering",
+    "published_at": "2026-10-12T13:57:00Z",
+    "text": "InfoQ Software Architects' Newsletter\n\nA monthly overview of things you need to know as an architect or aspiring architect.\n\nView an example\n\nWe protect your privacy.\n\nInfoQ Homepage News Spotify More Than Doubled Monthly Code Changes as AI Accelerated Development\n\nSpotify More Than Doubled Monthly Code Changes as AI Accelerated Development\n\nOct 12, 2026 2 min read\n\nFollow us on\n\nSpotify has expanded its use of AI-assisted development , more than doubling monthly merged changes from approximately 8,100 to 17,000 year over year in August. The company is adapting its quality and reliability controls to handle the higher volume of software changes across its production systems.\n\nSpotify operates nearly 3,000 production services supporting 777 million monthly active users, around 100 million concurrent clients, and 11 to 12 million backend requests per second. Its review identified issues involving content processing, fleet changes, compute capacity, and mobile application quality. The company has responded with changes to monitoring, testing, rollout safeguards, rollback capacity, capacity planning, and quality measurement.\n\nOne incident involved Spotify's content processing pipeline, which handles more than 500,000 new songs, videos, podcasts, and audiobooks each day. On June 24, a scheduled batch workload competed with new episodes, a quality improvement increased processing requirements, and a scheduling bug reduced throughput by about 10%. Episodes that normally appeared within minutes were delayed for hours. Spotify subsequently added end-to-end monitoring, fixed the scheduler, moved batch jobs to lower priority, reworked workload prioritization, and increased capacity.\n\nFleet automation created a different challenge. Spotify's Fleet Management system has merged more than 2.5 million automated maintenance pull requests, with most automatically merged after safety checks. The company later added Honk, a background coding agent that runs Claude using the Agent SDK in Kubernetes pods. Fleetshift handles target selection, scheduling, and progress tracking, while Honk performs code modifications and can run builds in CI. Spotify reports that a recent Java migration across its backend services took three days.\n\nAn automated dependency upgrade nevertheless passed existing checks and failed in production, according to Spotify. The company is strengthening safeguards, expanding rollback capacity, and scheduling automated changes during owning teams' working hours.\n\nAmit Jha , a software engineer at JumpCloud, in a LinkedIn post discussing Spotify's findings, said:\n\nMore changes meant greater pressure on testing, review and observability.\n\nAlex Beck similarly focused on the verification challenge in a LinkedIn post ,\n\nWriting code got easier. The hard part now is making sure the work is actually good before it goes live.\n\nThe findings provide context for Google's 2025 DORA research , which found that AI adoption was associated with higher software delivery throughput and product performance, while also reporting a negative relationship with delivery stability. The research identified automated testing, version control, and fast feedback loops as practices relevant to managing software delivery as AI adoption increases.\n\nSpotify combines Fleet Management for standardized maintenance with Honk for complex code changes, while Fleetshift handles orchestration and CI provides validation. Quality and optimization work rose from 27% to 31% of merged changes, while maintenance and configuration fell from 31% to 25%. Spotify reports no corresponding increase in rework, although pull request size and code complexity are rising. Its incident review found no material direct contribution from AI-authored code, but change volume had outpaced some verification controls.\n\nAbout the Author\n\nThis content is in the Observability topic\n\nArchitecture & Design\n\nAI, ML & Data Engineering\n\nAI Assisted Coding\n\nPopular across InfoQ What Does It Really Mean To Program With AI: A Conversation with Joy Ebertz Cloudflares Newly Acquired Vite+ Reaches 1.0 with GitLab CI Support, Hooks, and tsup Migration Github Migrates Copilot Runtime to Rust with AI-Assisted Rewrite Java News Roundup: Grails 8, Open Liberty, GlassFish, Infinispan, LangChain4j, Spock Google Antigravity SDK Adds Local Model Support for Greater Token Efficiency and Code Privacy Ontology‐Driven Observability: Building the E2E Knowledge Graph at Netflix Scale\n\nThe InfoQ Newsletter\n\nA round-up of last week’s content on InfoQ sent out every Tuesday. Join a community of over 250,000 senior developers. View an example\n\nWe protect your privacy.\n",
+    "segments": null
+  },
+  {
+    "item_id": "feed:infoq:53beeea632eecd42bb0a",
+    "version_id": "v-1d0c46de7ab29e24cb9194da",
+    "publisher_id": "infoq",
+    "kind": "feed",
+    "title": "Github Migrates Copilot Runtime to Rust with AI-Assisted Rewrite",
+    "url": "https://www.infoq.com/news/2026/10/github-copilot-rust-migration/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=AI%2C+ML+%26+Data+Engineering",
+    "published_at": "2026-10-09T14:29:00Z",
+    "text": "InfoQ Software Architects' Newsletter\n\nA monthly overview of things you need to know as an architect or aspiring architect.\n\nView an example\n\nWe protect your privacy.\n\nInfoQ Homepage News Github Migrates Copilot Runtime to Rust with AI-Assisted Rewrite\n\nGithub Migrates Copilot Runtime to Rust with AI-Assisted Rewrite\n\nOct 09, 2026 2 min read\n\nFollow us on\n\nGitHub has migrated the runtime behind GitHub Copilot CLI, the Copilot app, and Copilot SDK from TypeScript and Node.js to Rust, replacing more than 800,000 lines of production code through an AI-assisted rewrite. The migration took approximately 14.5 weeks and was delivered through 128 pull requests while GitHub continued releasing the runtime. GitHub reports that a measured client startup, session creation, and single-turn scenario fell from 5.25 seconds with the previous runtime to 292 milliseconds when the Rust runtime was embedded in process.\n\nThe migration also changed how applications integrate with the runtime. The previous implementation required Node.js and V8 and communicated with host applications across a process boundary. GitHub says this added approximately 100 MB of working set per client. The Rust implementation can instead be embedded directly into host applications through a C ABI, while an out-of-process mode remains available. The Copilot SDK currently supports TypeScript, Python, Go, .NET, Java, and Rust.\n\nGitHub’s before and after Copilot runtime architecture (Source: GitHub Blog Post )\n\nGitHub used an incremental replacement strategy rather than a parallel rewrite followed by a single cutover. Individual TypeScript components were replaced with Rust implementations, with temporary N API interoperability connecting the two. This allowed existing end-to-end tests to exercise the new code while other components remained in TypeScript. GitHub shipped 135 releases during the migration, including 35 stable and 100 prerelease versions.\n\nThe compatibility layer reached 2,019 internal N API exports and 3,356 TypeScript call sites before being removed. By August 21, the runtime contained 832,378 lines of production Rust and 468,689 lines of Rust unit tests. AI agents generated most of the implementation, while compilation, testing, and human review helped identify regressions involving behavior, state and lifetime handling, library semantics, and lost optimizations. GitHub recorded 4,478 direct cargo check runs, with 87.1% completing cleanly.\n\nCommunity responses also focused on the verification challenges of AI-assisted migrations and pointed to cancellation, retries, and backpressure as examples requiring validation beyond compilation. PLBjt wrote that\n\nThe interesting part here is less that Copilot wrote Rust and more whether the migration kept the runtime’s behavior stable at the boundaries.\n\nFrancesco Pira , XR tech lead at Leonardo, highlighted :\n\nTests small reviewable changes, compatibility layers, and human engineering judgment as important elements of the approach.\n\nCôme Redon , senior solution engineer at Microsoft, pointed out :\n\nThe challenge of identifying undocumented behavioral contracts in legacy systems.\n\nGitHub’s migration timeline showing the incremental pull requests and releases. (Source: GitHub Blog Post )\n\nThe resulting architecture provides a native Rust runtime that can be embedded directly into host applications or operated separately, while the Copilot SDK maintains language-specific interfaces across its supported languages. The migration combined AI-generated implementation with incremental integration, temporary compatibility boundaries, automated validation, and human review while the production runtime continued to evolve.\n\nAbout the Author\n\nThis content is in the Performance topic\n\nArchitecture & Design\n\nAI, ML & Data Engineering\n\nAI Assisted Coding\n\nAI coding agents\n\nPopular across InfoQ What Does It Really Mean To Program With AI: A Conversation with Joy Ebertz Cloudflares Newly Acquired Vite+ Reaches 1.0 with GitLab CI Support, Hooks, and tsup Migration Github Migrates Copilot Runtime to Rust with AI-Assisted Rewrite Java News Roundup: Grails 8, Open Liberty, GlassFish, Infinispan, LangChain4j, Spock Google Antigravity SDK Adds Local Model Support for Greater Token Efficiency and Code Privacy Ontology‐Driven Observability: Building the E2E Knowledge Graph at Netflix Scale\n\nThe InfoQ Newsletter\n\nA round-up of last week’s content on InfoQ sent out every Tuesday. Join a community of over 250,000 senior developers. View an example\n\nWe protect your privacy.\n",
+    "segments": null
+  },
+  {
+    "item_id": "youtube:9yPyoxlyc5Q",
+    "version_id": "v-ab01f07d4890bf0557ad681d",
+    "publisher_id": "github",
+    "kind": "youtube",
+    "title": "25 agent skills to improve your workflow in GitHub Copilot | Matt Pocock | GitHub Copilot Day",
+    "url": "https://www.youtube.com/watch?v=9yPyoxlyc5Q",
+    "published_at": "2026-09-20T00:00:00Z",
+    "text": "I'm extremely delighted to be here and\nI've been somehow come into possession\nof the most or the second most popular\nskills repo in the world. I'm coming to\nyou from sunny Oxfordshire right now and\nI'm going to introduce to you to the\nskills repo and also maybe look at a\ncouple of new things that are coming to\nthe skills repo and how you can apply\nthose in GitHub copilot. So, first of\nall, let me show you the repo. We are up\nto around 259K\nstars, which is fairly wild to me. I\nnever really thought we would get there.\nAnd the place we're going to start is in\nthe main flow here. So, the idea of\nthese skills is you can really ship any\nsize of work that you want to. And the\nplace we pretty much always start is\nwith this grill with docks skill. For\nthose who haven't used my skills before,\nthis is essentially a way to align\nyourself with the agent. And it means\nthat like it's so often that you will\nget the agent and you will look at the\nwork that they've done and they will\njust have not produced the thing that\nyou want them to. And so doing a kind of\npreession grilling kind of before the\nagent does any work whatsoever I found\nhas been absolutely essential. And this\nis what that looks like in GitHub\nCopilot. So if we head over to the\nterminal here, I have been doing some\nactual real work on my repo this\nmorning. My repo is a course video\nmanager where I handle all of my video\nediting. I manage all of my course\nvideos. And let's take a look at what\nthat actually looked like. So what I did\nfirst of all is I use GitHub issues to\ncoordinate all the things I want to\nchange about the repo itself. This means\nthat keeping those outside of the repo,\nI just get a lot more value in pumping\nthose into uh automated loops, in\npassing them directly to agents, and\nsometimes even just triggering them via\nlabels. But that's kind of outside the\nscope for today. But what that looks\nlike in GitHub Copilot is it means I can\njust go into issues. I could press W\nhere to open up a work tree and I ended\nup inside this work tree here. So this\nlittle example, if I press enter to go\nin, what happens is I just literally say\ngrill with docs issue 1612. And this\nissue was one that I actually needed to\nfix. It's basically adding something\ninto the CLI that comes served with this\nuh course video manager. Now what\nhappened first is it goes and does an\nexploration in a sub agent. Very nice.\nAnd once it's done the exploration, once\nit understands what it wants to grill me\nabout, then it begins asking",
+    "segments": [
+      {
+        "end_seconds": 11.28,
+        "segment_id": "seg-0001",
+        "start_seconds": 5.2,
+        "text": "I'm extremely delighted to be here and",
+        "timestamp_method": "source_transcript"
+      },
+      {
+        "end_seconds": 36.64,
+        "segment_id": "seg-0012",
+        "start_seconds": 31.84,
+        "text": "to around 259K",
+        "timestamp_method": "source_transcript"
+      },
+      {
+        "end_seconds": 65.92,
+        "segment_id": "seg-0023",
+        "start_seconds": 60.0,
+        "text": "yourself with the agent. And it means",
+        "timestamp_method": "source_transcript"
+      },
+      {
+        "end_seconds": 92.32,
+        "segment_id": "seg-0034",
+        "start_seconds": 87.52,
+        "text": "terminal here, I have been doing some",
+        "timestamp_method": "source_transcript"
+      },
+      {
+        "end_seconds": 117.52,
+        "segment_id": "seg-0045",
+        "start_seconds": 112.079,
+        "text": "I just get a lot more value in pumping",
+        "timestamp_method": "source_transcript"
+      },
+      {
+        "end_seconds": 141.92,
+        "segment_id": "seg-0056",
+        "start_seconds": 136.08,
+        "text": "in, what happens is I just literally say",
+        "timestamp_method": "source_transcript"
+      },
+      {
+        "end_seconds": 165.04,
+        "segment_id": "seg-0067",
+        "start_seconds": 161.04,
+        "text": "questions. And so these questions here",
+        "timestamp_method": "source_transcript"
+      },
+      {
+        "end_seconds": 190.4,
+        "segment_id": "seg-0078",
+        "start_seconds": 186.56,
+        "text": "a dictation tool to just answer these",
+        "timestamp_method": "source_transcript"
+      },
+      {
+        "end_seconds": 213.44,
+        "segment_id": "seg-0089",
+        "start_seconds": 210.159,
+        "text": "gone in. I'm just going to press return",
+        "timestamp_method": "source_transcript"
+      },
+      {
+        "end_seconds": 235.68,
+        "segment_id": "seg-0100",
+        "start_seconds": 232.159,
+        "text": "questions. This level of alignment",
+        "timestamp_method": "source_transcript"
+      },
+      {
+        "end_seconds": 260.4,
+        "segment_id": "seg-0111",
+        "start_seconds": 255.84,
+        "text": "let's take a look at what happened next.",
+        "timestamp_method": "source_transcript"
+      },
+      {
+        "end_seconds": 283.12,
+        "segment_id": "seg-0122",
+        "start_seconds": 279.12,
+        "text": "with you. And then what we end up with",
+        "timestamp_method": "source_transcript"
+      },
+      {
+        "end_seconds": 316.8,
+        "segment_id": "seg-0134",
+        "start_seconds": 311.759,
+        "text": "showing exactly what has changed about",
+        "timestamp_method": "source_transcript"
+      },
+      {
+        "end_seconds": 337.52,
+        "segment_id": "seg-0145",
+        "start_seconds": 334.72,
+        "text": "fractional order. You know, this is a",
+        "timestamp_method": "source_transcript"
+      },
+      {
+        "end_seconds": 362.0,
+        "segment_id": "seg-0156",
+        "start_seconds": 358.32,
+        "text": "current topic visually with concise",
+        "timestamp_method": "source_transcript"
+      },
+      {
+        "end_seconds": 387.84,
+        "segment_id": "seg-0167",
+        "start_seconds": 383.68,
+        "text": "here. This UI structure one is amazing",
+        "timestamp_method": "source_transcript"
+      },
+      {
+        "end_seconds": 412.479,
+        "segment_id": "seg-0178",
+        "start_seconds": 408.0,
+        "text": "changes, for call tree and call stack",
+        "timestamp_method": "source_transcript"
+      },
+      {
+        "end_seconds": 437.28,
+        "segment_id": "seg-0189",
+        "start_seconds": 431.68,
+        "text": "nice. And so as part of this skill or",
+        "timestamp_method": "source_transcript"
+      },
+      {
+        "end_seconds": 467.199,
+        "segment_id": "seg-0200",
+        "start_seconds": 461.68,
+        "text": "is not wasted, right? Because",
+        "timestamp_method": "source_transcript"
+      },
+      {
+        "end_seconds": 491.759,
+        "segment_id": "seg-0211",
+        "start_seconds": 487.039,
+        "text": "we also need to make sure that the code",
+        "timestamp_method": "source_transcript"
+      },
+      {
+        "end_seconds": 517.36,
+        "segment_id": "seg-0222",
+        "start_seconds": 511.919,
+        "text": "it's using origin main as the fix point",
+        "timestamp_method": "source_transcript"
+      },
+      {
+        "end_seconds": 543.839,
+        "segment_id": "seg-0233",
+        "start_seconds": 538.56,
+        "text": "that you know we need to do it this way",
+        "timestamp_method": "source_transcript"
+      },
+      {
+        "end_seconds": 566.48,
+        "segment_id": "seg-0244",
+        "start_seconds": 562.959,
+        "text": "means is because we're doing these in",
+        "timestamp_method": "source_transcript"
+      },
+      {
+        "end_seconds": 589.76,
+        "segment_id": "seg-0255",
+        "start_seconds": 585.2,
+        "text": "configuration in DB beat services",
+        "timestamp_method": "source_transcript"
+      },
+      {
+        "end_seconds": 616.32,
+        "segment_id": "seg-0266",
+        "start_seconds": 611.279,
+        "text": "change. And all of that happens. Code",
+        "timestamp_method": "source_transcript"
+      },
+      {
+        "end_seconds": 641.2,
+        "segment_id": "seg-0277",
+        "start_seconds": 637.44,
+        "text": "it's kind of like a traditional red",
+        "timestamp_method": "source_transcript"
+      },
+      {
+        "end_seconds": 664.48,
+        "segment_id": "seg-0288",
+        "start_seconds": 660.72,
+        "text": "anything to do with a command here or",
+        "timestamp_method": "source_transcript"
+      },
+      {
+        "end_seconds": 691.279,
+        "segment_id": "seg-0299",
+        "start_seconds": 685.279,
+        "text": "stack I want to take a look at that work",
+        "timestamp_method": "source_transcript"
+      },
+      {
+        "end_seconds": 716.88,
+        "segment_id": "seg-0310",
+        "start_seconds": 713.44,
+        "text": "on the things that it thinks you should",
+        "timestamp_method": "source_transcript"
+      },
+      {
+        "end_seconds": 738.959,
+        "segment_id": "seg-0321",
+        "start_seconds": 735.44,
+        "text": "to take a look at the recent PR and see",
+        "timestamp_method": "source_transcript"
+      },
+      {
+        "end_seconds": 759.44,
+        "segment_id": "seg-0332",
+        "start_seconds": 755.2,
+        "text": "improved codebase architecture here,",
+        "timestamp_method": "source_transcript"
+      },
+      {
+        "end_seconds": 783.36,
+        "segment_id": "seg-0343",
+        "start_seconds": 779.36,
+        "text": "final cast tells Typescript that the",
+        "timestamp_method": "source_transcript"
+      },
+      {
+        "end_seconds": 808.88,
+        "segment_id": "seg-0354",
+        "start_seconds": 802.959,
+        "text": "have in your library which is it",
+        "timestamp_method": "source_transcript"
+      },
+      {
+        "end_seconds": 834.56,
+        "segment_id": "seg-0365",
+        "start_seconds": 830.24,
+        "text": "an unsloped skill. However, I do, you",
+        "timestamp_method": "source_transcript"
+      },
+      {
+        "end_seconds": 857.519,
+        "segment_id": "seg-0376",
+        "start_seconds": 853.199,
+        "text": "look like? Because the previous one I",
+        "timestamp_method": "source_transcript"
+      },
+      {
+        "end_seconds": 881.839,
+        "segment_id": "seg-0387",
+        "start_seconds": 877.839,
+        "text": "in terms of the size, then I recommend a",
+        "timestamp_method": "source_transcript"
+      },
+      {
+        "end_seconds": 914.72,
+        "segment_id": "seg-0399",
+        "start_seconds": 908.24,
+        "text": "doing was I turned that really nice um",
+        "timestamp_method": "source_transcript"
+      },
+      {
+        "end_seconds": 938.24,
+        "segment_id": "seg-0410",
+        "start_seconds": 933.279,
+        "text": "spec reality. So this spec is",
+        "timestamp_method": "source_transcript"
+      },
+      {
+        "end_seconds": 966.32,
+        "segment_id": "seg-0421",
+        "start_seconds": 960.16,
+        "text": "my skills before which is I used a skill",
+        "timestamp_method": "source_transcript"
+      },
+      {
+        "end_seconds": 992.639,
+        "segment_id": "seg-0432",
+        "start_seconds": 988.639,
+        "text": "to spawn out multiple sub aents to put",
+        "timestamp_method": "source_transcript"
+      },
+      {
+        "end_seconds": 1020.48,
+        "segment_id": "seg-0443",
+        "start_seconds": 1015.759,
+        "text": "everything it can in parallel and then",
+        "timestamp_method": "source_transcript"
+      },
+      {
+        "end_seconds": 1044.48,
+        "segment_id": "seg-0454",
+        "start_seconds": 1039.12,
+        "text": "that we created. Closes the spec. It",
+        "timestamp_method": "source_transcript"
+      },
+      {
+        "end_seconds": 1070.559,
+        "segment_id": "seg-0465",
+        "start_seconds": 1064.88,
+        "text": "want to actually take this approach,",
+        "timestamp_method": "source_transcript"
+      },
+      {
+        "end_seconds": 1097.36,
+        "segment_id": "seg-0476",
+        "start_seconds": 1093.28,
+        "text": "improve. And so agents are pretty good",
+        "timestamp_method": "source_transcript"
+      },
+      {
+        "end_seconds": 1119.28,
+        "segment_id": "seg-0487",
+        "start_seconds": 1115.919,
+        "text": "feature branch rather than its intended",
+        "timestamp_method": "source_transcript"
+      },
+      {
+        "end_seconds": 1142.64,
+        "segment_id": "seg-0498",
+        "start_seconds": 1137.2,
+        "text": "at navigation steps here. So this retro",
+        "timestamp_method": "source_transcript"
+      },
+      {
+        "end_seconds": 1166.799,
+        "segment_id": "seg-0509",
+        "start_seconds": 1163.039,
+        "text": "to do better next time. I'm excited",
+        "timestamp_method": "source_transcript"
+      },
+      {
+        "end_seconds": 1187.84,
+        "segment_id": "seg-0520",
+        "start_seconds": 1184.0,
+        "text": "Day. See you very soon.",
+        "timestamp_method": "source_transcript"
+      }
+    ]
+  },
+  {
+    "item_id": "youtube:IZXv6a78NDw",
+    "version_id": "v-aa6fb499336c3701ec05174c",
+    "publisher_id": "openai",
+    "kind": "youtube",
+    "title": "Code review is no longer the bottleneck",
+    "url": "https://www.youtube.com/watch?v=IZXv6a78NDw",
+    "published_at": "2026-10-12T00:00:00Z",
+    "text": "Does this sound familiar?\nHey, can you give this a quick review?\nAnd you're like, sure.\nWhich repository is this?\nWhat's different about this?\nAnd where is this feature coming from?\nLook, there's so much code\nbeing written all the time,\nall over all of our companies.\nCode review is the new bottleneck.\nAnd that's why Codex now brings\nthat workflow into one place.\nThis is my personal inbox\nwith GitHub pull requests\nfrom across my repositories.\nI can see the reviews\nthat are assigned to me.\nI can see stuff I authored\nand I can also find priorities.\nNow here's one that is\nassigned specifically to me.\nI'm going to pin it in the sidebar.\nSo it's easy to come back to.\nCloud code review has\nalready taken a first pass.\nOnce the connector has the right\nrepository permissions, initial\nreviews can run automatically.\nThe comments Codex leaves\non GitHub show up here too.\nSo I can read the feedback\nalongside the change and I don't\nneed to switch tools or worry\nabout managing a cloud environment.\nEach pull request has a private chat.\nI love this.\nLook, I can ask, summarize\nthis change and explain the risks\nfor this entire project.\nAnd all my skills and connectors\ncan be brought into this context.\nLike our team's review guidelines\nor design documents or whatever.\nI can also customize the review\ninstructions depending\non how I like things.\nLike give me a short summary,\nor how about a risk analysis?\nOr hey, how about even put\nthis in a comic book style explanation?\nIf I want another pass, I can\nstart a local private review myself.\nNow that's separate from the cloud\nreview that ran ahead of time.\nAnd now I can ask, ask\nquestions and draft a comment\nin our team's review style.\nI can check it against the diff.\nI can make it my own and I\ncan use the comment and the review\nactions right here in Codex.\nI love that I don't have to leave.\nNow when I'm the author, I can\nswitch back to my changes and work\nthrough the feedback in the same place.\nAnd that's code review in Codex.\nFind the work, quickly understand\nthe change, and move the review\nforward all in one place.\nRemove those bottlenecks.\nGitHub Code Review is generally\navailable with GitLab\nsupport in preview.\nTry it with the next review\nwaiting in your inbox.\n",
+    "segments": [
+      {
+        "end_seconds": 1.46,
+        "segment_id": "seg-0001",
+        "start_seconds": 0.0,
+        "text": "Does this sound familiar?",
+        "timestamp_method": "source_transcript"
+      },
+      {
+        "end_seconds": 5.18,
+        "segment_id": "seg-0003",
+        "start_seconds": 3.98,
+        "text": "And you're like, sure.",
+        "timestamp_method": "source_transcript"
+      },
+      {
+        "end_seconds": 7.92,
+        "segment_id": "seg-0004",
+        "start_seconds": 6.16,
+        "text": "Which repository is this?",
+        "timestamp_method": "source_transcript"
+      },
+      {
+        "end_seconds": 12.08,
+        "segment_id": "seg-0006",
+        "start_seconds": 10.22,
+        "text": "And where is this feature coming from?",
+        "timestamp_method": "source_transcript"
+      },
+      {
+        "end_seconds": 13.92,
+        "segment_id": "seg-0007",
+        "start_seconds": 12.26,
+        "text": "Look, there's so much code",
+        "timestamp_method": "source_transcript"
+      },
+      {
+        "end_seconds": 17.14,
+        "segment_id": "seg-0009",
+        "start_seconds": 15.18,
+        "text": "all over all of our companies.",
+        "timestamp_method": "source_transcript"
+      },
+      {
+        "end_seconds": 19.34,
+        "segment_id": "seg-0010",
+        "start_seconds": 17.7,
+        "text": "Code review is the new bottleneck.",
+        "timestamp_method": "source_transcript"
+      },
+      {
+        "end_seconds": 23.46,
+        "segment_id": "seg-0012",
+        "start_seconds": 21.12,
+        "text": "that workflow into one place.",
+        "timestamp_method": "source_transcript"
+      },
+      {
+        "end_seconds": 26.58,
+        "segment_id": "seg-0014",
+        "start_seconds": 25.1,
+        "text": "with GitHub pull requests",
+        "timestamp_method": "source_transcript"
+      },
+      {
+        "end_seconds": 28.22,
+        "segment_id": "seg-0015",
+        "start_seconds": 26.58,
+        "text": "from across my repositories.",
+        "timestamp_method": "source_transcript"
+      },
+      {
+        "end_seconds": 30.58,
+        "segment_id": "seg-0017",
+        "start_seconds": 29.54,
+        "text": "that are assigned to me.",
+        "timestamp_method": "source_transcript"
+      },
+      {
+        "end_seconds": 32.0,
+        "segment_id": "seg-0018",
+        "start_seconds": 30.58,
+        "text": "I can see stuff I authored",
+        "timestamp_method": "source_transcript"
+      },
+      {
+        "end_seconds": 35.72,
+        "segment_id": "seg-0020",
+        "start_seconds": 34.32,
+        "text": "Now here's one that is",
+        "timestamp_method": "source_transcript"
+      },
+      {
+        "end_seconds": 37.12,
+        "segment_id": "seg-0021",
+        "start_seconds": 35.72,
+        "text": "assigned specifically to me.",
+        "timestamp_method": "source_transcript"
+      },
+      {
+        "end_seconds": 40.06,
+        "segment_id": "seg-0023",
+        "start_seconds": 38.5,
+        "text": "So it's easy to come back to.",
+        "timestamp_method": "source_transcript"
+      },
+      {
+        "end_seconds": 43.46,
+        "segment_id": "seg-0025",
+        "start_seconds": 41.76,
+        "text": "already taken a first pass.",
+        "timestamp_method": "source_transcript"
+      },
+      {
+        "end_seconds": 45.28,
+        "segment_id": "seg-0026",
+        "start_seconds": 43.62,
+        "text": "Once the connector has the right",
+        "timestamp_method": "source_transcript"
+      },
+      {
+        "end_seconds": 49.66,
+        "segment_id": "seg-0028",
+        "start_seconds": 47.36,
+        "text": "reviews can run automatically.",
+        "timestamp_method": "source_transcript"
+      },
+      {
+        "end_seconds": 51.52,
+        "segment_id": "seg-0029",
+        "start_seconds": 49.98,
+        "text": "The comments Codex leaves",
+        "timestamp_method": "source_transcript"
+      },
+      {
+        "end_seconds": 54.4,
+        "segment_id": "seg-0031",
+        "start_seconds": 52.94,
+        "text": "So I can read the feedback",
+        "timestamp_method": "source_transcript"
+      },
+      {
+        "end_seconds": 56.46,
+        "segment_id": "seg-0032",
+        "start_seconds": 54.4,
+        "text": "alongside the change and I don't",
+        "timestamp_method": "source_transcript"
+      },
+      {
+        "end_seconds": 59.98,
+        "segment_id": "seg-0034",
+        "start_seconds": 58.36,
+        "text": "about managing a cloud environment.",
+        "timestamp_method": "source_transcript"
+      },
+      {
+        "end_seconds": 64.48,
+        "segment_id": "seg-0036",
+        "start_seconds": 63.5,
+        "text": "I love this.",
+        "timestamp_method": "source_transcript"
+      },
+      {
+        "end_seconds": 66.22,
+        "segment_id": "seg-0037",
+        "start_seconds": 64.48,
+        "text": "Look, I can ask, summarize",
+        "timestamp_method": "source_transcript"
+      },
+      {
+        "end_seconds": 70.66,
+        "segment_id": "seg-0039",
+        "start_seconds": 68.44,
+        "text": "for this entire project.",
+        "timestamp_method": "source_transcript"
+      },
+      {
+        "end_seconds": 73.38,
+        "segment_id": "seg-0040",
+        "start_seconds": 71.3,
+        "text": "And all my skills and connectors",
+        "timestamp_method": "source_transcript"
+      },
+      {
+        "end_seconds": 76.92,
+        "segment_id": "seg-0042",
+        "start_seconds": 75.24,
+        "text": "Like our team's review guidelines",
+        "timestamp_method": "source_transcript"
+      },
+      {
+        "end_seconds": 80.5,
+        "segment_id": "seg-0044",
+        "start_seconds": 78.84,
+        "text": "I can also customize the review",
+        "timestamp_method": "source_transcript"
+      },
+      {
+        "end_seconds": 81.86,
+        "segment_id": "seg-0045",
+        "start_seconds": 80.5,
+        "text": "instructions depending",
+        "timestamp_method": "source_transcript"
+      },
+      {
+        "end_seconds": 84.86,
+        "segment_id": "seg-0047",
+        "start_seconds": 83.3,
+        "text": "Like give me a short summary,",
+        "timestamp_method": "source_transcript"
+      },
+      {
+        "end_seconds": 86.78,
+        "segment_id": "seg-0048",
+        "start_seconds": 84.86,
+        "text": "or how about a risk analysis?",
+        "timestamp_method": "source_transcript"
+      },
+      {
+        "end_seconds": 90.94,
+        "segment_id": "seg-0050",
+        "start_seconds": 88.74,
+        "text": "this in a comic book style explanation?",
+        "timestamp_method": "source_transcript"
+      },
+      {
+        "end_seconds": 93.22,
+        "segment_id": "seg-0051",
+        "start_seconds": 90.94,
+        "text": "If I want another pass, I can",
+        "timestamp_method": "source_transcript"
+      },
+      {
+        "end_seconds": 97.28,
+        "segment_id": "seg-0053",
+        "start_seconds": 95.92,
+        "text": "Now that's separate from the cloud",
+        "timestamp_method": "source_transcript"
+      },
+      {
+        "end_seconds": 101.44,
+        "segment_id": "seg-0055",
+        "start_seconds": 98.74,
+        "text": "And now I can ask, ask",
+        "timestamp_method": "source_transcript"
+      },
+      {
+        "end_seconds": 103.52,
+        "segment_id": "seg-0056",
+        "start_seconds": 101.44,
+        "text": "questions and draft a comment",
+        "timestamp_method": "source_transcript"
+      },
+      {
+        "end_seconds": 107.34,
+        "segment_id": "seg-0058",
+        "start_seconds": 105.7,
+        "text": "I can check it against the diff.",
+        "timestamp_method": "source_transcript"
+      },
+      {
+        "end_seconds": 108.56,
+        "segment_id": "seg-0059",
+        "start_seconds": 107.34,
+        "text": "I can make it my own and I",
+        "timestamp_method": "source_transcript"
+      },
+      {
+        "end_seconds": 112.3,
+        "segment_id": "seg-0061",
+        "start_seconds": 110.44,
+        "text": "actions right here in Codex.",
+        "timestamp_method": "source_transcript"
+      },
+      {
+        "end_seconds": 114.34,
+        "segment_id": "seg-0062",
+        "start_seconds": 112.32,
+        "text": "I love that I don't have to leave.",
+        "timestamp_method": "source_transcript"
+      },
+      {
+        "end_seconds": 117.6,
+        "segment_id": "seg-0064",
+        "start_seconds": 116.0,
+        "text": "switch back to my changes and work",
+        "timestamp_method": "source_transcript"
+      },
+      {
+        "end_seconds": 122.68,
+        "segment_id": "seg-0066",
+        "start_seconds": 119.62,
+        "text": "And that's code review in Codex.",
+        "timestamp_method": "source_transcript"
+      },
+      {
+        "end_seconds": 124.76,
+        "segment_id": "seg-0067",
+        "start_seconds": 122.72,
+        "text": "Find the work, quickly understand",
+        "timestamp_method": "source_transcript"
+      },
+      {
+        "end_seconds": 128.36,
+        "segment_id": "seg-0069",
+        "start_seconds": 126.1,
+        "text": "forward all in one place.",
+        "timestamp_method": "source_transcript"
+      },
+      {
+        "end_seconds": 130.1,
+        "segment_id": "seg-0070",
+        "start_seconds": 128.46,
+        "text": "Remove those bottlenecks.",
+        "timestamp_method": "source_transcript"
+      },
+      {
+        "end_seconds": 133.32,
+        "segment_id": "seg-0072",
+        "start_seconds": 131.98,
+        "text": "available with GitLab",
+        "timestamp_method": "source_transcript"
+      },
+      {
+        "end_seconds": 134.52,
+        "segment_id": "seg-0073",
+        "start_seconds": 133.32,
+        "text": "support in preview.",
+        "timestamp_method": "source_transcript"
+      },
+      {
+        "end_seconds": 137.76,
+        "segment_id": "seg-0075",
+        "start_seconds": 136.52,
+        "text": "waiting in your inbox.",
+        "timestamp_method": "source_transcript"
+      }
+    ]
+  },
+  {
+    "item_id": "youtube:PUBc2G0Tj5E",
+    "version_id": "v-f95ed73f67d6b610264834f4",
+    "publisher_id": "openai",
+    "kind": "youtube",
+    "title": "Meet the New Codex CLI",
+    "url": "https://www.youtube.com/watch?v=PUBc2G0Tj5E",
+    "published_at": "2026-10-05T00:00:00Z",
+    "text": "Look, we know some of you are\nterminally in the terminal.\nWell, this one's for y'all.\nWe've been listening.\nYou want Codex to feel fast\nand stay out of your way.\nYou want it to let you build\nwhere you love to hang out.\nI think you're going to dig\nthese new features.\nSo I've been working\non a very important project,\na CLI for purchasing my usual burrito.\nIt's a single command.\nHere, let me show you the help.\nPretty handy, eh?\nI've been talking about it a lot\nto others and they want in.\nSo I'm making a web property\nso people can get it installed.\nLet's pop that open in the Codex CLI.\nFirst, look at this new\nfull-screen interface.\nIt's gorgeous, right?\nYou can scroll through\nthese earlier outputs\nand the footer for the next message\nis always there.\nWhy don't we give it\nsome work to do?\nNow this is a little bonkers.\nI can kick it off in voice mode.\nHey there.\nCan you hear me?\nHey, what's up?\nStart three separate tasks\nfor these burrito projects.\nNow first, extend the website\nadding a new background\nof repeating burritos.\nAnd second, check the CLI tests\nand ensure that we test\nfor price changes\nand order confirmation.\nAnd third, can you generate\nme a Mermaid diagram\nof the CLI's order flow?\nNow I can mute the voice.\nAnd now I've got three\nactual tasks working across\na couple of projects.\nLet's go see what they're doing.\nSo left arrow takes me into the agents.\nI can see what's running.\nI can filter.\nI can group by status.\nI can search.\nI can jump straight into a task.\nI don't need to go hunting\naround my file system\nor open terminals to find these.\nI can ask Codex\nto check the other tasks\nor send them a follow-up.\nAnd if I want to try\nto build in a different direction,\nI can fork this conversation\ninto a new worktree.\nThe same context,\nbut a completely separate checkout.\nAnd you might have missed this,\nbut I can get back to all\nof this from my phone.\nI enable remote control on my laptop.\nI choose this specific computer\nand they're the same tasks.\nI can check progress.\nI can answer a question\nwhile I'm away from my keyboard.\nWhen I'm back at the terminal,\nI can see what finished\nand what needs attention.\nHey, look, those changes\nand the test results are here.\nI'll open up the web demo.\nAnd there's more.\nUsage analytics let me see my activity.\nIt's my top chats and the plugins\nand the skills that I've been using.\nNow, here's the burrito order flow\nrendered right in the terminal.\nSupported LaTeX renders here too.\nHere's some mathematical proof\nof why burritos rule.",
+    "segments": [
+      {
+        "end_seconds": 5.48,
+        "segment_id": "seg-0001",
+        "start_seconds": 2.86,
+        "text": "Look, we know some of you are",
+        "timestamp_method": "source_transcript"
+      },
+      {
+        "end_seconds": 9.08,
+        "segment_id": "seg-0003",
+        "start_seconds": 7.78,
+        "text": "Well, this one's for y'all.",
+        "timestamp_method": "source_transcript"
+      },
+      {
+        "end_seconds": 11.34,
+        "segment_id": "seg-0005",
+        "start_seconds": 9.88,
+        "text": "You want Codex to feel fast",
+        "timestamp_method": "source_transcript"
+      },
+      {
+        "end_seconds": 16.12,
+        "segment_id": "seg-0008",
+        "start_seconds": 14.74,
+        "text": "where you love to hang out.",
+        "timestamp_method": "source_transcript"
+      },
+      {
+        "end_seconds": 18.22,
+        "segment_id": "seg-0010",
+        "start_seconds": 17.22,
+        "text": "these new features.",
+        "timestamp_method": "source_transcript"
+      },
+      {
+        "end_seconds": 21.16,
+        "segment_id": "seg-0012",
+        "start_seconds": 19.6,
+        "text": "on a very important project,",
+        "timestamp_method": "source_transcript"
+      },
+      {
+        "end_seconds": 25.02,
+        "segment_id": "seg-0014",
+        "start_seconds": 24.06,
+        "text": "It's a single command.",
+        "timestamp_method": "source_transcript"
+      },
+      {
+        "end_seconds": 28.46,
+        "segment_id": "seg-0016",
+        "start_seconds": 27.26,
+        "text": "Pretty handy, eh?",
+        "timestamp_method": "source_transcript"
+      },
+      {
+        "end_seconds": 34.26,
+        "segment_id": "seg-0019",
+        "start_seconds": 32.42,
+        "text": "So I'm making a web property",
+        "timestamp_method": "source_transcript"
+      },
+      {
+        "end_seconds": 38.32,
+        "segment_id": "seg-0021",
+        "start_seconds": 36.04,
+        "text": "Let's pop that open in the Codex CLI.",
+        "timestamp_method": "source_transcript"
+      },
+      {
+        "end_seconds": 42.44,
+        "segment_id": "seg-0023",
+        "start_seconds": 41.14,
+        "text": "full-screen interface.",
+        "timestamp_method": "source_transcript"
+      },
+      {
+        "end_seconds": 44.84,
+        "segment_id": "seg-0025",
+        "start_seconds": 43.8,
+        "text": "You can scroll through",
+        "timestamp_method": "source_transcript"
+      },
+      {
+        "end_seconds": 47.86,
+        "segment_id": "seg-0027",
+        "start_seconds": 45.92,
+        "text": "and the footer for the next message",
+        "timestamp_method": "source_transcript"
+      },
+      {
+        "end_seconds": 50.1,
+        "segment_id": "seg-0029",
+        "start_seconds": 49.26,
+        "text": "Why don't we give it",
+        "timestamp_method": "source_transcript"
+      },
+      {
+        "end_seconds": 55.1,
+        "segment_id": "seg-0032",
+        "start_seconds": 53.1,
+        "text": "I can kick it off in voice mode.",
+        "timestamp_method": "source_transcript"
+      },
+      {
+        "end_seconds": 58.04,
+        "segment_id": "seg-0034",
+        "start_seconds": 56.84,
+        "text": "Can you hear me?",
+        "timestamp_method": "source_transcript"
+      },
+      {
+        "end_seconds": 60.92,
+        "segment_id": "seg-0036",
+        "start_seconds": 59.02,
+        "text": "Start three separate tasks",
+        "timestamp_method": "source_transcript"
+      },
+      {
+        "end_seconds": 64.42,
+        "segment_id": "seg-0038",
+        "start_seconds": 62.54,
+        "text": "Now first, extend the website",
+        "timestamp_method": "source_transcript"
+      },
+      {
+        "end_seconds": 67.86,
+        "segment_id": "seg-0040",
+        "start_seconds": 65.7,
+        "text": "of repeating burritos.",
+        "timestamp_method": "source_transcript"
+      },
+      {
+        "end_seconds": 72.96,
+        "segment_id": "seg-0043",
+        "start_seconds": 71.98,
+        "text": "for price changes",
+        "timestamp_method": "source_transcript"
+      },
+      {
+        "end_seconds": 77.7,
+        "segment_id": "seg-0045",
+        "start_seconds": 74.74,
+        "text": "And third, can you generate",
+        "timestamp_method": "source_transcript"
+      },
+      {
+        "end_seconds": 81.24,
+        "segment_id": "seg-0047",
+        "start_seconds": 79.3,
+        "text": "of the CLI's order flow?",
+        "timestamp_method": "source_transcript"
+      },
+      {
+        "end_seconds": 86.38,
+        "segment_id": "seg-0049",
+        "start_seconds": 83.64,
+        "text": "And now I've got three",
+        "timestamp_method": "source_transcript"
+      },
+      {
+        "end_seconds": 89.7,
+        "segment_id": "seg-0051",
+        "start_seconds": 88.42,
+        "text": "a couple of projects.",
+        "timestamp_method": "source_transcript"
+      },
+      {
+        "end_seconds": 96.46,
+        "segment_id": "seg-0054",
+        "start_seconds": 94.98,
+        "text": "I can see what's running.",
+        "timestamp_method": "source_transcript"
+      },
+      {
+        "end_seconds": 98.8,
+        "segment_id": "seg-0056",
+        "start_seconds": 97.38,
+        "text": "I can group by status.",
+        "timestamp_method": "source_transcript"
+      },
+      {
+        "end_seconds": 102.12,
+        "segment_id": "seg-0058",
+        "start_seconds": 99.82,
+        "text": "I can jump straight into a task.",
+        "timestamp_method": "source_transcript"
+      },
+      {
+        "end_seconds": 105.12,
+        "segment_id": "seg-0060",
+        "start_seconds": 103.88,
+        "text": "around my file system",
+        "timestamp_method": "source_transcript"
+      },
+      {
+        "end_seconds": 109.24,
+        "segment_id": "seg-0062",
+        "start_seconds": 107.84,
+        "text": "I can ask Codex",
+        "timestamp_method": "source_transcript"
+      },
+      {
+        "end_seconds": 114.8,
+        "segment_id": "seg-0065",
+        "start_seconds": 112.44,
+        "text": "And if I want to try",
+        "timestamp_method": "source_transcript"
+      },
+      {
+        "end_seconds": 118.32,
+        "segment_id": "seg-0067",
+        "start_seconds": 116.6,
+        "text": "I can fork this conversation",
+        "timestamp_method": "source_transcript"
+      },
+      {
+        "end_seconds": 121.4,
+        "segment_id": "seg-0069",
+        "start_seconds": 120.02,
+        "text": "The same context,",
+        "timestamp_method": "source_transcript"
+      },
+      {
+        "end_seconds": 125.96,
+        "segment_id": "seg-0071",
+        "start_seconds": 124.58,
+        "text": "And you might have missed this,",
+        "timestamp_method": "source_transcript"
+      },
+      {
+        "end_seconds": 128.88,
+        "segment_id": "seg-0073",
+        "start_seconds": 127.22,
+        "text": "of this from my phone.",
+        "timestamp_method": "source_transcript"
+      },
+      {
+        "end_seconds": 135.02,
+        "segment_id": "seg-0076",
+        "start_seconds": 133.34,
+        "text": "and they're the same tasks.",
+        "timestamp_method": "source_transcript"
+      },
+      {
+        "end_seconds": 137.72,
+        "segment_id": "seg-0078",
+        "start_seconds": 136.44,
+        "text": "I can answer a question",
+        "timestamp_method": "source_transcript"
+      },
+      {
+        "end_seconds": 140.84,
+        "segment_id": "seg-0080",
+        "start_seconds": 139.42,
+        "text": "When I'm back at the terminal,",
+        "timestamp_method": "source_transcript"
+      },
+      {
+        "end_seconds": 143.14,
+        "segment_id": "seg-0082",
+        "start_seconds": 141.8,
+        "text": "and what needs attention.",
+        "timestamp_method": "source_transcript"
+      },
+      {
+        "end_seconds": 146.66,
+        "segment_id": "seg-0084",
+        "start_seconds": 145.46,
+        "text": "and the test results are here.",
+        "timestamp_method": "source_transcript"
+      },
+      {
+        "end_seconds": 151.54,
+        "segment_id": "seg-0086",
+        "start_seconds": 149.9,
+        "text": "And there's more.",
+        "timestamp_method": "source_transcript"
+      },
+      {
+        "end_seconds": 159.42,
+        "segment_id": "seg-0089",
+        "start_seconds": 157.42,
+        "text": "and the skills that I've been using.",
+        "timestamp_method": "source_transcript"
+      },
+      {
+        "end_seconds": 163.76,
+        "segment_id": "seg-0091",
+        "start_seconds": 161.84,
+        "text": "rendered right in the terminal.",
+        "timestamp_method": "source_transcript"
+      },
+      {
+        "end_seconds": 168.74,
+        "segment_id": "seg-0093",
+        "start_seconds": 167.12,
+        "text": "Here's some mathematical proof",
+        "timestamp_method": "source_transcript"
+      },
+      {
+        "end_seconds": 172.66,
+        "segment_id": "seg-0095",
+        "start_seconds": 170.46,
+        "text": "Look, you like to work in the terminal",
+        "timestamp_method": "source_transcript"
+      },
+      {
+        "end_seconds": 176.06,
+        "segment_id": "seg-0097",
+        "start_seconds": 174.58,
+        "text": "where you are and let you keep",
+        "timestamp_method": "source_transcript"
+      },
+      {
+        "end_seconds": 181.46,
+        "segment_id": "seg-0100",
+        "start_seconds": 179.72,
+        "text": "We'll keep improving the CLI.",
+        "timestamp_method": "source_transcript"
+      },
+      {
+        "end_seconds": 186.0,
+        "segment_id": "seg-0102",
+        "start_seconds": 183.88,
+        "text": "Okay, I'm getting pretty hungry.",
+        "timestamp_method": "source_transcript"
+      },
+      {
+        "end_seconds": 189.38,
+        "segment_id": "seg-0104",
+        "start_seconds": 187.48,
+        "text": "the output of that burrito command.",
+        "timestamp_method": "source_transcript"
+      }
+    ]
+  }
+]
+
+Create exactly three connected but intellectually distinct briefs. Piece 01 answers what changed and what matters. Piece 02 tests which claims withstand scrutiny and where evidence or interpretations are in tension. Piece 03 explains implications for the audience and what to watch next. Every claim needs at least one accepted exact-version reference. For written evidence, copy a short exact quote verbatim into locator.quote and set segment_id null. For media, use an existing segment_id and set quote null. Use at least three independent publishers per piece. Each piece needs a genuine inference connecting at least two publishers, an explicit reasoning chain in synthesis, and a meaningful limitation or counterargument. Distinguish reported facts, attributed source claims, and your own inference. Use claim IDs 01-c1, 01-c2, and so on.
+
+The supplied inputs are complete. Do not call tools or inspect files; return the schema-conforming JSON directly.

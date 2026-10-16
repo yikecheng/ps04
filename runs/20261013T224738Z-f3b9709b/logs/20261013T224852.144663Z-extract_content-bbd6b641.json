@@ -1,0 +1,29 @@
+{
+  "cost_estimate": false,
+  "cost_usd": null,
+  "details": {
+    "cache_hits": 0,
+    "failed_item_count": 8
+  },
+  "errors": [
+    "feed:cursor:301c1497d14b1ed17100: written item feed:cursor:301c1497d14b1ed17100 has no substantive retrievable text",
+    "feed:cursor:84d2e8f0655374a11ab2: written item feed:cursor:84d2e8f0655374a11ab2 has no substantive retrievable text",
+    "feed:openai:4927283c6bfad8cdd836: written item feed:openai:4927283c6bfad8cdd836 has no substantive retrievable text",
+    "feed:independent-research-authors:258392c93310baab1471: written item feed:independent-research-authors:258392c93310baab1471 has no substantive retrievable text",
+    "feed:independent-research-authors:337cbc4cedf5cfb1d758: written item feed:independent-research-authors:337cbc4cedf5cfb1d758 has no substantive retrievable text",
+    "feed:independent-research-authors:89ac63769de00fed6835: written item feed:independent-research-authors:89ac63769de00fed6835 has no substantive retrievable text",
+    "feed:sourcegraph:32584b6ceadae8f3a512: written item feed:sourcegraph:32584b6ceadae8f3a512 has no substantive retrievable text",
+    "feed:sourcegraph:ea3179ffe2d4c95b4f7b: written item feed:sourcegraph:ea3179ffe2d4c95b4f7b has no substantive retrievable text"
+  ],
+  "finished_at": "2026-10-13T22:48:52Z",
+  "input_count": 8,
+  "output_count": 0,
+  "stage": "extract_content",
+  "started_at": "2026-10-13T22:48:51Z",
+  "status": "incomplete",
+  "tools_or_models": [
+    "python-urllib",
+    "html-parser",
+    "youtube-transcript-api-or-yt-dlp"
+  ]
+}

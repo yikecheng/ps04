@@ -1,0 +1,75 @@
+Does this sound familiar?
+Hey, can you give this a quick review?
+And you're like, sure.
+Which repository is this?
+What's different about this?
+And where is this feature coming from?
+Look, there's so much code
+being written all the time,
+all over all of our companies.
+Code review is the new bottleneck.
+And that's why Codex now brings
+that workflow into one place.
+This is my personal inbox
+with GitHub pull requests
+from across my repositories.
+I can see the reviews
+that are assigned to me.
+I can see stuff I authored
+and I can also find priorities.
+Now here's one that is
+assigned specifically to me.
+I'm going to pin it in the sidebar.
+So it's easy to come back to.
+Cloud code review has
+already taken a first pass.
+Once the connector has the right
+repository permissions, initial
+reviews can run automatically.
+The comments Codex leaves
+on GitHub show up here too.
+So I can read the feedback
+alongside the change and I don't
+need to switch tools or worry
+about managing a cloud environment.
+Each pull request has a private chat.
+I love this.
+Look, I can ask, summarize
+this change and explain the risks
+for this entire project.
+And all my skills and connectors
+can be brought into this context.
+Like our team's review guidelines
+or design documents or whatever.
+I can also customize the review
+instructions depending
+on how I like things.
+Like give me a short summary,
+or how about a risk analysis?
+Or hey, how about even put
+this in a comic book style explanation?
+If I want another pass, I can
+start a local private review myself.
+Now that's separate from the cloud
+review that ran ahead of time.
+And now I can ask, ask
+questions and draft a comment
+in our team's review style.
+I can check it against the diff.
+I can make it my own and I
+can use the comment and the review
+actions right here in Codex.
+I love that I don't have to leave.
+Now when I'm the author, I can
+switch back to my changes and work
+through the feedback in the same place.
+And that's code review in Codex.
+Find the work, quickly understand
+the change, and move the review
+forward all in one place.
+Remove those bottlenecks.
+GitHub Code Review is generally
+available with GitLab
+support in preview.
+Try it with the next review
+waiting in your inbox.

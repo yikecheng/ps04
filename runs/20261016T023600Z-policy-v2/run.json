@@ -1,0 +1,8 @@
+{
+  "run_id": "20261016T023600Z-policy-v2",
+  "started_at": "2026-10-16T02:36:14Z",
+  "as_of_date": "2026-10-13",
+  "mode": "policy_comparison",
+  "previous_run_id": "20261013T231400Z-55620c5a",
+  "cohort_note": "Controlled selection rerun using the exact first completed run evidence versions; not a live collection and not a substitute for a second-day live run."
+}

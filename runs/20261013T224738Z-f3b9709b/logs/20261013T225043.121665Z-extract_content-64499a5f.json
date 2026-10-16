@@ -1,0 +1,23 @@
+{
+  "cost_estimate": false,
+  "cost_usd": null,
+  "details": {
+    "cache_hits": 0,
+    "failed_item_count": 2
+  },
+  "errors": [
+    "feed:openai:4927283c6bfad8cdd836: written item feed:openai:4927283c6bfad8cdd836 has no substantive retrievable text",
+    "podcast:thoughtworks:1e42ba3702a4388e97a5: media item podcast:thoughtworks:1e42ba3702a4388e97a5 has no timestamped transcript"
+  ],
+  "finished_at": "2026-10-13T22:50:43Z",
+  "input_count": 13,
+  "output_count": 11,
+  "stage": "extract_content",
+  "started_at": "2026-10-13T22:50:38Z",
+  "status": "incomplete",
+  "tools_or_models": [
+    "python-urllib",
+    "html-parser",
+    "youtube-transcript-api-or-yt-dlp"
+  ]
+}

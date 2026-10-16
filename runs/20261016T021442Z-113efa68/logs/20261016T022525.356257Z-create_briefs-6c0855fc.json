@@ -1,0 +1,27 @@
+{
+  "cost_estimate": false,
+  "cost_usd": null,
+  "details": {
+    "events_path": "runs/20261016T021442Z-113efa68/logs/20261016T021944.819642Z-create-briefs-model-2ba76b7d.events.jsonl",
+    "request_path": "runs/20261016T021442Z-113efa68/logs/20261016T021944.819642Z-create-briefs-model-2ba76b7d.request.txt",
+    "response_path": "runs/20261016T021442Z-113efa68/logs/20261016T021944.819642Z-create-briefs-model-2ba76b7d.response.json",
+    "schema_path": "runs/20261016T021442Z-113efa68/logs/20261016T021944.819642Z-create-briefs-model-2ba76b7d.schema.json",
+    "usage": {
+      "cache_write_input_tokens": 0,
+      "cached_input_tokens": 0,
+      "input_tokens": 49176,
+      "output_tokens": 21682,
+      "reasoning_output_tokens": 13741
+    }
+  },
+  "errors": [],
+  "finished_at": "2026-10-16T02:25:25Z",
+  "input_count": 25,
+  "output_count": 3,
+  "stage": "create_briefs",
+  "started_at": "2026-10-16T02:19:44Z",
+  "status": "completed",
+  "tools_or_models": [
+    "codex-cli:account-default"
+  ]
+}

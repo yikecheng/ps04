@@ -1,0 +1,71 @@
+# Adopt agents as a controlled system, not a new teammate
+
+_As of October 16, 2026._
+
+_Disclosure: AI assisted the research and drafting; a human reviewed the evidence._
+
+A small team should not make one binary decision about coding agents. It should climb a delegation ladder, giving the system more reach one reversible rung at a time. If a rung cannot support the team’s weight, there must still be a safe route down.
+
+### Rung 1: Constrain the job
+
+<!-- claim:03-c1 -->
+Our recommendation is to begin with one narrow, reversible task class. Default-branch CodeQL remediation is one candidate; a well-established deterministic transformation is another. [GitHub’s scoped workflow](https://github.blog/changelog/2026-10-15-agentic-autofix-for-code-scanning-alerts-general-availability) and the [Android Bench account](https://www.infoq.com/news/2026/10/android-bench-2/) support those boundaries, while [AgentSWE](https://arxiv.org/html/2610.13361) warns that demonstrated and delivered behavior can diverge. Open-ended agent construction should not be the first pilot.
+
+### Rung 2: Define acceptance first
+
+<!-- claim:03-c2 -->
+Before execution, turn the brief into explicit acceptance clauses and reserve at least one hidden check for the frozen result. When requirements remain ambiguous, run a structured questioning pass before implementation, as illustrated in the [GitHub Copilot Day demonstration at 2:41 and 3:52](https://www.youtube.com/watch?v=9yPyoxlyc5Q&t=161s). This is an inference from AgentSWE’s held-out design and [research showing that developers concentrate effort in planning](https://arxiv.org/html/2609.24234), not a proven recipe for every team.
+
+### Rung 3: Isolate concurrent execution
+
+<!-- claim:03-c7 -->
+Run concurrent agents in separate worktrees, and make status and ownership visible. The [OpenAI CLI demonstration at 1:34–2:00](https://www.youtube.com/watch?v=PUBc2G0Tj5E&t=94s) shows visible running status, grouping, and conversation forking; the supervision study emphasizes directing work, tracking progress, and evaluating output. Treat checkout isolation as containment against collisions, not validation that independently produced changes are semantically safe to merge.
+
+### Rung 4: Preserve the gates
+
+<!-- claim:03-c3 -->
+Keep agent-authored fixes behind human PR approval. Then deploy progressively with an editable monitoring plan and a tested rollback path. This recommendation combines [GitHub’s draft-PR boundary](https://github.blog/changelog/2026-10-15-agentic-autofix-for-code-scanning-alerts-general-availability), [Cursor’s monitoring and approval-gated revert workflow](https://cursor.com/blog/rollouts-and-security-reviewer), and [Spotify’s report](https://www.infoq.com/news/2026/10/spotify-ai-quality-controls/) of a check-passing automated change that failed in production.
+
+### Rung 5: Slice migrations at compatibility boundaries
+
+<!-- claim:03-c4 -->
+For migration work, prefer incremental component replacement behind a temporary interoperability boundary. [GitHub’s reported Rust migration](https://www.infoq.com/news/2026/10/github-copilot-rust-migration/) used that pattern instead of one parallel rewrite and cutover, allowing existing end-to-end tests to exercise each replacement while other components remained in TypeScript. Our inference is that the boundary made both testing and reversal more tractable; the case does not prove the same result for a small team.
+
+### Rung 6: Bound the batch and expose its cost
+
+<!-- claim:03-c5 -->
+GitHub currently permits users to select at most 25 code-scanning alerts for one agentic-autofix pull request. That product limit is a useful reminder that a batch still needs a reviewable edge.
+
+<!-- claim:03-c6 -->
+The same workflow consumes both Code Security AI Credits and GitHub Actions minutes. Those are separate resource inputs and belong in the pilot accounting rather than being hidden behind a count of completed PRs.
+
+### Rung 7: Measure accepted work
+
+<!-- claim:03-c8 -->
+Score the pilot on accepted outcomes and full supervision cost: held-out pass rate, rework, reviewer time, rollout or rollback events, credits, and tokens. Do not treat PR or code volume as success by itself. That recommendation reconciles [Cursor’s token-cost result](https://cursor.com/blog/improved-token-efficiency), GitHub’s explicit resource consumption, Spotify’s throughput and rework account, and AgentSWE’s large gap between development and held-out scores.
+
+### The signal that earns another rung
+
+<!-- claim:03-c9 -->
+The next persuasive external signal is convergent improvement across frozen held-out acceptance, one-attempt resolution, cross-module harness behavior, and runtime-heavy tasks. [AgentSWE](https://arxiv.org/html/2610.13361), [SWE-Nexus](https://arxiv.org/abs/2610.20038), [Doc2Harness](https://arxiv.org/abs/2610.20344), and the [Android Bench account](https://www.infoq.com/news/2026/10/android-bench-2/) each expose a different failure boundary. A higher aggregate leaderboard rank alone can conceal which boundary actually moved.
+
+No source tests this complete ladder end to end. GitHub and Spotify are unusually large organizations; the requirements demonstration is creator-reported; vendors have commercial incentives; and benchmark authors benefit from difficult new problems. Hidden checks, staging, and observability also impose costs that a very small team may not support. Worktrees do not resolve semantic conflicts. Those limitations should constrain autonomy, not be mistaken for evidence that bounded agents have no value.
+
+**Do now:** Pilot one task class, specify acceptance before execution, isolate the work, retain approval, stage the release, and preserve rollback.
+
+**Watch next:** Expand only when your own accepted outcomes justify it—and when independent evidence improves at the held-out, cross-module, and runtime layers where current systems remain weakest.
+
+## Sources
+
+- *Agentic autofix for code scanning alerts general availability* — GitHub, October 15, 2026. [Read the release](https://github.blog/changelog/2026-10-15-agentic-autofix-for-code-scanning-alerts-general-availability)
+- *Android Bench 2 Adds Support for Long-Horizon Tasks, Agentic Evaluation, and Continuous Scoring* — InfoQ, October 9, 2026. [Read the report](https://www.infoq.com/news/2026/10/android-bench-2/)
+- *AgentSWE: Can Coding Agents Build the Agent You Actually Want?* — Independent research authors, October 9, 2026. [Read the paper](https://arxiv.org/html/2610.13361)
+- *The Work Behind Delegation: A Framework for Supervising AI Coding Agents* — Independent research authors, September 21, 2026. [Read the paper](https://arxiv.org/html/2609.24234)
+- *25 agent skills to improve your workflow in GitHub Copilot* — GitHub, September 20, 2026. [Watch at 2:41 and 3:52](https://www.youtube.com/watch?v=9yPyoxlyc5Q&t=161s)
+- *Meet the New Codex CLI* — OpenAI, October 5, 2026. [Watch at 1:34, 1:37, 1:56, and 2:00](https://www.youtube.com/watch?v=PUBc2G0Tj5E&t=94s)
+- *Bots for the last mile* — Cursor, September 23, 2026. [Read the release](https://cursor.com/blog/rollouts-and-security-reviewer)
+- *Spotify More Than Doubled Monthly Code Changes as AI Accelerated Development* — InfoQ, October 12, 2026. [Read the report](https://www.infoq.com/news/2026/10/spotify-ai-quality-controls/)
+- *Github Migrates Copilot Runtime to Rust with AI-Assisted Rewrite* — InfoQ, October 9, 2026. [Read the report](https://www.infoq.com/news/2026/10/github-copilot-rust-migration/)
+- *Improved token efficiency for longer agent runs* — Cursor, September 23, 2026. [Read the report](https://cursor.com/blog/improved-token-efficiency)
+- *SWE-Nexus: Automated Composition of Software Engineering Tasks from Test Execution* — arXiv research authors, October 15, 2026. [Read the paper](https://arxiv.org/abs/2610.20038)
+- *Doc2Harness: Benchmarking LLMs on Long-Horizon Harness Engineering of Coding Agents* — arXiv research authors, October 15, 2026. [Read the paper](https://arxiv.org/abs/2610.20344)

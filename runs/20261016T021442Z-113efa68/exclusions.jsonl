@@ -1,0 +1,2 @@
+{"detail":"publication date 2026-09-14 is before inclusive window 2026-09-17 through 2026-10-16","item_id":"feed:sourcegraph:32584b6ceadae8f3a512","reason":"outside_window","version_id":"v-acd26359855c645902908453"}
+{"detail":"publication date 2026-09-14 is before inclusive window 2026-09-17 through 2026-10-16","item_id":"podcast:infoq:d6cf9bc155dcb06cf247","reason":"outside_window","version_id":"v-7b3b18e04679106bc24d6104"}

@@ -1,0 +1,17 @@
+{
+  "cost_estimate": false,
+  "cost_usd": null,
+  "details": {
+    "review_id": "review-8f4ee1be1e8599b656e3fed9"
+  },
+  "errors": [],
+  "finished_at": "2026-10-16T19:15:40Z",
+  "input_count": 6,
+  "output_count": 12,
+  "stage": "prepare_package",
+  "started_at": "2026-10-16T19:15:40Z",
+  "status": "completed",
+  "tools_or_models": [
+    "python-stdlib"
+  ]
+}

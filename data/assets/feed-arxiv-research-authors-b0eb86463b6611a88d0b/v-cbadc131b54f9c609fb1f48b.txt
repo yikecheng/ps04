@@ -1,0 +1,25 @@
+Computer Science > Software Engineering
+
+Title: T2J-BENCH: Benchmarking Coding Agents on Execution-Grounded PyTorch-to-JAX Repository Migration
+
+Abstract: Migrating a machine-learning codebase across frameworks--for example from PyTorch to JAX--is a routine but costly engineering task that is fundamentally cross-paradigm: eager, stateful, object-oriented modules must be rewritten as pure, jittable functions over an explicit parameter pytree. We ask whether coding agents can perform such whole-repository migrations correctly, and argue that existing code benchmarks, which grade unit-test pass rates or surface-level similarity to a reference translation, cannot answer this: they neither require the migrated system to \emph{behave} the same nor prevent a JAX reimplementation from faking equivalence by secretly importing PyTorch itself. We introduce T2J-BENCH, a benchmark of 63 whole-repository PyTorch-to-JAX migration tasks spanning 18 model families across both training and serving, where torch-free checkpoint conversion is itself part of the deliverable. T2J-BENCH grades execution-grounded functional equivalence: each candidate is run inside a separate, torch-free, offline verifier and scored against references frozen from the PyTorch original, under a hard independence gate and a continuous, threshold-free reward. Across twenty off-the-shelf agent--model configurations, the strongest recovers only 0.676 of the reward against a 0.980 oracle, with substantial numeric and behavioral divergence despite high spec pass rates. Finally, we contribute TWINHARNESS, a reference-grounded agent harness that turns the agent's executable PyTorch source into legitimate self-verification feedback; applied to an opus-5 agent it raises the reward from 0.649 to 0.723--the highest of any configuration--using only task-visible resources.
+
+Current browse context:
+
+References & Citations
+
+BibTeX formatted citation
+
+Bibliographic and Citation Tools
+
+Code, Data and Media Associated with this Article
+
+Recommenders and Search Tools
+
+arXivLabs: experimental projects with community collaborators
+
+arXivLabs is a framework that allows collaborators to develop and share new arXiv features directly on our website.
+
+Both individuals and organizations that work with arXivLabs have embraced and accepted our values of openness, community, excellence, and user data privacy. arXiv is committed to these values and only works with partners that adhere to them.
+
+Have an idea for a project that will add value for arXiv's community? Learn more about arXivLabs .

@@ -1,0 +1,123 @@
+Today we're releasing software development bots that help you get safe, reliable code into production faster.
+
+Rollouts watches a change from PR to production, flags regressions, and acts to restore a healthy state.
+
+Security Reviewer finds and fixes security issues in your codebase.
+
+# Why we built these
+
+Writing code is no longer the slow part. What hasn't sped up is everything after the PR goes up: making sure code is secure, watching the deploy, deciding whether a latency bump is real, figuring out which of eleven changes broke checkout.
+
+That work is hard, repetitive, and needs a lot of context. Sounds like the type of work that bots should be doing!
+
+We've said we're building toward self-driving codebases. Rollouts and Security Review autonomously handle common tasks every software team wishes they had more expertise and time to do.
+
+Rollouts tracks a change from the moment the PR opens to the moment you're confident it works in production.
+
+Connect source control, your deploy system, and your telemetry (Datadog, Grafana, Honeycomb, or wherever your metrics and traces live). Before merge, Rollouts reads the diff and writes a monitoring plan: the risks it sees, the effects the change is supposed to have, and the places your instrumentation can't tell you whether it worked. Edit the plan if it's missing something.
+
+After deploy, Rollouts compares the signals in the plan against the pre-deploy baseline. When it finds a regression, it tells you which change it suspects and what it plans to do. Depending on how you've configured it, that's a ping to the author, a paused progressive rollout, or a revert PR waiting for approval.
+
+Three things it does well today:
+
+It catches regressions confined to one endpoint in one region, before a global alert would fire
+
+It tells intended effects apart from regressions, so a deliberate spike doesn't page anyone
+
+It flags missing instrumentation before merge, which is the most common reason a bad change goes unnoticed
+
+Coming soon: feature flag integration so Rollouts can ramp and unramp traffic directly, and awareness of release trains and deploy freezes.
+
+# Security Reviewer
+
+Security Reviewer runs on every PR, reads the change in the context of the whole codebase, and reports vulnerabilities with an explanation and a proposed fix.
+
+Static analysis pattern-matches: it flags every string concatenation near a SQL call and misses the authorization check that stopped running after a refactor. Security Review reads code the way a security engineer does: where does user input enter, where does it end up, what does it pass through on the way.
+
+Out of the box it looks for:
+
+Injection across SQL, command, template, and LDAP surfaces
+
+Missing or broken authentication and authorization on new and changed routes
+
+Secrets and credentials committed to source
+
+Unsafe deserialization and unvalidated redirects
+
+Dependency changes that pull in known vulnerabilities
+
+Insecure defaults in infrastructure and config
+
+Each finding has a severity, an attack path, and a one-click fix.
+
+# Get started
+
+Rollouts and Security Reviewer are available today on Teams and Enterprise plans. Enable either bot from the automations tab to get started.
+
+Cloud agents start 3x faster with builds
+
+Bugbot is now over 3x faster, 22% cheaper, and finds 10% more bugs
+
+Meet the new Cursor
+
+Today we're releasing software development bots that help you get safe, reliable code into production faster.
+
+Rollouts watches a change from PR to production, flags regressions, and acts to restore a healthy state.
+
+Security Reviewer finds and fixes security issues in your codebase.
+
+# Why we built these
+
+Writing code is no longer the slow part. What hasn't sped up is everything after the PR goes up: making sure code is secure, watching the deploy, deciding whether a latency bump is real, figuring out which of eleven changes broke checkout.
+
+That work is hard, repetitive, and needs a lot of context. Sounds like the type of work that bots should be doing!
+
+We've said we're building toward self-driving codebases. Rollouts and Security Review autonomously handle common tasks every software team wishes they had more expertise and time to do.
+
+Rollouts tracks a change from the moment the PR opens to the moment you're confident it works in production.
+
+Connect source control, your deploy system, and your telemetry (Datadog, Grafana, Honeycomb, or wherever your metrics and traces live). Before merge, Rollouts reads the diff and writes a monitoring plan: the risks it sees, the effects the change is supposed to have, and the places your instrumentation can't tell you whether it worked. Edit the plan if it's missing something.
+
+After deploy, Rollouts compares the signals in the plan against the pre-deploy baseline. When it finds a regression, it tells you which change it suspects and what it plans to do. Depending on how you've configured it, that's a ping to the author, a paused progressive rollout, or a revert PR waiting for approval.
+
+Three things it does well today:
+
+It catches regressions confined to one endpoint in one region, before a global alert would fire
+
+It tells intended effects apart from regressions, so a deliberate spike doesn't page anyone
+
+It flags missing instrumentation before merge, which is the most common reason a bad change goes unnoticed
+
+Coming soon: feature flag integration so Rollouts can ramp and unramp traffic directly, and awareness of release trains and deploy freezes.
+
+# Security Reviewer
+
+Security Reviewer runs on every PR, reads the change in the context of the whole codebase, and reports vulnerabilities with an explanation and a proposed fix.
+
+Static analysis pattern-matches: it flags every string concatenation near a SQL call and misses the authorization check that stopped running after a refactor. Security Review reads code the way a security engineer does: where does user input enter, where does it end up, what does it pass through on the way.
+
+Out of the box it looks for:
+
+Injection across SQL, command, template, and LDAP surfaces
+
+Missing or broken authentication and authorization on new and changed routes
+
+Secrets and credentials committed to source
+
+Unsafe deserialization and unvalidated redirects
+
+Dependency changes that pull in known vulnerabilities
+
+Insecure defaults in infrastructure and config
+
+Each finding has a severity, an attack path, and a one-click fix.
+
+# Get started
+
+Rollouts and Security Reviewer are available today on Teams and Enterprise plans. Enable either bot from the automations tab to get started.
+
+Cloud agents start 3x faster with builds
+
+Bugbot is now over 3x faster, 22% cheaper, and finds 10% more bugs
+
+Meet the new Cursor

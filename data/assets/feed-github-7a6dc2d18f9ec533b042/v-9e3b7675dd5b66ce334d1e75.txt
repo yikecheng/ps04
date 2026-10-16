@@ -1,0 +1,27 @@
+Gemini 4 Argon, Google’s newest frontier model, is now generally available in GitHub Copilot. It is designed for complex coding, agentic, and reasoning tasks. In early testing, Gemini 4 Argon solved more tasks than previous Gemini models on every coding benchmark, with its largest gains in Copilot CLI. It also thoroughly checks its work, testing edge cases before it finishes.
+
+This model is billed at provider list pricing under usage-based billing. See Models and pricing for GitHub Copilot for details.
+
+Availability in GitHub Copilot
+
+Gemini 4 Argon is available to Copilot Pro+, Max, Business, and Enterprise users. You can select the model in the model picker in:
+
+Visual Studio Code
+
+GitHub Copilot coding agent
+
+GitHub Copilot app
+
+Rollout will be gradual. Check back soon if you don’t see it yet.
+
+Copilot Enterprise and Copilot Business plan administrators can manage access to Gemini 4 Argon through the model policy in Copilot settings. Under default model enablement, new models are automatically enabled unless an administrator has turned off the global default or explicitly disables this model.
+
+To explore all models available in GitHub Copilot, see our documentation on models and get started with Copilot.
+
+Share your feedback
+
+Join the GitHub Community to share your feedback.
+
+Subscribe to our developer newsletter
+
+Discover tips, technical guides, and best practices in our biweekly newsletter just for devs.

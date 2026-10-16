@@ -1,0 +1,103 @@
+Just recently, I was talking to a software engineer and made conversation.
+He stops to check his phone, approve a code change and continue talking.
+It turns out he had multiple agents running in the background for all of the different roles that you would typically have on a team.
+So he had a developer, a code reviewer, an operations and many, many more.
+And turns out this guy wasn't a software engineer by trade, he was actually a pilot.
+So when people keep asking whether AI will replace developers, I always say no.
+I've actually seen more people get into coding because of AI.
+But what AI will do is change what software development looks like.
+And in this video, I'll break down five key concepts that you need to know in order to prepare.
+And trust me, the last one is the most important.
+So stay tuned.
+So first off is the inflection point.
+And let me explain what that means.
+Because over the past year.
+Me and my team have all started to say the same thing,
+that AI is able to complete tasks that typically would have taken us weeks, if not months, now in just a few minutes.
+And I used to use AI as an autocomplete in order to help me write better functions and tests,
+but I would often spend more time fixing AI output if I had just written it myself.
+Now we just commonly assign entire features to AI.
+Coding agents, such as not just writing the code, but also understanding the code base and what's happening inside,
+writing and running those tests,
+and merging those changes into the actual code base, all from a single prompt or loop that can define when this agent should finish.
+And speaking of defining when the agent should finish, instead of doing all of this via prompts.
+Which can be interpreted differently by different types of coding models and having to argue with the AI in order to get the right output.
+What we typically now see is an approach that's known as spec-driven development,
+where by creating this specification of the requirements and all the outcomes that we would like to see with the software project,
+we can then send that off to the AI coding agent and model.
+In order for us to create this project and its artifacts.
+Next is the shift from implementing to conducting.
+Because I mentioned earlier that I don't think developers are going to disappear, but the priorities are definitely changing.
+And that's because for decades, the biggest bottleneck to taking code and shipping that was one,
+how fast you could write that code, and two, how high quality that code output was.
+And companies would hire who they thought were the best competitive programmers or who could complete the most complex programming tasks.
+And the thing is, now most AI models already know programming languages like, say for example, Java, or Python, or Rust.
+And they're able to take those languages that they're very proficient in and complete tasks.
+Say, for example tickets that are coming in from the team and take that.
+And be able to move that to staging, production, QA, and much more.
+And so if this can already be done with AI, the implementing phase, well, then what becomes important for developers?
+That, my friends, is being a conductor, a captain,
+someone who can make important architectural decisions that will impact the software in a year from now, for example.
+So instead of writing functions yourself by hand, what we see now is defining goals that will break.
+Work down into specific milestones that can then be completed by an AI model or agent.
+And the reason for that is because you have to start thinking about concepts such as effective context management.
+So context management is the idea of understanding the resource limitations of an AI models context window
+and all of those extra components that are being added in addition to your code base when you're using it for engineering.
+Such as tools or skills or MCP servers to provide external data to the model.
+So that's context engineering, but there's also the idea of loop engineering.
+And what loop engineering is, is where instead of you being the person that prompts the agent back and forth and you continually iterate,
+well, what you do is you design a system that does it instead.
+So loop engineering works like a recursive goal where you as a human define the purpose
+and the AI iterates until it's complete with whatever the task was that needed to be done.
+However, understanding the fundamentals of AI models is really important as well.
+So let me give you an example.
+If I was to ask an AI model, how long would it take to build a third-person role-playing game, an RPG?
+It might say, hey, several weeks to several months, as an example, that it would estimate it would take in order to build out this game.
+But if you ask...
+That same model with a coding agent in order to actually build that game.
+Well, it might give you a working example within five minutes, right?
+So the thing is, how does this work, right.
+Well, that's one of the limitations of LLMs, right, it doesn't quite understand time and memory like we do as humans.
+And so understandings of the basics of how these LLM and models work is really important.
+Another example is how LLMs are stored in GPU memory and how you actually use them at inference.
+So here you have the model's weights loaded into the GPU's memory.
+And here you the KV cache, which is generated and stored as you request the model and get results back.
+So understanding how all of this works is going to give you a huge advantage as you proceed to use AMM models as a software developer.
+Then, if we add on context engineering capabilities that we just talked about, such as skills,
+which are markdown files, but add reusable and contextual information about your code and project with each AI request, as well as automations.
+So being able to set up kind of cron jobs and event triggered actions.
+So for example, if someone comes to your website and fills in a form that can kick automation.
+As well as sub agents.
+So sub agents are essentially used for situations where maybe you're investigating a problem with the code source
+and you send off a sub agent to go see how that library works and test it out itself and then come back to the main agent.
+So all of these are different examples of contextual engineering capabilities that you can start adding to your
+software engineering process as a developer to better use these AI models.
+And these are the fundamentals which are important to know.
+But just like how SQL injections can infiltrate our applications, prompt injections are also very real.
+That's because AI systems have access to sensitive data, they have exposure to the web, and also the ability to send data.
+And the combination of all three for your agent makes it quite possible for your AI agent to say, for example, read a pull request online.
+Here we have our little AI agent here in the middle, seeing the pull request, and be tricked into sending your credentials to somebody else.
+So say for example this is our little key with our private credentials that we have on our desktop.
+And this could happen without you even knowing.
+So that's why teams are running coding agents inside of disposable sandboxes whenever possible.
+So you can see this as an example, where we have the agent and the code that we're working with sandbox
+in its own environment in order to reduce the tack surface if an AI agent gets compromised.
+Finally, the future.
+Because I had the chance recently to work with AI legend, Andrew Ng, and I remembered his quote, that AI is becoming the new electricity, right?
+And what does that really mean?
+Because...
+Electricity transformed everything around it, and now we use electricity to power our phone, turn on lights, and warm our home, right?
+But there's also entire industries and thousands of people who, for example, work at substations to make sure that the grid is working.
+They also are in the field helping people, for example to repair streetlights and help out at their home.
+And they're also making sure that everyone can access electricity, right.
+And AI might follow the same path, where we're gonna need engineers who can maintain these systems, right?
+The grid, to be able to ensure connectivity so that people can access these AI models and systems,
+ensure that AI systems are safe and reliable and have quality, right.
+So don't worry, I think software engineering isn't going anywhere,
+but I'm optimistic for the future, for developers and what they'll be able to create and yes, it is shifting.
+Away from just manually writing code to designing and orchestrating systems and AI agents.
+And those who excel in the architectural and critical thinking phases will become even more valuable as AI coding agents continue to improve.
+As always, thanks so much for watching.
+If you learned something today and want to help us hack the algorithm,
+please leave a like and make sure you're subscribed for more content around AI and software development.
+Bye.

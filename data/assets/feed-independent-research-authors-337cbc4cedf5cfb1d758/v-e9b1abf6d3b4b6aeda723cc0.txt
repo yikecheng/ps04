@@ -1,0 +1,99 @@
+Why Software Engineering Is Indispensable in the Age of Coding Agents
+
+Can AI make Software Engineering (SE) — the discipline — obsolete? And can it make software engineers — the professionals — redundant? This paper argues that the rise of capable AI coding agents makes SE and software engineers essential, not obsolete: the missing foundation without which AI-assisted development produces misleadingly plausible, unverifiable, and ultimately untrustworthy software. Three structural properties of large language models (probabilistic generation, agnosticism, and semantic statelessness) create a structural vacuum that no amount of training can eliminate. Filling it requires four knowledge levers: methodological knowledge, domain knowledge, design choices, and process choices. All four must be reified as persistent artifacts, and each requires the software engineer as methodologist, mediator, and custodian.
+
+1. What We See
+
+The advent of coding agents has raised legitimate questions about the fate of Software Engineering and software engineers. To answer them, one may assess empirical data or practitioners’ judgment. The first evidence to enable careful judgment is now emerging: field observation and professional practice, randomized trials, cross-country firm surveys.
+
+Meyer ( 5 ) , writing in these pages, frames the current moment. He distinguishes three software categories ( acute , business , casual ) and argues that vibe coding — code produced by “giving in to the vibes” rather than engineering — works for the third but not for the first two, where correctness is paramount and coding is only 10–20% of project cost. He names the hallucination loop : a plausible suggestion that sends the developer down a path that will not close. His conclusion: for professional software, AI-assisted development must be paired with formal specification and verification, the move from probable to provable .
+
+The empirical picture is not uniform. Cui et al. ( 1 ) found in field experiments a 26% increase in completed tasks across 4,867 developers at Microsoft, Accenture, and a Fortune 100 firm, with the largest gains among less experienced developers. Becker et al. ( 2 ) ran a randomized controlled trial with sixteen experienced open-source developers on 246 real tasks in their own mature repositories: those given AI tools took 19% longer than those without, and afterward believed AI had helped. Xu et al. ( 10 ) confirmed this pattern at scale in a study of 2,755 open-source repositories using difference-in-differences: aggregate line-of-code output rose 17.7% after Copilot introduction, but core contributors — those with the deepest ownership of the codebase — saw a 19% decline in original code output, offset by more time spent on code review and pull-request rework. The discriminator is task complexity, codebase maturity, and developer seniority. Time saved on delimited tasks is recaptured on complex ones, spent supervising output that looks plausible but requires an external reference for correctness. That reference lives with the developer, not with the tool.
+
+Huang et al. ( 3 ) studied thirteen developers in the field and surveyed ninety-nine more. A distinctive divide has emerged: some developers practice vibe coding, treating interaction flow as evidence of correctness. Professionals do not: they plan, validate output, and retain architectural control, treating the agent as an executor. Where AI-assisted development succeeds, something structured is compensating for what the agent alone cannot do.
+
+At scale, the Stack Overflow 2025 Developer Survey — nearly forty-nine thousand developers across 177 countries — captures the same ambivalence: 84% adopt AI tools, yet 46% distrust the accuracy of AI output (up from 31%), and 66% cite AI solutions that are “almost right, but not quite” as the top frustration.
+
+AI coding agents have a structural vacuum: on their own, they lack what they need to succeed. The vacuum follows from what AI tools structurally are; the nature of software makes it consequential, and the state of SE decides whether it is filled. Software is intangible and, as Balzer ( 4 ) observed, “rarely consistent”: requirements evolve, knowledge arrives incrementally, practices carry inconsistencies that are features, not errors. Classical engineering converges on a finished artifact; software never settles, its substrate constantly renegotiated. SE is still young — the NATO Conference dating from 1968 — and applied unevenly. In sixty years that discipline has moved toward the classical engineering disciplines: formal methods, safety standards (DO-178C, IEC 62304, ISO 26262), Empirical Software Engineering, Model-Based Systems Engineering, product line engineering. Yet without it, mature or not, AI tools cannot resolve the problems the evidence lays bare. The two reinforce each other: SE supplies what AI lacks, and AI accelerates SE’s systematic application and improvement.
+
+2. Why: The Structural Vacuum
+
+The evidence and the practitioner voice reviewed in Section 1 reveal the vacuum; they do not explain it. To do so, we adopt a logical and epistemological approach: examining what AI coding agents structurally are and, from that structure, deriving the roles human knowledge and judgment must necessarily play. The vacuum is not a performance gap: it is a structural condition.
+
+Three properties of a large language model define how it operates and, together, constrain what it can and cannot do without external support.
+
+Probabilistic generation. An LLM does not compute: it generates. Its output is a navigation over a probability distribution conditioned on training and context. And no digital artifact, generated or otherwise, can be validated against the world it represents without a reference external to the model.
+
+Agnosticism. An LLM has absorbed patterns from vast corpora of code and text; three domains resist that absorption. Each has a reducible surface layer and a structurally irreducible core.
+
+Methodological agnosticism. The reducible surface is SE principles — specification methods, architectural styles, testing frameworks — which specialized models can absorb. The irreducible core is evaluative judgment: determining whether this specification for this system meets the bar requires a domain-grounded reference the model cannot generate. Asking the model to evaluate its own output does not help: it lacks that reference, which is difficult, if not impossible, to reify precisely each time.
+
+Domain agnosticism. The reducible surface is general domain knowledge (e.g., clinical constraints, regulatory requirements) accessible through RAG, fine-tuning, or domain training. The irreducible core is organization-specific knowledge: continuously renegotiated, semantically defined by the practice it describes, and permanently inconsistent in Balzer’s sense. It can only be managed, never eliminated, and requires ongoing human mediation.
+
+Evolutionary agnosticism. The reducible surface is general evolution patterns — what design choices constrain future change, what qualities matter in a given domain — in principle trainable. The irreducible core is the project-specific trajectory: what this system must become, given this organization’s constraints, does not exist until the software engineer reasons it into existence. This is a structural absence, not a deficiency of attention.
+
+Semantic statelessness. Within a session, the model retains a working footprint: the context window gives it access to what was said, decided, and produced. Modern systems now add persistent memory across sessions, but as storage or log of prior exchanges — not as a semantic model of accumulated know-how. The architectural decision made last Tuesday, the domain constraint introduced by the expert last week, the specification agreed upon last month: none becomes usable knowledge unless it has been reified as an artifact.
+
+3. Four Knowledge Levers, Three Actors
+
+The vacuum has a precise structure. Filling it requires four distinct levers.
+
+Methodological knowledge — how to build quality software — is codified by SE as a discipline: fifty years of accumulated practice on specifications, architecture, testing, and process governance.
+
+Domain knowledge — what the system must mean and do in its world — is carried by domain experts: clinicians, operators, traders, and subject-matter specialists who understand the problem the software is built to solve.
+
+Design choices — the project-specific decisions that translate into the product: architectural structures, component boundaries, trade-offs, interfaces. These are produced and owned by the software engineer, informed by both methodological and domain knowledge, and accumulate as the system grows.
+
+Process choices — how the work is organized for this specific project: the lifecycle adopted, the criteria for agent autonomy, the review structure.
+
+All four levers require reification : they must be materialized as persistent, accessible artifacts. Knowledge that exists only in someone’s head does not exist for a stateless agent.
+
+Three actors do this work. Domain experts supply semantic knowledge — without them, SE structure is form without meaning. The AI agent is the executor, powerful but without intrinsic reference for correctness or future orientation. The software engineer is the active mediator between the two, and the custodian who keeps the system’s evolutionary trajectory explicit over time.
+
+One might object that these limits are temporary and that enough training data would let the agent learn without human intervention. But the three irreducible cores named in Section 2 are not gaps in training: evaluative judgment, organizational knowledge, and a system’s future trajectory cannot be distilled from any corpus. The vacuum is structural, not historical.
+
+4. SE and AI
+
+The four levers and three actors just described operate through two distinct mechanisms — the soul SE lends to AI to fill the vacuum. The first is constitutive : SE methodology embedded directly in the agent’s design, so that it asks for specifications when they are missing, signals underspecified requirements, and structures its outputs according to SE principles before any human provides project-specific input. The second is operational : the software engineer provides SE-structured artifacts — specifications, architectural contexts, testing frameworks, domain constraints — that give the agent a reference for correctness on each project. The two mechanisms map onto the two layers: constitutive addresses the reducible, operational addresses the irreducible core.
+
+AI, in turn, helps SE close a knowing-doing gap it has long been unable to close on its own: formal requirements, architectural documentation, and systematic testing are demonstrably effective yet consistently underused. CASE tools in the 1980s and 1990s tried to close this gap, resented for their overhead. AI shifts the cost dynamic: reification, verification, and accountability (concepts SE has developed for decades) become cheaper to apply. Specifications, once expensive to produce and maintain outside critical domains, become byproducts of elicitation sessions and can be progressively formalized to reconnect with established SE practices. Tests, once written after the code to verify it, become the reference the agent generates against. Shaw and colleagues call the resulting skill design rather than coding ( 7 ) . Architecture Decision Records, once documentation debt, become the substrate the agent operates on. Practices once confined to critical domains can become ordinary, as the mechanical cost of applying the method drops below the threshold of abandonment.
+
+The software engineer’s role now operates on three axes: methodological (providing the agent with sound SE structure); mediating (eliciting organization-specific domain knowledge and structuring it as verifiable artifacts); and custodial (owning the design and process choices that accumulate over the project’s lifetime). To govern an AI agent well, the engineer must know more SE, not less. The pattern is visible at organizational scale: the DORA 2025 State of AI report ( 8 ) , based on nearly five thousand professionals worldwide, finds that AI adoption amplifies practices already present. Teams with mature engineering foundations convert AI into delivery throughput; teams without them find AI accelerating instability rather than productivity.
+
+5. In Practice: Artifacts and Workflows
+
+Sections 3 and 4 established that the four knowledge levers must be reified as artifacts, and that AI has made their reification sustainable beyond the critical domains that could once justify its cost. The artifacts named below are largely independent of the software lifecycle adopted; the list is not exhaustive.
+
+Specifications (the primary operational artifact of spec-driven development ( 6 ) ) supply the model with the criterion of adequacy it cannot generate for itself. Architecture Decision Records encode the design choices that accumulate over the system’s life, along with the why and the intended trajectory that no session context preserves. Domain constraint records reify the organization-specific knowledge elicited from experts: the artifact form of what is otherwise permanently inconsistent and never articulated. Test frameworks structured for agent input externalize the reference of correctness the agent has no internal access to, becoming the agent’s proving ground and the engineer’s acceptance criterion. Process definitions instantiated per project make process choices executable rather than aspirational: the criteria for agent autonomy, the boundaries of automated action, the review structure. Design rationale records , finally, hold the custodial layer of coherence across accumulated decisions, distinguishing incidental patches from principled changes.
+
+A natural question is whether AI changes development workflows. AI does not prescribe one. Any lifecycle a team adopts (waterfall, agile, spec-driven, or incremental refinement of existing practices) can be supported by an AI engine, provided the artifacts are present and continuously maintained. The “loop” now celebrated in agentic development revisits iterative, incremental development — long practiced in SE — now driven by an AI executor: AI empowering an established method. The ambition to drive the software process through such an engine is not new. Through the 1990s and 2000s, research on Process Modeling Languages and Process-centered Software Engineering Environments attempted to govern the software process through deterministic formal models. A 2014 retrospective concluded that formal process automation could succeed only in narrow technical phases such as code generation, testing, and deployment ( 9 ) . Deterministic execution cannot govern an activity whose normal state is inconsistency: it either blocks or forces premature resolution that erases information. AI resolves the problem differently: a probabilistic engine does not require constraint satisfaction, navigates incomplete specs, and surfaces inconsistencies as outputs for human judgment. The intent behind PSEE research is not abandoned. Where deterministic execution could not, probabilistic delivery opens a new direction.
+
+SE is not a discipline in decline. It is a discipline whose moment has arrived — the one that defines the structured space in which AI agents can be trusted. And the software engineer is not a professional in decline either — but the one who carries that knowledge into practice: who defines what the agent navigates by, who elicits the domain meaning that no corpus can supply, and who owns the trajectory of the system over time.
+
+Three implications follow.
+
+Reframe the question. The dominant debate asks whether AI will replace software engineers. The right question is different: what structured knowledge must govern AI agents to produce software that is correct, trustworthy, and built to last? Answering it requires SE and software engineers, not their abandonment.
+
+Redirect the investment. Specifications, domain elicitation, architectural governance, and process discipline are not overhead to minimize — they are the structured space within which AI agents can be trusted to operate with persistent and coherent memory. Organizations that treat them as optional will pay the cost in correctness, maintainability, and accountability.
+
+Revalue the discipline. SE education, research, and practice are not legacies to be displaced by AI fluency. They are prerequisites for AI exploitation and governance. A generation of developers trained only in prompting — without methodological knowledge, domain elicitation skill, or architectural judgment — will reproduce at scale the failure modes this paper describes.
+
+(1) Z. Cui, M. Demirer, S. Jaffe, L. Musolff, S. Peng, and T. Salz. The Effects of Generative AI on High-Skilled Work: Evidence from Three Field Experiments with Software Developers. SSRN Working Paper 4945566, Feb. 2025.
+
+(2) J. Becker, N. Rush, E. Barnes, and D. Rein. Measuring the Impact of Early–2025 AI on Experienced Open-Source Developer Productivity. arXiv:2507.09089, July 2025.
+
+(3) R. Huang, A. Reyna, S. Lerner, H. Xia, and B. Hempel. Professional Software Developers Don’t Vibe, They Control: AI Agent Use for Coding in 2025. arXiv:2512.14012, 2025.
+
+(4) R. Balzer. Tolerating Inconsistency. In Proc. 13th Int. Conf. on Software Engineering (ICSE 1991) , Austin, TX, 1991, pp. 158–165.
+
+(5) B. Meyer. Artificial Intelligence for Software Engineering: From Probable to Provable. Communications of the ACM , 69(6):46–49, June 2026. doi:10.1145/3773295.
+
+(6) D. B. Piskala. Spec-Driven Development: From Code to Contract in the Age of AI Coding Assistants. arXiv:2602.00180, 2026. Submitted to AIWare 2026.
+
+(7) M. Shaw, M. Hilton, and G. Fairbanks. AI Tools Make Design Skills More Important than Ever. IEEE Software , 43(2), Mar./Apr. 2026 (The Pragmatic Designer). doi:10.1109/MS.2025.3646316.
+
+(8) Google Cloud DORA Research Team. State of AI-Assisted Software Development 2025. Google Cloud, Oct. 2025. https://dora.dev/dora-report-2025/
+
+(9) A. Fuggetta and E. Di Nitto. Software Process. In Proc. Future of Software Engineering (FOSE’14) , Hyderabad, India, 2014, pp. 1–14.
+
+(10) F. Xu, P. K. Medappa, M. M. Tunc, M. Vroegindeweij, and J. C. Fransoo. AI-Assisted Programming Decreases the Productivity of Experienced Developers by Increasing the Technical Debt and Maintenance Burden. arXiv:2510.10165, October 2025.

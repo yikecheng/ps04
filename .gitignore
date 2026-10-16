@@ -1,0 +1,14 @@
+.DS_Store
+.venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+
+# Raw downloaded media stays local. The small SQLite evidence index, retained
+# text/transcripts, and run specimens are included for grading and replay.
+data/media/
+
+# Temporary files are never submission evidence.
+*.tmp
+work/
+outputs/

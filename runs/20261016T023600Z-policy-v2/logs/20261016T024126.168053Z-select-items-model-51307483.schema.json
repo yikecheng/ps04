@@ -1,0 +1,70 @@
+{
+  "additionalProperties": false,
+  "properties": {
+    "decisions": {
+      "items": {
+        "additionalProperties": false,
+        "properties": {
+          "decision": {
+            "enum": [
+              "accept",
+              "reject",
+              "defer"
+            ],
+            "type": "string"
+          },
+          "decision_slot": {
+            "enum": [
+              "slot-0001",
+              "slot-0002",
+              "slot-0003",
+              "slot-0004",
+              "slot-0005",
+              "slot-0006",
+              "slot-0007",
+              "slot-0008",
+              "slot-0009",
+              "slot-0010",
+              "slot-0011",
+              "slot-0012",
+              "slot-0013",
+              "slot-0014",
+              "slot-0015",
+              "slot-0016",
+              "slot-0017"
+            ],
+            "type": "string"
+          },
+          "piece_ids": {
+            "items": {
+              "enum": [
+                "01",
+                "02",
+                "03"
+              ],
+              "type": "string"
+            },
+            "type": "array"
+          },
+          "reason": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "decision_slot",
+          "decision",
+          "reason",
+          "piece_ids"
+        ],
+        "type": "object"
+      },
+      "maxItems": 17,
+      "minItems": 17,
+      "type": "array"
+    }
+  },
+  "required": [
+    "decisions"
+  ],
+  "type": "object"
+}

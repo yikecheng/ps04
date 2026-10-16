@@ -1,0 +1,16 @@
+{
+  "cost_estimate": false,
+  "cost_usd": null,
+  "errors": [
+    "one or more preparation or storage stages failed"
+  ],
+  "finished_at": "2026-10-13T22:50:43Z",
+  "input_count": 13,
+  "output_count": 11,
+  "stage": "collect_sources",
+  "started_at": "2026-10-13T22:50:36Z",
+  "status": "failed",
+  "tools_or_models": [
+    "bash"
+  ]
+}

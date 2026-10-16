@@ -1,0 +1,61 @@
+InfoQ Software Architects' Newsletter
+
+A monthly overview of things you need to know as an architect or aspiring architect.
+
+View an example
+
+We protect your privacy.
+
+InfoQ Homepage News Github Migrates Copilot Runtime to Rust with AI-Assisted Rewrite
+
+Github Migrates Copilot Runtime to Rust with AI-Assisted Rewrite
+
+Oct 09, 2026 2 min read
+
+Follow us on
+
+GitHub has migrated the runtime behind GitHub Copilot CLI, the Copilot app, and Copilot SDK from TypeScript and Node.js to Rust, replacing more than 800,000 lines of production code through an AI-assisted rewrite. The migration took approximately 14.5 weeks and was delivered through 128 pull requests while GitHub continued releasing the runtime. GitHub reports that a measured client startup, session creation, and single-turn scenario fell from 5.25 seconds with the previous runtime to 292 milliseconds when the Rust runtime was embedded in process.
+
+The migration also changed how applications integrate with the runtime. The previous implementation required Node.js and V8 and communicated with host applications across a process boundary. GitHub says this added approximately 100 MB of working set per client. The Rust implementation can instead be embedded directly into host applications through a C ABI, while an out-of-process mode remains available. The Copilot SDK currently supports TypeScript, Python, Go, .NET, Java, and Rust.
+
+GitHub’s before and after Copilot runtime architecture (Source: GitHub Blog Post )
+
+GitHub used an incremental replacement strategy rather than a parallel rewrite followed by a single cutover. Individual TypeScript components were replaced with Rust implementations, with temporary N API interoperability connecting the two. This allowed existing end-to-end tests to exercise the new code while other components remained in TypeScript. GitHub shipped 135 releases during the migration, including 35 stable and 100 prerelease versions.
+
+The compatibility layer reached 2,019 internal N API exports and 3,356 TypeScript call sites before being removed. By August 21, the runtime contained 832,378 lines of production Rust and 468,689 lines of Rust unit tests. AI agents generated most of the implementation, while compilation, testing, and human review helped identify regressions involving behavior, state and lifetime handling, library semantics, and lost optimizations. GitHub recorded 4,478 direct cargo check runs, with 87.1% completing cleanly.
+
+Community responses also focused on the verification challenges of AI-assisted migrations and pointed to cancellation, retries, and backpressure as examples requiring validation beyond compilation. PLBjt wrote that
+
+The interesting part here is less that Copilot wrote Rust and more whether the migration kept the runtime’s behavior stable at the boundaries.
+
+Francesco Pira , XR tech lead at Leonardo, highlighted :
+
+Tests small reviewable changes, compatibility layers, and human engineering judgment as important elements of the approach.
+
+Côme Redon , senior solution engineer at Microsoft, pointed out :
+
+The challenge of identifying undocumented behavioral contracts in legacy systems.
+
+GitHub’s migration timeline showing the incremental pull requests and releases. (Source: GitHub Blog Post )
+
+The resulting architecture provides a native Rust runtime that can be embedded directly into host applications or operated separately, while the Copilot SDK maintains language-specific interfaces across its supported languages. The migration combined AI-generated implementation with incremental integration, temporary compatibility boundaries, automated validation, and human review while the production runtime continued to evolve.
+
+About the Author
+
+This content is in the Performance topic
+
+Architecture & Design
+
+AI, ML & Data Engineering
+
+AI Assisted Coding
+
+AI coding agents
+
+Popular across InfoQ What Does It Really Mean To Program With AI: A Conversation with Joy Ebertz Cloudflares Newly Acquired Vite+ Reaches 1.0 with GitLab CI Support, Hooks, and tsup Migration Github Migrates Copilot Runtime to Rust with AI-Assisted Rewrite Java News Roundup: Grails 8, Open Liberty, GlassFish, Infinispan, LangChain4j, Spock Google Antigravity SDK Adds Local Model Support for Greater Token Efficiency and Code Privacy Ontology‐Driven Observability: Building the E2E Knowledge Graph at Netflix Scale
+
+The InfoQ Newsletter
+
+A round-up of last week’s content on InfoQ sent out every Tuesday. Join a community of over 250,000 senior developers. View an example
+
+We protect your privacy.

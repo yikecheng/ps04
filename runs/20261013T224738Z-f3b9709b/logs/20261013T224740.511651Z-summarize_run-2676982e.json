@@ -1,0 +1,17 @@
+{
+  "cost_estimate": false,
+  "cost_usd": null,
+  "details": {
+    "overall_status": "failed"
+  },
+  "errors": [],
+  "finished_at": "2026-10-13T22:47:40Z",
+  "input_count": 8,
+  "output_count": 1,
+  "stage": "summarize_run",
+  "started_at": "2026-10-13T22:47:40Z",
+  "status": "completed",
+  "tools_or_models": [
+    "python-stdlib"
+  ]
+}

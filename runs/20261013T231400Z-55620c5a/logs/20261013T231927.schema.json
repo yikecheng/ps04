@@ -1,0 +1,133 @@
+{
+  "additionalProperties": false,
+  "properties": {
+    "briefs": {
+      "items": {
+        "additionalProperties": false,
+        "properties": {
+          "argument": {
+            "type": "string"
+          },
+          "claims": {
+            "items": {
+              "additionalProperties": false,
+              "properties": {
+                "claim_id": {
+                  "type": "string"
+                },
+                "evidence": {
+                  "items": {
+                    "additionalProperties": false,
+                    "properties": {
+                      "item_id": {
+                        "type": "string"
+                      },
+                      "locator": {
+                        "additionalProperties": false,
+                        "properties": {
+                          "quote": {
+                            "type": [
+                              "string",
+                              "null"
+                            ]
+                          },
+                          "segment_id": {
+                            "type": [
+                              "string",
+                              "null"
+                            ]
+                          },
+                          "type": {
+                            "enum": [
+                              "text",
+                              "segment"
+                            ],
+                            "type": "string"
+                          }
+                        },
+                        "required": [
+                          "type",
+                          "quote",
+                          "segment_id"
+                        ],
+                        "type": "object"
+                      },
+                      "version_id": {
+                        "type": "string"
+                      }
+                    },
+                    "required": [
+                      "item_id",
+                      "version_id",
+                      "locator"
+                    ],
+                    "type": "object"
+                  },
+                  "minItems": 1,
+                  "type": "array"
+                },
+                "statement": {
+                  "type": "string"
+                },
+                "type": {
+                  "enum": [
+                    "reported_fact",
+                    "source_claim",
+                    "inference"
+                  ],
+                  "type": "string"
+                }
+              },
+              "required": [
+                "claim_id",
+                "statement",
+                "type",
+                "evidence"
+              ],
+              "type": "object"
+            },
+            "minItems": 4,
+            "type": "array"
+          },
+          "limitations": {
+            "type": "string"
+          },
+          "piece_id": {
+            "enum": [
+              "01",
+              "02",
+              "03"
+            ],
+            "type": "string"
+          },
+          "question": {
+            "type": "string"
+          },
+          "synthesis": {
+            "type": "string"
+          },
+          "title": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "piece_id",
+          "title",
+          "question",
+          "argument",
+          "synthesis",
+          "limitations",
+          "claims"
+        ],
+        "type": "object"
+      },
+      "maxItems": 3,
+      "minItems": 3,
+      "type": "array"
+    }
+  },
+  "required": [
+    "briefs"
+  ],
+  "type": "object"
+}

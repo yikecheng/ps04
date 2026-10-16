@@ -1,0 +1,32 @@
+{
+  "cost_estimate": false,
+  "cost_usd": null,
+  "details": {
+    "events_path": "runs/20261016T021442Z-113efa68/logs/20261016T022919.119754Z-write-video-scripts-model-c3704af6.events.jsonl",
+    "length_warnings": [
+      "video script 01 has approximately 881 spoken words",
+      "video script 02 has approximately 875 spoken words",
+      "video script 03 has approximately 880 spoken words"
+    ],
+    "request_path": "runs/20261016T021442Z-113efa68/logs/20261016T022919.119754Z-write-video-scripts-model-c3704af6.request.txt",
+    "response_path": "runs/20261016T021442Z-113efa68/logs/20261016T022919.119754Z-write-video-scripts-model-c3704af6.response.json",
+    "schema_path": "runs/20261016T021442Z-113efa68/logs/20261016T022919.119754Z-write-video-scripts-model-c3704af6.schema.json",
+    "usage": {
+      "cache_write_input_tokens": 0,
+      "cached_input_tokens": 0,
+      "input_tokens": 30764,
+      "output_tokens": 14952,
+      "reasoning_output_tokens": 8286
+    }
+  },
+  "errors": [],
+  "finished_at": "2026-10-16T02:33:28Z",
+  "input_count": 3,
+  "output_count": 3,
+  "stage": "write_video_scripts",
+  "started_at": "2026-10-16T02:29:19Z",
+  "status": "completed",
+  "tools_or_models": [
+    "codex-cli:account-default"
+  ]
+}

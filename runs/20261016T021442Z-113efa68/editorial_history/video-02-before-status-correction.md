@@ -1,0 +1,134 @@
+# What survives: workflow competence, not blanket correctness
+
+**Publication:** Agent Signal  
+**Evidence cut-off:** 2026-10-16  
+**Target runtime:** 4:00–4:30  
+**Approximate spoken words:** 640
+
+## Scene 1 — One phrase, four different outcomes
+
+**Narration**
+
+<!-- claim:02-c11 -->
+When somebody says coding agents work, ask: at which outcome layer? A workflow can be available, cheaper to run, or able to close a detector alert while still failing held-out requirements, cross-module contracts, or production behavior. Read together, the GitHub, Cursor, benchmark, and Spotify evidence is not contradictory. The sources measure different things.
+
+**Visual direction**
+
+[VISUAL: Build a four-rung ladder: Available → Efficient → Check closes → Production behavior. Add the caption: “Success at one layer does not prove the next.”]
+
+[VISUAL: On-screen disclosure for five seconds: “AI assisted research, drafting, and presentation; human editorial review completed.”]
+
+**Source notes — video 0:00–0:35**
+
+This is a cross-source inference separating workflow availability, operating efficiency, detector closure, held-out performance, and production behavior.
+
+## Scene 2 — Change the test and the result changes
+
+**Narration**
+
+<!-- claim:02-c1 -->
+AgentSWE evaluates 25 agent-building commissions spanning its three stages. Builders develop against requirements and illustrative examples; their submissions are then frozen and tested independently on held-out acceptance cases.
+
+<!-- claim:02-c2 -->
+Its authors report that Creation runs scoring at least 90 during development averaged only 9.9 on held-out delivery cases. A convincing build-time demonstration therefore did not reliably transfer to unseen acceptance conditions.
+
+<!-- claim:02-c3 -->
+SWE-Nexus covers 600 tasks from 105 repositories in six programming languages. Its authors report that the best configuration resolved 37.8 percent in one attempt, while a scope-weighted measure credited partial recovery.
+
+<!-- claim:02-c4 -->
+Doc2Harness evaluated 19 frontier models with three independent builds per model across 328 deterministic tests. The authors report a best pass rate of 53.05 percent. Even that strongest result failed nearly half the cases, with failures clustering around functionality divided across modules.
+
+**Visual direction**
+
+[VISUAL: Show three clean benchmark cards. AgentSWE: 25 commissions, development ≥90 → held-out 9.9. SWE-Nexus: 600 tasks, best one-attempt 37.8%. Doc2Harness: 19 models, best 53.05%. Label every number “author-reported.”]
+
+**Source notes — video 0:35–1:45**
+
+All three sources are research-author accounts. Their tasks and scoring systems differ, so the percentages should not be ranked against one another.
+
+## Scene 3 — What the product evidence actually proves
+
+**Narration**
+
+<!-- claim:02-c5 -->
+In GitHub’s agentic-autofix workflow, the agent reruns CodeQL to confirm that the alert closes, then opens a draft pull request for review. That is useful evidence about a bounded detector condition. It is not evidence that every related runtime behavior is correct.
+
+<!-- claim:02-c6 -->
+Cursor reports a seven-percent reduction in user token costs without reduced agent quality after tracking cost, latency, tool-call errors, and usage in internal experiments. That supports an efficiency claim under Cursor’s measurement system; the supplied account does not independently define or verify the quality threshold.
+
+**Visual direction**
+
+[VISUAL: Two measuring tools appear. A CodeQL gauge turns green under the label “Detector outcome.” A token meter drops 7% under “Vendor-measured efficiency.” Keep a separate, unfilled box labeled “Production correctness.”]
+
+**Source notes — video 1:45–2:30**
+
+GitHub and Cursor are describing their own commercial products. Their evidence supports the stated workflow and internal measurements, not general correctness.
+
+## Scene 4 — Runtime and long-horizon work remain harder
+
+**Narration**
+
+<!-- claim:02-c7 -->
+InfoQ reported that the leading model on Android Bench 2.0 had a 32-percent long-horizon-task pass rate at publication time. That figure is a benchmark snapshot, not a universal model ranking.
+
+<!-- claim:02-c8 -->
+The same account says agents perform better on several well-established, deterministic transformations, even in larger codebases. It also reports continued difficulty with runtime validation, breaking framework changes, and knowledge gaps involving unreleased libraries.
+
+<!-- claim:02-c9 -->
+Spotify supplies a production counterpart: according to the company account relayed by InfoQ, an automated dependency upgrade passed the available checks and still failed after deployment.
+
+The pattern is consistent. A visible example, compiler, detector, or test suite can provide real evidence while leaving important behavior unobserved.
+
+**Visual direction**
+
+[VISUAL: Matrix with task type on the left and evidence layer across the top. Highlight deterministic transformation in green; runtime validation, framework change, and production behavior in amber. Animate “Checks passed” followed by “Production failed.”]
+
+**Source notes — video 2:30–3:25**
+
+InfoQ’s Android Bench article relays Google’s benchmark account. Its Spotify article relays one reported incident, which demonstrates a failure mode rather than an error rate.
+
+## Scene 5 — Supervision is the compensating system
+
+**Narration**
+
+<!-- claim:02-c10 -->
+Researchers observing 19 experienced developers identified seven supervisory stages and described supervision as a connected process rather than a final-review event. The work includes setting direction, monitoring progress, intervening, evaluating output, and maintaining reusable guidance.
+
+The evidence has limits. AgentSWE contains 25 commissions; SWE-Nexus constructs tasks from traced tests; Doc2Harness uses a scripted mock model; and the supplied Android Bench account omits the distribution of long-horizon tasks. Vendor metrics omit important denominators and quality definitions. Spotify contributes one incident, not a rate. Hard benchmarks may also understate performance on routine work.
+
+For a small team, the defensible conclusion is narrow workflow competence under connected supervision. Approve tasks with a clear acceptance oracle, test behavior the agent did not optimize against, and retain intervention and rollback points. Nothing supplied here supports blanket autonomous delivery.
+
+**Visual direction**
+
+[VISUAL: Circular seven-node supervision loop, with readable labels for Plan, Delegate, Monitor, Intervene, Review, Integrate, Update guidance. Close with: “Bounded competence + connected supervision.”]
+
+**Source notes — video 3:25–4:20**
+
+The supervision study is qualitative. Source incentives also differ: vendors benefit from adoption, while benchmark authors benefit from establishing difficult new problems.
+
+## Ready-to-paste companion-article copy
+
+**Headline:** Coding-agent claims make sense once you separate the outcome layers
+
+**Standfirst:** Workflow availability, detector closure, lower token cost, held-out acceptance, and production behavior are different results. The strongest current evidence supports bounded competence under supervision—not blanket autonomous correctness.
+
+**Callout:** Ask what was measured before asking whether an agent succeeded.
+
+## Ready-to-paste video-description copy
+
+Why can a coding agent close a security alert and still be unsafe in production? Because workflow availability, operating cost, detector closure, held-out acceptance, and runtime correctness are different outcome layers.
+
+Agent Signal compares AgentSWE, SWE-Nexus, Doc2Harness, Android Bench 2.0, vendor measurements, and Spotify’s reported incident. The evidence supports narrow, testable workflows with connected supervision. It does not establish reliable autonomous delivery. Evidence cut-off: October 16, 2026.
+
+Disclosure: AI assisted research, drafting, and presentation; human editorial review completed.
+
+## Sources
+
+- Independent research authors — *AgentSWE: Can Coding Agents Build the Agent You Actually Want?* — 2026-10-09 — https://arxiv.org/html/2610.13361 — Timestamp: n/a, text source.
+- arXiv research authors — *SWE-Nexus: Automated Composition of Software Engineering Tasks from Test Execution* — 2026-10-15 — https://arxiv.org/abs/2610.20038 — Timestamp: n/a, text source.
+- arXiv research authors — *Doc2Harness: Benchmarking LLMs on Long-Horizon Harness Engineering of Coding Agents* — 2026-10-15 — https://arxiv.org/abs/2610.20344 — Timestamp: n/a, text source.
+- GitHub — *Agentic autofix for code scanning alerts general availability* — 2026-10-15 — https://github.blog/changelog/2026-10-15-agentic-autofix-for-code-scanning-alerts-general-availability — Timestamp: n/a, text source.
+- Cursor — *Improved token efficiency for longer agent runs* — 2026-09-23 — https://cursor.com/blog/improved-token-efficiency — Timestamp: n/a, text source.
+- InfoQ — *Android Bench 2 Adds Support for Long-Horizon Tasks, Agentic Evaluation, and Continuous Scoring* — 2026-10-09 — https://www.infoq.com/news/2026/10/android-bench-2/ — Timestamp: n/a, text source.
+- InfoQ — *Spotify More Than Doubled Monthly Code Changes as AI Accelerated Development* — 2026-10-12 — https://www.infoq.com/news/2026/10/spotify-ai-quality-controls/ — Timestamp: n/a, text source.
+- Independent research authors — *The Work Behind Delegation: A Framework for Supervising AI Coding Agents* — 2026-09-21 — https://arxiv.org/html/2609.24234 — Timestamp: n/a, text source.

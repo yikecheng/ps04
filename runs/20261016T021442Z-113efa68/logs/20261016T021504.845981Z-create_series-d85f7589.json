@@ -1,0 +1,16 @@
+{
+  "cost_estimate": false,
+  "cost_usd": null,
+  "errors": [
+    "editorial selection failed"
+  ],
+  "finished_at": "2026-10-16T02:15:04Z",
+  "input_count": 25,
+  "output_count": null,
+  "stage": "create_series",
+  "started_at": "2026-10-16T02:15:04Z",
+  "status": "failed",
+  "tools_or_models": [
+    "bash"
+  ]
+}

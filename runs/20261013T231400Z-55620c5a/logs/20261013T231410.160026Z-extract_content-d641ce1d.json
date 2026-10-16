@@ -1,0 +1,20 @@
+{
+  "cost_estimate": false,
+  "cost_usd": null,
+  "details": {
+    "cache_hits": 11,
+    "failed_item_count": 0
+  },
+  "errors": [],
+  "finished_at": "2026-10-13T23:14:10Z",
+  "input_count": 17,
+  "output_count": 17,
+  "stage": "extract_content",
+  "started_at": "2026-10-13T23:14:02Z",
+  "status": "completed",
+  "tools_or_models": [
+    "python-urllib",
+    "html-parser",
+    "youtube-transcript-api-or-yt-dlp"
+  ]
+}

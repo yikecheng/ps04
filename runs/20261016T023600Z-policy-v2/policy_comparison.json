@@ -1,0 +1,19 @@
+{
+  "comparison_type": "controlled_policy_only",
+  "evidence_cohort_run_id": "20261013T231400Z-55620c5a",
+  "evidence_item_count": 17,
+  "policy_v1_counts": {"accept": 10, "reject": 6, "defer": 1},
+  "policy_v2_counts": {"accept": 11, "reject": 5, "defer": 1},
+  "changed_decisions": [
+    {"item_id": "feed:github:7a6dc2d18f9ec533b042", "before": "reject", "after": "accept"},
+    {"item_id": "feed:independent-research-authors:337cbc4cedf5cfb1d758", "before": "reject", "after": "accept"},
+    {"item_id": "feed:sourcegraph:32584b6ceadae8f3a512", "before": "accept", "after": "reject"},
+    {"item_id": "podcast:infoq:5950b2ca18b6b0b75291", "before": "reject", "after": "accept"},
+    {"item_id": "podcast:infoq:d6cf9bc155dcb06cf247", "before": "accept", "after": "reject"}
+  ],
+  "proposed_human_sample_match": {"policy_v1": "6/6", "policy_v2": "4/6"},
+  "limitations": [
+    "One model rerun includes sampling variation and does not establish a causal policy effect with experimental certainty.",
+    "The proposed human labels are not final student approval."
+  ]
+}

@@ -1,6 +1,6 @@
 {
-  "publication_name": "",
-  "topic": "",
-  "audience": "",
-  "central_question": ""
+  "publication_name": "Agent Signal",
+  "topic": "Evidence-based adoption of AI coding agents by small software teams",
+  "audience": "Technical leads and hands-on engineering managers at software teams of roughly 2–20 people who understand pull requests, CI, testing, and code review",
+  "central_question": "Which new coding-agent capabilities are genuinely production-ready, what evidence supports the claims, and what should a small software team do next?"
 }

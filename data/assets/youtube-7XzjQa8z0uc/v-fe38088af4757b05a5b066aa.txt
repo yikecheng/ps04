@@ -1,0 +1,220 @@
+In this video, you'll learn how to use OpenAI's Codex step by step. Codex is an AI coding
+agent that can build projects, make changes, fix problems, and even have multiple agents working on
+different tasks all at the same time. And the best part is, you don't need to know how to code to
+use it. To show you how it works, we'll start from scratch and build our own Cookie Shop Tycoon game.
+Along the way, you'll learn how to create a project, make changes, use Git to keep track
+of your work, leverage multiple agents, use skills, and even hand off work to the cloud.
+By the end, you'll know how to use Codex to take an idea and turn it into something that
+actually works. I'm Kevin, and let's dive in. To get started with Codex,
+first download and install the ChatGPT desktop app. You'll find a link right
+here at the bottom of the screen. It's available on both Windows and Mac.
+Once you open the ChatGPT app and sign in, up in the top left-hand corner,
+select Codex. This opens Codex. It's a separate experience from a regular ChatGPT conversation.
+Codex can work with files, run commands, and take actions to complete tasks for
+you. You can also use Codex from the web, command line, or inside your code editor.
+To keep things beginner-friendly, we'll start with the desktop app. To see how all this works,
+let's create our very first project. In Codex, let's start by adding a project.
+Over on the left-hand side, make sure you can see the sidebar. Right up above,
+you can click on this icon to toggle it off, or here you can toggle it on.
+Right here, I see the option for a project. Let's click on the plus icon to add a new one.
+If you're wondering what a project is, it's basically a folder on your
+computer that contains the files that Codex will work with. Right up above,
+we can give the project a name. I'll call this Cookie Shop Tycoon.
+This will be fun. And down below, we can specify a source folder,
+or basically where it's going to store all of the files on your local computer. I'll click on Add,
+and right up above, I've already created a folder on my computer called Cookie Shop Tycoon,
+and right down below, you'll notice that there are no files currently. That's okay. Right down below,
+I'll select the folder, and then in the bottom right-hand corner, let's click on Create Project.
+Right up here, let's click on Trust Folder. And now, we can simply describe what we
+want Codex to build. You don't need to know what programming language to use,
+or what files need to be created. You just explain what you want
+in just plain English. And I think that's what makes this so powerful.
+You really just need an idea. So let's start with something simple. I'm going
+to type in a prompt. Now, feel free to pause it if you'd like to read it,
+and you'll also find a copy of this in the description if you'd like to follow
+along. I want to build a browser-based game called Kevin's Cookie Shop Tycoon.
+You start with $100, and you run a cookie shop for 30 days. Each day,
+the player gets to decide how many cookies to bake, the price, and how much to spend
+on advertising. And then, at the end, we'll see how many cookies are sold, the revenue,
+expenses, profit, and remaining cash. So we're going to keep it simple, polished,
+and also make it easy to run just on the local computer in the browser. Now, as I described that,
+if you've ever played the classic lemonade stand game, this is basically that, but with cookies.
+Now, right over here, once you finish typing in your prompt, let's submit that. And now,
+Codex gets to work. It figures out how to build the game. It creates all the different files
+that it needs, and it writes the code. And this is one of the key things to understand about Codex.
+Instead of just giving you the code, like you would get in just a traditional chat,
+it can actually work directly with the files in your project. And Codex
+has now finished building the game. Right up here,
+we can see that it took about three minutes and 10 seconds. And right down below,
+we can see a summary of everything that it did. It created all the different files for the game.
+And here I could click into any one of them to see exactly what it created. Now, I could go through
+all this code myself, but I don't need to know how any of it works to try out the game. So right over
+here, let's open the game by clicking on this index.html file. Over on the right-hand side,
+we can now see the game. Let's expand the window just so we can see things better.
+Let's enter a full view. And over on the left-hand side, let's also minimize the
+sidebar. There we go. Kevin's Cookie Shop, the tycoon game. I like the sound of that.
+A little dough, a big dream. Well, let's see if we could turn this into a big success. Now,
+right down below, I could see that we start with $100 and we're currently on day one. Well, let's
+see how much money we can make on day one. So right down below, how many cookies should we bake?
+Let's go with 80. Down below, I could set the price. I think $2 is good.
+That's reasonably priced. Down below, we could also set the advertising budget.
+I'll go with, let's say, $15. Now, this seems pretty aggressive. We're spending 60% of our
+starting budget just on day one. Let's bake and open the shop to see how we do. Oh, look at that.
+Daily profit, $100. So we doubled our starting money. Maybe I should be
+baking cookies instead of making YouTube videos. This seems like a good business.
+And right down below, we could also see the shop ledger.
+Not bad. And just like that, we went from just an empty folder on the computer to a working
+game. And all we had to do was enter in a single prompt. We have a working game, but right now,
+it's mostly just numbers on a screen. Let's make it feel like we're actually running a cookie shop.
+With Codex, we don't have to start over. We can simply describe what we want to change, and it
+can update the project we already have. Let's try doing that. In the top right-hand corner,
+let's exit out of full screen mode. And in the bottom left-hand corner, we have our prompt field.
+Here, I'll ask it to add animated customers to the game. When I start a day, let's show
+customers arriving at the cookie shop and buying cookies. And we'll have the number
+of customers roughly reflect the number of cookies that we sell. And we'll keep
+it simple and try to make it fun. Now that I've entered that in, let's submit that.
+Codex will now look through our existing project, figure out which files it needs to modify,
+and it'll make the changes. It took a little under two minutes to make all those changes.
+And right down below, we could see all the different files that it modified. It changed
+the game.js, the index.html, and also the README file. Now, here's a neat thing.
+I could click into any one of these files. So here's the game.js. And I
+could see all the changes it made. So it looks like it added about 47 lines,
+here all highlighted in green. And then down below, it removed three lines from the file.
+That's cool. Now, let's close out of this changes file. And right up here, we have the
+Cookie Shop Tycoon. Let's now refresh it so we can see all the latest changes. I'll click here.
+Let's go back to full screen. You can press Ctrl+Shift+F on your keyboard,
+and that toggles full screen on. And right over here,
+we see this nice little visual of Kevin's Cookie Shop. That's cool. Let's test it out.
+Right over here, I'll stick with all the defaults. And let's bake and open the
+shop. Whoa, look at all those customers coming, buying cookies. Oh, I love it.
+And if we look right down below, I made $80 profit.
+Not as good as last time, but not bad. Now, I think this is a great approach to building
+things in Codex. You start out by telling it what you want. Then you test it out, see what
+you think. You go back, you give it feedback, and then it iterates on it again and again.
+And this way, you gradually build up your project. Now that we've
+been making some changes to our project, now is a really good time to talk about
+Git. Git helps us keep track of changes to our project. And the really nice thing is,
+Codex has Git integrated directly into it. So it's also really easy to use.
+Let's exit out of full screen mode again. And I'll press that shortcut key that
+we just learned. Ctrl+Shift+F. Now, over on the left-hand side,
+let's click on view changes. And this shows us exactly what changed in our project.
+Now, right at the top, you'll see by default, it's set to last turn. So we're seeing just
+the changes that Codex made in its most recent response. If I open this menu,
+you'll see that there are a few different ways to view all of our changes. Now,
+you don't need to understand all of these right now. If you're interested in going deep into Git,
+I have a video on my channel, which goes through it in depth.
+Now, down below, we can see the individual files that changed. And if I click into one of them,
+you'll see what's called the diff. Green shows what was added and red shows what
+was removed. One of the most useful things Git lets us do is create what's called a commit.
+You could think of a commit like, let's say a saved checkpoint on our project.
+Now, right now, I think this game is working really well. So this is the perfect time to
+create one. And again, you don't even need to know how to use different Git commands
+to do this. We could simply ask Codex. So right down below in the prompt field,
+I'll ask it to commit the current changes with the message Add animated characters.
+And right over here, we can now submit that and Codex will handle the Git commands for us and
+also create the commit. As we continue working on our game, we can create more commits along
+the way. And if something goes wrong, we have earlier versions of our projects that we can
+go back to. You don't need to be a Git expert to use Codex, but creating commits gives you
+a really useful safety net. So far, we've had one Codex agent working on one task at a time.
+But Codex can also delegate work to multiple agents and have them work in
+parallel. Let's make three improvements to our game all at the same time. Right down below,
+let's type in the prompt. I'm giving Codex three different improvements
+to work on. First, I want one agent to add cookie varieties.
+Here for the second one, I want to build a shop upgrade system. And third,
+I want to improve the visuals and the animations. And importantly,
+I'm telling Codex to give each agent its own isolated worktree so they can all work
+in parallel without changing our main project. Right over here, let's submit the prompt. Codex
+is now creating three isolated worktrees and assigning one feature to each agent.
+A worktree is basically a separate copy of our project. So all three agents can
+work in parallel without interfering with each other or our main project.
+And now all three agents have finished. It took about five minutes. Each one
+worked on a different feature and committed its changes separately.
+But nothing has been merged into our main project yet. So right down below,
+Codex even gives us a link to open each version of the game. That way we could try
+out what each agent built before deciding what we want to keep. So right over here,
+let's test it out. First, let's open up the cookie varieties.
+And here if I scroll down here, we can now choose the type of cookie that we want to
+bake. That's neat. Right over here, I'll click into shop upgrades. That opens up
+another tab over here. And if I scroll down here, we could upgrade different items.
+For example, a better oven, a larger storefront, or here we could also invest in improved
+advertising. And lastly, we also have some visual polish. It's subtle, but it does look a little bit
+nicer than what we had. Now, I think they all look pretty good. But let's bring one of them back in.
+Let's bring in the new cookie varieties into the main project. Right over here, we can ask Codex
+to help us with that. I'll say bring the cookie varieties feature from its worktree back into
+the main project. And we'll keep the other two separate for now. Over here, let's submit that.
+Right up above, we can now see that it's brought the cookie varieties into
+our main project. And right up above, if I click back into the main game,
+let's refresh that. And here, let's scroll down. And there we have the
+new cookie varieties in the main game. And the other two agents' changes are still separate.
+Now, of course, I could follow the same process with those other agents
+if we wanted to bring their work into the main project too. So with multiple agents,
+we can break a larger project into separate tasks and have Codex work on them all at the same time,
+review the results, and then choose which changes we actually want to keep. Next, let's look at
+skills. A skill is a reusable set of instructions that teaches Codex how to perform a specific task.
+This is really useful for something that you want Codex to do the same way again and again.
+For example, as we continue adding features to our game, we'll want to make sure we haven't
+accidentally broken anything. Instead of writing out the same testing instructions every time,
+let's turn them into a skill. Right down below, I'll type in a prompt. I'm asking
+Codex to create a reusable skill called the Game Tester. I'm giving it a list of things
+that I wanted to check like whether the game launches, the controls work,
+the calculations are correct, and players can't spend money or sell cookies they don't have.
+I'm also telling it to report any problems it finds without changing anything so I can review
+the results first. Right over here, let's submit that. Codex has now created the skill for us,
+and we can reuse it whenever we want to test a project. Let's try it out. Down below,
+I'll ask it to use the Game Tester skill to test Cookie Shop Tycoon.
+Then let's run it. Codex has now followed all the different instructions in our skill. Right above,
+I could click on the skill, and here we could see all the different instructions,
+and it went through all these different checks. Now, once it finished, we get this
+report showing us what it found. And overall, it looks like there were no gameplay problems.
+So that's great news. Now, if there were any issues, we can always go back and ask Codex
+to fix it. The nice thing is we don't have to write out all these testing instructions again,
+we simply reuse the Game Tester skill whenever we need it. And skills aren't limited to testing,
+you could create them for things like reviewing code, writing documentation,
+or any other repeatable workflow. So far, Codex has been working locally on my computer.
+But we can also hand work off to Codex Cloud where it can work on a task remotely. There's
+a little bit of setup the first time you do this, you'll need to set up a free GitHub account. And
+you can do that at the following website. Once you sign up for your account, you'll need to connect
+GitHub to ChatGPT. Let's jump back into ChatGPT to do that. Back in the ChatGPT desktop app, over on
+the left-hand side, hover over the Customize menu, and right up on top, go to Plugins.
+Then look for GitHub. And once you see that install it and then connect your
+account. Once you finish connecting to GitHub, go back to your main project. And
+now we're going to push the local project to GitHub. So Codex Cloud can access it.
+If you're new to GitHub, you could think of it as a place to store and manage your project online.
+Right now, all of our project files are sitting here on my computer, we're going to create a
+repository on GitHub, which is basically an online home for all of these files. And the
+best part is we don't have to set up any of this manually, we could simply ask Codex to handle it
+for us. So right down below, I'll type in my prompt, Create a new GitHub repository called
+Cookie Shop Tycoon and push the current main project to it. Then over here, let's submit
+that. Codex has now created the repository and uploaded our current project to GitHub.
+Now, because it’s on GitHub, Codex Cloud can access it. To use Codex Cloud right up in
+the top left-hand corner, let's start a new chat right down here, let's click on this computer and
+let's change it to cloud. Then over here, let's click on choose environment. And let's create a
+new environment. Here, Codex can already see the repositories from my connected GitHub account.
+Let's select Cookie Shop Tycoon. And over here, I'll click on Get Started. Codex is
+now inspecting the repository and figuring out how to configure the environment for us. It's
+now finished setting up the environment right down here. And let's click on Save and publish.
+Here we can now give Codex a task to run in the cloud. I'll click here right down below,
+I'll type in a prompt to add a new customer satisfaction system to the game. Then over here,
+I'll submit that. Now the task is running remotely instead of on my
+computer. I don't have to keep Codex open here while it works.
+And I can also access the cloud task from Codex on the web and come back later to review the
+results. So the basic workflow is work locally, push the project to GitHub, and then hand off
+tasks to Codex Cloud when you want them to run remotely. And Codex has now finished the task.
+Let's take a look at what it built. Here we can now see the new customer satisfaction score.
+And let's advance to the next day. I'll bake and open the shop. There
+we see that beautiful animation. And we can see how it impacts the satisfaction
+score. So that entire feature was built and tested remotely in Codex Cloud.
+We've been using the Codex desktop app, but there are other ways that you can work with Codex. As
+we just saw, you can use Codex on the web to start and check on cloud tasks from anywhere.
+There is also the Codex CLI, which lets you work with Codex directly from the command
+line. And if you already write code in an editor like Visual Studio Code,
+you can use the Codex extension without leaving your editor. They all give
+you different ways to work with Codex depending on just how you like to work.
+But if you're getting started, I'd probably stick with the desktop app. It gives you a visual way to
+work. And you could work with local projects, you could run multiple agents, you could use skills,
+and you could also hand work off to the cloud. So it makes it really easy. And there you go.
+Now you know how to use Codex to take an idea and turn it into a working project,
+even if you don't know how to code. And of course, Cookie Shop Tycoon is really
+just one possibility. You could use this same workflow that we looked at today to build apps
+or maybe automate tasks, work on websites, or really bring any software idea to life.
+All right, thanks for watching. And I'll see you in the next one.

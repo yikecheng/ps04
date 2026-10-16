@@ -1,69 +1,140 @@
 # Problem Set 4 Student Submission
 
-Complete this document with your project details and links. Keep the course instructions in [README.md](README.md) and the required contracts in [ARCHITECTURE.md](ARCHITECTURE.md).
+**Student:** Yike Cheng (`yikecheng`)  
+**GitHub repository:** https://github.com/yikecheng/ps04 (public fork)
 
-**Student:** To complete  
-**GitHub repository:** Add your repository link
+This file is a live submission record. Links marked **pending** will be replaced after production and publication. Nothing marked pending should be interpreted as published.
 
 ## Topic and Audience
 
-- **Publication name:** To complete
-- **Topic:** To complete
-- **Audience and assumed knowledge:** To complete
-- **Central question:** To complete
-- **Scope and exclusions:** To complete
-- **Reason for readers to return:** To complete
+- **Publication name:** Agent Signal
+- **Topic:** Evidence-based adoption of AI coding agents by small software teams.
+- **Audience and assumed knowledge:** Technical leads and hands-on engineering managers at teams of roughly 2–20 people who understand pull requests, CI, testing, and code review.
+- **Central question:** Which new coding-agent capabilities are genuinely production-ready, what evidence supports the claims, and what should a small software team do next?
+- **Scope and exclusions:** The series covers delegation, context and harness design, verification, security, cost, team workflow, and maintenance. It excludes generic AI news, model-release scorekeeping without workflow implications, beginner prompting tutorials, investment speculation, and claims without a verifiable date or supporting passage.
+- **Reason for readers to return:** Each run converts a fresh 30-date evidence window into three practical layers: what changed, what survives scrutiny, and what a small team should do next. Vendor announcements, independent research, and practitioner evidence remain visibly distinct.
 
 ## Published Series
 
-Replace each placeholder with the title or working link. Verify that course staff can open every publication.
+The reviewed working titles are below. Publication links are intentionally pending.
 
 | Piece | Title | Substack article | YouTube video |
 | --- | --- | --- | --- |
-| 1 | To complete | Add link | Add link |
-| 2 | To complete | Add link | Add link |
-| 3 | To complete | Add link | Add link |
+| 1 | The Agent Moved Past the Diff, Not Past the Gate | **Pending publication** | **Pending Google Vids production and publication** |
+| 2 | Production-Ready Is a Measurement Claim | **Pending publication** | **Pending Google Vids production and publication** |
+| 3 | Earn the Next Rung | **Pending publication** | **Pending Google Vids production and publication** |
 
-**Separate technical demonstration video:** Add link
+**Separate 4–6 minute technical demonstration video:** **Pending human-narrated screen recording and YouTube upload.** The three audience videos will be AI-produced in Google Vids from the reviewed scripts, with an AI-production disclosure. The technical demonstration will use the student's own narration; no camera appearance is required.
 
 ## Setup and Execution
 
-Document the required tools and versions, installation commands, model or provider choices, and configuration steps. List credential environment variable names without including secret values. Explain how to populate the project configuration, source list, editorial policy, and prompts.
+See also `docs/SETUP.md` and `docs/ARCHITECTURE_IMPLEMENTATION.md` for a concise grader-facing implementation guide.
 
-After implementation, the required entry commands are:
+The project was exercised on macOS with Bash and Python 3.10. It requires an authenticated Codex CLI for the live editorial stages. Network collection uses Python's standard library plus the explicit CA bundle in `certifi`; YouTube transcript retrieval uses `youtube-transcript-api` with `yt-dlp` as fallback. The exact Python dependencies are pinned by compatible ranges in `requirements.txt`.
 
 ```bash
+bash setup.sh
 bash run.sh
+```
+
+`setup.sh` creates `.venv` and installs the dependencies. Each Bash entrypoint automatically prefers that environment when present. The model provider defaults to the logged-in Codex account. Optional configuration variables are:
+
+- `PS04_MODEL_PROVIDER=codex` — the only supported live provider.
+- `PS04_MODEL=<model-name>` — optional explicit model; omission records `account-default`.
+- `PS04_EVIDENCE_DIR=<path>` — optional alternate evidence-store path, primarily for isolated tests.
+
+No API secret is stored in this repository. `config/project.json` defines the publication, topic, audience, and question. `config/sources.json` defines real feed, YouTube, podcast, and documented fallback sources. `config/editorial_policy.md` and the four files under `prompts/` control selection, brief creation, and paired article/video-script generation. Each live run snapshots all of these inputs before doing work.
+
+Useful verification and replay commands are:
+
+```bash
+python3 -m unittest discover -s tests -v
+bash data/store.sh list
+bash processing/filter_items.sh runs/RUN_ID < runs/RUN_ID/corpus.jsonl
+bash editorial/select_items.sh runs/RUN_ID < runs/RUN_ID/eligible.jsonl
+bash review/check_content.sh runs/RUN_ID
+bash reporting/summarize_run.sh runs/RUN_ID
 bash run.sh --package runs/RUN_ID
 ```
 
-Replace `RUN_ID` with an actual run directory. Add any setup or stage-replay commands a reviewer needs.
+The final command is allowed to package only a passing review whose `review_id` exactly matches a genuine student-supplied `approval.json`; it does not recollect or rewrite approved drafts.
 
 ## Architecture and Manual Handoffs
 
-Add a diagram of your implemented pipeline and explain any additional components or helpers. Show where models are called and where evidence is stored.
+```mermaid
+flowchart LR
+    R[run.sh] --> C[3 collectors]
+    C --> E[extract text and timestamped transcripts]
+    E --> S[(versioned SQLite evidence index)]
+    S --> F[30-date mechanical filter]
+    F --> G{coverage gate}
+    G --> A[AI accept / reject / defer]
+    A --> B[3 evidence-linked briefs]
+    B --> W[3 articles]
+    B --> V[3 video scripts]
+    W --> Q[mechanical content review]
+    V --> Q
+    Q --> H[student editorial approval]
+    H --> P[immutable production package]
+    P --> GV[Google Vids]
+    P --> SS[Substack]
+    GV --> YT[YouTube]
+```
 
-Describe the human editorial review, Google Vids or HeyGen production, and Substack and YouTube publishing steps. Identify the files passed into each manual step and the resulting artifacts.
+The 16 required Bash files remain separate entrypoints with the responsibilities specified in `ARCHITECTURE.md`; focused Python helpers implement parsing, storage, coverage, receipts, and structured model calls. Candidate and item streams are JSON Lines. `data/store.sh` alone accesses the persistent SQLite index. Source text and timestamp segments are content-addressed under `data/assets/`; retrieval time is excluded from the substantive version hash. Every invocation writes a non-overwriting receipt under the run's `logs/` directory, and every model call retains its request, output schema, event stream, response, model name, token usage, and unknown cost.
+
+There are three honest manual handoffs:
+
+1. **Editorial approval (complete):** Yike Cheng inspected the review packet and stated, “I reviewed the packet and approve the recommendations.” The exact fingerprint-bound decision is retained in `approval.json`; automation did not manufacture this judgment.
+2. **Video production:** import the three packaged scripts and visual directions into Google Vids, add source cards and an AI-production disclosure, render, and quality-check each 3–5 minute audience video.
+3. **Publication:** publish the three articles without a paywall, upload the three videos as public or unlisted, cross-link each pair, verify access, and enter the real URLs in `package/publication_links.json`. Record a separate human-narrated 4–6 minute system demonstration.
 
 ## Evidence and Runs
 
-Link to the retained evidence, editorial decisions, briefs, content checks, and intermediate artifacts needed to inspect the complete workflow. Keep referenced text and transcript files accessible. Explain how to retrieve media omitted from the repository.
+The retained runs are repository-relative and self-contained; all referenced `text_path` and `segments_path` values resolve to immutable files under `data/assets/`.
 
-| Run | Actual date | Run artifacts and logs | Elapsed time | Approximate cost |
+| Run | Actual date (UTC) | Result and artifacts | Elapsed time | Approximate cost |
 | --- | --- | --- | --- | --- |
-| First live run | To complete | Add path or link | To complete | To complete |
-| Second live run | To complete | Add path or link | To complete | To complete |
+| Diagnostic live run `20261013T224738Z-f3b9709b` | 2026-10-13 | Failed honestly after partial collection; preserves TLS failures, broken YouTube feed endpoints, inaccessible full text, one missing transcript, repeated recovery attempts, and 11 stored items | 185.215 s | Unknown |
+| First completed live run `20261013T231400Z-55620c5a` | 2026-10-13 | `summary.json`, 17 eligible items, 9 independent publishers, 10 accepts, 6 rejects, 1 defer, 3 briefs, 3 articles, 3 scripts, passing `review.json`, and an approved immutable production package | 1,292 s generation; 244,900 s through the later human-approval/package handoff | Unknown; account-default Codex did not report dollars |
+| Second live run `20261016T021442Z-113efa68` | 2026-10-16 | 27 observations; 10 new, 5 changed, 12 unchanged; 25 eligible items from 10 publishers. Generated 3 briefs/articles/scripts under policy v2 but correctly failed final review because no accepted podcast entered the new briefs. See `docs/SECOND_LIVE_RUN.md`. | 1,237 s | Unknown; account-default Codex did not report dollars |
 
-Explain what changed between runs. Identify unknown or estimated costs. Provide the records demonstrating duplicate handling, the date-window checks, and collection failure or recovery. Label any fixture replay or simulated failure.
+The first completed run contains 8 feed items, 6 YouTube videos, and 3 podcast episodes. Six items were new and 11 were unchanged from the earlier live attempt, demonstrating persistent deduplication and replay without duplicate evidence versions. `filter_items` rechecked all 17 stored items against the inclusive `D-29` through `D` UTC window; all were eligible. The failed run's receipts preserve the initial certificate errors and later recovery through an explicit CA bundle, while the source configuration records the verified direct-video fallback used after YouTube channel-feed endpoints returned 404/500 errors. These are real live failures, not simulated fixtures.
 
-Trace one published claim to its brief, editorial decision, source version, and exact supporting passage or timestamp.
+The later live run demonstrates actual update behavior: 10 new items were inserted, 12 observations remained unchanged, and 5 material versions changed. The moving window excluded two September 14 items as `outside_window`. A sandbox-blocked model invocation was retained, then the affected editorial workflow was resumed successfully. Policy v2 accepted neither eligible podcast, so the series-level check stopped rather than silently using rejected evidence. The original complete run remains the production candidate.
+
+The completed run records 4,650,834 input tokens, 4,294,784 cached-input tokens, 78,491 output tokens, and 49,410 reasoning-output tokens. Monetary cost remains unknown because the logged-in account-default CLI did not return per-call pricing; the summary's `$0` aggregate is only the sum of known receipt costs and is not a claim of zero spend.
+
+### Claim trace
+
+For Piece 2, claim `02-c9` says that Joy Ebertz asked an agent to fix a test, the agent deleted it, and her team added guidance not to delete tests.
+
+- **Draft:** `runs/20261013T231400Z-55620c5a/articles/02.md`, under the exact marker `<!-- claim:02-c9 -->`.
+- **Brief:** `runs/20261013T231400Z-55620c5a/briefs.jsonl`, claim `02-c9`.
+- **Editorial decision:** `runs/20261013T231400Z-55620c5a/decisions.jsonl`, accepted item `podcast:infoq:5925e1fbf36f4960a85e` as bounded practitioner evidence.
+- **Immutable source version:** `v-fa6a1a051450d1962bb56646`.
+- **Exact retained passage:** segments `seg-0060` through `seg-0063` in `data/assets/podcast-infoq-5925e1fbf36f4960a85e/v-fa6a1a051450d1962bb56646.segments.json`, mapped to 13:35–14:31 and explicitly labeled `estimated_from_duration`.
+- **Publisher transcript:** the article links directly to InfoQ's transcript page. Extraction v2 recognizes the publisher's spaced section timestamps and labels paragraph-level interpolation; the second run preserved that corrected source-derived version without rewriting this first-run evidence.
+
+Large original audio/video files are not required to inspect a claim and are not committed. The source URL, native media ID, publication metadata, full retained transcript, timestamped segments, and deterministic content version are preserved. A reviewer can retrieve the original media from each item's `url` or `media_url`.
 
 ## Editorial Review
 
-Link to the editorial policy and prompts used. Provide your review of at least three accepted and three rejected or deferred items, comparing the AI's reasons with your own judgment.
+The first completed run snapshots editorial-policy version 1 at `runs/20261013T231400Z-55620c5a/config/editorial_policy.md` and retains the exact prompts under that run's `prompts/` directory. `runs/20261013T231400Z-55620c5a/human_review.md` compares the AI's reasoning with proposed student judgments for three accepted items and three rejected/deferred items:
 
-Show the policy before and after your revision, the affected stage outputs, and what changed. Record factual corrections, remaining limitations, and the evidence for your final publication approval.
+- Accept AgentSWE, bounded to its 25 commissioned tasks and held-out protocol.
+- Accept Sourcegraph's workflow scope, but not merged-change volume as proof of effectiveness.
+- Accept Joy Ebertz's interview as practitioner evidence, not prevalence data.
+- Reject GitHub's model-availability announcement because it gives no inspectable production outcome.
+- Reject IBM's generic explainer because its large speed claims lack inspectable tasks and outcomes.
+- Defer Simon Scrapes' numerical improvement claims until their primary source, product version, and method are inspectable.
+
+Version 2 adds four operational rules: vendor announcements establish availability rather than readiness; quantitative claims retain or name missing denominator/baseline/task/outcome fields; activity and efficiency metrics remain separate from accepted outcomes; and creator-reported numerical improvements are deferred when their primary method is not inspectable. The full second live run used v2. A controlled rerun also applies v2 to the exact original evidence cohort so policy effects are not confused with new or changed sources. On 2026-10-16, Yike Cheng stated, “I reviewed the packet and approve the recommendations,” confirming review fingerprint `review-8f4ee1be1e8599b656e3fed9`. The matching package was created without rewriting the approved drafts, and the run status is now `ready_for_production`. The scope and remaining limitations are recorded in `docs/FINAL_REVIEW.md`.
 
 ## Reflection
 
-Explain one insight the system produced, one editorial failure or limitation, and the next improvement you would make. Discuss one architectural tradeoff and why your choice fits this project.
+The most useful insight was that apparently conflicting evidence often measures different layers. Cursor measured harness efficiency, Sourcegraph reported human-gated activity, AgentSWE tested frozen delivery fidelity, and practitioners described test-integrity and architectural failures. A team can improve cost or throughput while accepted outcomes stay flat or worsen. “Production-ready” is therefore a measurement claim, not a product label.
+
+The clearest editorial failure was that a fresh announcement initially looked valuable merely because it was recent. The selection pass correctly rejected it when it established only model availability and admin controls, not task outcomes. A second limitation is the lack of head-to-head small-team evidence on identical tasks, repositories, supervision, and acceptance criteria. The next improvement would be a small reproducible local pilot suite that adds defect, rework, review-time, rollback, and maintainability outcomes to the external evidence.
+
+The main architectural tradeoff is a lightweight local SQLite index plus immutable text/segment assets instead of a hosted search or vector database. This makes replay, version history, exact claim inspection, and grading simple, deterministic, and credential-free. It gives up semantic retrieval at larger scale, but 12–30 evidence items per run do not justify the extra infrastructure or opaque retrieval behavior.

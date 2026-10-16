@@ -1,0 +1,28 @@
+{
+  "cost_estimate": false,
+  "cost_usd": null,
+  "details": {
+    "events_path": "runs/20261013T231400Z-55620c5a/logs/20261013T232955.510346Z-write-articles-model-7345e883.events.jsonl",
+    "length_warnings": [],
+    "request_path": "runs/20261013T231400Z-55620c5a/logs/20261013T232955.510346Z-write-articles-model-7345e883.request.txt",
+    "response_path": "runs/20261013T231400Z-55620c5a/logs/20261013T232955.510346Z-write-articles-model-7345e883.response.json",
+    "schema_path": "runs/20261013T231400Z-55620c5a/logs/20261013T232955.510346Z-write-articles-model-7345e883.schema.json",
+    "usage": {
+      "cache_write_input_tokens": 0,
+      "cached_input_tokens": 0,
+      "input_tokens": 34499,
+      "output_tokens": 13042,
+      "reasoning_output_tokens": 8551
+    }
+  },
+  "errors": [],
+  "finished_at": "2026-10-13T23:32:56Z",
+  "input_count": 3,
+  "output_count": 3,
+  "stage": "write_articles",
+  "started_at": "2026-10-13T23:29:55Z",
+  "status": "completed",
+  "tools_or_models": [
+    "codex-cli:account-default"
+  ]
+}

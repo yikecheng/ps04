@@ -1,0 +1,723 @@
+[
+  {
+    "end_seconds": 3.69,
+    "segment_id": "seg-0001",
+    "start_seconds": 0.03,
+    "text": "Just recently, I was talking to a software engineer and made conversation.",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 8.17,
+    "segment_id": "seg-0002",
+    "start_seconds": 3.77,
+    "text": "He stops to check his phone, approve a code change and continue talking.",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 15.49,
+    "segment_id": "seg-0003",
+    "start_seconds": 8.71,
+    "text": "It turns out he had multiple agents running in the background for all of the different roles that you would typically have on a team.",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 22.569,
+    "segment_id": "seg-0004",
+    "start_seconds": 15.99,
+    "text": "So he had a developer, a code reviewer, an operations and many, many more.",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 27.23,
+    "segment_id": "seg-0005",
+    "start_seconds": 22.93,
+    "text": "And turns out this guy wasn't a software engineer by trade, he was actually a pilot.",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 32.88,
+    "segment_id": "seg-0006",
+    "start_seconds": 28.04,
+    "text": "So when people keep asking whether AI will replace developers, I always say no.",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 36.34,
+    "segment_id": "seg-0007",
+    "start_seconds": 33.18,
+    "text": "I've actually seen more people get into coding because of AI.",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 41.579,
+    "segment_id": "seg-0008",
+    "start_seconds": 36.9,
+    "text": "But what AI will do is change what software development looks like.",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 48.459,
+    "segment_id": "seg-0009",
+    "start_seconds": 41.84,
+    "text": "And in this video, I'll break down five key concepts that you need to know in order to prepare.",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 51.319,
+    "segment_id": "seg-0010",
+    "start_seconds": 48.92,
+    "text": "And trust me, the last one is the most important.",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 52.439,
+    "segment_id": "seg-0011",
+    "start_seconds": 51.4,
+    "text": "So stay tuned.",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 55.1,
+    "segment_id": "seg-0012",
+    "start_seconds": 53.04,
+    "text": "So first off is the inflection point.",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 56.599,
+    "segment_id": "seg-0013",
+    "start_seconds": 55.12,
+    "text": "And let me explain what that means.",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 57.999,
+    "segment_id": "seg-0014",
+    "start_seconds": 56.6,
+    "text": "Because over the past year.",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 61.432,
+    "segment_id": "seg-0015",
+    "start_seconds": 58.44,
+    "text": "Me and my team have all started to say the same thing,",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 68.98,
+    "segment_id": "seg-0016",
+    "start_seconds": 61.432,
+    "text": "that AI is able to complete tasks that typically would have taken us weeks, if not months, now in just a few minutes.",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 76.06,
+    "segment_id": "seg-0017",
+    "start_seconds": 69.5,
+    "text": "And I used to use AI as an autocomplete in order to help me write better functions and tests,",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 82.219,
+    "segment_id": "seg-0018",
+    "start_seconds": 76.06,
+    "text": "but I would often spend more time fixing AI output if I had just written it myself.",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 87.419,
+    "segment_id": "seg-0019",
+    "start_seconds": 83.16,
+    "text": "Now we just commonly assign entire features to AI.",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 96.67,
+    "segment_id": "seg-0020",
+    "start_seconds": 87.71,
+    "text": "Coding agents, such as not just writing the code, but also understanding the code base and what's happening inside,",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 99.759,
+    "segment_id": "seg-0021",
+    "start_seconds": 96.67,
+    "text": "writing and running those tests,",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 108.629,
+    "segment_id": "seg-0022",
+    "start_seconds": 99.759,
+    "text": "and merging those changes into the actual code base, all from a single prompt or loop that can define when this agent should finish.",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 114.65,
+    "segment_id": "seg-0023",
+    "start_seconds": 109.33,
+    "text": "And speaking of defining when the agent should finish, instead of doing all of this via prompts.",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 125.13,
+    "segment_id": "seg-0024",
+    "start_seconds": 115.29,
+    "text": "Which can be interpreted differently by different types of coding models and having to argue with the AI in order to get the right output.",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 130.854,
+    "segment_id": "seg-0025",
+    "start_seconds": 125.63,
+    "text": "What we typically now see is an approach that's known as spec-driven development,",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 138.472,
+    "segment_id": "seg-0026",
+    "start_seconds": 130.854,
+    "text": "where by creating this specification of the requirements and all the outcomes that we would like to see with the software project,",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 143.029,
+    "segment_id": "seg-0027",
+    "start_seconds": 138.472,
+    "text": "we can then send that off to the AI coding agent and model.",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 147.11,
+    "segment_id": "seg-0028",
+    "start_seconds": 143.37,
+    "text": "In order for us to create this project and its artifacts.",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 150.87,
+    "segment_id": "seg-0029",
+    "start_seconds": 148.17,
+    "text": "Next is the shift from implementing to conducting.",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 157.089,
+    "segment_id": "seg-0030",
+    "start_seconds": 151.19,
+    "text": "Because I mentioned earlier that I don't think developers are going to disappear, but the priorities are definitely changing.",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 163.57,
+    "segment_id": "seg-0031",
+    "start_seconds": 157.25,
+    "text": "And that's because for decades, the biggest bottleneck to taking code and shipping that was one,",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 168.93,
+    "segment_id": "seg-0032",
+    "start_seconds": 163.57,
+    "text": "how fast you could write that code, and two, how high quality that code output was.",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 177.16,
+    "segment_id": "seg-0033",
+    "start_seconds": 169.43,
+    "text": "And companies would hire who they thought were the best competitive programmers or who could complete the most complex programming tasks.",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 186.819,
+    "segment_id": "seg-0034",
+    "start_seconds": 177.86,
+    "text": "And the thing is, now most AI models already know programming languages like, say for example, Java, or Python, or Rust.",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 192.979,
+    "segment_id": "seg-0035",
+    "start_seconds": 187.36,
+    "text": "And they're able to take those languages that they're very proficient in and complete tasks.",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 197.419,
+    "segment_id": "seg-0036",
+    "start_seconds": 193.48,
+    "text": "Say, for example tickets that are coming in from the team and take that.",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 201.52,
+    "segment_id": "seg-0037",
+    "start_seconds": 197.7,
+    "text": "And be able to move that to staging, production, QA, and much more.",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 207.8,
+    "segment_id": "seg-0038",
+    "start_seconds": 201.98,
+    "text": "And so if this can already be done with AI, the implementing phase, well, then what becomes important for developers?",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 211.947,
+    "segment_id": "seg-0039",
+    "start_seconds": 208.56,
+    "text": "That, my friends, is being a conductor, a captain,",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 219.319,
+    "segment_id": "seg-0040",
+    "start_seconds": 211.947,
+    "text": "someone who can make important architectural decisions that will impact the software in a year from now, for example.",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 226.579,
+    "segment_id": "seg-0041",
+    "start_seconds": 219.8,
+    "text": "So instead of writing functions yourself by hand, what we see now is defining goals that will break.",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 233.599,
+    "segment_id": "seg-0042",
+    "start_seconds": 226.86,
+    "text": "Work down into specific milestones that can then be completed by an AI model or agent.",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 241.8,
+    "segment_id": "seg-0043",
+    "start_seconds": 234.24,
+    "text": "And the reason for that is because you have to start thinking about concepts such as effective context management.",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 250.795,
+    "segment_id": "seg-0044",
+    "start_seconds": 242.6,
+    "text": "So context management is the idea of understanding the resource limitations of an AI models context window",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 256.699,
+    "segment_id": "seg-0045",
+    "start_seconds": 250.795,
+    "text": "and all of those extra components that are being added in addition to your code base when you're using it for engineering.",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 264.39,
+    "segment_id": "seg-0046",
+    "start_seconds": 257.05,
+    "text": "Such as tools or skills or MCP servers to provide external data to the model.",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 269.35,
+    "segment_id": "seg-0047",
+    "start_seconds": 264.73,
+    "text": "So that's context engineering, but there's also the idea of loop engineering.",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 277.401,
+    "segment_id": "seg-0048",
+    "start_seconds": 269.59,
+    "text": "And what loop engineering is, is where instead of you being the person that prompts the agent back and forth and you continually iterate,",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 280.649,
+    "segment_id": "seg-0049",
+    "start_seconds": 277.401,
+    "text": "well, what you do is you design a system that does it instead.",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 286.381,
+    "segment_id": "seg-0050",
+    "start_seconds": 281.19,
+    "text": "So loop engineering works like a recursive goal where you as a human define the purpose",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 291.649,
+    "segment_id": "seg-0051",
+    "start_seconds": 286.381,
+    "text": "and the AI iterates until it's complete with whatever the task was that needed to be done.",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 297.13,
+    "segment_id": "seg-0052",
+    "start_seconds": 292.33,
+    "text": "However, understanding the fundamentals of AI models is really important as well.",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 298.769,
+    "segment_id": "seg-0053",
+    "start_seconds": 297.35,
+    "text": "So let me give you an example.",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 305.79,
+    "segment_id": "seg-0054",
+    "start_seconds": 299.25,
+    "text": "If I was to ask an AI model, how long would it take to build a third-person role-playing game, an RPG?",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 314.829,
+    "segment_id": "seg-0055",
+    "start_seconds": 306.39,
+    "text": "It might say, hey, several weeks to several months, as an example, that it would estimate it would take in order to build out this game.",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 316.249,
+    "segment_id": "seg-0056",
+    "start_seconds": 314.83,
+    "text": "But if you ask...",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 322.039,
+    "segment_id": "seg-0057",
+    "start_seconds": 316.56,
+    "text": "That same model with a coding agent in order to actually build that game.",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 327.64,
+    "segment_id": "seg-0058",
+    "start_seconds": 322.42,
+    "text": "Well, it might give you a working example within five minutes, right?",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 330.519,
+    "segment_id": "seg-0059",
+    "start_seconds": 327.98,
+    "text": "So the thing is, how does this work, right.",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 338.68,
+    "segment_id": "seg-0060",
+    "start_seconds": 330.68,
+    "text": "Well, that's one of the limitations of LLMs, right, it doesn't quite understand time and memory like we do as humans.",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 344.66,
+    "segment_id": "seg-0061",
+    "start_seconds": 339.1,
+    "text": "And so understandings of the basics of how these LLM and models work is really important.",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 352.07,
+    "segment_id": "seg-0062",
+    "start_seconds": 345.33,
+    "text": "Another example is how LLMs are stored in GPU memory and how you actually use them at inference.",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 356.79,
+    "segment_id": "seg-0063",
+    "start_seconds": 352.51,
+    "text": "So here you have the model's weights loaded into the GPU's memory.",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 366.689,
+    "segment_id": "seg-0064",
+    "start_seconds": 357.11,
+    "text": "And here you the KV cache, which is generated and stored as you request the model and get results back.",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 375.149,
+    "segment_id": "seg-0065",
+    "start_seconds": 367.09,
+    "text": "So understanding how all of this works is going to give you a huge advantage as you proceed to use AMM models as a software developer.",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 383.188,
+    "segment_id": "seg-0066",
+    "start_seconds": 375.81,
+    "text": "Then, if we add on context engineering capabilities that we just talked about, such as skills,",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 393.529,
+    "segment_id": "seg-0067",
+    "start_seconds": 383.188,
+    "text": "which are markdown files, but add reusable and contextual information about your code and project with each AI request, as well as automations.",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 401.089,
+    "segment_id": "seg-0068",
+    "start_seconds": 393.75,
+    "text": "So being able to set up kind of cron jobs and event triggered actions.",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 404.709,
+    "segment_id": "seg-0069",
+    "start_seconds": 401.17,
+    "text": "So for example, if someone comes to your website and fills in a form that can kick automation.",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 407.589,
+    "segment_id": "seg-0070",
+    "start_seconds": 405.71,
+    "text": "As well as sub agents.",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 415.868,
+    "segment_id": "seg-0071",
+    "start_seconds": 408.13,
+    "text": "So sub agents are essentially used for situations where maybe you're investigating a problem with the code source",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 422.569,
+    "segment_id": "seg-0072",
+    "start_seconds": 415.868,
+    "text": "and you send off a sub agent to go see how that library works and test it out itself and then come back to the main agent.",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 431.189,
+    "segment_id": "seg-0073",
+    "start_seconds": 422.81,
+    "text": "So all of these are different examples of contextual engineering capabilities that you can start adding to your",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 436.849,
+    "segment_id": "seg-0074",
+    "start_seconds": 431.61,
+    "text": "software engineering process as a developer to better use these AI models.",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 439.83,
+    "segment_id": "seg-0075",
+    "start_seconds": 437.19,
+    "text": "And these are the fundamentals which are important to know.",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 447.19,
+    "segment_id": "seg-0076",
+    "start_seconds": 440.63,
+    "text": "But just like how SQL injections can infiltrate our applications, prompt injections are also very real.",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 457.47,
+    "segment_id": "seg-0077",
+    "start_seconds": 447.65,
+    "text": "That's because AI systems have access to sensitive data, they have exposure to the web, and also the ability to send data.",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 466.329,
+    "segment_id": "seg-0078",
+    "start_seconds": 457.59,
+    "text": "And the combination of all three for your agent makes it quite possible for your AI agent to say, for example, read a pull request online.",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 475.07,
+    "segment_id": "seg-0079",
+    "start_seconds": 466.75,
+    "text": "Here we have our little AI agent here in the middle, seeing the pull request, and be tricked into sending your credentials to somebody else.",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 481.509,
+    "segment_id": "seg-0080",
+    "start_seconds": 475.51,
+    "text": "So say for example this is our little key with our private credentials that we have on our desktop.",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 484.169,
+    "segment_id": "seg-0081",
+    "start_seconds": 481.93,
+    "text": "And this could happen without you even knowing.",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 491.37,
+    "segment_id": "seg-0082",
+    "start_seconds": 484.61,
+    "text": "So that's why teams are running coding agents inside of disposable sandboxes whenever possible.",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 498.366,
+    "segment_id": "seg-0083",
+    "start_seconds": 491.87,
+    "text": "So you can see this as an example, where we have the agent and the code that we're working with sandbox",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 503.69,
+    "segment_id": "seg-0084",
+    "start_seconds": 498.366,
+    "text": "in its own environment in order to reduce the tack surface if an AI agent gets compromised.",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 505.149,
+    "segment_id": "seg-0085",
+    "start_seconds": 504.11,
+    "text": "Finally, the future.",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 514.769,
+    "segment_id": "seg-0086",
+    "start_seconds": 505.37,
+    "text": "Because I had the chance recently to work with AI legend, Andrew Ng, and I remembered his quote, that AI is becoming the new electricity, right?",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 516.989,
+    "segment_id": "seg-0087",
+    "start_seconds": 515.23,
+    "text": "And what does that really mean?",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 518.13,
+    "segment_id": "seg-0088",
+    "start_seconds": 517.21,
+    "text": "Because...",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 526.27,
+    "segment_id": "seg-0089",
+    "start_seconds": 518.13,
+    "text": "Electricity transformed everything around it, and now we use electricity to power our phone, turn on lights, and warm our home, right?",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 534.109,
+    "segment_id": "seg-0090",
+    "start_seconds": 526.59,
+    "text": "But there's also entire industries and thousands of people who, for example, work at substations to make sure that the grid is working.",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 541.47,
+    "segment_id": "seg-0091",
+    "start_seconds": 534.77,
+    "text": "They also are in the field helping people, for example to repair streetlights and help out at their home.",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 546.21,
+    "segment_id": "seg-0092",
+    "start_seconds": 541.75,
+    "text": "And they're also making sure that everyone can access electricity, right.",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 552.82,
+    "segment_id": "seg-0093",
+    "start_seconds": 546.58,
+    "text": "And AI might follow the same path, where we're gonna need engineers who can maintain these systems, right?",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 559.283,
+    "segment_id": "seg-0094",
+    "start_seconds": 552.82,
+    "text": "The grid, to be able to ensure connectivity so that people can access these AI models and systems,",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 564.239,
+    "segment_id": "seg-0095",
+    "start_seconds": 559.283,
+    "text": "ensure that AI systems are safe and reliable and have quality, right.",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 568.021,
+    "segment_id": "seg-0096",
+    "start_seconds": 564.36,
+    "text": "So don't worry, I think software engineering isn't going anywhere,",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 574.359,
+    "segment_id": "seg-0097",
+    "start_seconds": 568.021,
+    "text": "but I'm optimistic for the future, for developers and what they'll be able to create and yes, it is shifting.",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 581.65,
+    "segment_id": "seg-0098",
+    "start_seconds": 574.89,
+    "text": "Away from just manually writing code to designing and orchestrating systems and AI agents.",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 590.59,
+    "segment_id": "seg-0099",
+    "start_seconds": 582.21,
+    "text": "And those who excel in the architectural and critical thinking phases will become even more valuable as AI coding agents continue to improve.",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 592.53,
+    "segment_id": "seg-0100",
+    "start_seconds": 590.89,
+    "text": "As always, thanks so much for watching.",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 595.712,
+    "segment_id": "seg-0101",
+    "start_seconds": 592.69,
+    "text": "If you learned something today and want to help us hack the algorithm,",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 600.669,
+    "segment_id": "seg-0102",
+    "start_seconds": 595.712,
+    "text": "please leave a like and make sure you're subscribed for more content around AI and software development.",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 602.21,
+    "segment_id": "seg-0103",
+    "start_seconds": 601.21,
+    "text": "Bye.",
+    "timestamp_method": "source_transcript"
+  }
+]

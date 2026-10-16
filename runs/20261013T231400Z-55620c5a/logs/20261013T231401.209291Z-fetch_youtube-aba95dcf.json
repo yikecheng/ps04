@@ -1,0 +1,18 @@
+{
+  "cost_estimate": false,
+  "cost_usd": null,
+  "details": {
+    "failed_source_count": 0
+  },
+  "errors": [],
+  "finished_at": "2026-10-13T23:14:01Z",
+  "input_count": 5,
+  "output_count": 6,
+  "stage": "fetch_youtube",
+  "started_at": "2026-10-13T23:14:01Z",
+  "status": "completed",
+  "tools_or_models": [
+    "python-urllib",
+    "python-elementtree"
+  ]
+}

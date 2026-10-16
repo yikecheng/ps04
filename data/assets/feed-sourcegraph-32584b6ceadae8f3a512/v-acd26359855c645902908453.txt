@@ -1,0 +1,53 @@
+Subscribe for AI news & product updates
+
+Introducing Agentic Batch Changes: the frontier agent for code change at scale
+
+Codebase-wide changes across hundreds or thousands of repositories can now be run by one engineer.
+
+Every large codebase has a list. The .NET upgrade that touches ten thousand repositories. The deprecated API that a dozen services still call. The CI config that was standardized years ago and has drifted in every direction since. Each one is manageable in a single repository. Across the whole codebase, the repositories are rarely identical, so the fix that works in one place breaks in the next, and there is no cost-effective way to roll the change out exhaustively.
+
+The list grows, and the bigger the change, the less anyone can vouch that it reached everywhere it needed to. One migration turns into hundreds of pull requests, and you still can't confidently say whether the work is done.
+
+We have been working on this problem for years. Batch Changes, our engine for coordinated change across a codebase, already runs these rollouts for some of the largest engineering organizations in the world. You program the change, it opens pull requests everywhere the change applies, and then tracks them until they merge. Customers have merged hundreds of thousands of changesets this way, tens of millions of lines of code. The largest single Batch Change we have seen merged more than 2,200 changesets from one change.
+
+The pressure is different now, and only getting worse. Coding agents write code faster than any team can read it. Nobody holds the whole codebase in their head anymore, so every change is a bet. The same agents that make one repository easy to change have made the codebase as a whole harder to maintain, and the list keeps getting longer.
+
+Agentic Batch Changes is available today, built on technology designed for the world's largest codebases.
+
+Describe the change once. The agent takes it from there.
+
+Agentic Batch Changes is built on Batch Changes and Deep Search, our agent for understanding complex codebases. Together they form an agent harness specialized for applying changes across codebases at any scale, from thousands of repositories to the largest monorepos.
+
+You tell it what needs to change, in plain language. It scopes the work across your indexed codebase, builds a plan, tries the change in one repository, then rolls it out. Where repositories differ, it adapts. A diff is not a shipped change, so when CI fails, it reacts. It keeps working until the pull requests are ready for a human to review and merge, and it tracks merge status the whole way so you can see the change land from one place.
+
+Anything a single coding agent can do in one repository, Agentic Batch Changes can orchestrate across all of your repositories at the same time.
+
+Agentic Batch Changes writes scripts more often than it deploys coding agents, which is what keeps it efficient at scale
+
+For each piece of a plan, Agentic Batch Changes decides whether the change needs judgment or just needs doing. When it needs judgment, it hands the repository to a coding agent with specific instructions and codebase context. Most of the time it writes a script, because a large migration is mostly the same change made over and over, and running a script is far more efficient than working out the same change a hundred times over. You see diffs as they are generated, you can step in at any point, and when the agent needs a decision, it stops and asks.
+
+Success we saw from the Beta
+
+During the Beta, customers merged nearly a thousand changesets created by Agentic Batch Changes, on work that ranged from security remediation to library migrations.
+
+Mercari, a Japan-based marketplace, turned to Agentic Batch Changes for a security fix across many repositories. Patrick Klitzke, Team Lead at Mercari, used it to identify a GitHub Actions environment-variable injection vulnerability across Mercari's codebase and began patching it across the affected repositories.
+
+"I looked at a GitHub injection issue where you have to set environment variables correctly. I was able to fix it with one prompt on both the Help Center frontend and backend, then extended this to all repos in Mercari. I found around 80 potential repos affected." "With the help of Agentic Batch Changes, you're able to handle repos that have similar, but not identical setups. A normal scripted change would most likely be a text search and replace operation without any context of how it's actually used." Patrick Klitzke, Team Lead at Mercari
+
+At Canva, the use case was a library migration. The alternative would have been a handful of oversized pull requests, or a spreadsheet to keep track of many small ones. Instead, Agentic Batch Changes raised the pull requests and tracked each one to merge from a single view.
+
+"We used Agentic Batch Changes to raise and merge 50+ pull requests across our repos as part of a library migration. The web UI made it easy to track each PR and its status. Without it, we would have been managing either huge PRs or spreadsheets; instead, Agentic Batch Changes made the process easier for both reviewers and me." William L., Senior Software Engineer, Canva
+
+Security remediation and library migrations are two of the use cases. We've also seen dependency upgrades, deprecated API replacement, framework rollouts, CI pipeline modernization, and end-of-life deadlines. These are starting points, not a fixed list. Customers keep finding uses we didn't plan for, and we want to hear about them.
+
+Only pay for what merges
+
+With the launch of Agentic Batch Changes, we're rolling out outcome-based pricing . You pay per changeset merged into your codebase, not per token, seat, or attempt. If it opens a pull request and your team decides not to merge it, you don't pay for it. We priced it this way because it's the clearest way to say we're confident in the work, and because it lets you justify spend against something concrete: a change that landed rather than a forecast of compute usage.
+
+Agentic Batch Changes is available today for Sourcegraph Cloud customers, on by default.
+
+Talk to your account team or schedule a demo , and learn more at sourcegraph.com/agentic-batch-changes .
+
+Unblock your organization. Ship faster.
+
+With Sourcegraph, the code understanding platform for enterprise.

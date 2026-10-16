@@ -1,0 +1,1542 @@
+[
+  {
+    "end_seconds": 6.88,
+    "segment_id": "seg-0001",
+    "start_seconds": 0.08,
+    "text": "In this video, you'll learn how to use OpenAI's Codex step by step. Codex is an AI coding",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 13.12,
+    "segment_id": "seg-0002",
+    "start_seconds": 6.88,
+    "text": "agent that can build projects, make changes, fix problems, and even have multiple agents working on",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 20.0,
+    "segment_id": "seg-0003",
+    "start_seconds": 13.12,
+    "text": "different tasks all at the same time. And the best part is, you don't need to know how to code to",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 27.36,
+    "segment_id": "seg-0004",
+    "start_seconds": 20.0,
+    "text": "use it. To show you how it works, we'll start from scratch and build our own Cookie Shop Tycoon game.",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 32.32,
+    "segment_id": "seg-0005",
+    "start_seconds": 27.36,
+    "text": "Along the way, you'll learn how to create a project, make changes, use Git to keep track",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 38.48,
+    "segment_id": "seg-0006",
+    "start_seconds": 32.32,
+    "text": "of your work, leverage multiple agents, use skills, and even hand off work to the cloud.",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 43.76,
+    "segment_id": "seg-0007",
+    "start_seconds": 38.48,
+    "text": "By the end, you'll know how to use Codex to take an idea and turn it into something that",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 48.96,
+    "segment_id": "seg-0008",
+    "start_seconds": 43.76,
+    "text": "actually works. I'm Kevin, and let's dive in. To get started with Codex,",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 53.84,
+    "segment_id": "seg-0009",
+    "start_seconds": 48.96,
+    "text": "first download and install the ChatGPT desktop app. You'll find a link right",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 58.88,
+    "segment_id": "seg-0010",
+    "start_seconds": 53.84,
+    "text": "here at the bottom of the screen. It's available on both Windows and Mac.",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 63.6,
+    "segment_id": "seg-0011",
+    "start_seconds": 58.88,
+    "text": "Once you open the ChatGPT app and sign in, up in the top left-hand corner,",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 70.96,
+    "segment_id": "seg-0012",
+    "start_seconds": 63.6,
+    "text": "select Codex. This opens Codex. It's a separate experience from a regular ChatGPT conversation.",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 76.4,
+    "segment_id": "seg-0013",
+    "start_seconds": 70.96,
+    "text": "Codex can work with files, run commands, and take actions to complete tasks for",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 82.24,
+    "segment_id": "seg-0014",
+    "start_seconds": 76.4,
+    "text": "you. You can also use Codex from the web, command line, or inside your code editor.",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 88.96,
+    "segment_id": "seg-0015",
+    "start_seconds": 82.24,
+    "text": "To keep things beginner-friendly, we'll start with the desktop app. To see how all this works,",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 93.84,
+    "segment_id": "seg-0016",
+    "start_seconds": 88.96,
+    "text": "let's create our very first project. In Codex, let's start by adding a project.",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 97.28,
+    "segment_id": "seg-0017",
+    "start_seconds": 93.84,
+    "text": "Over on the left-hand side, make sure you can see the sidebar. Right up above,",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 101.28,
+    "segment_id": "seg-0018",
+    "start_seconds": 97.28,
+    "text": "you can click on this icon to toggle it off, or here you can toggle it on.",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 105.92,
+    "segment_id": "seg-0019",
+    "start_seconds": 101.28,
+    "text": "Right here, I see the option for a project. Let's click on the plus icon to add a new one.",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 110.08,
+    "segment_id": "seg-0020",
+    "start_seconds": 106.48,
+    "text": "If you're wondering what a project is, it's basically a folder on your",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 114.32,
+    "segment_id": "seg-0021",
+    "start_seconds": 110.08,
+    "text": "computer that contains the files that Codex will work with. Right up above,",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 117.6,
+    "segment_id": "seg-0022",
+    "start_seconds": 114.32,
+    "text": "we can give the project a name. I'll call this Cookie Shop Tycoon.",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 121.52,
+    "segment_id": "seg-0023",
+    "start_seconds": 117.6,
+    "text": "This will be fun. And down below, we can specify a source folder,",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 127.04,
+    "segment_id": "seg-0024",
+    "start_seconds": 121.52,
+    "text": "or basically where it's going to store all of the files on your local computer. I'll click on Add,",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 131.44,
+    "segment_id": "seg-0025",
+    "start_seconds": 127.04,
+    "text": "and right up above, I've already created a folder on my computer called Cookie Shop Tycoon,",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 135.92,
+    "segment_id": "seg-0026",
+    "start_seconds": 131.44,
+    "text": "and right down below, you'll notice that there are no files currently. That's okay. Right down below,",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 140.32,
+    "segment_id": "seg-0027",
+    "start_seconds": 135.92,
+    "text": "I'll select the folder, and then in the bottom right-hand corner, let's click on Create Project.",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 144.4,
+    "segment_id": "seg-0028",
+    "start_seconds": 140.32,
+    "text": "Right up here, let's click on Trust Folder. And now, we can simply describe what we",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 147.92,
+    "segment_id": "seg-0029",
+    "start_seconds": 144.4,
+    "text": "want Codex to build. You don't need to know what programming language to use,",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 151.44,
+    "segment_id": "seg-0030",
+    "start_seconds": 147.92,
+    "text": "or what files need to be created. You just explain what you want",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 154.88,
+    "segment_id": "seg-0031",
+    "start_seconds": 151.44,
+    "text": "in just plain English. And I think that's what makes this so powerful.",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 158.48,
+    "segment_id": "seg-0032",
+    "start_seconds": 154.88,
+    "text": "You really just need an idea. So let's start with something simple. I'm going",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 161.68,
+    "segment_id": "seg-0033",
+    "start_seconds": 158.48,
+    "text": "to type in a prompt. Now, feel free to pause it if you'd like to read it,",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 164.64,
+    "segment_id": "seg-0034",
+    "start_seconds": 161.68,
+    "text": "and you'll also find a copy of this in the description if you'd like to follow",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 169.28,
+    "segment_id": "seg-0035",
+    "start_seconds": 164.64,
+    "text": "along. I want to build a browser-based game called Kevin's Cookie Shop Tycoon.",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 173.68,
+    "segment_id": "seg-0036",
+    "start_seconds": 169.28,
+    "text": "You start with $100, and you run a cookie shop for 30 days. Each day,",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 177.84,
+    "segment_id": "seg-0037",
+    "start_seconds": 173.68,
+    "text": "the player gets to decide how many cookies to bake, the price, and how much to spend",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 181.44,
+    "segment_id": "seg-0038",
+    "start_seconds": 177.84,
+    "text": "on advertising. And then, at the end, we'll see how many cookies are sold, the revenue,",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 185.04,
+    "segment_id": "seg-0039",
+    "start_seconds": 181.44,
+    "text": "expenses, profit, and remaining cash. So we're going to keep it simple, polished,",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 190.08,
+    "segment_id": "seg-0040",
+    "start_seconds": 185.04,
+    "text": "and also make it easy to run just on the local computer in the browser. Now, as I described that,",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 195.6,
+    "segment_id": "seg-0041",
+    "start_seconds": 190.08,
+    "text": "if you've ever played the classic lemonade stand game, this is basically that, but with cookies.",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 199.28,
+    "segment_id": "seg-0042",
+    "start_seconds": 195.6,
+    "text": "Now, right over here, once you finish typing in your prompt, let's submit that. And now,",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 205.44,
+    "segment_id": "seg-0043",
+    "start_seconds": 199.28,
+    "text": "Codex gets to work. It figures out how to build the game. It creates all the different files",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 212.72,
+    "segment_id": "seg-0044",
+    "start_seconds": 205.44,
+    "text": "that it needs, and it writes the code. And this is one of the key things to understand about Codex.",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 216.8,
+    "segment_id": "seg-0045",
+    "start_seconds": 212.72,
+    "text": "Instead of just giving you the code, like you would get in just a traditional chat,",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 220.8,
+    "segment_id": "seg-0046",
+    "start_seconds": 216.8,
+    "text": "it can actually work directly with the files in your project. And Codex",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 222.64,
+    "segment_id": "seg-0047",
+    "start_seconds": 220.8,
+    "text": "has now finished building the game. Right up here,",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 226.64,
+    "segment_id": "seg-0048",
+    "start_seconds": 222.64,
+    "text": "we can see that it took about three minutes and 10 seconds. And right down below,",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 231.52,
+    "segment_id": "seg-0049",
+    "start_seconds": 226.64,
+    "text": "we can see a summary of everything that it did. It created all the different files for the game.",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 237.12,
+    "segment_id": "seg-0050",
+    "start_seconds": 231.52,
+    "text": "And here I could click into any one of them to see exactly what it created. Now, I could go through",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 242.48,
+    "segment_id": "seg-0051",
+    "start_seconds": 237.12,
+    "text": "all this code myself, but I don't need to know how any of it works to try out the game. So right over",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 246.64,
+    "segment_id": "seg-0052",
+    "start_seconds": 242.48,
+    "text": "here, let's open the game by clicking on this index.html file. Over on the right-hand side,",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 250.48,
+    "segment_id": "seg-0053",
+    "start_seconds": 246.64,
+    "text": "we can now see the game. Let's expand the window just so we can see things better.",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 254.16,
+    "segment_id": "seg-0054",
+    "start_seconds": 250.48,
+    "text": "Let's enter a full view. And over on the left-hand side, let's also minimize the",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 258.8,
+    "segment_id": "seg-0055",
+    "start_seconds": 254.16,
+    "text": "sidebar. There we go. Kevin's Cookie Shop, the tycoon game. I like the sound of that.",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 263.84,
+    "segment_id": "seg-0056",
+    "start_seconds": 258.8,
+    "text": "A little dough, a big dream. Well, let's see if we could turn this into a big success. Now,",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 268.24,
+    "segment_id": "seg-0057",
+    "start_seconds": 263.84,
+    "text": "right down below, I could see that we start with $100 and we're currently on day one. Well, let's",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 272.32,
+    "segment_id": "seg-0058",
+    "start_seconds": 268.24,
+    "text": "see how much money we can make on day one. So right down below, how many cookies should we bake?",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 276.32,
+    "segment_id": "seg-0059",
+    "start_seconds": 272.32,
+    "text": "Let's go with 80. Down below, I could set the price. I think $2 is good.",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 280.0,
+    "segment_id": "seg-0060",
+    "start_seconds": 276.32,
+    "text": "That's reasonably priced. Down below, we could also set the advertising budget.",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 286.08,
+    "segment_id": "seg-0061",
+    "start_seconds": 280.0,
+    "text": "I'll go with, let's say, $15. Now, this seems pretty aggressive. We're spending 60% of our",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 291.12,
+    "segment_id": "seg-0062",
+    "start_seconds": 286.08,
+    "text": "starting budget just on day one. Let's bake and open the shop to see how we do. Oh, look at that.",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 295.76,
+    "segment_id": "seg-0063",
+    "start_seconds": 291.12,
+    "text": "Daily profit, $100. So we doubled our starting money. Maybe I should be",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 299.36,
+    "segment_id": "seg-0064",
+    "start_seconds": 295.76,
+    "text": "baking cookies instead of making YouTube videos. This seems like a good business.",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 302.24,
+    "segment_id": "seg-0065",
+    "start_seconds": 299.36,
+    "text": "And right down below, we could also see the shop ledger.",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 308.08,
+    "segment_id": "seg-0066",
+    "start_seconds": 302.24,
+    "text": "Not bad. And just like that, we went from just an empty folder on the computer to a working",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 314.4,
+    "segment_id": "seg-0067",
+    "start_seconds": 308.08,
+    "text": "game. And all we had to do was enter in a single prompt. We have a working game, but right now,",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 322.08,
+    "segment_id": "seg-0068",
+    "start_seconds": 314.4,
+    "text": "it's mostly just numbers on a screen. Let's make it feel like we're actually running a cookie shop.",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 326.72,
+    "segment_id": "seg-0069",
+    "start_seconds": 322.08,
+    "text": "With Codex, we don't have to start over. We can simply describe what we want to change, and it",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 331.2,
+    "segment_id": "seg-0070",
+    "start_seconds": 326.72,
+    "text": "can update the project we already have. Let's try doing that. In the top right-hand corner,",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 335.36,
+    "segment_id": "seg-0071",
+    "start_seconds": 331.2,
+    "text": "let's exit out of full screen mode. And in the bottom left-hand corner, we have our prompt field.",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 340.0,
+    "segment_id": "seg-0072",
+    "start_seconds": 335.36,
+    "text": "Here, I'll ask it to add animated customers to the game. When I start a day, let's show",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 343.68,
+    "segment_id": "seg-0073",
+    "start_seconds": 340.0,
+    "text": "customers arriving at the cookie shop and buying cookies. And we'll have the number",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 348.0,
+    "segment_id": "seg-0074",
+    "start_seconds": 343.68,
+    "text": "of customers roughly reflect the number of cookies that we sell. And we'll keep",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 352.56,
+    "segment_id": "seg-0075",
+    "start_seconds": 348.0,
+    "text": "it simple and try to make it fun. Now that I've entered that in, let's submit that.",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 356.48,
+    "segment_id": "seg-0076",
+    "start_seconds": 352.56,
+    "text": "Codex will now look through our existing project, figure out which files it needs to modify,",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 360.56,
+    "segment_id": "seg-0077",
+    "start_seconds": 356.48,
+    "text": "and it'll make the changes. It took a little under two minutes to make all those changes.",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 364.64,
+    "segment_id": "seg-0078",
+    "start_seconds": 360.56,
+    "text": "And right down below, we could see all the different files that it modified. It changed",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 369.36,
+    "segment_id": "seg-0079",
+    "start_seconds": 364.64,
+    "text": "the game.js, the index.html, and also the README file. Now, here's a neat thing.",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 372.4,
+    "segment_id": "seg-0080",
+    "start_seconds": 369.36,
+    "text": "I could click into any one of these files. So here's the game.js. And I",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 376.24,
+    "segment_id": "seg-0081",
+    "start_seconds": 372.4,
+    "text": "could see all the changes it made. So it looks like it added about 47 lines,",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 381.28,
+    "segment_id": "seg-0082",
+    "start_seconds": 376.24,
+    "text": "here all highlighted in green. And then down below, it removed three lines from the file.",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 386.0,
+    "segment_id": "seg-0083",
+    "start_seconds": 381.28,
+    "text": "That's cool. Now, let's close out of this changes file. And right up here, we have the",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 390.32,
+    "segment_id": "seg-0084",
+    "start_seconds": 386.0,
+    "text": "Cookie Shop Tycoon. Let's now refresh it so we can see all the latest changes. I'll click here.",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 394.0,
+    "segment_id": "seg-0085",
+    "start_seconds": 390.32,
+    "text": "Let's go back to full screen. You can press Ctrl+Shift+F on your keyboard,",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 397.04,
+    "segment_id": "seg-0086",
+    "start_seconds": 394.0,
+    "text": "and that toggles full screen on. And right over here,",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 401.92,
+    "segment_id": "seg-0087",
+    "start_seconds": 397.04,
+    "text": "we see this nice little visual of Kevin's Cookie Shop. That's cool. Let's test it out.",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 405.28,
+    "segment_id": "seg-0088",
+    "start_seconds": 401.92,
+    "text": "Right over here, I'll stick with all the defaults. And let's bake and open the",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 410.96,
+    "segment_id": "seg-0089",
+    "start_seconds": 405.28,
+    "text": "shop. Whoa, look at all those customers coming, buying cookies. Oh, I love it.",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 413.6,
+    "segment_id": "seg-0090",
+    "start_seconds": 410.96,
+    "text": "And if we look right down below, I made $80 profit.",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 418.0,
+    "segment_id": "seg-0091",
+    "start_seconds": 413.6,
+    "text": "Not as good as last time, but not bad. Now, I think this is a great approach to building",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 421.44,
+    "segment_id": "seg-0092",
+    "start_seconds": 418.0,
+    "text": "things in Codex. You start out by telling it what you want. Then you test it out, see what",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 425.68,
+    "segment_id": "seg-0093",
+    "start_seconds": 421.44,
+    "text": "you think. You go back, you give it feedback, and then it iterates on it again and again.",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 428.48,
+    "segment_id": "seg-0094",
+    "start_seconds": 425.68,
+    "text": "And this way, you gradually build up your project. Now that we've",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 432.48,
+    "segment_id": "seg-0095",
+    "start_seconds": 428.48,
+    "text": "been making some changes to our project, now is a really good time to talk about",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 438.8,
+    "segment_id": "seg-0096",
+    "start_seconds": 432.48,
+    "text": "Git. Git helps us keep track of changes to our project. And the really nice thing is,",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 443.44,
+    "segment_id": "seg-0097",
+    "start_seconds": 438.8,
+    "text": "Codex has Git integrated directly into it. So it's also really easy to use.",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 446.56,
+    "segment_id": "seg-0098",
+    "start_seconds": 443.44,
+    "text": "Let's exit out of full screen mode again. And I'll press that shortcut key that",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 451.76,
+    "segment_id": "seg-0099",
+    "start_seconds": 446.56,
+    "text": "we just learned. Ctrl+Shift+F. Now, over on the left-hand side,",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 456.72,
+    "segment_id": "seg-0100",
+    "start_seconds": 451.76,
+    "text": "let's click on view changes. And this shows us exactly what changed in our project.",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 461.52,
+    "segment_id": "seg-0101",
+    "start_seconds": 456.72,
+    "text": "Now, right at the top, you'll see by default, it's set to last turn. So we're seeing just",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 466.4,
+    "segment_id": "seg-0102",
+    "start_seconds": 461.52,
+    "text": "the changes that Codex made in its most recent response. If I open this menu,",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 469.76,
+    "segment_id": "seg-0103",
+    "start_seconds": 466.4,
+    "text": "you'll see that there are a few different ways to view all of our changes. Now,",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 473.92,
+    "segment_id": "seg-0104",
+    "start_seconds": 469.76,
+    "text": "you don't need to understand all of these right now. If you're interested in going deep into Git,",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 477.52,
+    "segment_id": "seg-0105",
+    "start_seconds": 473.92,
+    "text": "I have a video on my channel, which goes through it in depth.",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 483.2,
+    "segment_id": "seg-0106",
+    "start_seconds": 477.52,
+    "text": "Now, down below, we can see the individual files that changed. And if I click into one of them,",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 488.32,
+    "segment_id": "seg-0107",
+    "start_seconds": 483.2,
+    "text": "you'll see what's called the diff. Green shows what was added and red shows what",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 493.92,
+    "segment_id": "seg-0108",
+    "start_seconds": 488.32,
+    "text": "was removed. One of the most useful things Git lets us do is create what's called a commit.",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 498.08,
+    "segment_id": "seg-0109",
+    "start_seconds": 493.92,
+    "text": "You could think of a commit like, let's say a saved checkpoint on our project.",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 502.56,
+    "segment_id": "seg-0110",
+    "start_seconds": 498.08,
+    "text": "Now, right now, I think this game is working really well. So this is the perfect time to",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 507.36,
+    "segment_id": "seg-0111",
+    "start_seconds": 502.56,
+    "text": "create one. And again, you don't even need to know how to use different Git commands",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 512.48,
+    "segment_id": "seg-0112",
+    "start_seconds": 507.36,
+    "text": "to do this. We could simply ask Codex. So right down below in the prompt field,",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 518.24,
+    "segment_id": "seg-0113",
+    "start_seconds": 512.48,
+    "text": "I'll ask it to commit the current changes with the message Add animated characters.",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 522.8,
+    "segment_id": "seg-0114",
+    "start_seconds": 518.24,
+    "text": "And right over here, we can now submit that and Codex will handle the Git commands for us and",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 528.24,
+    "segment_id": "seg-0115",
+    "start_seconds": 522.8,
+    "text": "also create the commit. As we continue working on our game, we can create more commits along",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 534.08,
+    "segment_id": "seg-0116",
+    "start_seconds": 528.24,
+    "text": "the way. And if something goes wrong, we have earlier versions of our projects that we can",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 540.64,
+    "segment_id": "seg-0117",
+    "start_seconds": 534.08,
+    "text": "go back to. You don't need to be a Git expert to use Codex, but creating commits gives you",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 548.08,
+    "segment_id": "seg-0118",
+    "start_seconds": 540.64,
+    "text": "a really useful safety net. So far, we've had one Codex agent working on one task at a time.",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 553.92,
+    "segment_id": "seg-0119",
+    "start_seconds": 548.08,
+    "text": "But Codex can also delegate work to multiple agents and have them work in",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 560.08,
+    "segment_id": "seg-0120",
+    "start_seconds": 553.92,
+    "text": "parallel. Let's make three improvements to our game all at the same time. Right down below,",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 563.68,
+    "segment_id": "seg-0121",
+    "start_seconds": 560.08,
+    "text": "let's type in the prompt. I'm giving Codex three different improvements",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 567.36,
+    "segment_id": "seg-0122",
+    "start_seconds": 563.68,
+    "text": "to work on. First, I want one agent to add cookie varieties.",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 571.68,
+    "segment_id": "seg-0123",
+    "start_seconds": 567.36,
+    "text": "Here for the second one, I want to build a shop upgrade system. And third,",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 575.52,
+    "segment_id": "seg-0124",
+    "start_seconds": 571.68,
+    "text": "I want to improve the visuals and the animations. And importantly,",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 579.84,
+    "segment_id": "seg-0125",
+    "start_seconds": 575.52,
+    "text": "I'm telling Codex to give each agent its own isolated worktree so they can all work",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 584.8,
+    "segment_id": "seg-0126",
+    "start_seconds": 579.84,
+    "text": "in parallel without changing our main project. Right over here, let's submit the prompt. Codex",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 590.64,
+    "segment_id": "seg-0127",
+    "start_seconds": 584.8,
+    "text": "is now creating three isolated worktrees and assigning one feature to each agent.",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 596.16,
+    "segment_id": "seg-0128",
+    "start_seconds": 590.64,
+    "text": "A worktree is basically a separate copy of our project. So all three agents can",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 600.64,
+    "segment_id": "seg-0129",
+    "start_seconds": 596.16,
+    "text": "work in parallel without interfering with each other or our main project.",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 604.96,
+    "segment_id": "seg-0130",
+    "start_seconds": 600.64,
+    "text": "And now all three agents have finished. It took about five minutes. Each one",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 608.4,
+    "segment_id": "seg-0131",
+    "start_seconds": 604.96,
+    "text": "worked on a different feature and committed its changes separately.",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 612.72,
+    "segment_id": "seg-0132",
+    "start_seconds": 608.4,
+    "text": "But nothing has been merged into our main project yet. So right down below,",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 616.48,
+    "segment_id": "seg-0133",
+    "start_seconds": 612.72,
+    "text": "Codex even gives us a link to open each version of the game. That way we could try",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 620.64,
+    "segment_id": "seg-0134",
+    "start_seconds": 616.48,
+    "text": "out what each agent built before deciding what we want to keep. So right over here,",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 623.92,
+    "segment_id": "seg-0135",
+    "start_seconds": 620.64,
+    "text": "let's test it out. First, let's open up the cookie varieties.",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 627.92,
+    "segment_id": "seg-0136",
+    "start_seconds": 623.92,
+    "text": "And here if I scroll down here, we can now choose the type of cookie that we want to",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 631.84,
+    "segment_id": "seg-0137",
+    "start_seconds": 627.92,
+    "text": "bake. That's neat. Right over here, I'll click into shop upgrades. That opens up",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 635.84,
+    "segment_id": "seg-0138",
+    "start_seconds": 631.84,
+    "text": "another tab over here. And if I scroll down here, we could upgrade different items.",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 639.6,
+    "segment_id": "seg-0139",
+    "start_seconds": 635.84,
+    "text": "For example, a better oven, a larger storefront, or here we could also invest in improved",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 644.72,
+    "segment_id": "seg-0140",
+    "start_seconds": 639.6,
+    "text": "advertising. And lastly, we also have some visual polish. It's subtle, but it does look a little bit",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 650.0,
+    "segment_id": "seg-0141",
+    "start_seconds": 644.72,
+    "text": "nicer than what we had. Now, I think they all look pretty good. But let's bring one of them back in.",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 654.24,
+    "segment_id": "seg-0142",
+    "start_seconds": 650.0,
+    "text": "Let's bring in the new cookie varieties into the main project. Right over here, we can ask Codex",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 658.96,
+    "segment_id": "seg-0143",
+    "start_seconds": 654.24,
+    "text": "to help us with that. I'll say bring the cookie varieties feature from its worktree back into",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 663.52,
+    "segment_id": "seg-0144",
+    "start_seconds": 658.96,
+    "text": "the main project. And we'll keep the other two separate for now. Over here, let's submit that.",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 666.96,
+    "segment_id": "seg-0145",
+    "start_seconds": 663.52,
+    "text": "Right up above, we can now see that it's brought the cookie varieties into",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 671.12,
+    "segment_id": "seg-0146",
+    "start_seconds": 666.96,
+    "text": "our main project. And right up above, if I click back into the main game,",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 674.48,
+    "segment_id": "seg-0147",
+    "start_seconds": 671.12,
+    "text": "let's refresh that. And here, let's scroll down. And there we have the",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 680.32,
+    "segment_id": "seg-0148",
+    "start_seconds": 674.48,
+    "text": "new cookie varieties in the main game. And the other two agents' changes are still separate.",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 683.68,
+    "segment_id": "seg-0149",
+    "start_seconds": 680.32,
+    "text": "Now, of course, I could follow the same process with those other agents",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 687.84,
+    "segment_id": "seg-0150",
+    "start_seconds": 683.68,
+    "text": "if we wanted to bring their work into the main project too. So with multiple agents,",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 694.08,
+    "segment_id": "seg-0151",
+    "start_seconds": 687.84,
+    "text": "we can break a larger project into separate tasks and have Codex work on them all at the same time,",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 699.28,
+    "segment_id": "seg-0152",
+    "start_seconds": 694.08,
+    "text": "review the results, and then choose which changes we actually want to keep. Next, let's look at",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 706.24,
+    "segment_id": "seg-0153",
+    "start_seconds": 699.28,
+    "text": "skills. A skill is a reusable set of instructions that teaches Codex how to perform a specific task.",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 711.68,
+    "segment_id": "seg-0154",
+    "start_seconds": 706.24,
+    "text": "This is really useful for something that you want Codex to do the same way again and again.",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 715.68,
+    "segment_id": "seg-0155",
+    "start_seconds": 711.68,
+    "text": "For example, as we continue adding features to our game, we'll want to make sure we haven't",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 720.56,
+    "segment_id": "seg-0156",
+    "start_seconds": 715.68,
+    "text": "accidentally broken anything. Instead of writing out the same testing instructions every time,",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 724.64,
+    "segment_id": "seg-0157",
+    "start_seconds": 720.56,
+    "text": "let's turn them into a skill. Right down below, I'll type in a prompt. I'm asking",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 729.76,
+    "segment_id": "seg-0158",
+    "start_seconds": 724.64,
+    "text": "Codex to create a reusable skill called the Game Tester. I'm giving it a list of things",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 733.2,
+    "segment_id": "seg-0159",
+    "start_seconds": 729.76,
+    "text": "that I wanted to check like whether the game launches, the controls work,",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 737.84,
+    "segment_id": "seg-0160",
+    "start_seconds": 733.2,
+    "text": "the calculations are correct, and players can't spend money or sell cookies they don't have.",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 742.32,
+    "segment_id": "seg-0161",
+    "start_seconds": 737.84,
+    "text": "I'm also telling it to report any problems it finds without changing anything so I can review",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 747.36,
+    "segment_id": "seg-0162",
+    "start_seconds": 742.32,
+    "text": "the results first. Right over here, let's submit that. Codex has now created the skill for us,",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 751.84,
+    "segment_id": "seg-0163",
+    "start_seconds": 747.36,
+    "text": "and we can reuse it whenever we want to test a project. Let's try it out. Down below,",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 755.44,
+    "segment_id": "seg-0164",
+    "start_seconds": 751.84,
+    "text": "I'll ask it to use the Game Tester skill to test Cookie Shop Tycoon.",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 759.92,
+    "segment_id": "seg-0165",
+    "start_seconds": 755.44,
+    "text": "Then let's run it. Codex has now followed all the different instructions in our skill. Right above,",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 763.28,
+    "segment_id": "seg-0166",
+    "start_seconds": 759.92,
+    "text": "I could click on the skill, and here we could see all the different instructions,",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 767.28,
+    "segment_id": "seg-0167",
+    "start_seconds": 763.28,
+    "text": "and it went through all these different checks. Now, once it finished, we get this",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 771.6,
+    "segment_id": "seg-0168",
+    "start_seconds": 767.28,
+    "text": "report showing us what it found. And overall, it looks like there were no gameplay problems.",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 776.16,
+    "segment_id": "seg-0169",
+    "start_seconds": 771.6,
+    "text": "So that's great news. Now, if there were any issues, we can always go back and ask Codex",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 780.56,
+    "segment_id": "seg-0170",
+    "start_seconds": 776.16,
+    "text": "to fix it. The nice thing is we don't have to write out all these testing instructions again,",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 786.08,
+    "segment_id": "seg-0171",
+    "start_seconds": 780.56,
+    "text": "we simply reuse the Game Tester skill whenever we need it. And skills aren't limited to testing,",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 789.68,
+    "segment_id": "seg-0172",
+    "start_seconds": 786.08,
+    "text": "you could create them for things like reviewing code, writing documentation,",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 795.52,
+    "segment_id": "seg-0173",
+    "start_seconds": 789.68,
+    "text": "or any other repeatable workflow. So far, Codex has been working locally on my computer.",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 801.12,
+    "segment_id": "seg-0174",
+    "start_seconds": 795.52,
+    "text": "But we can also hand work off to Codex Cloud where it can work on a task remotely. There's",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 805.52,
+    "segment_id": "seg-0175",
+    "start_seconds": 801.12,
+    "text": "a little bit of setup the first time you do this, you'll need to set up a free GitHub account. And",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 809.84,
+    "segment_id": "seg-0176",
+    "start_seconds": 805.52,
+    "text": "you can do that at the following website. Once you sign up for your account, you'll need to connect",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 816.48,
+    "segment_id": "seg-0177",
+    "start_seconds": 809.84,
+    "text": "GitHub to ChatGPT. Let's jump back into ChatGPT to do that. Back in the ChatGPT desktop app, over on",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 822.08,
+    "segment_id": "seg-0178",
+    "start_seconds": 816.48,
+    "text": "the left-hand side, hover over the Customize menu, and right up on top, go to Plugins.",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 826.16,
+    "segment_id": "seg-0179",
+    "start_seconds": 822.08,
+    "text": "Then look for GitHub. And once you see that install it and then connect your",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 830.0,
+    "segment_id": "seg-0180",
+    "start_seconds": 826.16,
+    "text": "account. Once you finish connecting to GitHub, go back to your main project. And",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 836.24,
+    "segment_id": "seg-0181",
+    "start_seconds": 830.0,
+    "text": "now we're going to push the local project to GitHub. So Codex Cloud can access it.",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 841.28,
+    "segment_id": "seg-0182",
+    "start_seconds": 836.24,
+    "text": "If you're new to GitHub, you could think of it as a place to store and manage your project online.",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 846.88,
+    "segment_id": "seg-0183",
+    "start_seconds": 841.28,
+    "text": "Right now, all of our project files are sitting here on my computer, we're going to create a",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 853.12,
+    "segment_id": "seg-0184",
+    "start_seconds": 846.88,
+    "text": "repository on GitHub, which is basically an online home for all of these files. And the",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 857.92,
+    "segment_id": "seg-0185",
+    "start_seconds": 853.12,
+    "text": "best part is we don't have to set up any of this manually, we could simply ask Codex to handle it",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 862.8,
+    "segment_id": "seg-0186",
+    "start_seconds": 857.92,
+    "text": "for us. So right down below, I'll type in my prompt, Create a new GitHub repository called",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 867.92,
+    "segment_id": "seg-0187",
+    "start_seconds": 862.8,
+    "text": "Cookie Shop Tycoon and push the current main project to it. Then over here, let's submit",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 873.28,
+    "segment_id": "seg-0188",
+    "start_seconds": 867.92,
+    "text": "that. Codex has now created the repository and uploaded our current project to GitHub.",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 879.36,
+    "segment_id": "seg-0189",
+    "start_seconds": 873.28,
+    "text": "Now, because it’s on GitHub, Codex Cloud can access it. To use Codex Cloud right up in",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 883.92,
+    "segment_id": "seg-0190",
+    "start_seconds": 879.36,
+    "text": "the top left-hand corner, let's start a new chat right down here, let's click on this computer and",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 889.84,
+    "segment_id": "seg-0191",
+    "start_seconds": 883.92,
+    "text": "let's change it to cloud. Then over here, let's click on choose environment. And let's create a",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 894.88,
+    "segment_id": "seg-0192",
+    "start_seconds": 889.84,
+    "text": "new environment. Here, Codex can already see the repositories from my connected GitHub account.",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 899.12,
+    "segment_id": "seg-0193",
+    "start_seconds": 894.88,
+    "text": "Let's select Cookie Shop Tycoon. And over here, I'll click on Get Started. Codex is",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 903.52,
+    "segment_id": "seg-0194",
+    "start_seconds": 899.12,
+    "text": "now inspecting the repository and figuring out how to configure the environment for us. It's",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 907.04,
+    "segment_id": "seg-0195",
+    "start_seconds": 903.52,
+    "text": "now finished setting up the environment right down here. And let's click on Save and publish.",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 911.04,
+    "segment_id": "seg-0196",
+    "start_seconds": 907.04,
+    "text": "Here we can now give Codex a task to run in the cloud. I'll click here right down below,",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 916.56,
+    "segment_id": "seg-0197",
+    "start_seconds": 911.04,
+    "text": "I'll type in a prompt to add a new customer satisfaction system to the game. Then over here,",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 920.16,
+    "segment_id": "seg-0198",
+    "start_seconds": 916.56,
+    "text": "I'll submit that. Now the task is running remotely instead of on my",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 923.76,
+    "segment_id": "seg-0199",
+    "start_seconds": 920.16,
+    "text": "computer. I don't have to keep Codex open here while it works.",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 928.48,
+    "segment_id": "seg-0200",
+    "start_seconds": 923.76,
+    "text": "And I can also access the cloud task from Codex on the web and come back later to review the",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 934.32,
+    "segment_id": "seg-0201",
+    "start_seconds": 928.48,
+    "text": "results. So the basic workflow is work locally, push the project to GitHub, and then hand off",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 939.76,
+    "segment_id": "seg-0202",
+    "start_seconds": 934.32,
+    "text": "tasks to Codex Cloud when you want them to run remotely. And Codex has now finished the task.",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 944.4,
+    "segment_id": "seg-0203",
+    "start_seconds": 939.76,
+    "text": "Let's take a look at what it built. Here we can now see the new customer satisfaction score.",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 947.6,
+    "segment_id": "seg-0204",
+    "start_seconds": 944.4,
+    "text": "And let's advance to the next day. I'll bake and open the shop. There",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 952.0,
+    "segment_id": "seg-0205",
+    "start_seconds": 947.6,
+    "text": "we see that beautiful animation. And we can see how it impacts the satisfaction",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 956.8,
+    "segment_id": "seg-0206",
+    "start_seconds": 952.0,
+    "text": "score. So that entire feature was built and tested remotely in Codex Cloud.",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 962.64,
+    "segment_id": "seg-0207",
+    "start_seconds": 956.8,
+    "text": "We've been using the Codex desktop app, but there are other ways that you can work with Codex. As",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 967.76,
+    "segment_id": "seg-0208",
+    "start_seconds": 962.64,
+    "text": "we just saw, you can use Codex on the web to start and check on cloud tasks from anywhere.",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 972.72,
+    "segment_id": "seg-0209",
+    "start_seconds": 967.76,
+    "text": "There is also the Codex CLI, which lets you work with Codex directly from the command",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 977.36,
+    "segment_id": "seg-0210",
+    "start_seconds": 972.72,
+    "text": "line. And if you already write code in an editor like Visual Studio Code,",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 981.92,
+    "segment_id": "seg-0211",
+    "start_seconds": 977.36,
+    "text": "you can use the Codex extension without leaving your editor. They all give",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 986.8,
+    "segment_id": "seg-0212",
+    "start_seconds": 981.92,
+    "text": "you different ways to work with Codex depending on just how you like to work.",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 992.8,
+    "segment_id": "seg-0213",
+    "start_seconds": 986.8,
+    "text": "But if you're getting started, I'd probably stick with the desktop app. It gives you a visual way to",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 997.52,
+    "segment_id": "seg-0214",
+    "start_seconds": 992.8,
+    "text": "work. And you could work with local projects, you could run multiple agents, you could use skills,",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 1002.0,
+    "segment_id": "seg-0215",
+    "start_seconds": 997.52,
+    "text": "and you could also hand work off to the cloud. So it makes it really easy. And there you go.",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 1007.6,
+    "segment_id": "seg-0216",
+    "start_seconds": 1002.0,
+    "text": "Now you know how to use Codex to take an idea and turn it into a working project,",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 1013.12,
+    "segment_id": "seg-0217",
+    "start_seconds": 1007.6,
+    "text": "even if you don't know how to code. And of course, Cookie Shop Tycoon is really",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 1019.44,
+    "segment_id": "seg-0218",
+    "start_seconds": 1013.12,
+    "text": "just one possibility. You could use this same workflow that we looked at today to build apps",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 1026.08,
+    "segment_id": "seg-0219",
+    "start_seconds": 1019.44,
+    "text": "or maybe automate tasks, work on websites, or really bring any software idea to life.",
+    "timestamp_method": "source_transcript"
+  },
+  {
+    "end_seconds": 1030.617,
+    "segment_id": "seg-0220",
+    "start_seconds": 1026.88,
+    "text": "All right, thanks for watching. And I'll see you in the next one.",
+    "timestamp_method": "source_transcript"
+  }
+]

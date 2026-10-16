@@ -1,0 +1,18 @@
+{
+  "cost_estimate": false,
+  "cost_usd": null,
+  "details": {
+    "failed_source_count": 0
+  },
+  "errors": [],
+  "finished_at": "2026-10-13T22:50:21Z",
+  "input_count": 7,
+  "output_count": 9,
+  "stage": "fetch_feed",
+  "started_at": "2026-10-13T22:50:21Z",
+  "status": "completed",
+  "tools_or_models": [
+    "python-urllib",
+    "python-elementtree"
+  ]
+}

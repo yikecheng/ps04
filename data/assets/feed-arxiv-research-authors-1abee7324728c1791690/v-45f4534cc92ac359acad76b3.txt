@@ -1,0 +1,25 @@
+Computer Science > Software Engineering
+
+Title: Shortcutting the Fix: Identifying and Categorizing Agentic Exploits in Software Engineering Benchmarks
+
+Abstract: High software engineering benchmark scores often mask exploitative shortcuts, such as retrieving upstream solutions, exploiting local Git histories, or recalling memorized code. We formalize this phenomenon as agentic shortcutting and audit three state-of-the-art open LLMs on SWE-bench Multilingual and DeepSWE using trajectory-level LLM judges. Standard evaluations trigger shortcutting attempts in 60.7%-90.1% and 55.5%-89.1% of trajectories, respectively, with up to 72.1% of tasks resolved with the aid of a successful exploit; disabling network access fails to curb these high attempt rates. Prompting agents to construct solutions independently suppresses attempts to 9.4%-14.2% and 0.9%-10.3%, respectively, while virtually eliminating shortcut-dependent resolutions and preserving core task performance. Our findings demonstrate the necessity of exploit-aware evaluation frameworks to measure repository-level problem solving.
+
+Current browse context:
+
+References & Citations
+
+BibTeX formatted citation
+
+Bibliographic and Citation Tools
+
+Code, Data and Media Associated with this Article
+
+Recommenders and Search Tools
+
+arXivLabs: experimental projects with community collaborators
+
+arXivLabs is a framework that allows collaborators to develop and share new arXiv features directly on our website.
+
+Both individuals and organizations that work with arXivLabs have embraced and accepted our values of openness, community, excellence, and user data privacy. arXiv is committed to these values and only works with partners that adhere to them.
+
+Have an idea for a project that will add value for arXiv's community? Learn more about arXivLabs .

@@ -1,0 +1,489 @@
+The Work Behind Delegation: A Framework for Supervising AI Coding Agents
+
+As AI coding agents carry out development tasks with greater autonomy, developers are shifting from direct implementation toward supervising delegated work. Yet existing research offers limited understanding of how developers organize supervisory activities into connected workflows. Drawing on observations and workflow diagrams from 19 experienced developers, we reconfigure Sheridan’s framework of human supervisory control into seven stages and the connecting loops for supervising AI coding agents. We applied the framework to public developer discussions on Reddit and found that supervisory demands extend across stages and that developers manage them by concentrating effort in planning, delegating supervisory work to other agents, and turning recurring guidance into reusable assets. Our framework provides a useful analytical lens for understanding how developers supervise AI coding agents by capturing how supervision is structured in agentic software development.
+
+AI coding tools have rapidly expanded their capabilities, moving from assisting developers ( Santos et al., 2025 ) to carrying out software development tasks with greater autonomy ( Mozannar et al., 2024 ; Robbes et al., 2026 ) . With the emergence of AI coding agents such as Claude Code ( Anthropic, 2025 ) and Codex ( OpenAI, 2025b ) , developers can now provide high-level direction and leave the execution to the agent. Given a task description, agents can autonomously plan their own approach, explore the codebase, run commands, and make changes across multiple files ( Dong et al., 2025 ; Guo et al., 2025 ) . As developers delegate more of this execution to agents, their role shifts from direct implementation toward coordination and oversight ( Alenezi, 2026 ) . Therefore, developers increasingly act as supervisors of AI coding agents, setting the direction of delegated work, tracking progress, and evaluating its output ( Sapkota et al., 2025 ) .
+
+As developers take on this supervisory role, understanding what effective supervision of AI coding agents requires becomes important. Prior work has examined what developers do at particular points in the process, such as providing clear context and explicit instructions ( Huang et al., 2025 ) , asking agents to explain their changes ( Baumann et al., 2026 ) , and providing corrective feedback when execution goes wrong ( Chen et al., 2026b ) . However, supervision extends across a development task, and effort invested at one point can affect what needs to be monitored, corrected, or reviewed at subsequent points in the task ( Dhanorkar et al., 2026 ; Zhou et al., 2026 ; Chen et al., 2026a ) . Given limited human attention and effort, these dependencies highlight the need to consider supervision as a connected process rather than as a set of separate activities. Understanding this process requires an analytical approach that captures how supervisory activities are organized and connected across a task.
+
+Earlier research on automation provides a useful foundation for understanding how human roles change as task execution is increasingly automated by systems such as aircraft autopilots and industrial robots ( Parasuraman et al., 2000 ; Sheridan, 2012 ) . Among this body of work, we build on Sheridan’s framework of human supervisory control , which conceptualizes supervision as a process organized around five stages: Plan , Teach , Monitor , Intervene , and Learn ( Sheridan, 1976 ; Sheridan, 1992 ) . These stages are linked through recurrent loops, highlighting how one stage shapes subsequent supervisory demands. While Sheridan’s framework was grounded largely in automated systems that executed human-specified goals or instructions, AI coding agents have greater autonomy in determining how to accomplish delegated tasks. Hence, it remains unclear whether Sheridan’s supervisory framework can fully capture supervision under this more agentic form of delegation.
+
+This motivates a central question for our work: How do developers organize supervision over the course of a task delegated to AI coding agents? To answer this, we developed a framework for supervising AI coding agents by reconfiguring Sheridan’s framework (Figure 1 ). The framework was based on a qualitative study with 19 experienced developers, where we observed participants working with agents and asked them to reconstruct their supervision workflows as diagrams. Our analysis identified seven supervisory stages— Plan , Monitor , Wait , Review , Teach , Manual Fix , and Update Assets —and loops connecting them. Together, these stages and loops capture how supervision is organized in agentic software development, providing an analytic lens for studying developer supervision of AI coding agents.
+
+We then applied the framework to developer discussions on Reddit to examine supervisory patterns across the development process. We identified three demands that span multiple stages: maintaining alignment between agent behavior and developer intent, enforcing quality beyond task completion, and maintaining understanding of agents’ work. We also found three strategies for managing these demands: concentrating effort in planning, distributing supervisory work to other agents, and externalizing repeated supervision into reusable assets. Through the framework, we show how supervisory demands extend across stages and how developers redistribute their effort in response.
+
+The contributions of this paper are as follows:
+
+• A framework for supervising AI coding agents that consists of seven stages and the loops connecting them.
+
+• Findings from applying the framework to examine supervisory demands and the strategies developers use to manage them across the development process.
+
+2. Related Work
+
+We review prior work to contextualize our framework for developer supervision of AI coding agents: (1) AI-assisted software development, (2) frameworks for human–agent collaboration, and (3) human roles in the agentic era.
+
+2.1. AI-Assisted Software Development
+
+AI assistance in software development has shifted from providing localized code suggestions ( Sarkar et al., 2022 ; Prather et al., 2023 ; Fan et al., 2026 ; Ma et al., 2023 ) toward increasingly autonomous AI agents that can carry out development tasks with limited human intervention ( Liu et al., 2026a ; Fawzy et al., 2026 ; Ray, 2025 ) . As AI systems have become more capable ( Dong et al., 2025 ; Feng et al., 2025 ) , how developers interact with them has also changed.
+
+Prior work has examined AI assistance in software development and its integration into developer workflows. Early studies focused on developers’ interactions with individual AI-generated suggestions, examining how they evaluated, accepted, and modified suggestions during programming ( Barke et al., 2023 ; Mozannar et al., 2024 ) . More recent work has expanded attention to AI use across programming sessions and broader development workflows, drawing on interviews with practitioners ( Ullrich et al., 2025 ; Dhanorkar et al., 2026 ) , interaction logs from real-world use ( Wu et al., 2026 ; Tang et al., 2026 ) , and longitudinal telemetry ( Sergeyuk et al., 2026 ) . Together, these studies highlight the importance of understanding developer–AI interaction as AI becomes deeply integrated into software development.
+
+Agentic AI introduces new dynamics of developer–AI interaction. AI agents can proactively plan and execute multi-step actions ( Chen et al., 2026b ) , incorporate broader contextual information ( Guo et al., 2025 ) , and produce artifacts across development workflows ( Zamfirescu-Pereira et al., 2025 ) . As developers delegate more execution to agents, supervision becomes increasingly important, yet its organization across a development task remains underexplored. Therefore, in this work, we examine the supervisory activities developers perform and how these activities connect throughout the process.
+
+2.2. Frameworks for Human–Agent Collaboration
+
+A growing body of empirical work has examined human–agent collaboration through interviews ( Dhanorkar et al., 2026 ) , observational studies ( Huang et al., 2025 ; Shome et al., 2026 ) , and real-world interaction logs ( Tang et al., 2026 ; Baumann et al., 2026 ) . Building on these findings, researchers have developed different conceptualizations of human–agent interaction, capturing recurring modes, activities, and dimensions of collaboration. For example, Barke et al. (2023) distinguish between exploration and acceleration modes of interaction with programming assistants, while Dhanorkar et al. (2026) identify four forms of oversight: a priori control, co-planning, real-time monitoring, and post-hoc review. Other studies describe human–agent interaction in terms of the degree of human involvement ( Chen et al., 2026b ) , time allocation across activity states ( Mozannar et al., 2024 ) , and the distribution of initiative between human and system ( Maier et al., 2026 ) .
+
+Beyond these study-specific conceptualizations, recent work has proposed more explicit frameworks for human–agent collaboration. Feng et al. (2025) structure collaboration around levels of agent autonomy and corresponding user roles, while Wang and Lu (2025) propose a process-oriented framework that connects interaction, process, and infrastructure. These frameworks provide systematic ways to structure human–agent collaboration, but offer limited guidance to collaboration centered on supervising delegated agent work. In this work, we develop a framework that captures the supervisory activities involved and how they connect across a development task.
+
+2.3. Human Roles in the Agentic Era
+
+The emergence of AI as a collaborator is not unique to software development. Similar shifts toward human–AI collaboration have been observed across domains such as design ( Xu et al., 2025 ; Cavallin and Spagnol, 2026 ) , writing ( Lehmann et al., 2026 ) , and knowledge work ( Yun et al., 2025 ) , where AI systems have become integrated into everyday workflows. As these systems become more agentic and take on greater responsibility for execution, human roles are being reconceptualized. Rather than acting as primary executors while AI provides passive assistance, humans are increasingly shifting toward supervisory roles over delegated work by defining goals ( Feng et al., 2026b ; Ullrich et al., 2025 ; Ma et al., 2025 ) , evaluating outcomes ( Feng et al., 2026a ) , and intervening when necessary ( Zhou et al., 2026 ) .
+
+These shifts also align with longstanding perspectives in automation research, which describe how responsibilities shift between humans and systems as system autonomy increases ( Parasuraman et al., 2000 ; Sheridan, 2012 ) . Taken together, these perspectives point toward a shift in human contribution from direct execution toward higher-level activities such as providing context, exercising judgment, and guiding AI-generated work ( Feng et al., 2026a ; Cheruvu, 2025 ) . Building on these observations, we examine how this shift manifests in software development as developers increasingly supervise work delegated to AI agents.
+
+In this section, we provide background on Sheridan’s human supervisory control framework, which serves as the theoretical starting point for our work examining how developers supervise AI coding agents. The human supervisory control framework describes how a human supervisor directs and oversees automated systems such as aircraft autopilots and industrial robots ( Sheridan, 1992 ; Sheridan, 1976 ; Sheridan, 2012 ) . The framework consists of five supervisory stages: Plan , Teach , Monitor , Intervene , and Learn , connected by recurring loops as illustrated in Figure 2 . We briefly explain each stage below.
+
+The supervisor begins with Plan , where they develop an understanding of the process and system capabilities, then determine the goals, constraints, and overall strategy. In Teach , these plans are translated into instructions for the automated system. During execution, Monitor involves observing the system and assessing whether it is progressing as intended, while Intervene occurs when the supervisor needs to revise the instructions or take more direct control. Revising instructions returns the process to Teach , whereas satisfactory completion leads to Learn , where the supervisor reflects on key events and prior decisions to inform future Plan activities. Together, these stages form recurring control loops in which supervision can return to earlier stages as execution progresses (Figure 2 ).
+
+We conducted a qualitative study with experienced software developers to develop a framework for supervising AI coding agents. We used Sheridan’s framework of human supervisory control ( Sheridan, 1976 ; Sheridan, 1992 ) (§ 3 ) as a theoretical starting point to examine how its stages and loops translate to the supervision of AI coding agents as developers delegate more implementation to them. We observed participants working on their own coding tasks with their usual agent setups and asked them to reconstruct their supervision workflows as diagrams. We analyzed these workflow diagrams together with task observations and think-aloud data to develop our framework, which we introduce in § 5 .
+
+In this section, we describe how we designed and conducted the study in detail. The study was reviewed and approved by the Institutional Review Board (IRB) of our institution prior to conducting the study.
+
+We distributed a screening survey through university forums and developer communities in South Korea, as well as LinkedIn groups and networks for international recruitment. The survey collected information about respondents’ software development background, AI coding agent use (i.e., which agents they used, how frequently they used them, and the types of tasks they delegated), and the coding task they could bring to the study session.
+
+Based on the survey responses, we applied three eligibility criteria: (1) at least three years of professional software development or graduate-level research experience in a software-intensive field (e.g., computer science, electrical engineering), (2) regular use of AI coding agents for substantive development tasks in professional, research, or other real-world projects, and (3) the ability to bring a shareable coding task with a clearly defined goal for a 40-minute session. These criteria ensured that participants had sufficient development experience to judge agent output critically and sufficient familiarity with agents to have established supervisory practices of their own.
+
+We recruited 20 participants who met these criteria. One participant was unable to use their regular agent setup during the session and was excluded from the analysis, resulting in a final sample of 19 participants. The full list of participants and their information is shown in Table 1 . We deliberately recruited participants across diverse roles and development backgrounds to capture variation in how developers supervise AI coding agents.
+
+Sessions were conducted in Korean or English, and Korean transcripts were translated into English for analysis. All eligible participants received either a 120 USD Amazon gift card or 150,000 KRW ( ≈ \approx 98 USD) for a 90-minute study.
+
+Following Huang et al. (2025) , participants were asked to bring their own task from their ongoing project rather than complete a given standardized task. This allowed us to observe realistic development workflows ( Becker et al., 2025 ) , while introducing natural variation in tasks, codebases, and agent configurations across the study sessions ( Ko et al., 2015 ) .
+
+Each task needed a clearly defined goal that could be pursued within approximately 40 minutes. This scope allowed us to observe supervision end-to-end within a single session. Tasks could come from ongoing work, open-source projects, side projects, or research code, as long as they could be shared with the research team and did not contain confidential or personal information. The Task column in Table 1 summarizes the task brought by each participant.
+
+We conducted the study remotely over Zoom 1 1 1 https://zoom.us/ . Each session lasted approximately 90 minutes and consisted of three phases: (1) a pre-task interview, (2) a think-aloud coding task, and (3) a supervision workflow modeling activity. All sessions were recorded and transcribed for later analysis. We describe each phase below.
+
+4.3.1. Pre-Task Interview
+
+We began with a semi-structured interview that expanded on participants’ initial survey responses about their development background and agent use. Participants then introduced their prepared task and the concrete goal they intended to pursue during the session. We provided brief instructions on the think-aloud protocol as needed. This phase lasted approximately 10 minutes. The full interview questions are provided in Appendix A .
+
+4.3.2. Coding Session
+
+In this phase, participants worked on their prepared task in their own environment, sharing their screen(s) throughout. They were asked to think aloud as they worked, and we prompted them when they remained silent for an extended period. Sessions ended when participants felt they had reached their goal, or after approximately 40 minutes had passed. In the latter case, we briefly asked how much work remained.
+
+4.3.3. Workflow Design Session
+
+Participants then drew a diagram of their supervision workflow on a shared online whiteboard. To examine how human supervisory control translates to AI coding agents, we first introduced Sheridan’s framework to participants. We emphasized that participants did not need to follow Sheridan’s stages and asked them to construct their diagrams based on their own supervision practices. The activity proceeded in three steps.
+
+First, participants reflected on the task they had just completed and divided their supervision into stages they considered meaningful and distinct. If a stage was difficult to name concisely, they could write a short description instead. Second, they arranged the stages in order and marked recurring transitions as loops. Finally, they considered how the diagram might extend to their other tasks and to other developers, revising it accordingly. As in the coding session, participants were asked to think aloud during the activity, explaining the meaning of each stage and loop and the reasoning behind it. This phase lasted approximately 30 minutes. Example diagrams are provided in Appendix B .
+
+4.3.4. Inductive Content Analysis
+
+We analyzed participants’ workflow diagrams, task observations, and think-aloud data following the content analysis approach of Elo and Kyngäs (2008) . We inductively derived stages and loops in participants’ supervision processes and used the findings to reconfigure Sheridan’s framework for AI coding agents.
+
+After the first eight sessions, the three authors agreed that common patterns were emerging across participants. Each author independently reviewed all eight participants’ data to familiarize themselves with the data. We then collaboratively coded each participant’s supervision process across the three sources. The diagrams provided participants’ own representations of their processes, while task observations and think-aloud data clarified ambiguities and captured omitted steps. Through iterative comparison, we grouped codes representing similar supervisory functions, aligned their terminology and granularity, and organized them into an initial framework of stages and loops.
+
+We first checked the framework against the first eight cases. After each of the remaining 11 sessions, we compared the participant’s workflow with the framework and examined whether stages, transitions, or loops required revision. When a mismatch arose, the three authors revisited the data, discussed the case, and revised the framework as needed. This process led to the removal of one stage and the addition of one loop. As no new stages or loops emerged in later sessions, we stopped data collection after 19 participants. The final framework consists of seven stages— Plan , Monitor , Wait , Review , Teach , Manual Fix , and Update Assets —and the loops connecting them. We present it in detail in § 5 .
+
+5. A Framework for Supervising AI Coding Agents
+
+We developed a new framework for supervising AI coding agents that reconfigures Sheridan’s framework of human supervisory control based on our empirical findings. Our framework identifies seven distinct supervisory stages: Plan , Monitor , Wait , Review , Teach , Manual Fix , and Update Assets . These stages are connected through transitions and loops that capture the overall process of developer supervision across a development task, as illustrated in Figure 3 .
+
+In this section, we introduce our framework by describing the stages in the general order they appeared in participants’ workflows, grouping together those with similar supervisory goals. For each stage, we explain what developers did, how it relates to Sheridan’s framework, and how it connects with other stages.
+
+Plan corresponds closely to Sheridan’s planning stage, in which the supervisor sets a goal and an overall approach before execution begins. At this stage, developers define the work to be delegated to the agent and establish its boundaries in advance, specifying goals, requirements, constraints, success criteria, and an intended approach. For example, P10 described, “I usually write three things [in the plan]: the situation, the success criteria, and the cautions. Here is the situation I am in, here is what you need to implement, and here is what you need to watch out for.”
+
+In Sheridan’s framework, the supervisor determines the task and approach during Plan , then separately translates it into commands the system can execute during Teach . With AI coding agents, this translation was often unnecessary. Developers write the plan down in natural language with sufficient detail for the agent to act on directly. P3 explained, “I did planning, and the planning itself was the teaching. I wanted the teaching step to happen inside it.” Hence, Plan serves as both the developer’s specification and the agent’s initial instruction, absorbing the initial Teach step.
+
+In our framework, Plan also forms a self-loop. Developers refine their goals, requirements, and approach over multiple iterations before execution begins. These iterations include the developer’s own revisions as well as input from the agent or another AI, which proposes, elaborates, or critiques the plan. P18 said, “There’s a loop here, so if I don’t like it I keep going around, revising [with AI] until I’m satisfied. And if the plan is right, then I assign the work.” The loop ends when the plan aligns with the developer’s intent and is detailed enough for the agent to act on directly. Developers then hand it over, and the workflow moves to Monitor or Wait as the agent begins executing.
+
+Monitor corresponds closely to Sheridan’s monitoring stage, where supervisors observe an automated system during execution to track its progress and detect potential problems. Developers similarly observe agents as they work by reading their reasoning, watching the commands and file changes they produce, and checking intermediate outputs as they appear. P1 explained, “Definitely did the monitoring of the process to check if there are any easily identifiable errors happening in the reasoning or in the overall process.” In our framework, Monitor forms a self-loop similar to Sheridan’s monitoring loop. Developers continue observing the same ongoing execution and sometimes send additional prompts in response to what they see, without stopping the agent.
+
+However, developers do not always monitor agents continuously during execution. When an agent can continue working for extended periods without human input, participants sometimes left it running and turned their attention elsewhere, describing this as a distinct Wait stage. They explicitly distinguished these periods from Monitor . During Wait , some developers shift to supervising agents on separate tasks, while others turn to unrelated activities. P2 explained, “I instruct from the planning stage, then wait, and while waiting I go on to another round of planning and instructing.” On the other hand, P9 said, “I do something else—other work, or I just watch YouTube.”
+
+Monitor and Wait can alternate within the same execution as developers shift their attention between the agent and other activities. P3 described, “Sometimes I read them and sometimes I don’t. I read for a bit, then go do something else, and then when I read and something seems really off, I stop it.” When execution finishes, developers move to Review . When monitoring reveals a fundamental problem, they stop the execution and begin a new cycle from Plan .
+
+Review is a new supervisory stage in which developers assess the agent’s completed work against their intent and requirements. While Sheridan includes such assessment within Monitor , participants treated it as a separate Review stage. Developers inspect the code and diffs, run tests, or interact with the implemented feature to assess whether the changes behave as intended and satisfy their requirements. P18 explained, “[The plan] cannot capture all of my intent—some things get compressed, or it fills them in by guessing, and those only become visible once you get to this [Review] stage. […] What I look for in [Review] is the gap between my intent and the result.”
+
+Review also forms a self-loop because developers rarely evaluate the agent’s work in a single pass. Instead, they continue checking it in multiple ways until they are confident that it meets their expectations. For example, P9 described, “I first check how many of the tests pass—the acceptance conditions I gave the AI and the tests that match them. When those pass, I then check the feature with my own eyes, monkey-testing it.” When developers are satisfied with the result, they complete the current task and move to Plan for a new task, sometimes passing through Update Assets first. When they find errors or aspects they are dissatisfied with, they move to Teach or Manual Fix .
+
+When Review reveals errors or mismatches with the intent, developers supervise the correction in two ways. They either redirect the agent through Teach or take over the correction themselves through Manual Fix . In Sheridan’s framework, Teach translates an intended action into commands that the automated system can execute, following either initial planning or corrective intervention. With coding agents, the initial teaching function is absorbed into Plan , leaving only corrective instructions as a distinct Teach stage (see Figure 1 ).
+
+Teach takes the form of follow-up prompting. Developers prompt the agent again based on problems identified during Review , adding missing details, correcting misunderstandings, reporting errors, or specifying how the work should change. P14 described this process, “Most of the time, it’s because I didn’t communicate something. […] I realize, ‘I left this out,’ and tell [the agent] again. […] If there’s actually a bug, I just tell it there’s a bug, and it usually fixes it.”
+
+Manual Fix is where developers choose to take over and do the correction themselves. Developers make the correction when the change is simple or faster to carry out directly, or when they expect further prompting to be inefficient. P6 explained, “I could have had [the agent] do it, but it was faster for me, so I just changed it by myself.”
+
+After Teach , developers return to Monitor as the agent resumes execution, and then to Review , while Manual Fix directly leads back to Review . In both cases, the loop repeats until developers are satisfied with the result in Review .
+
+Update Assets is an optional stage that extends supervision beyond the current task by updating persistent resources that can guide future interactions with the agent. These resources include files such as AGENT.md , project documentation, and other shared assets that record project knowledge, preferences, constraints, or lessons from prior work. Developers do not necessarily update these assets after every task, but when they do, the updated assets support future tasks, beginning with a new Plan stage. In this way, Sheridan’s Learn , which focuses on updating the supervisor’s understanding from experience, becomes Update Assets as developers externalize what they have learned into persistent resources that can guide the agent in future work. P4 explained, “[Learning] also happens partly at the system level, because the company’s skills, assets, and data accumulate. […] Those assets then feed back into planning.”
+
+6. Applying the Framework to Developer Discussions
+
+Using our framework as an analytical lens, we examined public developer discussions to identify supervisory patterns that extend beyond individual instances. The framework allowed us to bring together practices across discussions and examine recurring patterns across the supervision process. Specifically, we focused on (1) what required developer involvement as more execution was delegated to agents and (2) how developers adapted their supervision in response.
+
+We chose Reddit 2 2 2 https://www.reddit.com/ as a source of developer discussions because its developer communities host naturally occurring, in-depth discussions of concrete experiences with AI coding agents ( Klemmer et al., 2024 ; Pimenova et al., 2026 ; Baltes et al., 2026 ) . These discussions span diverse tasks, codebases, and agent setups, providing large-scale evidence across development contexts. Hence, we collected discussions from three developer subreddits and used our framework to systematically identify and analyze supervisory practices.
+
+6.1. Data Collection
+
+We collected Reddit discussions and screened them to obtain a final sample of 102 threads with 12,912 comments. We describe this data collection and screening process in this section.
+
+We selected three developer subreddits for data collection: r/ClaudeCode 3 3 3 https://www.reddit.com/r/ClaudeCode/ , r/codex 4 4 4 https://www.reddit.com/r/codex/ , and r/ExperiencedDevs 5 5 5 https://www.reddit.com/r/ExperiencedDevs/ . We chose r/ClaudeCode and r/codex because they are active communities centered on two widely used coding agents, and r/ExperiencedDevs because it restricts participation to developers with at least three years of experience. Together, these communities capture both agent-focused discussions and perspectives from experienced developers.
+
+Given the rapid evolution of agentic tools and practices, we focused on a recent three-month period (May 17–August 17, 2026) to capture current practices at sufficient scale. Using Project Arctic Shift ( Heitmann, 2026 ) , we first collected the posts from the three subreddits during this period, including each post’s title, body, timestamp, and other metadata. This yielded 41,757 posts in total: 23,060 from r/ClaudeCode , 16,271 from r/codex , and 2,426 from r/ExperiencedDevs .
+
+We next screened these posts to identify threads with substantial evidence of supervisory practices for qualitative analysis. We first removed posts that did not provide useful data: (1) posts with deleted content, (2) posts with no comments, and (3) posts with less relevant flairs (e.g., Humor , News ; see Appendix C for details), leaving 11,471 posts.
+
+We then used gpt-5.6-luna 6 6 6 https://developers.openai.com/api/docs/models/gpt-5.6-luna in two screening steps to further narrow the corpus. In the first step, the model used each post’s title and body to conservatively exclude posts unrelated to the use of AI in software development, retaining 5,041 posts. For these posts, we collected all comments to reconstruct the complete threads. In the second step, the model tagged verbatim excerpts corresponding to any of the seven supervision stages defined in Study 1, identifying 4,390 threads with at least one excerpt. The prompts used for both screening steps are provided in Appendix D .
+
+We ranked these threads by the number of tagged excerpts and selected the top 100, including ties, for a total of 103 threads. We then manually checked each thread for relevance, excluding one that primarily promoted a product. The final sample consisted of 102 threads with 12,912 comments: 70 from r/ClaudeCode (9,151 comments), 26 from r/codex (2,631 comments), and 6 from r/ExperiencedDevs (1,130 comments).
+
+6.2. Thematic Analysis
+
+We conducted an inductive thematic analysis of the selected 102 threads following the method of Braun and Clarke (2006) . We began by randomly sampling 30 threads (29.4%) to first develop an initial codebook. Three authors first divided these sample threads and read each discussion thoroughly, tagging all relevant verbatim excerpts for the seven supervision stages. The prior LLM tagging results were visible during this pass, and we revised or removed them where they did not match our own judgment. This produced 1,114 evidence quotes: 366 for Review , 230 for Update Assets , 204 for Plan , 127 for Teach , 74 for Wait , 73 for Monitor , and 40 for Manual Fix .
+
+We pooled the excerpts by each stage to preserve their context and familiarized ourselves with the data. The three authors then independently open-coded the excerpts within each stage, focusing on supervisory demands and the strategies developers used to address them. We compared our codes, merged convergent ones, discussed differences in interpretations, and consolidated them into an initial codebook. Two authors applied the initial codebook to the remaining 72 threads, discussing new or ambiguous cases and iteratively revising the codebook. One additional code emerged during this process, and no further changes were needed. Finally, we compared the resulting codes across stages and grouped them into themes that captured patterns in demands and strategies across the supervision process.
+
+Applying our framework to developer discussions revealed patterns across the supervision process. We present our findings on (1) the supervisory demands developers encountered and (2) the strategies they used to address them.
+
+7.1. Demands of Supervising AI Coding Agents
+
+Across the seven supervisory stages, we identified three demands that spanned multiple stages: keeping agent work aligned with developer intent, enforcing quality standards beyond task completion, and maintaining understanding of agent-produced work. Each demand appeared at different points in the workflow, taking different forms as developers planned, monitored, reviewed, and corrected agent work. We describe these three demands below.
+
+7.1.1. Keeping Agent Work Aligned with Developer Intent
+
+A key supervisory demand was ensuring that agent work remained aligned with the developer’s intent throughout the workflow. During Plan , developers established the goals, requirements, and boundaries that the agent was expected to follow, but agents could interpret the plan differently, change its criteria, make unintended assumptions, or expand the task scope on their own.
+
+During Monitor , developers had to detect when the agent’s work began to diverge from the intended plan. This divergence took several forms. Agents sometimes changed the plan itself, as one developer emphasized the need to ensure that it “doesn’t make up criteria or change criteria as it goes.” Others skimmed the agent’s conversation to “spot how it deviates in an unwanted direction.” Execution could also stall rather than progress as planned, leading one developer to set up “monitors for when my agents get hung or stuck in place.” Developers therefore monitored the agent during execution to catch these problems before they accumulated into larger amounts of misaligned work.
+
+The same demand extended into Review , where developers assessed alignment again after the agent had completed its work. Here, they checked both whether the implementation had become unnecessarily complex and whether the agent had introduced work beyond the intended scope. One developer described how review “checks both things: did we make it more complicated than needed, and did the agent actually build what was in the plan instead of sneaking in extra work. If it did something outside the plan, that is a problem, even if the extra thing looks reasonable on its own.”
+
+When Review revealed misalignment, this demand carried into Teach , where developers redirected the agent toward the original plan. One developer explained, “If I catch it over-engineering, I can give some push back and it makes the appropriate change.” However, repeated correction could itself produce drift. One developer described “scope drift over long sessions,” where the agent “starts building on its own previous assumptions” across successive fixes.
+
+7.1.2. Enforcing Quality Standards Beyond Task Completion
+
+Even when agents followed the intended plan, developers still faced a demand to ensure that the resulting code met their quality standards. Completing the requested functionality was not sufficient, as working code could still fall short in how it was written. One developer noted that agents often produced “lazy, sloppy, repetitive, and overly defensive code—even with solid guardrails and tests.”
+
+During Review , developers checked aspects of code quality beyond functional correctness and carried identified issues into Teach or Manual Fix for revision. One developer explained that “part of the validation phase should include duplicate/dead code checks, among many more review items.” When such issues were found, developers could prompt agents to improve the implementation, as one developer described, “It really helps steering the next prompt to keep the code DRY and modular.” Others manually made quality improvements themselves. For example, one developer “re-write[s] most of the important comments […] to make sure it’s easy to understand for other human reviewers.”
+
+7.1.3. Maintaining Understanding of Agent-Produced Work
+
+As agents produced larger portions of the implementation, developers faced a supervisory demand to maintain enough understanding of work they had not written themselves. This involved keeping track of what the agent was doing, what had changed, and how the codebase was evolving.
+
+During Monitor and Review , developers maintained understanding by following the agent’s work and reviewing its results. One developer explained, “I like to read the code and talk with the model while it’s working. That way I understand what’s happening and stay engaged with it.” Another described reading the code after execution to keep their “mental model of how the code works” , calling it a way to “stay in control and to keep understanding the system that is being built.”
+
+The need to maintain understanding also appeared in Manual Fix . Developers sometimes remained directly involved in technically important parts of the implementation, particularly where broader system implications had to be understood. One developer explained, “I still code the tricky architectural decisions myself, the stuff where you need to think through the full system implications. […] [It] forces you to understand what the agent is actually building.”
+
+7.2. Strategies for Supervising AI Coding Agents
+
+We identified three strategies through which developers organized supervisory effort across the workflow: concentrating effort in planning, distributing supervisory work between developers and agents, and externalizing supervision into reusable assets. Together, these strategies shaped where supervisory effort was concentrated, who performed it, and whether it needed to be repeated in later work. We present these strategies below.
+
+7.2.1. Concentrating Supervisory Effort in Planning
+
+Developers concentrated supervisory effort in the Plan stage, investing more effort upfront to reduce the supervision required later in the workflow. Developers described well-structured plans as allowing them to shift from Monitor to Wait , enabling them to have agents run “for days without interruption and come back to clean and efficient implementation of code” and gain “free time to manage other agents.” They also associated stronger plans with fewer repeated Teach cycles, as one developer noted that with a sufficiently tight architecture and testing plan, the “whole thing can run in literally one pass, no looping needed.” Planning also helped developers build their own understanding before implementation was delegated, with one developer noting that they got “a very clear understanding of how the features should work, how the architecture should look, and which technical decisions needed to be made. A lot of problems were solved before any code was written.” Below, we describe the strategies developers used when constructing plans, deciding what to include in them, and delivering those plans to agents.
+
+Developers often had a clear idea of what they wanted before planning, but their intent still had to be articulated with natural language in a form the agent could follow. Since the resulting plan served directly as the agent’s instruction, developers involved agents in constructing it to expose assumptions, ambiguities, or missing details before execution. One developer brought a plan they had already drafted to the agent for stress testing, explaining that they would “sit down and plan it out. Architect the solution to a problem. Then I put it through the wringer with AI, stress testing it and looking to see if I missed anything. Then the plan gets drafted.” Others used dedicated planning skills that prompted the agent to interview them for missing details. One developer would “describe feature/task and ask it to /grill-me on it,” then “answer questions until the skill reaches full understanding.”
+
+Developers also constructed plans through multiple agents, using disagreement between them to expose gaps or weak assumptions in the plan. One developer asked two models to write plans from similar prompts and then had them “incorporate from each other’s good ideas,” letting “the one that did better consolidate and merge and then again the other to check it.” Others separated plan generation from plan review. One developer had Claude prepare the plan while “Codex does the review, and critique is messaged back to Claude,” after which “they loop till agreement.”
+
+Once the direction was settled, developers specified it through concrete constraints and representations that agents could act on. One set of components defined the boundaries of the work. Developers stated non-goals alongside goals to clarify the intended scope of a feature. One developer emphasized being “very explicit” about these boundaries, giving examples such as “do not start x,” “do not rewrite y,” and “preserve z.” Developers also specified which parts of the codebase the agent was allowed to modify. One described defining a “change contract” before prompting the agent, including “allowed files, expected behavior, and what it must not touch.”
+
+Another set of components represented the intended solution more concretely. Some developers provided examples of the desired result, with one recommending that, for a new feature, developers first write “the example you wish worked” and then have the agent build toward it. Others supplied architecture diagrams or pseudocode to specify the intended structure. One developer described giving the model their own pseudocode to fill in, explaining that this “ensures that its only building what I ask, and also importantly ensures that I know what the design of the codebase is.”
+
+Developers structured how plans were delivered to agents because, as one developer put it, agents were “great at executing, but pretty bad at preserving product direction over time” unless developers imposed structure around them. One strategy was to divide planned work into smaller execution units. One developer described breaking features down “more than I would have done when I was manually doing it,” reporting that this brought “a lot more success […] [and] seems to produce higher quality.” Developers then paired these smaller units with explicit end conditions. One developer explained, “Write the definition of done before it starts. One line: ‘done = this test passes and nothing outside file X changes.’ Then anything it wants to do that isn’t that is, by definition, a rabbit hole.”
+
+Developers also kept the plan visible throughout execution instead of relying on agents to retain it from the initial instruction. One developer required “a detailed architecture plan” and “refer[red] to that plan in each step” as implementation progressed. For longer work, developers managed context so the plan remained salient, for example by using separate branches to keep “the context window clean enough that it doesn’t drift” or external tools that “re-pin your goal + context health to the bottom of the window every prompt so the model doesn’t lose the plot.”
+
+7.2.2. Distributing Supervisory Work
+
+Developers addressed supervisory demands by distributing supervisory work between themselves and agents. They decided which supervisory tasks agents could perform independently, which required developer involvement, and which developers should retain entirely, covering the workflow without handling every demand directly. We describe these three arrangements below.
+
+Developers delegated parts of supervisory work to agents or automated mechanisms, allowing some supervisory loops to proceed without direct developer involvement. Such delegation required deciding in advance what would be watched, how detected problems should be handled, and when the corrective cycle should stop. Once configured, these arrangements allowed supervisory loops to proceed without developer involvement. In Monitor , one developer assigned other agents to detect when an agent became “hung or stuck in place,” so that they could “help the original agent out of the hole.” In Teach , developers set up feedback loops in which one agent reviewed another agent’s implementation and passed problems back for correction, as in an arrangement where an “Advisor checks the implementation, calls out anything bad, back to Implementer, repeat till it’s clean.”
+
+Review was delegated to agents most extensively, and developers were deliberate about how they configured the reviewing agents. One approach was to separate the reviewer from the implementer by model provider. One developer used “multiple models from different providers to have them all audit each other’s work,” explaining that each model had “its own biases and blindspots” and that “getting a second opinion from a different architecture is extremely useful.” Another approach was to separate reviews by focus, running “one pass for security/data loss, one for test gaps, one for overengineering,” because “when one review tries to cover everything, it tends to produce generic advice.”
+
+Developers also used hooks to make parts of these supervisory loops run automatically and reliably. One developer contrasted hooks with written guidance, which could be “read, weighed against everything else, and quietly deprioritised once context fills up,” whereas “a hook is code; it fires every time whether the model thinks it’s relevant or not.” This allowed developers to embed specific supervisory actions directly into the workflow. For example, one used a stop hook that prompted an agent entering a particular area of the codebase to “first read the system patterns for that area.” Another used a PostToolUse hook that ran “the narrowest relevant test right after an edit” and fed failures back immediately, so the agent learned it had broken something “on the same turn, before it stacks three more edits on a broken base.”
+
+Developers also shared supervisory work with agents, allowing agents to handle ongoing checks while retaining points for human inspection and judgment. In Monitor , agents handled routine coordination, while developers were brought in when needed. One developer built a relay that “passes messages between Claude and Codex,” but “if anything weird happens it always default freezes the relay and alerts me.”
+
+This collaboration was especially common in Review . Developers reviewed the work after multiple rounds of agent review, saying “agents and humans catch different types of errors.” They also divided review so agents handled more routine checks, letting developers focus on what remained. As one explained, “by the time I look at a change I’m reviewing something that’s already been checked for obvious mistakes, failed validations, and deviations from the task specification.”
+
+Developers sometimes retained supervisory work because delegating it to the agent carried its own cost. For small changes, explaining and routing the work through an agent could require more effort than making the change directly. One developer therefore made “surgical edits for things that would take longer to type into a prompt than to just fix myself.” Repeated correction created a similar cost, with one finding it “mentally much less taxing to just code it up manually” than to keep prompting the agent for the same outcome.
+
+Developers also retained supervision to maintain their own understanding of the work. One developer described they “read the reasoning to steer it when needed or learn more about how to properly direct it the next time I prompt.” Another periodically rewrote “one risky function or migration without the agent, just to keep the map in my head.”
+
+7.2.3. Externalizing Repeated Supervision into Assets
+
+Developers also externalized parts of supervision into reusable assets rather than repeating the same work in each interaction. Some assets guided agents directly, while others helped developers recover context and maintain understanding. Although creating and maintaining these assets required effort, they reduced supervisory demands that would otherwise recur later. We describe each below.
+
+Developers turned recurring supervision into assets that reduced the need to repeat the same intervention in later work. As one developer put it, “if I catch myself repeating the same instruction to the agent, that’s not a prompting problem, that’s a missing hook.” One developer, after getting “tired of writing the same review comments,” built “a static linter that checks for this automatically before commit.” Another maintained a “MISTAKES.md file where every mistake the agent makes gets documented, along with a rule in CLAUDE.md telling it to record them.” Developers also used completed work to strengthen these assets for future supervision. One ran a retrospective at the end of each milestone, where the “retro edits or writes skill files and meta-learnings as memory.” Across projects, this produced “compounding effects, essentially preventing the same kind of mistakes from happening in the future.”
+
+Developers used assets to reduce the effort required to maintain their own understanding of agent-produced work. Instead of reconstructing the purpose, decisions, and current state of the work each time, they kept records they could return to later. One developer recommended a feature document describing “what this code is supposed to do without any implementation details,” explaining that this “helps agents and humans track the context of this work.” Others used assets to recover their context after stepping away. One described a “wrap-up skill that takes what your are doing and next steps and puts it in a file,” so that on returning, it could “remind you what’s going on.”
+
+In this work, we developed a framework for supervising AI coding agents and applied it to developer discussions. Our findings suggest that delegating execution to agents redistributes supervisory work across the development process. Building on these findings, we discuss the framework’s applicability beyond software development, design implications for agentic systems, and how the framework can be further extended as agent autonomy increases.
+
+8.1. Applicability of the Framework
+
+Our framework captures supervisory functions that may extend beyond software development to other forms of delegated agentic work. Software development has been at the forefront of agentic delegation. Similar forms of delegation have now started to emerge in knowledge and creative work, where agents support tasks such as writing, research, data analysis, and design ( Google Cloud, 2026 ; OpenAI, 2026a ; Figma, 2026 ) . A particularly relevant example is computer-use agents, which can carry out tasks across browsers, documents, spreadsheets, and communication tools with limited human involvement ( OpenAI, 2025a ; Anthropic, 2026 ; OpenAI, 2026b ) . As users delegate such work, they may need to specify goals and constraints, oversee execution, evaluate outcomes, and intervene when necessary. Thus, our framework may generalize beyond software development, providing a common structure for analyzing these supervisory functions across domains.
+
+Applying the framework in these settings would require adapting each supervisory stage to the characteristics of the delegated work. In many knowledge and creative tasks, goals and quality criteria may be less precisely specified, and outputs cannot always be verified through deterministic checks. For example, in design tasks, Plan may involve specifying target users, interaction goals, and visual constraints, while Review may rely more on human judgment of usability, coherence, and aesthetic quality. Applying the framework across such domains could reveal how supervisory effort is distributed differently across types of work and where new demands for human involvement arise.
+
+8.2. Design Implications for Agentic Systems
+
+We present design implications for supporting developer supervision of AI coding agents.
+
+8.2.1. Developing AI Coding Agents
+
+Our findings suggest several directions for developing AI coding agents that require less supervisory effort from developers. First, developers of AI coding agents should prioritize preserving developer intent throughout execution. Developers faced supervisory demands when agents deviated from intended goals, constraints, or scope (§ 7.1.1 ). Thus, agents should be designed to consistently follow the plans and constraints provided by developers, reducing the need for repeated monitoring and redirection. For example, methods for maintaining goals and constraints over longer interactions ( Liu et al., 2026b ) or detecting when an agent’s planned actions conflict with previously specified intent ( Batole et al., 2026 ) could help prevent such deviations before developer intervention becomes necessary.
+
+Second, developers of AI coding agents should account for quality expectations beyond functional correctness. Even when functionality was correct, developers had to address implementations they considered repetitive, overly defensive, or difficult to maintain (§ 7.1.2 ). Hence, agents should be designed to reflect developer- and project-specific preferences in how code is produced. For instance, preference-alignment methods ( Sivapiran and Uddin, 2026 ; Rafailov et al., 2023 ) could be used to align agent outputs with preferred coding conventions, reducing the need to repeatedly correct the same quality issues.
+
+8.2.2. Supporting Developer Supervision
+
+Our findings also suggest several ways systems can be designed to better support developers in supervising AI coding agents. First, systems can better support developers in the planning stage prior to task delegation. Developers invested substantial effort in constructing plans that clarified goals, boundaries, and success criteria and reduced supervision later in the workflow (§ 7.2.1 ). Systems could help developers articulate these elements, identify missing or ambiguous requirements, and keep plans accessible throughout execution ( Feng et al., 2026b ; Vaithilingam et al., 2025 ; Kim et al., 2024 ) .
+
+Second, systems can be designed to reduce the effort of setting up and maintaining delegated supervision. Developers reduced supervisory work by delegating monitor and review to other agents (§ 7.2.2 ) and using reusable assets such as instruction files, tests, and hooks for repeated supervision (§ 7.2.3 ). However, these arrangements required developers to configure and maintain multiple agents and assets. Systems could help developers manage these forms of delegated supervision together, making it easier to inspect, update, and reuse how supervision is set up for a task ( Liu et al., 2026c ; Tan et al., 2026 ; Pan et al., 2026 ) .
+
+Finally, systems can be designed to help developers maintain an understanding of work delegated to agents. Developers actively followed and revisited agent-generated code to maintain a mental model of the codebase over time (§ 7.1.3 ). Systems could support this by highlighting important changes, connecting them to the agent’s rationale, and summarizing the context needed for developers to understand what changed and why ( Yan et al., 2024 ; Kazemitabaar et al., 2024 ; Hutter and Pradel, 2026 ) .
+
+8.3. Further Development of the Framework
+
+Although our framework captures a broad range of supervisory activities in agentic software development, the structure of supervision may change as agent autonomy increases. Prior work suggests that as AI agents become more autonomous, users may shift from actively directing their work toward approving or even observing it ( Feng et al., 2025 ; Zhou et al., 2026 ; Choudhuri et al., 2026 ) . Such changes may redistribute human involvement across the supervisory process, making some stages less prominent while increasing the importance of others. For example, practitioners increasingly debate whether every agent-generated change requires human review, with some arguing for human review only for high-risk or consequential changes ( Laycock, 2026 ; Shukla et al., 2026 ) . Hence, the framework can be further developed to reflect these changes as new forms of human–agent supervision emerge.
+
+The framework could also be developed to incorporate evidence about the effectiveness of different supervisory practices. Empirical studies could examine how the allocation of supervisory effort across stages relates to development outcomes. For example, they could test whether greater effort in Plan reduces later correction, delegated Review improves code quality, or different supervisory workflows affect developer time and errors ( Lai et al., 2022 ) . Such evidence could add an evaluative layer to the framework, indicating which forms of supervision are more effective under what conditions.
+
+Finally, the framework could be extended to incorporate the effects of supervision on developers. As implementation is increasingly delegated to agents, different supervisory arrangements may shape developers’ agency ( Pu et al., 2025 ; Schlonsak et al., 2026 ) , reliance on AI ( Kim et al., 2025 ; Ibrahim et al., 2026 ; He et al., 2026b ) , self-efficacy and authorship ( Park et al., 2026 ; Seo et al., 2026 ) , and ability to maintain skills and understanding over time ( Ma et al., 2026 ; Mitchell et al., 2026 ) . The framework could be extended to connect supervisory arrangements with their longer-term effects on developers.
+
+9. Limitations and Future Work
+
+We acknowledge several limitations of our study and suggest potential future work.
+
+First, our study for framework development captured only a limited window of participants’ development work. Although we asked participants to bring tasks that would allow us to observe an end-to-end supervisory workflow within 40 minutes, real-world development projects often span longer periods and multiple sessions beyond what we could capture. The subsequent workflow design activity helped participants extend their diagrams beyond the observed task by considering other tasks and developers, but this still relied on retrospective reflection. Future work could examine longer-term supervision through longitudinal observations ( Sergeyuk et al., 2026 ; He et al., 2026a ; Vella and Blincoe, 2026 ) or interaction traces ( Tang et al., 2026 ) .
+
+Second, participants’ observed behavior and resulting workflow diagrams may have been affected by the study setting. Participants completed their tasks while being observed and thinking aloud, which may have altered how they worked. Moreover, although we introduced Sheridan’s framework to help participants reflect on how their workflows related to it and emphasized that they need not follow its structure, prior exposure may still have anchored how they segmented or represented their supervision. Future work could complement our approach with less intrusive observations and workflow elicitation without prior exposure to a theoretical framework.
+
+In this work, we developed a framework for supervising AI coding agents, reconfiguring Sheridan’s framework of human supervisory control . We then applied our framework to developer discussions on agentic AI in software development and found that supervisory demands extend across stages. Developers manage such demands by shifting effort across the workflow, delegating parts of supervision, and creating reusable assets. These findings highlight that increasing autonomy of agents changes where and how human involvement is needed. Our framework provides a lens for understanding and supporting human supervision as agentic software development continues to evolve.
+
+Alenezi (2026) M. Alenezi Rethinking software engineering for agentic ai systems . External Links: 2604.10599 , Link Cited by: §1 .
+
+Anthropic (2025) Anthropic Claude code documentation (Website) Note: Accessed: 2026-09-11 External Links: Link Cited by: §1 .
+
+Anthropic (2026) Anthropic Claude fable and mythos 5.1 (Website) Anthropic . Note: Accessed: 2026-09-10 External Links: Link Cited by: §8.1 .
+
+Baltes et al. (2026) S. Baltes, M. Cheong, and C. Treude "An endless stream of ai slop": how developers discuss the burden of ai-assisted software development . External Links: 2603.27249 , Link Cited by: §6 .
+
+Barke et al. (2023) S. Barke, M. B. James, and N. Polikarpova Grounded copilot: how programmers interact with code-generating models . Proc. ACM Program. Lang. 7 ( OOPSLA1 ). External Links: Link , Document Cited by: §2.1 , §2.2 .
+
+Batole et al. (2026) F. Batole, F. Khomh, and H. Rajan RefineAct: automatic runtime verification of llm agent actions . In Proceedings of the 41st IEEE/ACM International Conference on Automated Software Engineering , ASE ’26 , New York, NY, USA . Cited by: §8.2.1 .
+
+Baumann et al. (2026) J. Baumann, V. Padmakumar, X. Li, J. Yang, D. Yang, and S. Koyejo SWE-chat: coding agent interactions from real users in the wild . External Links: 2604.20779 , Link Cited by: §1 , §2.2 .
+
+Becker et al. (2025) J. Becker, N. Rush, E. Barnes, and D. Rein Measuring the impact of early-2025 ai on experienced open-source developer productivity . External Links: 2507.09089 , Link Cited by: §4.2 .
+
+Braun and Clarke (2006) V. Braun and V. Clarke Using thematic analysis in psychology . Qualitative Research in Psychology 3 ( 2 ), pp. 77–101 . External Links: Document , Link Cited by: §6.2 .
+
+Cavallin and Spagnol (2026) E. Cavallin and S. Spagnol When designers sweat: behavioral traces of genai co-creation . In Proceedings of the 2026 CHI Conference on Human Factors in Computing Systems , CHI ’26 , New York, NY, USA . External Links: ISBN 9798400722783 , Link , Document Cited by: §2.3 .
+
+Chen et al. (2026a) C. Chen, Z. Zhang, Z. Chen, E. Xu, Y. Yang, I. Khalilov, S. A. Gebreegziabher, Y. Ye, Z. Xiao, Y. Yao, T. Li, and T. J. Li Comparing human oversight strategies for computer-use agents . External Links: 2604.04918 , Link Cited by: §1 .
+
+Chen et al. (2026b) V. Chen, A. Talwalkar, R. Brennan, and G. Neubig Code with me or for me? how increasing ai automation transforms developer workflows . In Proceedings of the 2026 CHI Conference on Human Factors in Computing Systems , CHI ’26 , New York, NY, USA . External Links: ISBN 9798400722783 , Link , Document Cited by: §1 , §2.1 , §2.2 .
+
+Cheruvu (2025) R. Cheruvu Human-in/on-the-loop design for human controllability . In Handbook of Human-Centered Artificial Intelligence , W. Xu (Ed.) , pp. 1–47 . External Links: ISBN 978-981-97-8440-0 , Document , Link Cited by: §2.3 .
+
+Choudhuri et al. (2026) R. Choudhuri, C. Bird, C. Badea, M. Gerosa, and A. Sarma You shall not pass! where and why developers draw the line on ai autonomy . External Links: 2607.00533 , Link Cited by: §8.3 .
+
+Dhanorkar et al. (2026) S. Dhanorkar, S. Passi, and M. Vorvoreanu Human oversight of agentic systems in practice: examining the oversight work, challenges, and heuristics of developers using software agents . In Proceedings of the 2026 ACM Conference on Fairness, Accountability, and Transparency , pp. 6438–6465 . External Links: ISBN 9798400725968 , Link Cited by: §1 , §2.1 , §2.2 .
+
+Dong et al. (2025) Y. Dong, X. Jiang, J. Qian, T. Wang, K. Zhang, Z. Jin, and G. Li A survey on code generation with llm-based agents . External Links: 2508.00083 , Link Cited by: §1 , §2.1 .
+
+Elo and Kyngäs (2008) S. Elo and H. Kyngäs The qualitative content analysis process . Journal of Advanced Nursing 62 ( 1 ), pp. 107–115 . External Links: Document , Link Cited by: §4.3.4 .
+
+Fan et al. (2026) G. Fan, D. Liu, L. Pan, and R. Zhang When help hurts: verification load and fatigue with ai coding assistants . In Proceedings of the 2026 CHI Conference on Human Factors in Computing Systems , CHI ’26 , New York, NY, USA . External Links: ISBN 9798400722783 , Link , Document Cited by: §2.1 .
+
+Fawzy et al. (2026) A. Fawzy, A. Tahir, and K. Blincoe Vibe coding in practice: motivations, challenges, and a future outlook – a grey literature review . In Proceedings of the IEEE/ACM 48th International Conference on Software Engineering: Software Engineering in Practice , ICSE-SEIP ’26 , New York, NY, USA , pp. 212–223 . External Links: ISBN 9798400724268 , Link , Document Cited by: §2.1 .
+
+Feng et al. (2026a) D. Feng, B. Yun, and A. Yi Wang From junior to senior: allocating agency and navigating professional growth in agentic ai-mediated software engineering . In Proceedings of the 2026 CHI Conference on Human Factors in Computing Systems , CHI ’26 , New York, NY, USA . External Links: ISBN 9798400722783 , Link , Document Cited by: §2.3 , §2.3 .
+
+Feng et al. (2026b) K. J. K. Feng, K. Pu, M. Latzke, T. August, P. Siangliulue, J. Bragg, D. S. Weld, A. X. Zhang, and J. C. Chang Cocoa: co-planning and co-execution with ai agents . In Proceedings of the 2026 CHI Conference on Human Factors in Computing Systems , CHI ’26 , New York, NY, USA . External Links: ISBN 9798400722783 , Link , Document Cited by: §2.3 , §8.2.2 .
+
+Feng et al. (2025) K. J. Feng, D. W. McDonald, and A. X. Zhang Levels of autonomy for AI agents . Technical report Technical Report 25-15 , Knight First Amendment Institute at Columbia University . External Links: Link Cited by: §2.1 , §2.2 , §8.3 .
+
+Figma (2026) Figma The Figma agent is here (Website) Figma Blog . Note: Accessed: 2026-09-10 External Links: Link Cited by: §8.1 .
+
+Google Cloud (2026) Google Cloud Introducing Gemini enterprise agent platform, powering the next wave of agents (Website) Google Cloud Blog . Note: Accessed: 2026-09-10 External Links: Link Cited by: §8.1 .
+
+Guo et al. (2025) J. Guo, S. Huang, M. Li, D. Huang, X. Chen, R. Zhang, Z. Guo, H. Yu, S. Yiu, P. Lio, and K. Lam A comprehensive survey on benchmarks and solutions in software engineering of llm-empowered agentic system . External Links: 2510.09721 , Link Cited by: §1 , §2.1 .
+
+He et al. (2026a) H. He, C. Miller, S. Agarwal, C. Kästner, and B. Vasilescu Speed at the cost of quality: how cursor ai increases short-term velocity and long-term complexity in open-source projects . In Proceedings of the 23rd International Conference on Mining Software Repositories , pp. 181–193 . External Links: ISBN 9798400724749 , Link Cited by: §9 .
+
+He et al. (2026b) K. He, Q. Ma, V. Chen, W. Chi, and T. Wu RECAP: an end-to-end platform for capturing, replaying, and analyzing AI-assisted programming interactions . In Proceedings of the 64th Annual Meeting of the Association for Computational Linguistics (Volume 3: System Demonstrations) , G. Durrett and P. Jian (Eds.) , San Diego, California, United States , pp. 692–701 . External Links: Link , Document , ISBN 979-8-89176-392-0 Cited by: §8.3 .
+
+Heitmann (2026) A. Heitmann Project arctic shift . Note: Accessed: 2026-09-03 External Links: Link Cited by: §6.1 .
+
+Huang et al. (2025) R. Huang, A. Reyna, S. Lerner, H. Xia, and B. Hempel Professional software developers don’t vibe, they control: ai agent use for coding in 2025 . External Links: 2512.14012 , Link Cited by: §1 , §2.2 , §4.2 .
+
+Hutter and Pradel (2026) R. Hutter and M. Pradel AgentStepper: interactive debugging of software development agents . External Links: 2602.06593 , Link Cited by: §8.2.2 .
+
+Ibrahim et al. (2026) L. Ibrahim, K. M. Collins, S. S. Y. Kim, A. Reuel, M. Lamparth, K. Feng, L. Ahmad, P. Soni, A. E. Kattan, M. Stein, S. Swaroop, V. Padmakumar, I. Sucholutsky, A. Strait, D. Yang, Q. V. Liao, and U. Bhatt Measuring and mitigating overreliance to build human-compatible ai . External Links: 2509.08010 , Link Cited by: §8.3 .
+
+Kazemitabaar et al. (2024) M. Kazemitabaar, J. Williams, I. Drosos, T. Grossman, A. Z. Henley, C. Negreanu, and A. Sarkar Improving steering and verification in ai-assisted data analysis with interactive task decomposition . In Proceedings of the 37th Annual ACM Symposium on User Interface Software and Technology , UIST ’24 , New York, NY, USA . External Links: ISBN 9798400706288 , Link , Document Cited by: §8.2.2 .
+
+Kim et al. (2025) S. S. Y. Kim, J. W. Vaughan, Q. V. Liao, T. Lombrozo, and O. Russakovsky Fostering appropriate reliance on large language models: the role of explanations, sources, and inconsistencies . In Proceedings of the 2025 CHI Conference on Human Factors in Computing Systems , CHI ’25 , New York, NY, USA . External Links: ISBN 9798400713941 , Link , Document Cited by: §8.3 .
+
+Kim et al. (2024) T. S. Kim, Y. Lee, J. Shin, Y. Kim, and J. Kim EvalLM: interactive evaluation of large language model prompts on user-defined criteria . In Proceedings of the 2024 CHI Conference on Human Factors in Computing Systems , CHI ’24 , New York, NY, USA . External Links: ISBN 9798400703300 , Link , Document Cited by: §8.2.2 .
+
+Klemmer et al. (2024) J. H. Klemmer, S. A. Horstmann, N. Patnaik, C. Ludden, C. Burton, C. Powers, F. Massacci, A. Rahman, D. Votipka, H. R. Lipford, A. Rashid, A. Naiakshina, and S. Fahl Using ai assistants in software development: a qualitative study on security practices and concerns . In Proceedings of the 2024 on ACM SIGSAC Conference on Computer and Communications Security , CCS ’24 , New York, NY, USA , pp. 2726–2740 . External Links: ISBN 9798400706363 , Link , Document Cited by: §6 .
+
+Ko et al. (2015) A. J. Ko, T. D. LaToza, and M. M. Burnett A practical guide to controlled experiments of software engineering tools with human participants . Empirical Softw. Engg. 20 ( 1 ), pp. 110–141 . External Links: ISSN 1382-3256 , Link , Document Cited by: §4.2 .
+
+Lai et al. (2022) V. Lai, S. Carton, R. Bhatnagar, Q. V. Liao, Y. Zhang, and C. Tan Human-ai collaboration via conditional delegation: a case study of content moderation . In Proceedings of the 2022 CHI Conference on Human Factors in Computing Systems , CHI ’22 , New York, NY, USA . External Links: ISBN 9781450391573 , Link , Document Cited by: §8.3 .
+
+Laycock (2026) R. Laycock Maybe we shouldn’t be reviewing all this code . Note: https://martinfowler.com/rachels-ramblings/code-review.html Blog post, martinfowler.com Cited by: §8.3 .
+
+Lehmann et al. (2026) F. Lehmann, K. Shauchenka, and D. Buschek Collaborative document editing with multiple users and ai agents . In Proceedings of the 2026 CHI Conference on Human Factors in Computing Systems , CHI ’26 , New York, NY, USA . External Links: ISBN 9798400722783 , Link , Document Cited by: §2.3 .
+
+Liu et al. (2026a) J. Liu, K. Wang, Y. Chen, X. Peng, Z. Chen, L. Zhang, and Y. Lou Large language model-based agents for software engineering: a survey . ACM Trans. Softw. Eng. Methodol. . Note: Just Accepted External Links: ISSN 1049-331X , Link , Document Cited by: §2.1 .
+
+Liu et al. (2026b) S. Liu, B. Jiang, J. Yang, Y. LI, J. Guo, X. Liu, and B. Dai Context as a tool: context management for long-horizon SWE-agents . In Findings of the Association for Computational Linguistics: ACL 2026 , M. Liakata, V. P. Moreira, J. Zhang, and D. Jurgens (Eds.) , San Diego, California, United States , pp. 20604–20617 . External Links: Link , Document , ISBN 979-8-89176-395-1 Cited by: §8.2.1 .
+
+Liu et al. (2026c) Y. Liu, J. Cai, Y. Li, Q. Meng, Z. Liu, X. Li, C. Qian, C. Shi, and C. Yang MASFactory: a graph-centric framework for orchestrating LLM-based multi-agent systems with vibe graphing . In Proceedings of the 64th Annual Meeting of the Association for Computational Linguistics (Volume 3: System Demonstrations) , G. Durrett and P. Jian (Eds.) , San Diego, California, United States , pp. 357–366 . External Links: Link , Document , ISBN 979-8-89176-392-0 Cited by: §8.2.2 .
+
+Ma et al. (2026) Q. Ma, K. R. Koedinger, and T. Wu Not everyone wins with llms: behavioral patterns and pedagogical implications for ai literacy in programmatic data science . In Proceedings of the 2026 CHI Conference on Human Factors in Computing Systems , CHI ’26 , New York, NY, USA . External Links: ISBN 9798400722783 , Link , Document Cited by: §8.3 .
+
+Ma et al. (2025) Q. Ma, W. Peng, C. Yang, H. Shen, K. Koedinger, and T. Wu What should we engineer in prompts? training humans in requirement-driven llm use . ACM Trans. Comput.-Hum. Interact. 32 ( 4 ). External Links: ISSN 1073-0516 , Link , Document Cited by: §2.3 .
+
+Ma et al. (2023) Q. Ma, T. Wu, and K. Koedinger Is ai the better programming partner? human-human pair programming vs. human-ai pair programming . External Links: 2306.05153 , Link Cited by: §2.1 .
+
+Maier et al. (2026) S. Maier, M. Schneider, and S. Feuerriegel Partnering with generative ai: experimental evaluation of model-led and human-led interaction in human-ai co-creation . In Proceedings of the 2026 CHI Conference on Human Factors in Computing Systems , CHI ’26 , New York, NY, USA . External Links: ISBN 9798400722783 , Link , Document Cited by: §2.2 .
+
+Mitchell et al. (2026) M. Mitchell, A. Ghosh, and S. Passi AI agents push humans out of the loop . External Links: 2608.23642 , Link Cited by: §8.3 .
+
+Mozannar et al. (2024) H. Mozannar, G. Bansal, A. Fourney, and E. Horvitz Reading between the lines: modeling user behavior and costs in ai-assisted programming . In Proceedings of the 2024 CHI Conference on Human Factors in Computing Systems , CHI ’24 , New York, NY, USA . External Links: ISBN 9798400703300 , Link , Document Cited by: §1 , §2.1 , §2.2 .
+
+OpenAI (2025a) OpenAI Introducing operator (Website) OpenAI Blog . Note: Accessed: 2026-09-10 External Links: Link Cited by: §8.1 .
+
+OpenAI (2025b) OpenAI OpenAI codex (Website) Note: Accessed: 2026-09-11 External Links: Link Cited by: §1 .
+
+OpenAI (2026a) OpenAI ChatGPT is now a partner for your most ambitious work (Website) OpenAI . Note: Accessed: 2026-09-10 External Links: Link Cited by: §8.1 .
+
+OpenAI (2026b) OpenAI GPT-6 astra (Website) OpenAI . Note: Accessed: 2026-09-10 External Links: Link Cited by: §8.1 .
+
+Pan et al. (2026) L. Pan, L. Zou, S. Guo, J. Ni, and H. Zheng Natural-language agent harnesses . External Links: 2603.25723 , Link Cited by: §8.2.2 .
+
+Parasuraman et al. (2000) R. Parasuraman, T.B. Sheridan, and C.D. Wickens A model for types and levels of human interaction with automation . IEEE Transactions on Systems, Man, and Cybernetics - Part A: Systems and Humans 30 ( 3 ), pp. 286–297 . External Links: Document , ISSN 1558-2426 Cited by: §1 , §2.3 .
+
+Park et al. (2026) Y. S. Park, N. A. P. Arvi, S. Kim, and J. Kim Authorship drift: how self-efficacy and trust evolve during llm-assisted writing . In Proceedings of the 2026 CHI Conference on Human Factors in Computing Systems , CHI ’26 , New York, NY, USA . External Links: ISBN 9798400722783 , Link , Document Cited by: §8.3 .
+
+Pimenova et al. (2026) V. Pimenova, S. Fakhoury, C. Bird, M. Storey, and M. Endres Good vibrations? a qualitative study of co-creation, communication, flow, and trust in vibe coding . External Links: 2509.12491 , Link Cited by: §6 .
+
+Prather et al. (2023) J. Prather, B. N. Reeves, P. Denny, B. A. Becker, J. Leinonen, A. Luxton-Reilly, G. Powell, J. Finnie-Ansley, and E. A. Santos “It’s weird that it knows what i want”: usability and interactions with copilot for novice programmers . ACM Trans. Comput.-Hum. Interact. 31 ( 1 ). External Links: ISSN 1073-0516 , Link , Document Cited by: §2.1 .
+
+Pu et al. (2025) K. Pu, D. Lazaro, I. Arawjo, H. Xia, Z. Xiao, T. Grossman, and Y. Chen Assistance or disruption? exploring and evaluating the design and trade-offs of proactive ai programming support . In Proceedings of the 2025 CHI Conference on Human Factors in Computing Systems , CHI ’25 , New York, NY, USA . External Links: ISBN 9798400713941 , Link , Document Cited by: §8.3 .
+
+Rafailov et al. (2023) R. Rafailov, A. Sharma, E. Mitchell, C. D. Manning, S. Ermon, and C. Finn Direct preference optimization: your language model is secretly a reward model . In Advances in Neural Information Processing Systems , A. Oh, T. Naumann, A. Globerson, K. Saenko, M. Hardt, and S. Levine (Eds.) , Vol. 36 , pp. 53728–53741 . External Links: Document , Link Cited by: §8.2.1 .
+
+Ray (2025) P. P. Ray A review on vibe coding: fundamentals, state-of-the-art, challenges and future directions . TechRxiv 2025 ( 0509 ). External Links: Document , Link Cited by: §2.1 .
+
+Robbes et al. (2026) R. Robbes, T. Matricon, T. Degueule, A. Hora, and S. Zacchiroli Agentic much? adoption of coding agents on github . ACM Trans. Softw. Eng. Methodol. . Note: Just Accepted External Links: ISSN 1049-331X , Link , Document Cited by: §1 .
+
+Santos et al. (2025) I. Santos, C. Magalhaes, and R. De Souza Santos Model-assisted and human-guided: perceptions and practices of software professionals using llms for coding . In 2025 2nd IEEE/ACM International Conference on AI-powered Software (AIware) , pp. 105–112 . External Links: Document Cited by: §1 .
+
+Sapkota et al. (2025) R. Sapkota, K. I. Roumeliotis, and M. Karkee Vibe coding vs. agentic coding: fundamentals and practical implications of agentic ai . External Links: 2505.19443 , Link Cited by: §1 .
+
+Sarkar et al. (2022) A. Sarkar, C. Negreanu, B. Zorn, S. S. Ragavan, C. Pölitz, and A. D. Gordon What is it like to program with artificial intelligence? . In Proceedings of the 33rd Annual Workshop of the Psychology of Programming Interest Group, PPIG 2022, The Open University, Milton Keynes, UK & Online, September 5-9, 2022 , S. Holland, M. Petre, L. Church, and M. Marasoiu (Eds.) , pp. 127–153 . External Links: Link Cited by: §2.1 .
+
+Schlonsak et al. (2026) R. Schlonsak, H. Jetter, and D. J.C. Matthies The cost of convenience: how delegation and decision horizons erode human agency when overusing llm systems . In Proceedings of the Extended Abstracts of the 2026 CHI Conference on Human Factors in Computing Systems , CHI EA ’26 , New York, NY, USA . External Links: ISBN 9798400722813 , Link , Document Cited by: §8.3 .
+
+Seo et al. (2026) J. Seo, E. Deldari, and H. M. Mentis Whose code is it? how ai autonomy reshapes ownership, responsibility, and disclosure in ai-assisted programming . In Proceedings of the 31st International Conference on Intelligent User Interfaces , IUI ’26 , New York, NY, USA , pp. 393–425 . External Links: ISBN 9798400719844 , Link , Document Cited by: §8.3 .
+
+Sergeyuk et al. (2026) A. Sergeyuk, E. Huang, D. Karaeva, A. Serova, Y. Golubev, and I. Ahmed Evolving with ai: a longitudinal analysis of developer logs . External Links: 2601.10258 , Link Cited by: §2.1 , §9 .
+
+Sheridan (1976) T. B. Sheridan Toward a general model of supervisory control . In Monitoring Behavior and Supervisory Control , T. B. Sheridan and G. Johannsen (Eds.) , pp. 271–281 . External Links: ISBN 978-1-4684-2523-9 , Document , Link Cited by: §1 , §3 , §4 .
+
+Sheridan (1992) T. B. Sheridan Telerobotics, automation, and human supervisory control . MIT Press , Cambridge, MA, USA . External Links: ISBN 0262193167 Cited by: §1 , §3 , §4 .
+
+Sheridan (2012) T. B. Sheridan Human supervisory control . In Handbook of Human Factors and Ergonomics , pp. 990–1015 . External Links: ISBN 9781118131350 , Document , Link Cited by: §1 , §2.3 , §3 .
+
+Shome et al. (2026) P. Shome, S. Krishnan, and S. Das Why johnny can’t use agents: industry aspirations vs. user realities with ai agents . In Proceedings of the ACM Conference on AI and Agentic Systems , CAIS ’26 , New York, NY, USA , pp. 597–619 . External Links: ISBN 9798400724152 , Link , Document Cited by: §2.2 .
+
+Shukla et al. (2026) T. Shukla, K. Feng, L. Wang, M. Rostami, and A. Zhang Hedwig: dynamic autonomy for coding agents under local oversight . In Proceedings of the ACM Conference on AI and Agentic Systems , CAIS ’26 , New York, NY, USA , pp. 1293–1299 . External Links: ISBN 9798400724152 , Link , Document Cited by: §8.3 .
+
+Sivapiran and Uddin (2026) S. Sivapiran and G. Uddin Reward-free code alignment from pretrained or fine-tuned llm: unpacking the trade-offs for code generation . Proc. ACM Softw. Eng. 3 ( FSE ). External Links: Link , Document Cited by: §8.2.1 .
+
+Tan et al. (2026) B. Tan, X. Huang, and Y. Sun Skill coverage: a test adequacy metric for agent skills . External Links: 2606.20659 , Link Cited by: §8.2.2 .
+
+Tang et al. (2026) N. Tang, C. Chen, Z. Fang, G. Xu, M. Dhakal, Y. Shi, C. McMillan, Y. Huang, and T. J. Li Programming by chat: a large-scale behavioral analysis of 11,579 real-world ai-assisted ide sessions . External Links: 2604.00436 , Link Cited by: §2.1 , §2.2 , §9 .
+
+Ullrich et al. (2025) J. Ullrich, M. Koch, and A. Vogelsang From requirements to code: understanding developer practices in llm-assisted software engineering . In 2025 IEEE 33rd International Requirements Engineering Conference (RE) , pp. 257–266 . External Links: Document Cited by: §2.1 , §2.3 .
+
+Vaithilingam et al. (2025) P. Vaithilingam, M. Kim, F. Acosta-Parenteau, D. Lee, A. Mhedhbi, E. L. Glassman, and I. Arawjo Semantic commit: helping users update intent specifications for ai memory at scale . In Proceedings of the 38th Annual ACM Symposium on User Interface Software and Technology , UIST ’25 , New York, NY, USA . External Links: ISBN 9798400720376 , Link , Document Cited by: §8.2.2 .
+
+Vella and Blincoe (2026) A. Vella and K. Blincoe The impact of ai coding assistants on software engineering: a longitudinal study . External Links: 2605.23135 , Link Cited by: §9 .
+
+Wang and Lu (2025) Y. Wang and Y. Lu Interaction, process, infrastructure: a unified framework for human-agent collaboration . External Links: 2506.11718 , Link Cited by: §2.2 .
+
+Wu et al. (2026) Y. Wu, Z. S. Li, K. T. Stolee, and B. Xu How do developers interact with ai? an exploratory study on modeling developer programming behavior . Proc. ACM Softw. Eng. 3 ( FSE ). External Links: Link , Document Cited by: §2.1 .
+
+Xu et al. (2025) X. (. Xu, A. Konnova, B. Gao, C. Peng, D. Vo, and S. P. Dow Productive vs. reflective: how different ways of integrating ai into design workflows affect cognition and motivation . In Proceedings of the 2025 CHI Conference on Human Factors in Computing Systems , CHI ’25 , New York, NY, USA . External Links: ISBN 9798400713941 , Link , Document Cited by: §2.3 .
+
+Yan et al. (2024) L. Yan, A. Hwang, Z. Wu, and A. Head Ivie: lightweight anchored explanations of just-generated code . In Proceedings of the 2024 CHI Conference on Human Factors in Computing Systems , CHI ’24 , New York, NY, USA . External Links: ISBN 9798400703300 , Link , Document Cited by: §8.2.2 .
+
+Yun et al. (2025) B. Yun, D. Feng, A. S. Chen, A. Nikzad, and N. Salehi Generative ai in knowledge work: design implications for data navigation and decision-making . In Proceedings of the 2025 CHI Conference on Human Factors in Computing Systems , CHI ’25 , New York, NY, USA . External Links: ISBN 9798400713941 , Link , Document Cited by: §2.3 .
+
+Zamfirescu-Pereira et al. (2025) J.D. Zamfirescu-Pereira, E. Jun, M. Terry, Q. Yang, and B. Hartmann Beyond code generation: llm-supported exploration of the program design space . In Proceedings of the 2025 CHI Conference on Human Factors in Computing Systems , CHI ’25 , New York, NY, USA . External Links: ISBN 9798400713941 , Link , Document Cited by: §2.1 .
+
+Zhou et al. (2026) J. Zhou, A. Roy, S. Gupta, D. Weitekamp, and C. J. MacLellan When should users check? modeling confirmation frequency in multi-step agentic ai tasks . In Proceedings of the 2026 CHI Conference on Human Factors in Computing Systems , CHI ’26 , New York, NY, USA . External Links: ISBN 9798400722783 , Link , Document Cited by: §1 , §2.3 , §8.3 .
+
+Appendix A Pre-Task Interview Questions
+
+We list the full interview questions for the study below.
+
+A.1. Participant Background
+
+• Could you briefly introduce yourself and your current role?
+
+• How much experience do you have with software development or programming?
+
+• When did you start using AI coding agents?
+
+• Could you briefly describe the AI coding tools or agent setup you usually use?
+
+• When you delegate work to AI coding agents, what level of granularity do you usually use?
+
+• How do you usually review or verify the outputs generated by AI coding agents?
+
+• In your current company, team, lab, open-source project, or other work context, are there any explicit or implicit rules, norms, or expectations around using AI coding tools?
+
+• If so, how do they affect the way you use these tools in practice?
+
+• Compared to your colleagues or peers, in what ways do you feel your use of AI coding tools is similar or different?
+
+A.2. Prepared Task
+
+• Could you briefly describe the task you prepared for today?
+
+• What would you like to accomplish within the 40-minute coding session?
+
+Appendix B Example Supervision Workflow Diagrams
+
+We present example supervision workflow diagrams drawn by participants in our interviews, illustrating the diversity of stages and loop structures observed. The diagrams shown here are translated to English from the original version.
+
+Flow diagram of P10's supervision workflow: a vertical sequence of stages with feedback loops.
+
+Appendix C Reddit Flair Filtering
+
+On Reddit, post flairs are labels used to categorize posts within a subreddit. We used these flairs to exclude posts unlikely to contain relevant discussions before LLM-based screening. Since each subreddit uses its own set of flairs, we applied subreddit-specific filtering criteria. The flairs excluded for each subreddit are listed below.
+
+We retained posts with the following flairs: Discussion , Question , Help Needed , Help/Question , Resource , Tutorial / Guide , and Tips & Workflows . On the other hand, we excluded posts with the following flairs: Showcase , Humor , Bug Report , Built with Claude , Meta , Solved , Bug / Issue , Rant , or News/Updates , as well as variants of Megathread , Weekly Showcase , and Community Update . This filtering step retained 7,232 of 10,427 posts.
+
+We retained posts with the following flairs: Question , Complaint , Commentary , Suggestion , Workaround , or Instruction . On the other hand, we excluded posts with the following flairs: Showcase , Bug , Praise , Limits , News , Other , Comparison , Humor , Reset , Megathread , or MOD . This filtering step retained 4,054 of 7,284 posts.
+
+We retained posts with the following flairs: Career/Workplace , AI/LLM , and Technical question . We excluded posts labeled Meta or Big Tech , as well as posts without a flair. This filtering step retained 185 of 211 posts.
+
+Appendix D LLM Prompts Used
+
+We present the prompts used for the two LLM-assisted screening steps in our data collection of Reddit threads as explained in § 6.1 : (1) screening posts for relevance and (2) initial supervision stage tagging.
+
+D.1. Prompt for Screening Posts for Relevance
+
+D.2. Prompt for Initial Supervision Stage Tagging
