@@ -22,7 +22,7 @@ flowchart TD
     V --> Q
     Q --> H[student review and approval.json]
     H --> X[immutable production package]
-    X --> M[Google Vids, Substack, YouTube]
+    X --> M[local TTS media renderer, Substack, YouTube]
     R --> Z[summarize_run: counts, costs, failures, actions]
 ```
 

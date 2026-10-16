@@ -10,12 +10,11 @@
   "approval_review_id": "review-8f4ee1be1e8599b656e3fed9",
   "production_package_ready": true,
   "production_package": "runs/20261013T231400Z-55620c5a/package",
-  "published_pairs": 0,
-  "technical_demo_url": null,
-  "remaining_manual_actions": [
-    "Retain the second run's podcast-evidence coverage failure as a documented non-production comparison",
-    "Produce three Google Vids videos",
-    "Publish and cross-link three Substack and YouTube pairs",
-    "Record and publish the human-narrated technical demonstration"
-  ]
+  "published_pairs": 3,
+  "publication_status": "complete",
+  "publication_verified_on": "2026-10-16",
+  "video_visibility": "unlisted",
+  "caption_status": "English video language; YouTube Studio reports published automatic tracks for all four videos",
+  "technical_demo_url": "https://youtu.be/N_G09Ix0UjU",
+  "remaining_manual_actions": []
 }

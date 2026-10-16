@@ -1,0 +1,19 @@
+The coding agent moved beyond the diff—but it did not move beyond the gate. This episode explains why supervised orchestration is the defensible production-ready capability for a small software team, and why planning, isolation, inspectable evidence, and explicit approval still matter.
+
+Read the accompanying Agent Signal article:
+https://ekc1586677.substack.com/p/the-agent-moved-past-the-diff-not
+
+Project repository and reproducible evidence pipeline:
+https://github.com/yikecheng/ps04
+
+Sources:
+- Sourcegraph, “Introducing Agentic Batch Changes” (2026-09-14): https://sourcegraph.com/blog/introducing-agentic-batch-changes
+- Cursor, “Bots for the last mile” (2026-09-23): https://cursor.com/blog/rollouts-and-security-reviewer
+- OpenAI, “Code review is no longer the bottleneck” (2026-10-12), evidence at 0:43–0:50: https://www.youtube.com/watch?v=IZXv6a78NDw&t=43s
+- OpenAI, “Meet the New Codex CLI” (2026-10-05), evidence at 1:23–1:30 and 1:56–2:04: https://www.youtube.com/watch?v=PUBc2G0Tj5E&t=83s
+- AgentSWE (2026-10-09): https://arxiv.org/html/2610.13361
+
+Disclosure: synthetic text-to-speech narration. AI assisted research, drafting, and presentation. A human editor reviewed the evidence and approved the recommendations.
+
+#AICoding #SoftwareEngineering #AIAgents
+

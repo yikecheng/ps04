@@ -17,6 +17,6 @@ The approved recommendations are to accept the AgentSWE benchmark with its 25-ta
 
 The first completed run is the publication candidate. The later version-2 live run remains a separate, honestly failed artifact because its accepted portfolio did not include podcast evidence. That failure was not waived or rewritten by this approval.
 
-## Remaining human work
+## Publication completion
 
-Approval unlocks immutable packaging. It does not publish anything. The three audience videos still require Google Vids production and quality review; the three article/video pairs require real Substack and YouTube publication and cross-linking; and the 4–6 minute technical demonstration requires the student's narration and upload.
+Approval unlocked immutable packaging without rewriting the reviewed drafts. The three audience videos and the 5:42 technical demonstration were then rendered with the course-approved synthetic TTS alternative, quality-checked, uploaded to YouTube as unlisted, and disclosed as AI-assisted. The three articles were published on Substack for everyone and cross-linked to their matching videos. Exact links and access checks are recorded in `docs/PUBLICATION_VERIFICATION.md`.

@@ -1,4 +1,5 @@
 .DS_Store
+outputs/final_media/work/
 .venv/
 __pycache__/
 *.py[cod]

@@ -1,0 +1,22 @@
+Do not choose an autonomy level from a feature list. Make an agent earn—and be able to lose—the next permission through reversible trials, independent acceptance, and predeclared thresholds. This episode gives small software teams a practical adoption ladder.
+
+Read the accompanying Agent Signal article:
+https://ekc1586677.substack.com/p/earn-the-next-rung
+
+Project repository and reproducible evidence pipeline:
+https://github.com/yikecheng/ps04
+
+Sources:
+- “The Work Behind Delegation” (2026-09-21): https://arxiv.org/html/2609.24234
+- AgentSWE (2026-10-09): https://arxiv.org/html/2610.13361
+- Sourcegraph, “Introducing Agentic Batch Changes” (2026-09-14): https://sourcegraph.com/blog/introducing-agentic-batch-changes
+- Cursor, “Bots for the last mile” (2026-09-23): https://cursor.com/blog/rollouts-and-security-reviewer
+- Cursor, “Improved token efficiency for longer agent runs” (2026-09-23): https://cursor.com/blog/improved-token-efficiency
+- InfoQ with Joy Ebertz (2026-10-12): https://www.infoq.com/podcasts/what-really-mean-program-ai/
+- InfoQ with Scott Hanselman (2026-09-14): https://www.infoq.com/podcasts/train-developers-ai-routine-work/
+- GitHub with Matt Pocock (2026-09-20): https://www.youtube.com/watch?v=9yPyoxlyc5Q&t=150s
+
+Disclosure: synthetic text-to-speech narration. AI assisted research, drafting, and presentation. A human editor reviewed the evidence and approved the recommendations.
+
+#AICoding #SoftwareEngineering #AIAgents
+

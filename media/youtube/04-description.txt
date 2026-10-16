@@ -1,0 +1,16 @@
+Technical demonstration of Agent Signal, a repeatable evidence-to-publication pipeline for evaluating AI coding-agent claims. The demo shows the fixed architecture, an end-to-end claim trace, two live collection days, moving-window behavior, honest failure recovery, editorial-policy revision, fingerprint-bound human approval, immutable packaging, and the main storage tradeoff.
+
+Public repository:
+https://github.com/yikecheng/ps04
+
+Key repository records:
+- Architecture: docs/ARCHITECTURE_IMPLEMENTATION.md
+- Claim trace: docs/CLAIM_TRACE.md
+- Recovery history: docs/RECOVERY_LOG.md
+- Policy comparison: docs/POLICY_COMPARISON.md
+- Student submission: SUBMISSION.md
+
+Disclosure: synthetic text-to-speech narration under the course’s approved TTS alternative. AI assisted research, drafting, and presentation. A human editor reviewed the evidence and approved the recommendations.
+
+#AIAgents #DataProvenance #SoftwareEngineering
+

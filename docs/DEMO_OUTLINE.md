@@ -1,6 +1,6 @@
 # Technical demonstration outline — 4–6 minutes
 
-Use these as screen cues and talking points. A final narration script will be produced after publication links exist. Do not claim human approval, rendered videos, or publication until the corresponding records exist.
+Use these as screen cues and talking points. The finished narration is in `docs/DEMO_SCRIPT.md`. The course's text-to-speech alternative is used for the final technical demo, with an explicit synthetic-narration disclosure.
 
 ## 0:00–0:40 — Purpose and fixed architecture
 
@@ -30,7 +30,7 @@ Show `data/store.sh`, one immutable asset path, and the run's receipt directory.
 
 ## 4:35–5:25 — Outputs and limitations
 
-Show the three packaged articles/scripts, final Substack/YouTube links, and publication verification record once available. Explain that the three audience videos use Google Vids and disclosed AI narration, while this technical demo uses the student's own narration. End with the central result: production readiness is a measured property of a bounded task and control system, not a label attached to an agent product.
+Show the three packaged articles/scripts, rendered media, and final Substack/YouTube links once available. Explain that all four videos use disclosed synthetic narration under the course's text-to-speech alternative. End with the central result: production readiness is a measured property of a bounded task and control system, not a label attached to an agent product.
 
 ## Recording safety
 
