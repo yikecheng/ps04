@@ -177,13 +177,31 @@ def main() -> int:
                 ]
             )
         else:
-            remaining.extend(
-                [
-                    "Produce three audience videos in Google Vids or HeyGen.",
-                    "Publish the three Substack articles and YouTube videos and record their links.",
-                    "Record and publish the separate narrated technical demonstration.",
-                ]
+            pairs_published = (
+                isinstance(publication_links, list)
+                and len(publication_links) == 3
+                and all(
+                    isinstance(row, dict)
+                    and isinstance(row.get("substack_url"), str)
+                    and row.get("substack_url")
+                    and isinstance(row.get("youtube_url"), str)
+                    and row.get("youtube_url")
+                    for row in publication_links
+                )
             )
+            if not pairs_published:
+                remaining.extend(
+                    [
+                        "Produce the three audience videos using an approved production method.",
+                        "Publish and cross-link the three Substack articles and YouTube videos, then record their URLs.",
+                    ]
+                )
+
+            project_status_path = pathlib.Path(__file__).resolve().parents[1] / "docs" / "PROJECT_STATUS.json"
+            project_status = load_json(project_status_path) if project_status_path.is_file() else None
+            demo_url = project_status.get("technical_demo_url") if isinstance(project_status, dict) else None
+            if not isinstance(demo_url, str) or not demo_url:
+                remaining.append("Record and publish the separate narrated technical demonstration.")
 
         started = parse_time(run_meta.get("started_at"))
         finish_candidates = [parse_time(row.get("finished_at")) for row in receipts]
