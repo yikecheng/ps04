@@ -1,0 +1,17 @@
+{
+  "cost_estimate": false,
+  "cost_usd": null,
+  "details": {
+    "overall_status": "ready_for_production"
+  },
+  "errors": [],
+  "finished_at": "2026-10-16T21:27:52Z",
+  "input_count": 24,
+  "output_count": 1,
+  "stage": "summarize_run",
+  "started_at": "2026-10-16T21:27:52Z",
+  "status": "completed",
+  "tools_or_models": [
+    "python-stdlib"
+  ]
+}
